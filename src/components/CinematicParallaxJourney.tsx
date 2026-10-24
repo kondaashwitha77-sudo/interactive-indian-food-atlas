@@ -11,22 +11,30 @@ export interface CinematicStage {
   id: string;
   image: string;
   imageAlt: string;
-  /** Smaller mid-ground image; omit to hide it. */
+  /** Plate that pops out in front of the hero card; omit to hide it. */
   secondaryImage?: string;
   eyebrow: string;
   title: string;
-  description: string;
-  badge?: string;
-  highlight?: { label: string; text: string };
-  /** Floating mid-ground chips (first 4 are shown). */
-  tags?: string[];
+  /** Optional one-line punchline under the headline. */
+  tagline?: string;
   /** Large outlined background numeral, e.g. "01". */
   numeral?: string;
+}
+
+export interface CinematicOutro {
+  kicker?: string;
+  title: string;
+  tagline?: string;
+  image: string;
 }
 
 interface CinematicParallaxJourneyProps {
   stages: CinematicStage[];
   label?: string;
+  /** Giant outlined word that slides behind every stage. */
+  backdropText?: string;
+  /** Closing hero card shown after the final stage. */
+  outro?: CinematicOutro;
   /** Height of any sticky header above the section, in px. */
   pinOffset?: number;
   /** Viewport heights of scrolling allotted to each stage. */
@@ -37,15 +45,15 @@ interface CinematicParallaxJourneyProps {
 const MOVE = 1;
 const FADE = 0.3;
 const STEP = MOVE + FADE;
+const OUTRO = 0.9;
 const END_HOLD = 0.15;
 
-const TAG_POSITIONS: React.CSSProperties[] = [
-  { top: "9%", left: "5%" },
-  { top: "46%", left: "3%" },
-  { top: "14%", right: "6%" },
-  { top: "31%", right: "5%" },
+// Floating plates: depth < 1 drifts behind the hero, depth > 1 races past in front of it.
+const ORBS = [
+  { depth: 0.35, size: "w-16 h-16 lg:w-24 lg:h-24", pos: { top: "10%", left: "8%" }, blur: 2, mobile: true },
+  { depth: 0.55, size: "w-14 h-14 lg:w-20 lg:h-20", pos: { top: "18%", right: "10%" }, blur: 1, mobile: false },
+  { depth: 1.45, size: "w-24 h-24 lg:w-36 lg:h-36", pos: { top: "46%", right: "4%" }, blur: 4, mobile: false },
 ];
-const TAG_DEPTHS = [0.22, 0.38, 0.3, 0.5];
 
 const PARTICLES = [
   { top: "18%", left: "22%", size: 4, depth: 0.5 },
@@ -54,6 +62,8 @@ const PARTICLES = [
   { top: "70%", left: "58%", size: 3, depth: 0.65 },
   { top: "12%", left: "48%", size: 2, depth: 0.9 },
   { top: "52%", left: "88%", size: 4, depth: 0.45 },
+  { top: "40%", left: "35%", size: 3, depth: 1.2 },
+  { top: "8%", left: "80%", size: 2, depth: 1.4 },
 ];
 
 const pad2 = (n: number) => String(n).padStart(2, "0");
@@ -66,9 +76,24 @@ function preloadImages(srcs: string[]) {
   });
 }
 
+const Words: React.FC<{ text: string; attr: string }> = ({ text, attr }) => (
+  <>
+    {text.split(" ").map((word, k) => (
+      <span key={k} className="inline-block overflow-hidden align-bottom pb-[0.08em] -mb-[0.08em]">
+        <span {...{ [attr]: "" }} className="inline-block will-change-transform">
+          {word}
+          {"\u00a0"}
+        </span>
+      </span>
+    ))}
+  </>
+);
+
 export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> = ({
   stages,
   label = "Cinematic Journey",
+  backdropText,
+  outro,
   pinOffset = 64,
   scrollPerStage = 1.1,
 }) => {
@@ -82,13 +107,16 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
   const [activeIdx, setActiveIdx] = useState(0);
 
   const stageCount = stages.length;
-  const totalDuration = (stageCount - 1) * STEP + MOVE + END_HOLD;
+  const hasOutro = Boolean(outro);
+  const stagesEnd = (stageCount - 1) * STEP + MOVE;
+  const totalDuration = (hasOutro ? stageCount * STEP + OUTRO : stagesEnd) + END_HOLD;
 
   useEffect(() => {
-    preloadImages(
-      stages.flatMap((s) => (s.secondaryImage ? [s.image, s.secondaryImage] : [s.image]))
-    );
-  }, [stages]);
+    preloadImages([
+      ...stages.flatMap((s) => (s.secondaryImage ? [s.image, s.secondaryImage] : [s.image])),
+      ...(outro ? [outro.image] : []),
+    ]);
+  }, [stages, outro]);
 
   useLayoutEffect(() => {
     if (reducedMotion || stageCount === 0) return;
@@ -98,20 +126,23 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
 
     const ctx = gsap.context(() => {
       const groups = gsap.utils.toArray<HTMLElement>("[data-stage]", pin);
+      const outroEl = pin.querySelector<HTMLElement>("[data-outro]");
       const width = () => pin.clientWidth;
+      const isMobile = () => width() < 768;
       const travel = () => {
         const card = pin.querySelector<HTMLElement>("[data-fg]");
         const cw = card?.offsetWidth ?? width() * 0.5;
-        const overshoot = width() < 768 ? 0.3 : 0.12;
-        return (width() - cw) / 2 + cw * overshoot;
+        return (width() - cw) / 2 + cw * (isMobile() ? 0.3 : 0.12);
       };
+      const swing = () => (isMobile() ? 20 : 32);
+      const scrollLength = groups.length + (outroEl ? 0.8 : 0);
 
       const tl = gsap.timeline({
         defaults: { ease: "none" },
         scrollTrigger: {
           trigger: section,
           start: `top top+=${pinOffset}`,
-          end: () => `+=${pin.clientHeight * scrollPerStage * groups.length}`,
+          end: () => `+=${pin.clientHeight * scrollPerStage * scrollLength}`,
           pin,
           scrub: 0.8,
           anticipatePin: 1,
@@ -130,74 +161,89 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
 
       groups.forEach((group, i) => {
         const start = i * STEP;
+        const half = MOVE / 2;
         const q = gsap.utils.selector(group);
-        const texts = q("[data-text]");
+        const words = q("[data-word]");
+        const minor = q("[data-text]");
+        const floaters = q("[data-orb], [data-pop]");
+        const leaves = i < groups.length - 1 || !!outroEl;
 
         gsap.set(group, { autoAlpha: i === 0 ? 1 : 0 });
 
-        // Foreground: the hero image crosses the screen left → right.
+        // Foreground: hero card crosses left → right while swinging in 3D like a product shot.
         tl.fromTo(q("[data-fg]"), { x: () => -travel() }, { x: () => travel(), duration: MOVE }, start);
         tl.fromTo(
-          q("[data-fg-img]"),
-          { scale: 1.14, xPercent: -3 },
-          { scale: 1.02, xPercent: 3, duration: MOVE },
+          q("[data-tilt]"),
+          { rotateY: () => swing(), rotateX: 10, z: -220 },
+          { rotateY: 0, rotateX: 0, z: 70, duration: half, ease: "sine.out" },
           start
         );
+        tl.to(
+          q("[data-tilt]"),
+          { rotateY: () => -swing(), rotateX: -6, z: -220, duration: half, ease: "sine.in", immediateRender: false },
+          start + half
+        );
+        tl.fromTo(q("[data-fg-img]"), { scale: 1.18, xPercent: -4 }, { scale: 1.04, xPercent: 4, duration: MOVE }, start);
+        tl.fromTo(q("[data-sheen]"), { xPercent: -160 }, { xPercent: 260, duration: MOVE, ease: "power1.inOut" }, start);
+        tl.fromTo(q("[data-shadow]"), { scaleX: 0.6, opacity: 0.25 }, { scaleX: 1.1, opacity: 0.6, duration: half, ease: "sine.out" }, start);
+        tl.to(q("[data-shadow]"), { scaleX: 0.6, opacity: 0.25, duration: half, ease: "sine.in", immediateRender: false }, start + half);
+        tl.fromTo(q("[data-pop]"), { rotate: -40 }, { rotate: 40, duration: MOVE }, start);
 
-        // Mid-ground: chips & secondary image follow at slower, varied speeds.
-        q("[data-depth]").forEach((el) => {
-          const depth = parseFloat((el as HTMLElement).dataset.depth || "0.4");
+        // Mid-ground plates: slower behind, faster in front.
+        q("[data-orb]").forEach((el) => {
+          const depth = parseFloat((el as HTMLElement).dataset.orb || "0.5");
           tl.fromTo(
             el,
-            { x: () => -travel() * depth },
-            { x: () => travel() * depth, duration: MOVE },
+            { x: () => -travel() * depth, y: 30 * depth, rotate: -25 * depth },
+            { x: () => travel() * depth, y: -30 * depth, rotate: 25 * depth, duration: MOVE },
             start
           );
         });
 
-        // Background: drifts subtly in the opposite direction.
-        tl.fromTo(
-          q("[data-bg]"),
-          { x: () => width() * 0.04 },
-          { x: () => -width() * 0.04, duration: MOVE },
-          start
-        );
-        tl.fromTo(
-          q("[data-numeral]"),
-          { x: () => width() * 0.1 },
-          { x: () => -width() * 0.1, duration: MOVE },
-          start
-        );
-
-        const mids = q("[data-depth]");
-        if (i > 0) {
-          tl.fromTo(mids, { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.2 }, start - FADE * 0.3);
-        }
-        if (i < groups.length - 1) {
-          tl.to(mids, { autoAlpha: 0, duration: 0.15 }, start + MOVE - 0.15);
-        }
+        // Background: blurred plate, spotlight and giant word drift against the motion.
+        tl.fromTo(q("[data-bg]"), { x: () => width() * 0.05 }, { x: () => -width() * 0.05, duration: MOVE }, start);
+        tl.fromTo(q("[data-glow]"), { x: () => -travel() * 0.8 }, { x: () => travel() * 0.8, duration: MOVE }, start);
+        tl.fromTo(q("[data-backdrop]"), { xPercent: 8 }, { xPercent: -28, duration: MOVE }, start);
+        tl.fromTo(q("[data-numeral]"), { x: () => width() * 0.12 }, { x: () => -width() * 0.12, duration: MOVE }, start);
 
         if (i > 0) {
           // Incoming stage is opaque and stacked above, so the crossfade never shows a blank frame.
           tl.to(group, { autoAlpha: 1, duration: FADE, ease: "power1.inOut" }, start - FADE);
           tl.set(groups[i - 1], { autoAlpha: 0 }, start);
+          tl.fromTo(floaters, { autoAlpha: 0, scale: 0.6 }, { autoAlpha: 1, scale: 1, duration: 0.25, ease: "back.out(1.6)" }, start - FADE * 0.4);
           tl.fromTo(
-            texts,
-            { autoAlpha: 0, y: 36 },
-            { autoAlpha: 1, y: 0, duration: 0.22, stagger: 0.04, ease: "power2.out" },
+            words,
+            { yPercent: 110, rotateX: -75, autoAlpha: 0 },
+            { yPercent: 0, rotateX: 0, autoAlpha: 1, duration: 0.24, stagger: 0.035, ease: "power3.out" },
             start - FADE * 0.5
           );
+          tl.fromTo(minor, { autoAlpha: 0, y: 24 }, { autoAlpha: 1, y: 0, duration: 0.2, stagger: 0.05, ease: "power2.out" }, start - FADE * 0.4);
         }
-        if (i < groups.length - 1) {
-          tl.to(
-            texts,
-            { autoAlpha: 0, y: -28, duration: 0.18, stagger: 0.03, ease: "power1.in" },
-            start + 0.8
-          );
+        if (leaves) {
+          tl.to(floaters, { autoAlpha: 0, scale: 0.7, duration: 0.15 }, start + MOVE - 0.15);
+          tl.to(words, { yPercent: -100, autoAlpha: 0, duration: 0.16, stagger: 0.02, ease: "power1.in" }, start + 0.8);
+          tl.to(minor, { autoAlpha: 0, y: -20, duration: 0.15, ease: "power1.in" }, start + 0.8);
         }
       });
 
-      tl.to({}, { duration: END_HOLD }, (groups.length - 1) * STEP + MOVE);
+      if (outroEl) {
+        const start = groups.length * STEP;
+        const oq = gsap.utils.selector(outroEl);
+        gsap.set(outroEl, { autoAlpha: 0 });
+        tl.to(outroEl, { autoAlpha: 1, duration: FADE, ease: "power1.inOut" }, start - FADE);
+        tl.set(groups[groups.length - 1], { autoAlpha: 0 }, start);
+        tl.fromTo(oq("[data-outro-img]"), { scale: 1.35 }, { scale: 1.05, duration: OUTRO + FADE }, start - FADE);
+        tl.fromTo(
+          oq("[data-char]"),
+          { z: -500, rotateY: (k: number) => (k % 2 ? 70 : -70), yPercent: 40, autoAlpha: 0 },
+          { z: 0, rotateY: 0, yPercent: 0, autoAlpha: 1, duration: 0.4, stagger: 0.03, ease: "power3.out" },
+          start - FADE * 0.3
+        );
+        tl.fromTo(oq("[data-outro-text]"), { autoAlpha: 0, y: 24 }, { autoAlpha: 1, y: 0, duration: 0.25, stagger: 0.08 }, start + 0.25);
+        tl.fromTo(oq("[data-outro-line]"), { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, start + 0.2);
+      }
+
+      tl.to({}, { duration: END_HOLD }, totalDuration - END_HOLD);
       tl.fromTo(progressRef.current, { scaleX: 0 }, { scaleX: 1, duration: totalDuration }, 0);
       tl.to("[data-hint]", { autoAlpha: 0, y: 12, duration: 0.15 }, 0.05);
 
@@ -205,13 +251,13 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
         const depth = parseFloat(el.dataset.particle || "0.5");
         tl.fromTo(
           el,
-          { x: () => -width() * 0.12 * depth, y: 10 * depth },
-          { x: () => width() * 0.12 * depth, y: -10 * depth, duration: totalDuration },
+          { x: () => -width() * 0.15 * depth, y: 14 * depth },
+          { x: () => width() * 0.15 * depth, y: -14 * depth, duration: totalDuration },
           0
         );
       });
 
-      // Entrance before pinning: first frame and heading settle in as the section arrives.
+      // Entrance before pinning: first card rises out of depth as the section arrives.
       gsap
         .timeline({
           defaults: { ease: "none" },
@@ -222,8 +268,8 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
             scrub: 0.6,
           },
         })
-        .fromTo(groups[0].querySelector("[data-fg-frame]"), { scale: 0.88, opacity: 0.5 }, { scale: 1, opacity: 1 }, 0)
-        .fromTo(groups[0].querySelector("[data-intro]"), { y: 60, opacity: 0 }, { y: 0, opacity: 1 }, 0.2);
+        .fromTo(groups[0].querySelector("[data-fg-frame]"), { scale: 0.8, opacity: 0.4 }, { scale: 1, opacity: 1 }, 0)
+        .fromTo(groups[0].querySelector("[data-intro]"), { y: 80, opacity: 0 }, { y: 0, opacity: 1 }, 0.2);
     }, section);
 
     const refresh = () => ScrollTrigger.refresh();
@@ -236,7 +282,7 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
       activeRef.current = 0;
       ctx.revert();
     };
-  }, [reducedMotion, stageCount, pinOffset, scrollPerStage, totalDuration]);
+  }, [reducedMotion, stageCount, hasOutro, pinOffset, scrollPerStage, totalDuration]);
 
   const scrollToStage = useCallback(
     (idx: number) => {
@@ -255,12 +301,13 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
   const headingColor = isLight ? "text-slate-900" : "text-white";
   const bodyColor = isLight ? "text-slate-700" : "text-slate-200";
   const accentColor = isLight ? "text-amber-800" : "text-amber-400";
+  const outlineStroke = isLight ? "1.5px rgba(180,83,9,0.2)" : "1.5px rgba(245,158,11,0.18)";
 
   if (reducedMotion) {
     return (
       <section key="static" aria-label={label} className="relative w-full py-12 space-y-16">
         {stages.map((stage) => (
-          <article key={stage.id} className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 items-center">
+          <article key={stage.id} className="max-w-5xl mx-auto px-5 grid md:grid-cols-2 gap-6 items-center">
             <img
               src={stage.image}
               alt={stage.imageAlt}
@@ -268,11 +315,18 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
             />
             <div className="space-y-2">
               <p className={`text-xs font-bold uppercase tracking-widest ${accentColor}`}>{stage.eyebrow}</p>
-              <h3 className={`font-cinzel font-bold text-2xl sm:text-3xl ${headingColor}`}>{stage.title}</h3>
-              <p className={`text-sm leading-relaxed ${bodyColor}`}>{stage.description}</p>
+              <h3 className={`font-cinzel font-black text-3xl sm:text-4xl ${headingColor}`}>{stage.title}</h3>
+              {stage.tagline && <p className={`text-base ${bodyColor}`}>{stage.tagline}</p>}
             </div>
           </article>
         ))}
+        {outro && (
+          <article className="max-w-5xl mx-auto px-5 text-center space-y-3">
+            {outro.kicker && <p className={`text-xs font-bold uppercase tracking-widest ${accentColor}`}>{outro.kicker}</p>}
+            <h3 className={`font-cinzel font-black text-4xl sm:text-6xl ${headingColor}`}>{outro.title}</h3>
+            {outro.tagline && <p className={`text-lg ${bodyColor}`}>{outro.tagline}</p>}
+          </article>
+        )}
       </section>
     );
   }
@@ -284,134 +338,203 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
         className="relative w-full h-[calc(100svh-4rem)] min-h-[480px] overflow-hidden"
         style={{ background: panelBg }}
       >
-        {stages.map((stage, i) => (
-          <div
-            key={stage.id}
-            data-stage
-            aria-hidden={activeIdx !== i}
-            className="absolute inset-0 overflow-hidden"
-            style={{ background: panelBg, visibility: i === 0 ? "visible" : "hidden" }}
-          >
-            {/* Background */}
-            <div data-bg className="absolute -inset-[8%] will-change-transform">
-              <img
-                src={stage.image}
-                alt=""
-                className={`w-full h-full object-cover blur-2xl scale-110 ${isLight ? "opacity-30" : "opacity-40"}`}
+        {stages.map((stage, i) => {
+          const orbImages = [1, 2, stageCount - 1].map((o) => stages[(i + o) % stageCount].image);
+          return (
+            <div
+              key={stage.id}
+              data-stage
+              aria-hidden={activeIdx !== i}
+              className="absolute inset-0 overflow-hidden"
+              style={{
+                background: panelBg,
+                visibility: i === 0 ? "visible" : "hidden",
+                perspective: "1100px",
+                perspectiveOrigin: "50% 40%",
+              }}
+            >
+              {/* Background */}
+              <div data-bg className="absolute -inset-[10%] will-change-transform">
+                <img
+                  src={stage.image}
+                  alt=""
+                  className={`w-full h-full object-cover blur-2xl scale-110 ${isLight ? "opacity-30" : "opacity-45"}`}
+                />
+              </div>
+              <div
+                className="absolute inset-0"
+                style={{
+                  background: isLight
+                    ? "radial-gradient(ellipse at 50% 35%, rgba(245,239,228,0.05) 0%, rgba(245,239,228,0.75) 60%, #f5efe4 100%)"
+                    : "radial-gradient(ellipse at 50% 35%, rgba(7,9,14,0) 0%, rgba(7,9,14,0.72) 60%, #07090e 100%)",
+                }}
               />
+              {backdropText && (
+                <div
+                  data-backdrop
+                  aria-hidden
+                  className="absolute left-0 top-[30%] sm:top-[22%] whitespace-nowrap font-cinzel font-black uppercase leading-none select-none text-[30vw] sm:text-[22vw] text-transparent will-change-transform"
+                  style={{ WebkitTextStroke: outlineStroke }}
+                >
+                  {backdropText}&nbsp;·&nbsp;{backdropText}
+                </div>
+              )}
+              {stage.numeral && (
+                <div
+                  data-numeral
+                  aria-hidden
+                  className="absolute right-[3%] top-[3%] font-cinzel font-black leading-none select-none text-[28vw] sm:text-[18vw] lg:text-[13vw] text-transparent will-change-transform"
+                  style={{ WebkitTextStroke: outlineStroke }}
+                >
+                  {stage.numeral}
+                </div>
+              )}
+              <div
+                data-glow
+                aria-hidden
+                className="absolute left-1/2 top-[34%] -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[60vh] max-w-[1000px] rounded-full pointer-events-none will-change-transform"
+                style={{
+                  background: isLight
+                    ? "radial-gradient(closest-side, rgba(251,191,36,0.35), transparent)"
+                    : "radial-gradient(closest-side, rgba(245,158,11,0.28), transparent)",
+                }}
+              />
+
+              {/* Mid-ground plates (behind + in front of hero) */}
+              {ORBS.map((orb, k) => (
+                <div
+                  key={k}
+                  data-orb={orb.depth}
+                  aria-hidden
+                  className={`${orb.mobile ? "block" : "hidden md:block"} absolute ${orb.depth > 1 ? "z-[15]" : "z-[5]"} ${orb.size} rounded-full overflow-hidden border-2 shadow-2xl will-change-transform ${
+                    isLight ? "border-white/80" : "border-amber-400/40"
+                  }`}
+                  style={{ ...orb.pos, filter: `blur(${orb.blur}px)` }}
+                >
+                  <img src={orbImages[k]} alt="" className="w-full h-full object-cover" />
+                </div>
+              ))}
+
+              {/* Foreground hero card */}
+              <div
+                data-fg
+                className="absolute z-10 inset-x-0 mx-auto top-[9%] sm:top-[10%] lg:top-[8%] w-[min(78vw,46vh)] sm:w-[min(62vw,54vh)] lg:w-[min(42vw,68vh)] max-w-[760px] aspect-[4/5] sm:aspect-[4/3] lg:aspect-[16/10] will-change-transform"
+                style={{ transformStyle: "preserve-3d" }}
+              >
+                <div data-tilt className="relative w-full h-full will-change-transform" style={{ transformStyle: "preserve-3d" }}>
+                  <div
+                    data-fg-frame
+                    className={`relative w-full h-full rounded-[22px] sm:rounded-[28px] overflow-hidden border ${
+                      isLight
+                        ? "border-amber-900/15 shadow-[0_40px_80px_-20px_rgba(120,53,15,0.45)]"
+                        : "border-amber-400/30 shadow-[0_40px_90px_-20px_rgba(0,0,0,0.85)]"
+                    }`}
+                  >
+                    <img
+                      data-fg-img
+                      src={stage.image}
+                      alt={stage.imageAlt}
+                      loading="eager"
+                      className="w-full h-full object-cover will-change-transform"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
+                    <div
+                      data-sheen
+                      aria-hidden
+                      className="absolute inset-y-0 left-0 w-1/3 -skew-x-12 pointer-events-none mix-blend-overlay will-change-transform"
+                      style={{ background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.55), transparent)" }}
+                    />
+                  </div>
+                  {stage.secondaryImage && (
+                    <div
+                      data-pop
+                      aria-hidden
+                      className={`absolute -bottom-[10%] -right-[6%] w-[28%] aspect-square rounded-full overflow-hidden border-4 shadow-2xl will-change-transform ${
+                        isLight ? "border-white" : "border-amber-400/60"
+                      }`}
+                      style={{ transform: "translateZ(90px)" }}
+                    >
+                      <img src={stage.secondaryImage} alt="" className="w-full h-full object-cover" />
+                    </div>
+                  )}
+                </div>
+                <div
+                  data-shadow
+                  aria-hidden
+                  className="absolute left-[10%] right-[10%] -bottom-[14%] h-[12%] rounded-[50%] blur-2xl will-change-transform"
+                  style={{ background: isLight ? "rgba(120,53,15,0.55)" : "rgba(0,0,0,0.9)" }}
+                />
+              </div>
+
+              {/* Typography */}
+              <div className="absolute z-20 inset-x-0 bottom-0 px-5 pb-8 sm:px-10 lg:px-14 lg:pb-10">
+                <div data-intro className="max-w-5xl space-y-2 sm:space-y-3" style={{ perspective: "600px" }}>
+                  <p data-text className={`text-[10px] sm:text-xs font-bold uppercase tracking-[0.3em] ${accentColor}`}>
+                    {stage.eyebrow}
+                  </p>
+                  <h3
+                    className={`font-cinzel font-black text-[1.7rem] sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.04] tracking-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.25)] ${headingColor}`}
+                  >
+                    <Words text={stage.title} attr="data-word" />
+                  </h3>
+                  {stage.tagline && (
+                    <p data-text className={`text-base sm:text-lg font-medium ${bodyColor}`}>
+                      {stage.tagline}
+                    </p>
+                  )}
+                </div>
+              </div>
             </div>
+          );
+        })}
+
+        {outro && (
+          <div
+            data-outro
+            aria-hidden={activeIdx !== stageCount - 1}
+            className="absolute inset-0 z-[22] overflow-hidden flex items-center justify-center text-center"
+            style={{ visibility: "hidden", background: panelBg, perspective: "900px" }}
+          >
+            <img data-outro-img src={outro.image} alt="" className="absolute inset-0 w-full h-full object-cover will-change-transform" />
             <div
               className="absolute inset-0"
               style={{
                 background: isLight
-                  ? "radial-gradient(ellipse at 50% 30%, rgba(245,239,228,0.1) 0%, rgba(245,239,228,0.75) 60%, #f5efe4 100%)"
-                  : "radial-gradient(ellipse at 50% 30%, rgba(7,9,14,0.05) 0%, rgba(7,9,14,0.7) 60%, #07090e 100%)",
+                  ? "radial-gradient(ellipse at center, rgba(245,239,228,0.55) 0%, rgba(245,239,228,0.92) 70%)"
+                  : "radial-gradient(ellipse at center, rgba(7,9,14,0.45) 0%, rgba(7,9,14,0.92) 70%)",
               }}
             />
-            {stage.numeral && (
-              <div
-                data-numeral
-                aria-hidden
-                className="absolute right-[3%] top-[4%] font-cinzel font-black leading-none select-none text-[34vw] sm:text-[24vw] lg:text-[17vw] text-transparent will-change-transform"
-                style={{
-                  WebkitTextStroke: isLight ? "1.5px rgba(180,83,9,0.18)" : "1.5px rgba(245,158,11,0.16)",
-                }}
+            <div className="relative px-5 space-y-4 sm:space-y-6" style={{ transformStyle: "preserve-3d" }}>
+              {outro.kicker && (
+                <p data-outro-text className={`text-[10px] sm:text-sm font-bold uppercase tracking-[0.4em] ${accentColor}`}>
+                  {outro.kicker}
+                </p>
+              )}
+              <h3
+                aria-label={outro.title}
+                className={`font-cinzel font-black uppercase leading-[0.95] text-[13vw] sm:text-[10vw] lg:text-[8vw] ${headingColor}`}
+                style={{ transformStyle: "preserve-3d" }}
               >
-                {stage.numeral}
-              </div>
-            )}
-
-            {/* Mid-ground */}
-            {stage.secondaryImage && (
-              <div
-                data-depth="0.45"
-                className={`hidden md:block absolute z-[5] bottom-[38%] right-[9%] w-24 h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-2 shadow-2xl will-change-transform ${
-                  isLight ? "border-white/80" : "border-amber-500/40"
-                }`}
-              >
-                <img src={stage.secondaryImage} alt="" className="w-full h-full object-cover" />
-              </div>
-            )}
-            {stage.tags?.slice(0, 4).map((tag, k) => (
-              <span
-                key={tag}
-                data-depth={TAG_DEPTHS[k]}
-                className={`${k >= 2 ? "hidden sm:inline-flex" : "inline-flex"} absolute z-[5] max-w-[42vw] sm:max-w-[16rem] truncate items-center gap-1.5 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-semibold backdrop-blur-md border will-change-transform ${
-                  isLight
-                    ? "bg-white/70 text-amber-950 border-amber-900/15"
-                    : "bg-slate-900/60 text-amber-100 border-amber-500/25"
-                }`}
-                style={TAG_POSITIONS[k]}
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0" />
-                <span className="truncate">{tag}</span>
-              </span>
-            ))}
-
-            {/* Foreground */}
-            <div
-              data-fg
-              className="absolute z-10 inset-x-0 mx-auto top-[10%] sm:top-[12%] lg:top-[9%] w-[min(70vw,42vh)] sm:w-[min(66vw,58vh)] lg:w-[min(44vw,78vh)] max-w-[780px] aspect-[4/5] sm:aspect-[4/3] lg:aspect-[16/10] will-change-transform"
-            >
-              <div
-                data-fg-frame
-                className={`relative w-full h-full rounded-[22px] sm:rounded-[28px] overflow-hidden border shadow-2xl ${
-                  isLight ? "border-amber-900/15 shadow-amber-950/20" : "border-amber-500/30 shadow-black/60"
-                }`}
-              >
-                <img
-                  data-fg-img
-                  src={stage.image}
-                  alt={stage.imageAlt}
-                  loading="eager"
-                  className="w-full h-full object-cover will-change-transform"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
-                {stage.badge && (
-                  <span className="absolute top-3 left-3 sm:top-4 sm:left-4 px-3 py-1 rounded-full bg-amber-500/95 text-slate-950 text-[10px] font-black uppercase tracking-wider shadow-lg">
-                    {stage.badge}
+                {outro.title.split(" ").map((word, w) => (
+                  <span key={w} className="inline-block whitespace-nowrap" style={{ transformStyle: "preserve-3d" }}>
+                    {[...word].map((ch, c) => (
+                      <span key={c} data-char aria-hidden className="inline-block will-change-transform">
+                        {ch}
+                      </span>
+                    ))}
+                    {"\u00a0"}
                   </span>
-                )}
-              </div>
-            </div>
-
-            {/* Typography */}
-            <div className="absolute z-20 inset-x-0 bottom-0 px-5 pb-8 sm:px-10 lg:px-14 lg:pb-10">
-              <div data-intro className="grid lg:grid-cols-12 gap-4 items-end">
-                <div className="lg:col-span-7 space-y-2 sm:space-y-3">
-                  <p data-text className={`text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] ${accentColor}`}>
-                    {stage.eyebrow}
-                  </p>
-                  <h3
-                    data-text
-                    className={`font-cinzel font-black text-2xl sm:text-4xl lg:text-5xl leading-[1.08] tracking-tight ${headingColor}`}
-                  >
-                    {stage.title}
-                  </h3>
-                  <p
-                    data-text
-                    className={`text-sm sm:text-base leading-relaxed max-w-2xl line-clamp-3 sm:line-clamp-none ${bodyColor}`}
-                  >
-                    {stage.description}
-                  </p>
-                </div>
-                {stage.highlight && (
-                  <div
-                    data-text
-                    className={`hidden lg:block lg:col-span-4 lg:col-start-9 p-4 rounded-2xl border backdrop-blur-md ${
-                      isLight ? "bg-white/70 border-amber-900/15" : "bg-slate-900/60 border-amber-500/25"
-                    }`}
-                  >
-                    <p className={`text-[10px] uppercase font-bold tracking-wider ${accentColor}`}>
-                      {stage.highlight.label}
-                    </p>
-                    <p className={`text-sm font-semibold mt-1 ${headingColor}`}>{stage.highlight.text}</p>
-                  </div>
-                )}
-              </div>
+                ))}
+              </h3>
+              <div data-outro-line className="mx-auto h-[2px] w-32 sm:w-48 bg-gradient-to-r from-transparent via-amber-500 to-transparent" />
+              {outro.tagline && (
+                <p data-outro-text className={`font-cormorant italic text-xl sm:text-3xl ${bodyColor}`}>
+                  {outro.tagline}
+                </p>
+              )}
             </div>
           </div>
-        ))}
+        )}
 
         {/* Decorative particles */}
         <div aria-hidden className="absolute inset-0 z-[25] pointer-events-none">
@@ -419,7 +542,7 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
             <span
               key={k}
               data-particle={p.depth}
-              className="absolute rounded-full bg-amber-400/50 shadow-[0_0_8px_rgba(251,191,36,0.6)]"
+              className="absolute rounded-full bg-amber-400/60 shadow-[0_0_10px_rgba(251,191,36,0.7)]"
               style={{ top: p.top, left: p.left, width: p.size, height: p.size }}
             />
           ))}
@@ -469,7 +592,7 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
           }`}
         >
           <ArrowDown className="w-3 h-3" />
-          Scroll to travel through time
+          Scroll to explore
         </div>
       </div>
     </section>

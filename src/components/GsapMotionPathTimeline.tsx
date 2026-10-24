@@ -16,7 +16,7 @@ import {
 import { GenerationWaypoint, getGenerationsForDish } from "../data/generationRecipesData";
 import { Skiper6Summarizer, GenerationSummaryMember } from "./ui/skiper6";
 import { useTheme } from "../context/ThemeContext";
-import { CinematicParallaxJourney, CinematicStage } from "./CinematicParallaxJourney";
+import { CinematicOutro, CinematicParallaxJourney, CinematicStage } from "./CinematicParallaxJourney";
 
 // Register GSAP plugins
 gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
@@ -45,16 +45,23 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
         image: w.image,
         imageAlt: w.headline,
         secondaryImage: waypoints[idx + 1]?.image ?? waypoints[idx - 1]?.image,
-        eyebrow: `${w.centuryLabel} · ${w.eraTitle} · ${w.yearRange}`,
+        eyebrow: `${w.eraTitle} · ${w.yearRange}`,
         title: w.headline,
-        description: w.shortDescription,
-        badge: w.yearRange,
-        highlight: { label: "Historic Breakthrough", text: w.technologicalLeap },
-        tags: w.generationRecipe.ingredientsList,
         numeral: String(w.generationNumber).padStart(2, "0"),
       })),
     [dishId, waypoints]
   );
+
+  const cinematicOutro: CinematicOutro | undefined = useMemo(() => {
+    const finalStage = waypoints[waypoints.length - 1];
+    if (!finalStage) return undefined;
+    return {
+      kicker: "The Legend Lives On",
+      title: dishName,
+      tagline: "Centuries of craft in every bite.",
+      image: finalStage.image,
+    };
+  }, [dishName, waypoints]);
 
   const [activeWaypointIdx, setActiveWaypointIdx] = useState<number>(0);
   const waypointRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -196,6 +203,8 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
           key={dishId}
           stages={cinematicStages}
           label={`${dishName} · Through the Ages`}
+          backdropText={dishName}
+          outro={cinematicOutro}
         />
       </div>
 
