@@ -5,6 +5,7 @@
 // ─────────────────────────────────────────────
 
 import { Dish, getAllDishes } from "./foodData";
+import foodImageManifest from "./foodImageManifest.json";
 
 export interface GenerationWaypoint {
   generationNumber: number;
@@ -932,14 +933,34 @@ function generateDynamicGenerationsForDish(dish: Dish): GenerationWaypoint[] {
 // Guaranteed never to show Masala Dosa data unless it IS Masala Dosa!
 // ─────────────────────────────────────────────
 
-export function getGenerationsForDish(dishId: string): GenerationWaypoint[] {
-  if (dishId === "masala-dosa") return DOSA_GENERATIONS;
-  if (dishId === "hyderabadi-biryani") return BIRYANI_GENERATIONS;
-  if (dishId === "rogan-josh") return ROGAN_JOSH_GENERATIONS;
-  if (dishId === "litti-chokha") return LITTI_CHOKHA_GENERATIONS;
-  if (dishId === "butter-chicken") return BUTTER_CHICKEN_GENERATIONS;
+const VERIFIED_DISH_IMAGES: Record<string, string> = Object.fromEntries(
+  foodImageManifest.foods.flatMap((entry) =>
+    entry.status === "downloaded" && entry.image
+      ? [[entry.id, entry.image]]
+      : [],
+  ),
+);
 
-  const allDishes = getAllDishes();
-  const dish = allDishes.find((d) => d.id === dishId) || allDishes[0];
-  return generateDynamicGenerationsForDish(dish);
+export function getGenerationsForDish(dishId: string): GenerationWaypoint[] {
+  let generations: GenerationWaypoint[];
+
+  if (dishId === "masala-dosa") generations = DOSA_GENERATIONS;
+  else if (dishId === "hyderabadi-biryani") generations = BIRYANI_GENERATIONS;
+  else if (dishId === "rogan-josh") generations = ROGAN_JOSH_GENERATIONS;
+  else if (dishId === "litti-chokha") generations = LITTI_CHOKHA_GENERATIONS;
+  else if (dishId === "butter-chicken") generations = BUTTER_CHICKEN_GENERATIONS;
+  else {
+    const allDishes = getAllDishes();
+    const dish = allDishes.find((d) => d.id === dishId) || allDishes[0];
+    generations = generateDynamicGenerationsForDish(dish);
+  }
+
+  const verifiedImage = VERIFIED_DISH_IMAGES[dishId];
+  if (!verifiedImage || generations.length === 0) return generations;
+
+  return generations.map((generation, index) =>
+    index === generations.length - 1
+      ? { ...generation, image: verifiedImage }
+      : generation,
+  );
 }

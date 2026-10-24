@@ -312,6 +312,9 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
               src={stage.image}
               alt={stage.imageAlt}
               className="w-full aspect-[16/10] object-cover rounded-3xl shadow-xl"
+              onError={(event) => {
+                event.currentTarget.hidden = true;
+              }}
             />
             <div className="space-y-2">
               <p className={`text-xs font-bold uppercase tracking-widest ${accentColor}`}>{stage.eyebrow}</p>
@@ -359,6 +362,9 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
                   src={stage.image}
                   alt=""
                   className={`w-full h-full object-cover blur-2xl scale-110 ${isLight ? "opacity-30" : "opacity-45"}`}
+                  onError={(event) => {
+                    event.currentTarget.hidden = true;
+                  }}
                 />
               </div>
               <div
@@ -411,7 +417,14 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
                   }`}
                   style={{ ...orb.pos, filter: `blur(${orb.blur}px)` }}
                 >
-                  <img src={orbImages[k]} alt="" className="w-full h-full object-cover" />
+                  <img
+                    src={orbImages[k]}
+                    alt=""
+                    className="w-full h-full object-cover"
+                    onError={(event) => {
+                      event.currentTarget.hidden = true;
+                    }}
+                  />
                 </div>
               ))}
 
@@ -436,6 +449,9 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
                       alt={stage.imageAlt}
                       loading="eager"
                       className="w-full h-full object-cover will-change-transform"
+                      onError={(event) => {
+                        event.currentTarget.hidden = true;
+                      }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
                     <div
@@ -454,7 +470,14 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
                       }`}
                       style={{ transform: "translateZ(90px)" }}
                     >
-                      <img src={stage.secondaryImage} alt="" className="w-full h-full object-cover" />
+                      <img
+                        src={stage.secondaryImage}
+                        alt=""
+                        className="w-full h-full object-cover"
+                        onError={(event) => {
+                          event.currentTarget.hidden = true;
+                        }}
+                      />
                     </div>
                   )}
                 </div>
@@ -495,7 +518,15 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
             className="absolute inset-0 z-[22] overflow-hidden flex items-center justify-center text-center"
             style={{ visibility: "hidden", background: panelBg, perspective: "900px" }}
           >
-            <img data-outro-img src={outro.image} alt="" className="absolute inset-0 w-full h-full object-cover will-change-transform" />
+            <img
+              data-outro-img
+              src={outro.image}
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover will-change-transform"
+              onError={(event) => {
+                event.currentTarget.hidden = true;
+              }}
+            />
             <div
               className="absolute inset-0"
               style={{

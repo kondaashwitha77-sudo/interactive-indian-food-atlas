@@ -288,6 +288,9 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                       src={waypoint.image}
                       alt={waypoint.headline}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                      onError={(event) => {
+                        event.currentTarget.hidden = true;
+                      }}
                     />
 
                     {/* Gradient Vignette Overlay */}
