@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowDown, Sparkles } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
-import { usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
+import { useMediaQuery, usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,6 +47,8 @@ const FADE = 0.3;
 const STEP = MOVE + FADE;
 const OUTRO = 0.9;
 const END_HOLD = 0.15;
+// Dot navigation lands here within a stage, after the staggered headline entrance has finished.
+const DOT_LANDING = 0.4;
 
 // Floating plates: depth < 1 drifts behind the hero, depth > 1 races past in front of it.
 const ORBS = [
@@ -99,6 +101,8 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
 }) => {
   const { isLight } = useTheme();
   const reducedMotion = usePrefersReducedMotion();
+  // Rebuild the timeline when crossing the mobile breakpoint so pin geometry and swing limits match the layout.
+  const isMobile = !useMediaQuery("(min-width: 768px)");
   const sectionRef = useRef<HTMLElement>(null);
   const pinRef = useRef<HTMLDivElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
@@ -128,13 +132,12 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
       const groups = gsap.utils.toArray<HTMLElement>("[data-stage]", pin);
       const outroEl = pin.querySelector<HTMLElement>("[data-outro]");
       const width = () => pin.clientWidth;
-      const isMobile = () => width() < 768;
       const travel = () => {
         const card = pin.querySelector<HTMLElement>("[data-fg]");
         const cw = card?.offsetWidth ?? width() * 0.5;
-        return (width() - cw) / 2 + cw * (isMobile() ? 0.3 : 0.12);
+        return (width() - cw) / 2 + cw * (isMobile ? 0.3 : 0.12);
       };
-      const swing = () => (isMobile() ? 20 : 32);
+      const swing = isMobile ? 20 : 32;
       const scrollLength = groups.length + (outroEl ? 0.8 : 0);
 
       const tl = gsap.timeline({
@@ -174,19 +177,25 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
         tl.fromTo(q("[data-fg]"), { x: () => -travel() }, { x: () => travel(), duration: MOVE }, start);
         tl.fromTo(
           q("[data-tilt]"),
-          { rotateY: () => swing(), rotateX: 10, z: -220 },
+          { rotateY: swing, rotateX: 10, z: -220 },
           { rotateY: 0, rotateX: 0, z: 70, duration: half, ease: "sine.out" },
           start
         );
-        tl.to(
+        tl.fromTo(
           q("[data-tilt]"),
-          { rotateY: () => -swing(), rotateX: -6, z: -220, duration: half, ease: "sine.in", immediateRender: false },
+          { rotateY: 0, rotateX: 0, z: 70 },
+          { rotateY: -swing, rotateX: -6, z: -220, duration: half, ease: "sine.in", immediateRender: false },
           start + half
         );
         tl.fromTo(q("[data-fg-img]"), { scale: 1.18, xPercent: -4 }, { scale: 1.04, xPercent: 4, duration: MOVE }, start);
         tl.fromTo(q("[data-sheen]"), { xPercent: -160 }, { xPercent: 260, duration: MOVE, ease: "power1.inOut" }, start);
         tl.fromTo(q("[data-shadow]"), { scaleX: 0.6, opacity: 0.25 }, { scaleX: 1.1, opacity: 0.6, duration: half, ease: "sine.out" }, start);
-        tl.to(q("[data-shadow]"), { scaleX: 0.6, opacity: 0.25, duration: half, ease: "sine.in", immediateRender: false }, start + half);
+        tl.fromTo(
+          q("[data-shadow]"),
+          { scaleX: 1.1, opacity: 0.6 },
+          { scaleX: 0.6, opacity: 0.25, duration: half, ease: "sine.in", immediateRender: false },
+          start + half
+        );
         tl.fromTo(q("[data-pop]"), { rotate: -40 }, { rotate: 40, duration: MOVE }, start);
 
         // Mid-ground plates: slower behind, faster in front.
@@ -282,13 +291,13 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
       activeRef.current = 0;
       ctx.revert();
     };
-  }, [reducedMotion, stageCount, hasOutro, pinOffset, scrollPerStage, totalDuration]);
+  }, [reducedMotion, isMobile, stageCount, hasOutro, pinOffset, scrollPerStage, totalDuration]);
 
   const scrollToStage = useCallback(
     (idx: number) => {
       const st = triggerRef.current;
       if (!st) return;
-      const time = Math.min(idx * STEP + 0.02, totalDuration);
+      const time = Math.min(idx * STEP + DOT_LANDING, totalDuration);
       const top = st.start + (time / totalDuration) * (st.end - st.start);
       window.scrollTo({ top, behavior: "smooth" });
     },
