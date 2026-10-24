@@ -258,7 +258,7 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
 
   if (reducedMotion) {
     return (
-      <section aria-label={label} className="relative w-full py-12 space-y-16">
+      <section key="static" aria-label={label} className="relative w-full py-12 space-y-16">
         {stages.map((stage) => (
           <article key={stage.id} className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 items-center">
             <img
@@ -278,7 +278,7 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
   }
 
   return (
-    <section ref={sectionRef} aria-label={label} className="relative w-full">
+    <section key="animated" ref={sectionRef} aria-label={label} className="relative w-full">
       <div
         ref={pinRef}
         className="relative w-full h-[calc(100svh-4rem)] min-h-[480px] overflow-hidden"
