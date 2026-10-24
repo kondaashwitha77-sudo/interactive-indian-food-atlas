@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -16,6 +16,7 @@ import {
 import { GenerationWaypoint, getGenerationsForDish } from "../data/generationRecipesData";
 import { Skiper6Summarizer, GenerationSummaryMember } from "./ui/skiper6";
 import { useTheme } from "../context/ThemeContext";
+import { CinematicOutro, CinematicParallaxJourney, CinematicStage } from "./CinematicParallaxJourney";
 
 // Register GSAP plugins
 gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
@@ -35,7 +36,32 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const pathRef = useRef<SVGPathElement>(null);
   const travelerRef = useRef<SVGCircleElement>(null);
-  const waypoints = getGenerationsForDish(dishId);
+  const waypoints = useMemo(() => getGenerationsForDish(dishId), [dishId]);
+
+  const cinematicStages: CinematicStage[] = useMemo(
+    () =>
+      waypoints.map((w, idx) => ({
+        id: `${dishId}-gen-${w.generationNumber}`,
+        image: w.image,
+        imageAlt: w.headline,
+        secondaryImage: waypoints[idx + 1]?.image ?? waypoints[idx - 1]?.image,
+        eyebrow: `${w.eraTitle} · ${w.yearRange}`,
+        title: w.headline,
+        numeral: String(w.generationNumber).padStart(2, "0"),
+      })),
+    [dishId, waypoints]
+  );
+
+  const cinematicOutro: CinematicOutro | undefined = useMemo(() => {
+    const finalStage = waypoints[waypoints.length - 1];
+    if (!finalStage) return undefined;
+    return {
+      kicker: "The Legend Lives On",
+      title: dishName,
+      tagline: "Centuries of craft in every bite.",
+      image: finalStage.image,
+    };
+  }, [dishName, waypoints]);
 
   const [activeWaypointIdx, setActiveWaypointIdx] = useState<number>(0);
   const waypointRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -169,6 +195,17 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
             </button>
           ))}
         </div>
+      </div>
+
+      {/* ── CINEMATIC SCROLL-DRIVEN PARALLAX JOURNEY ── */}
+      <div className="-mx-4 sm:-mx-6 md:-mx-10 lg:-mx-16 mb-24">
+        <CinematicParallaxJourney
+          key={dishId}
+          stages={cinematicStages}
+          label={`${dishName} · Through the Ages`}
+          backdropText={dishName}
+          outro={cinematicOutro}
+        />
       </div>
 
       {/* ── THE MOTIONPATH WAYPOINTS ROUTE CONTAINER ── */}
