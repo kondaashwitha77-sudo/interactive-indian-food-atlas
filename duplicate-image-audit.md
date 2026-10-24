@@ -1,6 +1,6 @@
 # Food Atlas duplicate and incorrect image audit
 
-**Branch:** `fix/food-image-mappings` (based on `main` at `64628be`). This branch has not been merged or pushed.
+**Merged:** PR [#4](https://github.com/kondaashwitha77-sudo/interactive-indian-food-atlas/pull/4) into `main` at merge commit `2fedf9e`.
 
 ## Audit and correction summary
 
