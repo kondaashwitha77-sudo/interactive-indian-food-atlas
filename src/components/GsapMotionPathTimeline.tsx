@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -16,6 +16,7 @@ import {
 import { GenerationWaypoint, getGenerationsForDish } from "../data/generationRecipesData";
 import { Skiper6Summarizer, GenerationSummaryMember } from "./ui/skiper6";
 import { useTheme } from "../context/ThemeContext";
+import { CinematicParallaxJourney, CinematicStage } from "./CinematicParallaxJourney";
 
 // Register GSAP plugins
 gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
@@ -35,7 +36,25 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const pathRef = useRef<SVGPathElement>(null);
   const travelerRef = useRef<SVGCircleElement>(null);
-  const waypoints = getGenerationsForDish(dishId);
+  const waypoints = useMemo(() => getGenerationsForDish(dishId), [dishId]);
+
+  const cinematicStages: CinematicStage[] = useMemo(
+    () =>
+      waypoints.map((w, idx) => ({
+        id: `${dishId}-gen-${w.generationNumber}`,
+        image: w.image,
+        imageAlt: w.headline,
+        secondaryImage: waypoints[idx + 1]?.image ?? waypoints[idx - 1]?.image,
+        eyebrow: `${w.centuryLabel} · ${w.eraTitle} · ${w.yearRange}`,
+        title: w.headline,
+        description: w.shortDescription,
+        badge: w.yearRange,
+        highlight: { label: "Historic Breakthrough", text: w.technologicalLeap },
+        tags: w.generationRecipe.ingredientsList,
+        numeral: String(w.generationNumber).padStart(2, "0"),
+      })),
+    [dishId, waypoints]
+  );
 
   const [activeWaypointIdx, setActiveWaypointIdx] = useState<number>(0);
   const waypointRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -169,6 +188,15 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
             </button>
           ))}
         </div>
+      </div>
+
+      {/* ── CINEMATIC SCROLL-DRIVEN PARALLAX JOURNEY ── */}
+      <div className="-mx-4 sm:-mx-6 md:-mx-10 lg:-mx-16 mb-24">
+        <CinematicParallaxJourney
+          key={dishId}
+          stages={cinematicStages}
+          label={`${dishName} · Through the Ages`}
+        />
       </div>
 
       {/* ── THE MOTIONPATH WAYPOINTS ROUTE CONTAINER ── */}
