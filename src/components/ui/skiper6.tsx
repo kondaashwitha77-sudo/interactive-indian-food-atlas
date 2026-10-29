@@ -8,7 +8,8 @@ export interface GenerationSummaryMember {
   name: string;
   roleOrEra: string;
   yearPeriod: string;
-  image: string;
+  image: string | null;
+  imageReviewNote?: string;
   summary: string;
   keyContribution: string;
   signatureIngredient: string;
@@ -115,13 +116,15 @@ export const Skiper6Summarizer: React.FC<Skiper6Props> = ({
 
                 {/* Left: Avatar Thumbnail & Name */}
                 <div className="flex items-center gap-3.5 pl-2">
-                  <div className="w-12 h-12 rounded-xl overflow-hidden border border-amber-500/30 bg-slate-950 shrink-0 relative">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
-                    />
-                  </div>
+                  {member.image && (
+                    <div className="w-12 h-12 rounded-xl overflow-hidden border border-amber-500/30 bg-slate-950 shrink-0 relative">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-contain object-center"
+                      />
+                    </div>
+                  )}
                   <div>
                     <div className="flex items-center gap-2">
                       <h4 className={`font-bold text-sm md:text-base transition-colors ${
@@ -185,23 +188,27 @@ export const Skiper6Summarizer: React.FC<Skiper6Props> = ({
                     : "bg-slate-850/90 border-amber-500/40 text-slate-200"
                 }`}
               >
-                {/* Big Featured Image */}
-                <div className="relative h-44 w-full rounded-xl overflow-hidden border border-slate-700/80 mb-5 shadow-lg">
-                  <img
-                    src={activeMember.image}
-                    alt={activeMember.name}
-                    className="w-full h-full object-cover object-center"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
-                  <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs">
-                    <span className="font-cinzel font-bold text-white text-sm">
-                      {activeMember.name}
-                    </span>
-                    <span className="px-2 py-0.5 rounded-full bg-amber-500 text-slate-950 font-extrabold text-[10px]">
-                      {activeMember.yearPeriod}
-                    </span>
+                {/* Featured Photo or Plain Text Review Flag */}
+                {activeMember.image ? (
+                  <div className="relative h-44 w-full rounded-xl overflow-hidden border border-slate-700/80 mb-5 shadow-lg">
+                    <img
+                      src={activeMember.image}
+                      alt={activeMember.name}
+                      className="w-full h-full object-contain bg-black/10"
+                    />
+                    <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs">
+                      <span className="font-cinzel font-bold text-white text-sm drop-shadow-md">{activeMember.name}</span>
+                      <span className="px-2 py-0.5 rounded-lg bg-black/75 text-white font-extrabold text-[10px]">
+                        {activeMember.yearPeriod}
+                      </span>
+                    </div>
                   </div>
-                </div>
+                ) : (
+                  <div role="status" className={`mb-5 rounded-xl border p-4 text-sm leading-relaxed ${isLight ? "border-amber-900/15 bg-amber-50 text-slate-700" : "border-amber-500/20 bg-slate-950 text-slate-300"}`}>
+                    <span className={`block text-[10px] font-bold uppercase tracking-widest ${isLight ? "text-amber-800" : "text-amber-400"}`}>Image review needed</span>
+                    <span className="mt-1 block">{activeMember.imageReviewNote || "No verified, stage-specific photograph is assigned yet."}</span>
+                  </div>
+                )}
 
                 {/* Summary Narrative */}
                 <div className="space-y-3.5 flex-1">
