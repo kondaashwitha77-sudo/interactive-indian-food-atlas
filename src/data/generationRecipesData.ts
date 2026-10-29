@@ -958,7 +958,7 @@ export function getGenerationsForDish(dishId: string): GenerationWaypoint[] {
       ...generation,
       image: stageImage.image,
       imageAlt: stageImage.imageAlt,
-      imageReviewStatus: stageImage.status,
+      imageReviewStatus: stageImage.imageKind === "modern_illustration" ? "modern_illustration" : stageImage.status,
       imageReviewNote: stageImage.image ? undefined : stageImage.notes,
       imageCreator: stageImage.source?.creator || undefined,
       imageSourceUrl: stageImage.source?.sourcePageUrl || undefined,

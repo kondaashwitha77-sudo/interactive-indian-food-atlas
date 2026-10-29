@@ -2830,24 +2830,25 @@
         {
           "stageNumber": 2,
           "stageLabel": "Preparation technique and tools",
-          "image": null,
-          "imageAlt": "No verified photograph is assigned for Masala Dosa, stage 2: Preparation technique and tools.",
+          "image": "/images/timeline-assets/karnataka-masala-dosa-mysuru-chef-preparation-modern.webp",
+          "imageAlt": "Modern photo of a chef preparing Mysore Masala Dosa in Mysuru; illustrative only, not evidence for the displayed historical era.",
           "status": "manual_review",
           "source": {
-            "sourcePageUrl": "",
-            "originalImageUrl": "",
-            "creator": "",
-            "license": "",
-            "licenseUrl": "",
-            "attribution": "",
-            "modifications": ""
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Chef_cooking_Mysore_masala_dosa_in_Mysuru,_July_2013.jpg",
+            "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Chef_cooking_Mysore_masala_dosa_in_Mysuru%2C_July_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "creator": "Sunnya343",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+            "attribution": "Sunnya343 / Wikimedia Commons / CC BY-SA 4.0",
+            "modifications": "Downloaded from the source and re-encoded/resized to fit within 2000x1600 as WebP; no crop."
           },
-          "notes": "The contemporary preparation candidate is not sufficient to illustrate this historical stage without unsupported historical framing.",
+          "notes": "Present-day Mysuru preparation photo; Commons describes a chef applying chutney powder while cooking Mysore Masala Dosa. It is not evidence for the stage date or historical narrative.",
           "researchEvidence": {
             "identity": "",
             "stageRelevance": "A Commons photo verifies a modern chef preparing Mysore masala dosa and applying chutney powder, but this does not establish medieval technique or cookware continuity.",
             "reviewNotes": "The contemporary preparation candidate is not sufficient to illustrate this historical stage without unsupported historical framing."
-          }
+          },
+          "imageKind": "modern_illustration"
         },
         {
           "stageNumber": 3,
@@ -2874,46 +2875,48 @@
         {
           "stageNumber": 4,
           "stageLabel": "Recipe refinement and household preparation",
-          "image": null,
-          "imageAlt": "No verified photograph is assigned for Masala Dosa, stage 4: Recipe refinement and household preparation.",
+          "image": "/images/timeline-assets/karnataka-masala-dosa-bengaluru-griddle-modern.webp",
+          "imageAlt": "Modern Bengaluru photo showing Masala Dosa preparation at Sri Udupi Vihar; illustrative only, not evidence for the displayed historical era.",
           "status": "manual_review",
           "source": {
-            "sourcePageUrl": "",
-            "originalImageUrl": "",
-            "creator": "",
-            "license": "",
-            "licenseUrl": "",
-            "attribution": "",
-            "modifications": ""
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Masala_Dosa_at_Sri_Udupi_Vihar,_Bengaluru.JPG",
+            "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Masala_Dosa_at_Sri_Udupi_Vihar%2C_Bengaluru.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "creator": "Kiranrad",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+            "attribution": "Kiranrad / Wikimedia Commons / CC BY-SA 4.0",
+            "modifications": "Downloaded from the source and re-encoded/resized to fit within 2000x1600 as WebP; no crop."
           },
-          "notes": "Avoid presenting contemporary recipe imagery as historical household documentation.",
+          "notes": "Present-day restaurant preparation photo from Bengaluru. It illustrates making Masala Dosa on a griddle; it does not verify the historical date or household context of this stage.",
           "researchEvidence": {
             "identity": "",
             "stageRelevance": "No verified evidence or reusable image was found tying an 18th–19th century household or recipe refinement image specifically to Masala Dosa.",
             "reviewNotes": "Avoid presenting contemporary recipe imagery as historical household documentation."
-          }
+          },
+          "imageKind": "modern_illustration"
         },
         {
           "stageNumber": 5,
           "stageLabel": "Regional popularization",
-          "image": null,
-          "imageAlt": "No verified photograph is assigned for Masala Dosa, stage 5: Regional popularization.",
+          "image": "/images/timeline-assets/karnataka-masala-dosa-served-sambar-chutney-modern.webp",
+          "imageAlt": "Modern photo of Masala Dosa served with sambar and chutney; illustrative only, not evidence for the displayed historical era.",
           "status": "manual_review",
           "source": {
-            "sourcePageUrl": "",
-            "originalImageUrl": "",
-            "creator": "",
-            "license": "",
-            "licenseUrl": "",
-            "attribution": "",
-            "modifications": ""
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Masala_dosa_01.jpg",
+            "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Masala_dosa_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "creator": "Marajozkee",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+            "attribution": "Marajozkee / Wikimedia Commons / CC BY-SA 4.0",
+            "modifications": "Downloaded from the source and re-encoded/resized to fit within 2000x1600 as WebP; no crop."
           },
-          "notes": "A modern restaurant photograph alone does not establish a 20th-century popularization milestone.",
+          "notes": "Present-day Masala Dosa serving photo with regional accompaniments. Used as a modern illustration for the popularization stage; it does not document that historical period.",
           "researchEvidence": {
             "identity": "",
             "stageRelevance": "No verified 20th-century Karnataka popularization image or source was established for this stage.",
             "reviewNotes": "A modern restaurant photograph alone does not establish a 20th-century popularization milestone."
-          }
+          },
+          "imageKind": "modern_illustration"
         },
         {
           "stageNumber": 6,
@@ -3664,24 +3667,25 @@
         {
           "stageNumber": 2,
           "stageLabel": "Preparation technique and tools",
-          "image": null,
-          "imageAlt": "No verified photograph is assigned for Vada Pav, stage 2: Preparation technique and tools.",
+          "image": "/images/timeline-assets/maharashtra-vada-pav-batata-before-batter-modern.webp",
+          "imageAlt": "Modern photo of formed batata vada before dipping into gram-flour batter and frying; illustrative only, not evidence for the displayed historical era.",
           "status": "stage_mismatch",
           "source": {
-            "sourcePageUrl": "",
-            "originalImageUrl": "",
-            "creator": "",
-            "license": "",
-            "licenseUrl": "",
-            "attribution": "",
-            "modifications": ""
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Batata_Vada_ready_to_Dip_and_Fry.JPG",
+            "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Batata_Vada_ready_to_Dip_and_Fry.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "creator": "Miansari66",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attribution": "Miansari66 / Wikimedia Commons / CC0 1.0",
+            "modifications": "Downloaded from the source and re-encoded/resized to fit within 2000x1600 as WebP; no crop."
           },
-          "notes": "No candidate selected; avoid presenting generic cookware or technique as dish history.",
+          "notes": "Present-day photograph of the batata-vada pre-frying step. It is a relevant process illustration only; it does not establish the chronology of this historically disputed stage.",
           "researchEvidence": {
             "identity": "",
             "stageRelevance": "The medieval stage predates vada pav as a named dish; a generic frying technique or cookware image would not establish a dish-specific medieval connection.",
             "reviewNotes": "No candidate selected; avoid presenting generic cookware or technique as dish history."
-          }
+          },
+          "imageKind": "modern_illustration"
         },
         {
           "stageNumber": 3,
@@ -3708,46 +3712,48 @@
         {
           "stageNumber": 4,
           "stageLabel": "Recipe refinement and household preparation",
-          "image": null,
-          "imageAlt": "No verified photograph is assigned for Vada Pav, stage 4: Recipe refinement and household preparation.",
+          "image": "/images/timeline-assets/maharashtra-vada-pav-batada-vada-frying-modern.webp",
+          "imageAlt": "Modern Mumbai photo of batata vada being fried for Vada Pav; illustrative only, not evidence for the displayed historical era.",
           "status": "stage_mismatch",
           "source": {
-            "sourcePageUrl": "",
-            "originalImageUrl": "",
-            "creator": "",
-            "license": "",
-            "licenseUrl": "",
-            "attribution": "",
-            "modifications": ""
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Batada_Vada_preparation_in_Mumbai.jpg",
+            "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Batada_Vada_preparation_in_Mumbai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "creator": "SnapMeUp",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+            "attribution": "SnapMeUp / Wikimedia Commons / CC BY-SA 4.0",
+            "modifications": "Downloaded from the source and re-encoded/resized to fit within 2000x1600 as WebP; no crop."
           },
-          "notes": "No candidate selected because this era does not fit the dish's documented modern identity.",
+          "notes": "Present-day Mumbai photo explicitly described on Commons as batada-vada preparation for Vada Pav. The stage chronology itself remains under historical review.",
           "researchEvidence": {
             "identity": "",
             "stageRelevance": "An 18th–19th-century refinement image would imply a named-dish history unsupported by the evidence; vada pav is a modern food.",
             "reviewNotes": "No candidate selected because this era does not fit the dish's documented modern identity."
-          }
+          },
+          "imageKind": "modern_illustration"
         },
         {
           "stageNumber": 5,
           "stageLabel": "Regional popularization",
-          "image": null,
-          "imageAlt": "No verified photograph is assigned for Vada Pav, stage 5: Regional popularization.",
-          "status": "manual_review",
+          "image": "/images/timeline-assets/maharashtra-vada-pav-garlic-assembled-modern.webp",
+          "imageAlt": "Modern photo of assembled Vada Pav with garlic chutney; present-day illustrative reference, not a historical photograph.",
+          "status": "modern_illustration",
           "source": {
-            "sourcePageUrl": "",
-            "originalImageUrl": "",
-            "creator": "",
-            "license": "",
-            "licenseUrl": "",
-            "attribution": "",
-            "modifications": ""
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Vada_pav_with_garlic.jpg",
+            "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Vada_pav_with_garlic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "creator": "Shreya13jain",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+            "attribution": "Shreya13jain / Wikimedia Commons / CC BY-SA 4.0",
+            "modifications": "Downloaded from the source and re-encoded/resized to fit within 2000x1600 as WebP; no crop."
           },
-          "notes": "Manual review required for a period-specific or otherwise historically substantiated image; do not use a modern image as a historical photograph.",
+          "notes": "Present-day, unannotated serving photo of Vada Pav with garlic. Used as an illustrative example of the assembled regional snack; it does not document the date of regional popularization.",
           "researchEvidence": {
-            "identity": "",
-            "stageRelevance": "The stage is chronologically plausible for a modern Maharashtra street food, but no distinct, verified reusable image tied to 20th-century popularization was established. A contemporary vendor or finished-dish photograph would not itself document 20th-century popularization.",
-            "reviewNotes": "Manual review required for a period-specific or otherwise historically substantiated image; do not use a modern image as a historical photograph."
-          }
+            "identity": "The Commons page identifies the photograph as “wada pav,” dates it to 18 November 2011, and names Abhinav619 as the author.",
+            "stageRelevance": "The image visibly shows vada frying, a direct present-day preparation process for the named dish. It is a modern visual reference only and does not establish the timeline stage or its date.",
+            "reviewNotes": "The image is explicitly labeled as a present-day illustration; it must not be read as historical evidence."
+          },
+          "imageKind": "modern_illustration"
         },
         {
           "stageNumber": 6,
@@ -6314,23 +6320,23 @@
         {
           "stageNumber": 2,
           "stageLabel": "Preparation technique and tools",
-          "image": null,
-          "imageAlt": "No verified photograph is assigned for Idli Sambar, stage 2: Preparation technique and tools.",
-          "status": "manual_review",
+          "image": "/images/timeline-assets/tamil-nadu-idli-batter-portioning-modern.webp",
+          "imageAlt": "Present-day photograph of idli batter being portioned into a mould; illustrative process reference only, not medieval evidence.",
+          "status": "modern_illustration",
           "source": {
-            "sourcePageUrl": "",
-            "originalImageUrl": "",
-            "creator": "",
-            "license": "",
-            "licenseUrl": "",
-            "attribution": "",
-            "modifications": ""
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Idli_Batter_to_Making_Plate.JPG",
+            "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Idli_Batter_to_Making_Plate.JPG",
+            "creator": "SijiR",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "attribution": "SijiR / Wikimedia Commons, CC BY-SA 3.0",
+            "modifications": "EXIF orientation applied; resized to fit within 1600×1200 and re-encoded as WebP (quality 86); no crop."
           },
-          "notes": "No verified Commons image was found that substantiates a medieval idli-specific preparation technique or cookware. Modern idli-making images cannot be presented as medieval evidence.",
+          "notes": "Contemporary preparation illustration only. The image shows idli batter being portioned onto an idli plate. It does not substantiate a medieval idli technique or chronology; the historical claim remains under review.",
           "researchEvidence": {
-            "identity": "",
-            "stageRelevance": "",
-            "reviewNotes": "No verified Commons image was found that substantiates a medieval idli-specific preparation technique or cookware. Modern idli-making images cannot be presented as medieval evidence."
+            "identity": "The Commons page describes this as idli batter being scooped or poured onto an idli plate; the image visibly shows batter being portioned into a mould.",
+            "stageRelevance": "Directly relevant to present-day idli batter preparation. It is shown only as a modern technique reference and is not evidence for the medieval-stage date or an ancient preparation method.",
+            "reviewNotes": "The image is explicitly labeled as a present-day illustration; it must not be read as historical evidence."
           }
         },
         {
@@ -6358,45 +6364,46 @@
         {
           "stageNumber": 4,
           "stageLabel": "Recipe refinement and household preparation",
-          "image": null,
-          "imageAlt": "No verified photograph is assigned for Idli Sambar, stage 4: Recipe refinement and household preparation.",
-          "status": "manual_review",
+          "image": "/images/timeline-assets/tamil-nadu-idli-coconut-shell-steaming-modern.webp",
+          "imageAlt": "Modern composite photo showing Idli batter in coconut-shell moulds and cooked Idlis in a steamer; illustrative only, not evidence for the displayed historical era.",
+          "status": "modern_illustration",
           "source": {
-            "sourcePageUrl": "",
-            "originalImageUrl": "",
-            "creator": "",
-            "license": "",
-            "licenseUrl": "",
-            "attribution": "",
-            "modifications": ""
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Traditional_coconut_shell_idlis,_Karnataka.jpg",
+            "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Traditional_coconut_shell_idlis%2C_Karnataka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "creator": "VinPrasad",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+            "attribution": "VinPrasad / Wikimedia Commons / CC BY-SA 4.0",
+            "modifications": "Downloaded from the source and re-encoded/resized to fit within 2000x1600 as WebP; no crop."
           },
-          "notes": "No verified image or source evidence located for an 18th–19th century household or recipe-refinement episode specific to idli-sambar. A contemporary dish photograph would not establish this stage.",
+          "notes": "Present-day composite photo depicting the traditional coconut-shell Idli mould and cooking vessel. It illustrates a method, not a dated historical stage.",
           "researchEvidence": {
-            "identity": "",
-            "stageRelevance": "",
-            "reviewNotes": "No verified image or source evidence located for an 18th–19th century household or recipe-refinement episode specific to idli-sambar. A contemporary dish photograph would not establish this stage."
-          }
+            "identity": "The Commons page labels the subject “Idli Cooked”; visual review confirms idlis in an idli cooking vessel.",
+            "stageRelevance": "Directly relevant to present-day idli cooking and equipment. The photograph does not substantiate the 18th–19th-century stage, so it is labeled as a modern reference.",
+            "reviewNotes": "The image is explicitly labeled as a present-day illustration; it must not be read as historical evidence."
+          },
+          "imageKind": "modern_illustration"
         },
         {
           "stageNumber": 5,
           "stageLabel": "Regional popularization",
-          "image": null,
-          "imageAlt": "No verified photograph is assigned for Idli Sambar, stage 5: Regional popularization.",
-          "status": "manual_review",
+          "image": "/images/timeline-assets/tamil-nadu-idli-ready-modern.webp",
+          "imageAlt": "Present-day photograph of idlis ready in their mould; illustrative reference only, not evidence of 20th-century popularization.",
+          "status": "modern_illustration",
           "source": {
-            "sourcePageUrl": "",
-            "originalImageUrl": "",
-            "creator": "",
-            "license": "",
-            "licenseUrl": "",
-            "attribution": "",
-            "modifications": ""
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Idlis_Ready.JPG",
+            "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Idlis_Ready.JPG",
+            "creator": "SijiR",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+            "attribution": "SijiR / Wikimedia Commons, CC BY-SA 3.0",
+            "modifications": "EXIF orientation applied; resized to fit within 1600×1200 and re-encoded as WebP (quality 86); no crop."
           },
-          "notes": "No verified image was found that documents a 20th-century Tamil Nadu popularization event or period-specific service. A later photograph alone would not prove popularization.",
+          "notes": "Contemporary finished-idli illustration only. The image shows prepared idlis in their mould. It does not document a 20th-century popularization event or period-specific service; that claim remains under review.",
           "researchEvidence": {
-            "identity": "",
-            "stageRelevance": "",
-            "reviewNotes": "No verified image was found that documents a 20th-century Tamil Nadu popularization event or period-specific service. A later photograph alone would not prove popularization."
+            "identity": "The Commons page describes the subject as ready idlis; visual review confirms finished idlis in their mould/stand.",
+            "stageRelevance": "A distinct present-day image of ready idlis, used only as an illustrative reference. It does not establish the timing or scale of 20th-century popularization.",
+            "reviewNotes": "The image is explicitly labeled as a present-day illustration; it must not be read as historical evidence."
           }
         },
         {
