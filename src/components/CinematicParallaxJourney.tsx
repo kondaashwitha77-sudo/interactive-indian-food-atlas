@@ -17,6 +17,7 @@ export interface CinematicStage {
   title: string;
   /** Optional one-line punchline under the headline. */
   tagline?: string;
+  imageCredit?: { creator: string; sourcePageUrl: string; licenseUrl: string };
   /** Large outlined background numeral, e.g. "01". */
   numeral?: string;
 }
@@ -26,6 +27,7 @@ export interface CinematicOutro {
   title: string;
   tagline?: string;
   image: string;
+  imageCredit?: { creator: string; sourcePageUrl: string; licenseUrl: string };
 }
 
 interface CinematicParallaxJourneyProps {
@@ -320,6 +322,13 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
               <p className={`text-xs font-bold uppercase tracking-widest ${accentColor}`}>{stage.eyebrow}</p>
               <h3 className={`font-cinzel font-black text-3xl sm:text-4xl ${headingColor}`}>{stage.title}</h3>
               {stage.tagline && <p className={`text-base ${bodyColor}`}>{stage.tagline}</p>}
+              {stage.imageCredit && (
+                <p className={`text-[10px] sm:text-xs leading-snug ${bodyColor}`}>
+                  Photo: <a href={stage.imageCredit.sourcePageUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2">{stage.imageCredit.creator} · Wikimedia Commons</a>
+                  {" · "}
+                  <a href={stage.imageCredit.licenseUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2">License</a>
+                </p>
+              )}
             </div>
           </article>
         ))}
@@ -328,6 +337,13 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
             {outro.kicker && <p className={`text-xs font-bold uppercase tracking-widest ${accentColor}`}>{outro.kicker}</p>}
             <h3 className={`font-cinzel font-black text-4xl sm:text-6xl ${headingColor}`}>{outro.title}</h3>
             {outro.tagline && <p className={`text-lg ${bodyColor}`}>{outro.tagline}</p>}
+            {outro.imageCredit && (
+              <p className={`text-[10px] sm:text-xs leading-snug ${bodyColor}`}>
+                Photo: <a href={outro.imageCredit.sourcePageUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2">{outro.imageCredit.creator} · Wikimedia Commons</a>
+                {" · "}
+                <a href={outro.imageCredit.licenseUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2">License</a>
+              </p>
+            )}
           </article>
         )}
       </section>
@@ -505,6 +521,13 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
                       {stage.tagline}
                     </p>
                   )}
+                  {stage.imageCredit && (
+                    <p data-text className={`text-[10px] sm:text-xs leading-snug ${bodyColor}`}>
+                      Photo: <a href={stage.imageCredit.sourcePageUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2">{stage.imageCredit.creator} · Wikimedia Commons</a>
+                      {" · "}
+                      <a href={stage.imageCredit.licenseUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2">License</a>
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
@@ -561,6 +584,13 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
               {outro.tagline && (
                 <p data-outro-text className={`font-cormorant italic text-xl sm:text-3xl ${bodyColor}`}>
                   {outro.tagline}
+                </p>
+              )}
+              {outro.imageCredit && (
+                <p data-outro-text className={`text-[10px] sm:text-xs leading-snug ${bodyColor}`}>
+                  Photo: <a href={outro.imageCredit.sourcePageUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2">{outro.imageCredit.creator} · Wikimedia Commons</a>
+                  {" · "}
+                  <a href={outro.imageCredit.licenseUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2">License</a>
                 </p>
               )}
             </div>

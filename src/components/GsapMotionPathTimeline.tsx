@@ -43,10 +43,22 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
       waypoints.map((w, idx) => ({
         id: `${dishId}-gen-${w.generationNumber}`,
         image: w.image,
-        imageAlt: w.headline,
+        imageAlt: w.imageAlt ?? w.headline,
         secondaryImage: waypoints[idx + 1]?.image ?? waypoints[idx - 1]?.image,
         eyebrow: `${w.eraTitle} · ${w.yearRange}`,
         title: w.headline,
+        tagline:
+          w.imageReviewStatus === "modern_illustration"
+            ? "Modern photo used as illustration; it does not document this era."
+            : undefined,
+        imageCredit:
+          w.imageCreator && w.imageSourceUrl && w.imageLicenseUrl
+            ? {
+                creator: w.imageCreator,
+                sourcePageUrl: w.imageSourceUrl,
+                licenseUrl: w.imageLicenseUrl,
+              }
+            : undefined,
         numeral: String(w.generationNumber).padStart(2, "0"),
       })),
     [dishId, waypoints]
@@ -60,6 +72,14 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
       title: dishName,
       tagline: "Centuries of craft in every bite.",
       image: finalStage.image,
+      imageCredit:
+        finalStage.imageCreator && finalStage.imageSourceUrl && finalStage.imageLicenseUrl
+          ? {
+              creator: finalStage.imageCreator,
+              sourcePageUrl: finalStage.imageSourceUrl,
+              licenseUrl: finalStage.imageLicenseUrl,
+            }
+          : undefined,
     };
   }, [dishName, waypoints]);
 
