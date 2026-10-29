@@ -40,26 +40,45 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
 
   const cinematicStages: CinematicStage[] = useMemo(
     () =>
-      waypoints.map((w, idx) => ({
+      waypoints.map((w) => ({
         id: `${dishId}-gen-${w.generationNumber}`,
         image: w.image,
-        imageAlt: w.headline,
-        secondaryImage: waypoints[idx + 1]?.image ?? waypoints[idx - 1]?.image,
+        imageAlt: w.imageAlt ?? w.headline,
+        imageReviewNote: w.imageReviewNote,
         eyebrow: `${w.eraTitle} · ${w.yearRange}`,
         title: w.headline,
-        numeral: String(w.generationNumber).padStart(2, "0"),
+        tagline:
+          w.imageReviewStatus === "modern_illustration"
+            ? "Modern photo used as illustration; it does not document this era."
+            : undefined,
+        imageCredit:
+          w.imageCreator && w.imageSourceUrl && w.imageLicenseUrl
+            ? {
+                creator: w.imageCreator,
+                sourcePageUrl: w.imageSourceUrl,
+                licenseUrl: w.imageLicenseUrl,
+              }
+            : undefined,
       })),
     [dishId, waypoints]
   );
 
   const cinematicOutro: CinematicOutro | undefined = useMemo(() => {
     const finalStage = waypoints[waypoints.length - 1];
-    if (!finalStage) return undefined;
+    if (!finalStage?.image) return undefined;
     return {
       kicker: "The Legend Lives On",
       title: dishName,
       tagline: "Centuries of craft in every bite.",
       image: finalStage.image,
+      imageCredit:
+        finalStage.imageCreator && finalStage.imageSourceUrl && finalStage.imageLicenseUrl
+          ? {
+              creator: finalStage.imageCreator,
+              sourcePageUrl: finalStage.imageSourceUrl,
+              licenseUrl: finalStage.imageLicenseUrl,
+            }
+          : undefined,
     };
   }, [dishName, waypoints]);
 
@@ -133,6 +152,7 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
     roleOrEra: w.centuryLabel,
     yearPeriod: w.yearRange,
     image: w.image,
+    imageReviewNote: w.imageReviewNote,
     summary: w.shortDescription,
     keyContribution: w.technologicalLeap,
     signatureIngredient: w.generationRecipe.ingredientsList[0] || "Ancient Grain",
@@ -203,7 +223,6 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
           key={dishId}
           stages={cinematicStages}
           label={`${dishName} · Through the Ages`}
-          backdropText={dishName}
           outro={cinematicOutro}
         />
       </div>
@@ -284,37 +303,45 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                   <div className={`relative rounded-3xl overflow-hidden border shadow-2xl group aspect-[16/10] ${
                     isLight ? "border-amber-900/15 bg-slate-100 shadow-amber-950/10" : "border-amber-500/40 bg-slate-950"
                   }`}>
-                    <img
-                      src={waypoint.image}
-                      alt={waypoint.headline}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                      onError={(event) => {
-                        event.currentTarget.hidden = true;
-                      }}
-                    />
-
-                    {/* Gradient Vignette Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
-
-                    {/* Waypoint Pill on Image */}
-                    <div className="absolute top-4 left-4 z-10 flex items-center gap-2">
-                      <span className="px-3 py-1 rounded-full bg-amber-500/95 text-slate-950 text-[10px] font-black uppercase tracking-wider shadow-lg">
-                        {waypoint.centuryLabel}
-                      </span>
-                      <span className="px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-amber-200 text-[10px] font-semibold border border-amber-500/30">
-                        {waypoint.yearRange}
-                      </span>
-                    </div>
-
-                    {/* Technological Leap Tag on Image Bottom */}
-                    <div className="absolute bottom-4 left-4 right-4 z-10">
-                      <p className="text-[10px] uppercase font-bold text-amber-400 tracking-wider">
-                        Historic Breakthrough:
-                      </p>
-                      <p className="text-xs font-semibold text-white drop-shadow-md">
-                        {waypoint.technologicalLeap}
-                      </p>
-                    </div>
+                    {waypoint.image ? (
+                      <>
+                        <img
+                          src={waypoint.image}
+                          alt={waypoint.imageAlt ?? waypoint.headline}
+                          className="w-full h-full object-contain"
+                          onError={(event) => {
+                            event.currentTarget.hidden = true;
+                          }}
+                        />
+                        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/80 to-transparent" />
+                        <div className="absolute top-4 left-4 z-10 flex flex-wrap items-center gap-2">
+                          <span className="px-3 py-1 rounded-lg bg-amber-500/95 text-slate-950 text-[10px] font-black uppercase tracking-wider shadow-lg">
+                            {waypoint.centuryLabel}
+                          </span>
+                          <span className="px-2.5 py-1 rounded-lg bg-black/75 text-amber-100 text-[10px] font-semibold border border-amber-500/30">
+                            {waypoint.yearRange}
+                          </span>
+                        </div>
+                        {waypoint.imageReviewStatus === "modern_illustration" && (
+                          <p className="absolute top-14 left-4 z-10 rounded-lg bg-black/75 px-2.5 py-1 text-[10px] font-semibold text-white">
+                            Modern photo — illustration only, not historical evidence.
+                          </p>
+                        )}
+                        <div className="absolute bottom-4 left-4 right-4 z-10">
+                          <p className="text-[10px] uppercase font-bold text-amber-400 tracking-wider">Stage context:</p>
+                          <p className="text-xs font-semibold text-white drop-shadow-md">{waypoint.technologicalLeap}</p>
+                        </div>
+                      </>
+                    ) : (
+                      <div role="status" className={`flex h-full w-full items-center justify-center p-6 text-center ${isLight ? "bg-white/70" : "bg-slate-950"}`}>
+                        <div className="max-w-md">
+                          <p className={`text-xs font-bold uppercase tracking-widest ${isLight ? "text-amber-800" : "text-amber-400"}`}>Image review needed</p>
+                          <p className={`mt-2 text-sm leading-relaxed ${isLight ? "text-slate-700" : "text-slate-300"}`}>
+                            {waypoint.imageReviewNote || "No verified, stage-specific photograph is assigned yet."}
+                          </p>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
 

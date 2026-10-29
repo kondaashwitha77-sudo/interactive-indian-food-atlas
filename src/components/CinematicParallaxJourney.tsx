@@ -9,16 +9,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 export interface CinematicStage {
   id: string;
-  image: string;
+  image: string | null;
   imageAlt: string;
-  /** Plate that pops out in front of the hero card; omit to hide it. */
-  secondaryImage?: string;
+  imageReviewNote?: string;
   eyebrow: string;
   title: string;
   /** Optional one-line punchline under the headline. */
   tagline?: string;
-  /** Large outlined background numeral, e.g. "01". */
-  numeral?: string;
+  imageCredit?: { creator: string; sourcePageUrl: string; licenseUrl: string };
 }
 
 export interface CinematicOutro {
@@ -26,13 +24,12 @@ export interface CinematicOutro {
   title: string;
   tagline?: string;
   image: string;
+  imageCredit?: { creator: string; sourcePageUrl: string; licenseUrl: string };
 }
 
 interface CinematicParallaxJourneyProps {
   stages: CinematicStage[];
   label?: string;
-  /** Giant outlined word that slides behind every stage. */
-  backdropText?: string;
   /** Closing hero card shown after the final stage. */
   outro?: CinematicOutro;
   /** Height of any sticky header above the section, in px. */
@@ -48,28 +45,10 @@ const STEP = MOVE + FADE;
 const OUTRO = 0.9;
 const END_HOLD = 0.15;
 
-// Floating plates: depth < 1 drifts behind the hero, depth > 1 races past in front of it.
-const ORBS = [
-  { depth: 0.35, size: "w-16 h-16 lg:w-24 lg:h-24", pos: { top: "10%", left: "8%" }, blur: 2, mobile: true },
-  { depth: 0.55, size: "w-14 h-14 lg:w-20 lg:h-20", pos: { top: "18%", right: "10%" }, blur: 1, mobile: false },
-  { depth: 1.45, size: "w-24 h-24 lg:w-36 lg:h-36", pos: { top: "46%", right: "4%" }, blur: 4, mobile: false },
-];
-
-const PARTICLES = [
-  { top: "18%", left: "22%", size: 4, depth: 0.5 },
-  { top: "62%", left: "12%", size: 3, depth: 0.8 },
-  { top: "30%", left: "70%", size: 5, depth: 0.35 },
-  { top: "70%", left: "58%", size: 3, depth: 0.65 },
-  { top: "12%", left: "48%", size: 2, depth: 0.9 },
-  { top: "52%", left: "88%", size: 4, depth: 0.45 },
-  { top: "40%", left: "35%", size: 3, depth: 1.2 },
-  { top: "8%", left: "80%", size: 2, depth: 1.4 },
-];
-
 const pad2 = (n: number) => String(n).padStart(2, "0");
 
 function preloadImages(srcs: string[]) {
-  srcs.forEach((src) => {
+  srcs.filter(Boolean).forEach((src) => {
     const img = new Image();
     img.src = src;
     img.decode?.().catch(() => {});
@@ -92,7 +71,6 @@ const Words: React.FC<{ text: string; attr: string }> = ({ text, attr }) => (
 export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> = ({
   stages,
   label = "Cinematic Journey",
-  backdropText,
   outro,
   pinOffset = 64,
   scrollPerStage = 1.1,
@@ -113,7 +91,7 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
 
   useEffect(() => {
     preloadImages([
-      ...stages.flatMap((s) => (s.secondaryImage ? [s.image, s.secondaryImage] : [s.image])),
+      ...stages.flatMap((s) => (s.image ? [s.image] : [])),
       ...(outro ? [outro.image] : []),
     ]);
   }, [stages, outro]);
@@ -165,8 +143,6 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
         const q = gsap.utils.selector(group);
         const words = q("[data-word]");
         const minor = q("[data-text]");
-        const floaters = q("[data-orb], [data-pop]");
-        const leaves = i < groups.length - 1 || !!outroEl;
 
         gsap.set(group, { autoAlpha: i === 0 ? 1 : 0 });
 
@@ -183,34 +159,15 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
           { rotateY: () => -swing(), rotateX: -6, z: -220, duration: half, ease: "sine.in", immediateRender: false },
           start + half
         );
-        tl.fromTo(q("[data-fg-img]"), { scale: 1.18, xPercent: -4 }, { scale: 1.04, xPercent: 4, duration: MOVE }, start);
+        tl.fromTo(q("[data-fg-img]"), { xPercent: -2 }, { xPercent: 2, duration: MOVE }, start);
         tl.fromTo(q("[data-sheen]"), { xPercent: -160 }, { xPercent: 260, duration: MOVE, ease: "power1.inOut" }, start);
         tl.fromTo(q("[data-shadow]"), { scaleX: 0.6, opacity: 0.25 }, { scaleX: 1.1, opacity: 0.6, duration: half, ease: "sine.out" }, start);
         tl.to(q("[data-shadow]"), { scaleX: 0.6, opacity: 0.25, duration: half, ease: "sine.in", immediateRender: false }, start + half);
-        tl.fromTo(q("[data-pop]"), { rotate: -40 }, { rotate: 40, duration: MOVE }, start);
-
-        // Mid-ground plates: slower behind, faster in front.
-        q("[data-orb]").forEach((el) => {
-          const depth = parseFloat((el as HTMLElement).dataset.orb || "0.5");
-          tl.fromTo(
-            el,
-            { x: () => -travel() * depth, y: 30 * depth, rotate: -25 * depth },
-            { x: () => travel() * depth, y: -30 * depth, rotate: 25 * depth, duration: MOVE },
-            start
-          );
-        });
-
-        // Background: blurred plate, spotlight and giant word drift against the motion.
-        tl.fromTo(q("[data-bg]"), { x: () => width() * 0.05 }, { x: () => -width() * 0.05, duration: MOVE }, start);
-        tl.fromTo(q("[data-glow]"), { x: () => -travel() * 0.8 }, { x: () => travel() * 0.8, duration: MOVE }, start);
-        tl.fromTo(q("[data-backdrop]"), { xPercent: 8 }, { xPercent: -28, duration: MOVE }, start);
-        tl.fromTo(q("[data-numeral]"), { x: () => width() * 0.12 }, { x: () => -width() * 0.12, duration: MOVE }, start);
 
         if (i > 0) {
           // Incoming stage is opaque and stacked above, so the crossfade never shows a blank frame.
           tl.to(group, { autoAlpha: 1, duration: FADE, ease: "power1.inOut" }, start - FADE);
           tl.set(groups[i - 1], { autoAlpha: 0 }, start);
-          tl.fromTo(floaters, { autoAlpha: 0, scale: 0.6 }, { autoAlpha: 1, scale: 1, duration: 0.25, ease: "back.out(1.6)" }, start - FADE * 0.4);
           tl.fromTo(
             words,
             { yPercent: 110, rotateX: -75, autoAlpha: 0 },
@@ -219,8 +176,7 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
           );
           tl.fromTo(minor, { autoAlpha: 0, y: 24 }, { autoAlpha: 1, y: 0, duration: 0.2, stagger: 0.05, ease: "power2.out" }, start - FADE * 0.4);
         }
-        if (leaves) {
-          tl.to(floaters, { autoAlpha: 0, scale: 0.7, duration: 0.15 }, start + MOVE - 0.15);
+        if (i < groups.length - 1 || !!outroEl) {
           tl.to(words, { yPercent: -100, autoAlpha: 0, duration: 0.16, stagger: 0.02, ease: "power1.in" }, start + 0.8);
           tl.to(minor, { autoAlpha: 0, y: -20, duration: 0.15, ease: "power1.in" }, start + 0.8);
         }
@@ -246,16 +202,6 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
       tl.to({}, { duration: END_HOLD }, totalDuration - END_HOLD);
       tl.fromTo(progressRef.current, { scaleX: 0 }, { scaleX: 1, duration: totalDuration }, 0);
       tl.to("[data-hint]", { autoAlpha: 0, y: 12, duration: 0.15 }, 0.05);
-
-      gsap.utils.toArray<HTMLElement>("[data-particle]", pin).forEach((el) => {
-        const depth = parseFloat(el.dataset.particle || "0.5");
-        tl.fromTo(
-          el,
-          { x: () => -width() * 0.15 * depth, y: 14 * depth },
-          { x: () => width() * 0.15 * depth, y: -14 * depth, duration: totalDuration },
-          0
-        );
-      });
 
       // Entrance before pinning: first card rises out of depth as the section arrives.
       gsap
@@ -301,33 +247,61 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
   const headingColor = isLight ? "text-slate-900" : "text-white";
   const bodyColor = isLight ? "text-slate-700" : "text-slate-200";
   const accentColor = isLight ? "text-amber-800" : "text-amber-400";
-  const outlineStroke = isLight ? "1.5px rgba(180,83,9,0.2)" : "1.5px rgba(245,158,11,0.18)";
 
   if (reducedMotion) {
     return (
       <section key="static" aria-label={label} className="relative w-full py-12 space-y-16">
         {stages.map((stage) => (
           <article key={stage.id} className="max-w-5xl mx-auto px-5 grid md:grid-cols-2 gap-6 items-center">
-            <img
-              src={stage.image}
-              alt={stage.imageAlt}
-              className="w-full aspect-[16/10] object-cover rounded-3xl shadow-xl"
-              onError={(event) => {
-                event.currentTarget.hidden = true;
-              }}
-            />
+            {stage.image ? (
+              <div className="relative w-full">
+                <img
+                  src={stage.image}
+                  alt={stage.imageAlt}
+                  className="w-full aspect-[16/10] object-contain rounded-3xl bg-black/10 shadow-xl"
+                  onError={(event) => {
+                    event.currentTarget.hidden = true;
+                  }}
+                />
+                <span className="absolute left-3 top-3 max-w-[90%] rounded-lg bg-black/75 px-3 py-1.5 text-[10px] font-semibold text-white sm:text-xs">
+                  {stage.eyebrow}
+                </span>
+              </div>
+            ) : (
+              <div role="status" className={`w-full aspect-[16/10] rounded-3xl border flex items-center justify-center p-6 text-center ${isLight ? "bg-white/70 border-amber-900/15" : "bg-slate-950 border-amber-500/20"}`}>
+                <div className="max-w-lg">
+                  <p className={`text-xs font-bold uppercase tracking-widest ${accentColor}`}>Image review needed</p>
+                  <p className={`mt-2 text-sm leading-relaxed ${bodyColor}`}>{stage.imageReviewNote || "No verified, stage-specific photograph is assigned yet."}</p>
+                </div>
+              </div>
+            )}
             <div className="space-y-2">
               <p className={`text-xs font-bold uppercase tracking-widest ${accentColor}`}>{stage.eyebrow}</p>
               <h3 className={`font-cinzel font-black text-3xl sm:text-4xl ${headingColor}`}>{stage.title}</h3>
               {stage.tagline && <p className={`text-base ${bodyColor}`}>{stage.tagline}</p>}
+              {stage.imageCredit && (
+                <p className={`text-[10px] sm:text-xs leading-snug ${bodyColor}`}>
+                  Photo: <a href={stage.imageCredit.sourcePageUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2">{stage.imageCredit.creator} · Wikimedia Commons</a>
+                  {" · "}
+                  <a href={stage.imageCredit.licenseUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2">License</a>
+                </p>
+              )}
             </div>
           </article>
         ))}
         {outro && (
           <article className="max-w-5xl mx-auto px-5 text-center space-y-3">
+            <img src={outro.image} alt={outro.title} className="w-full aspect-[16/10] sm:aspect-[21/9] object-contain rounded-3xl bg-black/10 shadow-xl" />
             {outro.kicker && <p className={`text-xs font-bold uppercase tracking-widest ${accentColor}`}>{outro.kicker}</p>}
             <h3 className={`font-cinzel font-black text-4xl sm:text-6xl ${headingColor}`}>{outro.title}</h3>
             {outro.tagline && <p className={`text-lg ${bodyColor}`}>{outro.tagline}</p>}
+            {outro.imageCredit && (
+              <p className={`text-[10px] sm:text-xs leading-snug ${bodyColor}`}>
+                Photo: <a href={outro.imageCredit.sourcePageUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2">{outro.imageCredit.creator} · Wikimedia Commons</a>
+                {" · "}
+                <a href={outro.imageCredit.licenseUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2">License</a>
+              </p>
+            )}
           </article>
         )}
       </section>
@@ -342,7 +316,6 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
         style={{ background: panelBg }}
       >
         {stages.map((stage, i) => {
-          const orbImages = [1, 2, stageCount - 1].map((o) => stages[(i + o) % stageCount].image);
           return (
             <div
               key={stage.id}
@@ -356,82 +329,10 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
                 perspectiveOrigin: "50% 40%",
               }}
             >
-              {/* Background */}
-              <div data-bg className="absolute -inset-[10%] will-change-transform">
-                <img
-                  src={stage.image}
-                  alt=""
-                  className={`w-full h-full object-cover blur-2xl scale-110 ${isLight ? "opacity-30" : "opacity-45"}`}
-                  onError={(event) => {
-                    event.currentTarget.hidden = true;
-                  }}
-                />
-              </div>
-              <div
-                className="absolute inset-0"
-                style={{
-                  background: isLight
-                    ? "radial-gradient(ellipse at 50% 35%, rgba(245,239,228,0.05) 0%, rgba(245,239,228,0.75) 60%, #f5efe4 100%)"
-                    : "radial-gradient(ellipse at 50% 35%, rgba(7,9,14,0) 0%, rgba(7,9,14,0.72) 60%, #07090e 100%)",
-                }}
-              />
-              {backdropText && (
-                <div
-                  data-backdrop
-                  aria-hidden
-                  className="absolute left-0 top-[30%] sm:top-[22%] whitespace-nowrap font-cinzel font-black uppercase leading-none select-none text-[30vw] sm:text-[22vw] text-transparent will-change-transform"
-                  style={{ WebkitTextStroke: outlineStroke }}
-                >
-                  {backdropText}&nbsp;·&nbsp;{backdropText}
-                </div>
-              )}
-              {stage.numeral && (
-                <div
-                  data-numeral
-                  aria-hidden
-                  className="absolute right-[3%] top-[3%] font-cinzel font-black leading-none select-none text-[28vw] sm:text-[18vw] lg:text-[13vw] text-transparent will-change-transform"
-                  style={{ WebkitTextStroke: outlineStroke }}
-                >
-                  {stage.numeral}
-                </div>
-              )}
-              <div
-                data-glow
-                aria-hidden
-                className="absolute left-1/2 top-[34%] -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[60vh] max-w-[1000px] rounded-full pointer-events-none will-change-transform"
-                style={{
-                  background: isLight
-                    ? "radial-gradient(closest-side, rgba(251,191,36,0.35), transparent)"
-                    : "radial-gradient(closest-side, rgba(245,158,11,0.28), transparent)",
-                }}
-              />
-
-              {/* Mid-ground plates (behind + in front of hero) */}
-              {ORBS.map((orb, k) => (
-                <div
-                  key={k}
-                  data-orb={orb.depth}
-                  aria-hidden
-                  className={`${orb.mobile ? "block" : "hidden md:block"} absolute ${orb.depth > 1 ? "z-[15]" : "z-[5]"} ${orb.size} rounded-full overflow-hidden border-2 shadow-2xl will-change-transform ${
-                    isLight ? "border-white/80" : "border-amber-400/40"
-                  }`}
-                  style={{ ...orb.pos, filter: `blur(${orb.blur}px)` }}
-                >
-                  <img
-                    src={orbImages[k]}
-                    alt=""
-                    className="w-full h-full object-cover"
-                    onError={(event) => {
-                      event.currentTarget.hidden = true;
-                    }}
-                  />
-                </div>
-              ))}
-
               {/* Foreground hero card */}
               <div
                 data-fg
-                className="absolute z-10 inset-x-0 mx-auto top-[9%] sm:top-[10%] lg:top-[8%] w-[min(78vw,46vh)] sm:w-[min(62vw,54vh)] lg:w-[min(42vw,68vh)] max-w-[760px] aspect-[4/5] sm:aspect-[4/3] lg:aspect-[16/10] will-change-transform"
+                className="absolute z-10 inset-x-0 mx-auto top-[9%] sm:top-[8%] w-[min(94vw,66vh)] sm:w-[min(80vw,78vh)] lg:w-[min(70vw,92vh)] max-w-[920px] aspect-[4/5] sm:aspect-[4/3] lg:aspect-[16/10] will-change-transform"
                 style={{ transformStyle: "preserve-3d" }}
               >
                 <div data-tilt className="relative w-full h-full will-change-transform" style={{ transformStyle: "preserve-3d" }}>
@@ -443,43 +344,38 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
                         : "border-amber-400/30 shadow-[0_40px_90px_-20px_rgba(0,0,0,0.85)]"
                     }`}
                   >
-                    <img
-                      data-fg-img
-                      src={stage.image}
-                      alt={stage.imageAlt}
-                      loading="eager"
-                      className="w-full h-full object-cover will-change-transform"
-                      onError={(event) => {
-                        event.currentTarget.hidden = true;
-                      }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
-                    <div
-                      data-sheen
-                      aria-hidden
-                      className="absolute inset-y-0 left-0 w-1/3 -skew-x-12 pointer-events-none mix-blend-overlay will-change-transform"
-                      style={{ background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.55), transparent)" }}
-                    />
+                    {stage.image ? (
+                      <>
+                        <img
+                          data-fg-img
+                          src={stage.image}
+                          alt={stage.imageAlt}
+                          loading="eager"
+                          className="w-full h-full object-contain will-change-transform"
+                          onError={(event) => {
+                            event.currentTarget.hidden = true;
+                          }}
+                        />
+                        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/45 to-transparent" />
+                        <span className="absolute left-4 top-4 max-w-[90%] rounded-lg bg-black/75 px-3 py-1.5 text-[10px] font-semibold text-white sm:text-xs">
+                          {stage.eyebrow}
+                        </span>
+                        <div
+                          data-sheen
+                          aria-hidden
+                          className="absolute inset-y-0 left-0 w-1/3 -skew-x-12 pointer-events-none mix-blend-overlay will-change-transform"
+                          style={{ background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)" }}
+                        />
+                      </>
+                    ) : (
+                      <div role="status" className={`flex h-full w-full items-center justify-center p-6 text-center ${isLight ? "bg-white/70" : "bg-slate-950"}`}>
+                        <div className="max-w-[32rem]">
+                          <p className={`text-xs font-bold uppercase tracking-widest ${accentColor}`}>Image review needed</p>
+                          <p className={`mt-3 text-sm leading-relaxed ${bodyColor}`}>{stage.imageReviewNote || "No verified, stage-specific photograph is assigned yet."}</p>
+                        </div>
+                      </div>
+                    )}
                   </div>
-                  {stage.secondaryImage && (
-                    <div
-                      data-pop
-                      aria-hidden
-                      className={`absolute -bottom-[10%] -right-[6%] w-[28%] aspect-square rounded-full overflow-hidden border-4 shadow-2xl will-change-transform ${
-                        isLight ? "border-white" : "border-amber-400/60"
-                      }`}
-                      style={{ transform: "translateZ(90px)" }}
-                    >
-                      <img
-                        src={stage.secondaryImage}
-                        alt=""
-                        className="w-full h-full object-cover"
-                        onError={(event) => {
-                          event.currentTarget.hidden = true;
-                        }}
-                      />
-                    </div>
-                  )}
                 </div>
                 <div
                   data-shadow
@@ -505,6 +401,13 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
                       {stage.tagline}
                     </p>
                   )}
+                  {stage.imageCredit && (
+                    <p data-text className={`text-[10px] sm:text-xs leading-snug ${bodyColor}`}>
+                      Photo: <a href={stage.imageCredit.sourcePageUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2">{stage.imageCredit.creator} · Wikimedia Commons</a>
+                      {" · "}
+                      <a href={stage.imageCredit.licenseUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2">License</a>
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
@@ -521,8 +424,8 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
             <img
               data-outro-img
               src={outro.image}
-              alt=""
-              className="absolute inset-0 w-full h-full object-cover will-change-transform"
+              alt={outro.title}
+              className="absolute inset-0 w-full h-full object-contain bg-black/10 will-change-transform"
               onError={(event) => {
                 event.currentTarget.hidden = true;
               }}
@@ -563,21 +466,16 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
                   {outro.tagline}
                 </p>
               )}
+              {outro.imageCredit && (
+                <p data-outro-text className={`text-[10px] sm:text-xs leading-snug ${bodyColor}`}>
+                  Photo: <a href={outro.imageCredit.sourcePageUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2">{outro.imageCredit.creator} · Wikimedia Commons</a>
+                  {" · "}
+                  <a href={outro.imageCredit.licenseUrl} target="_blank" rel="noreferrer" className="underline underline-offset-2">License</a>
+                </p>
+              )}
             </div>
           </div>
         )}
-
-        {/* Decorative particles */}
-        <div aria-hidden className="absolute inset-0 z-[25] pointer-events-none">
-          {PARTICLES.map((p, k) => (
-            <span
-              key={k}
-              data-particle={p.depth}
-              className="absolute rounded-full bg-amber-400/60 shadow-[0_0_10px_rgba(251,191,36,0.7)]"
-              style={{ top: p.top, left: p.left, width: p.size, height: p.size }}
-            />
-          ))}
-        </div>
 
         {/* HUD: progress, counter, stage dots */}
         <div className="absolute inset-x-0 top-0 z-30 h-[3px] bg-amber-500/10">
