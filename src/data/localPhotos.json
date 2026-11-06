@@ -65,6 +65,9 @@
       "origin": "/images/dishes/vada-pav-stage-1.webp"
     },
     "puran-poli": {
+      "origin": "/images/dishes/puran-poli-stage-1.webp",
+      "ingredients": "/images/dishes/puran-poli-stage-2.webp",
+      "method": "/images/dishes/puran-poli-stage-3.webp",
       "plated": "/images/dishes/puran-poli-stage-4.webp"
     },
     "singju": {

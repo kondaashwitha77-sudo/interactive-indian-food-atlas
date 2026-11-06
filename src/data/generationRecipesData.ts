@@ -683,133 +683,113 @@ export const LITTI_CHOKHA_GENERATIONS: GenerationWaypoint[] = [
 export const BUTTER_CHICKEN_GENERATIONS: GenerationWaypoint[] = [
   {
     generationNumber: 1,
-    eraTitle: "Peshawar Tandoor Antiquity",
-    yearRange: "c. 1920 – 1940 CE",
+    eraTitle: "The Pre-1947 Era",
+    yearRange: "Pre-1947",
     centuryLabel: "Epoch I",
-    headline: "The Clay Tandoor & Bell-Metal Skewers",
+    headline: "The Punjabi Tandoori Roots",
     shortDescription:
-      "In pre-partition Peshawar, Kundan Lal Gujral pioneered skewering chicken marinated in thick curd, Kashmiri chillies, and mustard oil, lowering it into a subterranean bell-shaped clay oven (tandoor) fired by coal.",
-    image: ERA_PHOTO.stone_ferment,
+      "Before it became a creamy curry, the foundation of Butter Chicken lay in the communal clay tandoors of Peshawar in undivided Punjab. In the 1920s and 30s at the original Moti Mahal eatery, Kundan Lal Gujral master shortcuts to feed hungry locals by cooking skewered chicken inside a roaring, charcoal-fired clay oven. The chicken was marinated simply in thick hung curd, lemon juice, and local spices. Because the intense, dry heat of the tandoor would quickly dry out the meat, it was served immediately alongside fresh hand-churned Punjabi white butter and pieces of onion to keep it palatable. There was no gravy yet; it was a rustic, smoky, and dry street food born out of the traditional open-air clay oven culture of rural and urban Punjab.",
+    image: "/images/dishes/butter-chicken-stage-1.webp",
     generationRecipe: {
-      recipeName: "Original Peshawari Tandoori Murgh",
-      historicalCookware: "Subterranean clay tandoor oven",
-      heatSource: "Hardwood and charcoal fire (400°C)",
-      ingredientsList: ["Whole chicken cuts", "Hung buffalo curd", "Kashmiri red chilli paste", "Mustard oil", "Garam masala & chaat masala"],
-      preparationMethod: "Marinated twice, impaled on long iron skewers, roasted in radiant clay oven heat in under 12 minutes.",
-      contemporaryDifference: "Dry roasted chicken only; zero tomato-butter gravy existed.",
+      recipeName: "Peshawari Communal Clay Tandoor Murgh",
+      historicalCookware: "Roaring charcoal-fired subterranean clay tandoor & iron skewers",
+      heatSource: "Charcoal embers",
+      ingredientsList: [
+        "Desi Murg",
+        "Chakka Dahi",
+        "Safed Makkhan",
+        "Kacchi Mirch",
+        "Nimbu Rassa"
+      ],
+      preparationMethod:
+        "Marinated simply in thick hung curd, lemon juice, and local spices; roasted on skewers inside a clay tandoor and served immediately with hand-churned white butter and sliced onions.",
+      contemporaryDifference:
+        "Rustic, dry, and smoky street food roasted over charcoal; completely devoid of tomato gravy or cream.",
     },
-    technologicalLeap: "High-radiant clay oven searing retaining natural meat juices.",
-    documentedCitation: "Oral histories of Peshawar's Gora Bazaar & Moti Mahal founding archives.",
+    technologicalLeap: "Clay tandoor high-radiant searing preserving natural meat juices.",
+    documentedCitation: "",
   },
   {
     generationNumber: 2,
-    eraTitle: "Post-Partition Daryaganj (1947–1950 CE)",
-    yearRange: "1947 – 1952 CE",
+    eraTitle: "The Mid-1900s",
+    yearRange: "1950s",
     centuryLabel: "Epoch II",
-    headline: "The Accidental Invention of Makhani Gravy",
+    headline: "The Delhi-Punjabi Invention (1950s)",
     shortDescription:
-      "Refugees from partition rebuilt their lives in Old Delhi's Daryaganj. To prevent leftover dry tandoori chicken from going to waste in the absence of refrigeration, Kundan Lal simmered it in a rich gravy of ripe tomatoes, butter, and cream.",
-    image: ERA_PHOTO.spice_trade,
+      "Following the partition, Punjabi migrants brought the tandoor to Delhi, where the dry chicken was accidentally transformed into the famous gravy dish. At the new Moti Mahal restaurant in Daryaganj, the cooks faced a massive problem: unsold tandoori chicken dried out and went to waste. To solve this, they created a rich, hydrating sauce using fresh tomato puree, heavy cream, and massive blocks of dairy butter to simmer the leftover chicken pieces. Cooked in large cauldrons over charcoal embers, the dish combined the smoky char of Punjabi tandoori grilling with a velvety, comforting gravy. It became an instant hit, serving as the ultimate comfort food for the displaced Punjabi diaspora and locals looking for a rich, hearty, and celebratory meal.",
+    image: "/images/dishes/butter-chicken-stage-2.webp",
     generationRecipe: {
-      recipeName: "First Daryaganj Murgh Makhani",
-      historicalCookware: "Large tinned copper degchi",
-      heatSource: "Charcoal coal pit",
-      ingredientsList: ["Leftover tandoori chicken chunks", "Fresh vine-ripened tomatoes", "Churned white butter (Makhan)", "Full-fat milk cream", "Kashmiri red chilli"],
-      preparationMethod: "Tomatoes boiled down and hand-sieved. Enriched with mounds of fresh white butter and simmered with roasted chicken until tender.",
-      contemporaryDifference: "Born out of food preservation necessity rather than planned recipe invention.",
+      recipeName: "Post-Partition Daryaganj Murgh Makhani",
+      historicalCookware: "Large tinned copper cauldrons (degchis) & charcoal tandoor",
+      heatSource: "Slow charcoal embers",
+      ingredientsList: [
+        "Tandoori Chicken Leftovers",
+        "Fresh Tamatar Puree",
+        "Commercial Dairy Butter",
+        "Fresh Malai",
+        "Kasuri Methi"
+      ],
+      preparationMethod:
+        "Leftover tandoori chicken simmered in a rich emulsion of fresh tomato puree, heavy cream, and mounds of dairy butter over charcoal embers.",
+      contemporaryDifference:
+        "Invention of the makhani tomato-butter gravy to hydrate leftover tandoori chicken for the post-partition diaspora.",
     },
-    technologicalLeap: "Use of rich dairy fat emulsion to rehydrate and tenderize roasted meat.",
-    documentedCitation: "Moti Mahal Daryaganj restaurant archives & Delhi Partition Heritage records.",
+    technologicalLeap: "Dairy fat and tomato acidity emulsion hydrating charred roasted meats.",
+    documentedCitation: "",
   },
   {
     generationNumber: 3,
-    eraTitle: "The Kasuri Methi Breakthrough",
-    yearRange: "c. 1955 – 1965 CE",
+    eraTitle: "The Present Day",
+    yearRange: "2020s–2026",
     centuryLabel: "Epoch III",
-    headline: "Dried Fenugreek Leaves & The Silk Strainer",
+    headline: "The Global Punjabi Pride",
     shortDescription:
-      "The definitive flavor breakthrough! Rubbing sun-dried fragrant fenugreek leaves (Kasuri Methi) between palms and crushing them into the simmering gravy imparted its iconic bittersweet aroma, perfectly balancing sweet tomato acidity.",
-    image: ERA_PHOTO.tawa_sizzle,
+      "Today, Butter Chicken stands as the definitive global ambassador of Punjabi-Indian cuisine, served everywhere from roadside dhabas to Michelin-starred dining rooms. Modern preparation has streamlined the process, using high-tech commercial tandoors or gas grills to prepare boneless chicken tikka pieces specifically for the sauce. High-speed blenders and electric strainers ensure the gravy achieves an ultra-smooth, silk-like texture in minutes. While traditional variants still rely heavily on cashew paste, cream, and Amul butter, modern kitchens also cater to global trends with health-conscious versions using Greek yogurt or plant-based vegan butter. It has also broken out of the curry bowl into fusion street food, appearing as a stuffing for naan bombs, pizzas, and loaded fries across the globe.",
+    image: "/images/dishes/butter-chicken-stage-3.webp",
     generationRecipe: {
-      recipeName: "Kasuri Methi Balanced Makhani",
-      historicalCookware: "Heavy brass handi with fine mesh strainer",
-      heatSource: "Restaurant gas burner",
-      ingredientsList: ["Tandoori chicken", "Tomato puree", "Kasuri methi (Dried fenugreek)", "Dairy butter & malai", "Ginger juliennes"],
-      preparationMethod: "Tomato gravy strained through fine muslin three times to achieve silkiness. Finished with palm-crushed kasuri methi in the final 2 minutes.",
-      contemporaryDifference: "Elimination of tomato seeds and fibers creating mirror-smooth texture.",
+      recipeName: "Modern Global Punjabi Makhani Formulation",
+      historicalCookware: "Commercial gas tandoors, high-speed blenders & electric strainers",
+      heatSource: "Precision gas burners and induction cooktops",
+      ingredientsList: [
+        "Boneless Chicken Tikka",
+        "Organic Tomato Paste",
+        "Pasteurized Amul Butter",
+        "UHT Whipping Cream",
+        "Ready Makhani Gravy Mix"
+      ],
+      preparationMethod:
+        "Boneless chicken tikka grilled and simmered in silk-strained tomato-cashew makhani gravy, finished with butter, whipping cream, or adapted into global fusion dishes.",
+      contemporaryDifference:
+        "Streamlined commercial kitchens using high-speed blenders, boneless meat specifically cooked for gravy, and global fusion formats.",
     },
-    technologicalLeap: "Muslin-straining and dried fenugreek infusion producing the signature velvety texture.",
-    documentedCitation: "Kundan Lal Gujral biography & Jawaharlal Nehru state banquet menus.",
+    technologicalLeap: "High-speed electric emulsification, precision temperature cooking, and global fusion formats.",
+    documentedCitation: "",
   },
   {
     generationNumber: 4,
-    eraTitle: "Diplomatic Banquets & World Acclaim",
-    yearRange: "c. 1965 – 1985 CE",
-    centuryLabel: "Epoch IV",
-    headline: "Nehru's State Banquets & International Fame",
-    shortDescription:
-      "Prime Minister Jawaharlal Nehru made Moti Mahal a regular stop for visiting world leaders, including US President Richard Nixon, Jacqueline Kennedy, and the Shah of Iran. Butter Chicken became India's gastronomic ambassador.",
-    image: ERA_PHOTO.butter_chicken_hero,
-    generationRecipe: {
-      recipeName: "Imperial Diplomatic Butter Chicken",
-      historicalCookware: "Silver-plated copper serving deg",
-      heatSource: "Low-flame warming chafing dish",
-      ingredientsList: ["Tender chicken tikka cuts", "San Marzano-style ripe tomatoes", "Pure butter", "Fresh cream swirl", "Cardamom & mace powder"],
-      preparationMethod: "Chicken roasted with charred edges, folded into silky sauce, garnished with cream spirals and ginger juliennes, served with hot garlic naan.",
-      contemporaryDifference: "Refined plating, milder heat tailored to international diplomatic palates.",
-    },
-    technologicalLeap: "Standardization of the dish for high-protocol global banquets.",
-    documentedCitation: "Official state banquet archives, Ministry of External Affairs of India.",
-  },
-  {
-    generationNumber: 5,
-    eraTitle: "Global Proliferation & British Tikka Masala Split",
-    yearRange: "c. 1980 – 2005 CE",
-    centuryLabel: "Epoch V",
-    headline: "From Delhi to Glasgow & The Global Curry House",
-    shortDescription:
-      "Butter Chicken inspired the creation of Chicken Tikka Masala in Britain and became the single most ordered Indian curry in London, New York, Tokyo, and Sydney, spawning dozens of restaurant variations.",
-    image: ERA_PHOTO.butter_chicken_hero,
-    generationRecipe: {
-      recipeName: "Modern Restaurant Style Murgh Makhani",
-      historicalCookware: "Heavy commercial restaurant handi",
-      heatSource: "High-power kitchen wok burner",
-      ingredientsList: ["Boneless chicken thigh tikka", "Blended tomato-cashew nut paste", "Unsalted dairy butter", "Heavy whipping cream", "Honey / sugar touch", "Kasuri methi"],
-      preparationMethod: "Cashew nut paste introduced to add glossy sheen and thickness, balancing natural tomato acidity with creamy sweetness.",
-      contemporaryDifference: "Widespread use of cashew nut paste as a modern thickening and richness agent.",
-    },
-    technologicalLeap: "Cashew-dairy dual emulsion providing stability under high-speed restaurant service.",
-    documentedCitation: "Lizzie Collingham's Curry: A Tale of Cooks and Conquerors.",
-  },
-  {
-    generationNumber: 6,
-    eraTitle: "Contemporary Living Legend",
+    eraTitle: "Serving & Plating",
     yearRange: "Present Day",
-    centuryLabel: "Epoch VI",
-    headline: "The Unrivaled Velvet Icon of Global Gastronomy",
+    centuryLabel: "Epoch IV",
+    headline: "The Global Crown Jewel of Punjabi Cuisine",
     shortDescription:
-      "Today, authentic Butter Chicken is celebrated for its harmonious balance of smoky charred meat, tangy ripe tomatoes, creamy churned butter, and fragrant fenugreek aroma.",
-    image: ERA_PHOTO.butter_chicken_hero,
+      "Served piping hot, garnished with a swirl of fresh cream, a pat of butter, and crushed kasuri methi, paired with butter garlic naan.",
+    image: "/images/dishes/butter-chicken-stage-4.webp",
     generationRecipe: {
-      recipeName: "Authentic Delhi Butter Chicken Master Formulation",
-      historicalCookware: "Heavy-bottomed copper or enameled cast-iron handi",
-      heatSource: "Medium-low stovetop flame",
+      recipeName: "Grand Restaurant Service Plating",
+      historicalCookware: "Copper handi or fine porcelain bowl",
+      heatSource: "Immediate service",
       ingredientsList: [
-        "800g boneless chicken thigh tikka (tandoor charred)",
-        "1 kg ripe red plum tomatoes (boiled, pureed, and fine-strained)",
-        "80g unsalted quality dairy butter",
-        "100ml fresh heavy dairy cream",
-        "2 tbsp soaked cashew nut paste",
-        "1.5 tbsp Kasuri Methi (toasted and palm-crushed)",
-        "1 tbsp Kashmiri red chilli powder",
-        "1 tsp honey (to balance acidity)",
+        "Boneless Chicken Tikka",
+        "Organic Tomato Paste",
+        "Pasteurized Amul Butter",
+        "UHT Whipping Cream",
+        "Ready Makhani Gravy Mix"
       ],
-      preparationMethod:
-        "Roast marinated chicken until edges char. Simmer strained tomato-cashew puree with butter and chilli for 20 minutes until oil glazes. Add charred chicken, stir in cream, honey, and crushed kasuri methi. Rest 5 minutes before serving.",
-      contemporaryDifference: "Tested home formulation preserving authentic Daryaganj velvety consistency.",
+      preparationMethod: "Garnished with fresh dairy cream swirl, pat of butter, and crushed kasuri methi.",
+      contemporaryDifference: "Living global legend.",
     },
-    technologicalLeap: "Perfected triple-balance of smoke, acid, and velvet fat.",
-    documentedCitation: "Culinary Heritage of Delhi & Michelin Guide Indian Restaurant Features.",
+    technologicalLeap: "Global luxury presentation.",
+    documentedCitation: "",
   },
 ];
 
@@ -979,15 +959,478 @@ const STAGE_SOURCE_EPOCH: Record<StageKey, number> = {
 };
 
 const STAGE_YEAR_RANGE: Record<StageKey, string> = {
-  origin: "Origins & documented references",
+  origin: "Origins & Cultural Roots",
   ingredients: "Regional & seasonal produce",
   method: "Traditional technique to modern kitchens",
   plated: "Present day",
 };
 
 /** Legacy six-epoch records for one dish, used only for recipe detail. */
+export const VADA_PAV_GENERATIONS: GenerationWaypoint[] = [
+  {
+    generationNumber: 1,
+    eraTitle: "The 1800s",
+    yearRange: "1800s",
+    centuryLabel: "Epoch I",
+    headline: "The Forbidden Blueprint",
+    shortDescription: "In the 19th century, Vada Pav did not exist because its two core components belonged to entirely different worlds. Potatoes had only recently been popularized by the British, and the Portuguese pav (bread) was largely shunned by mainstream society due to religious taboos surrounding European baking practices and the use of wild palm toddy for yeast fermentation. Had a prototype been forced together in a wood-fired kitchen, it would have tasted drastically different. The bread would have been dense and sour, the potato filling would have been roughly hand-mashed, and the frying would have taken place over smoky wood fires using heavy iron pots filled with cold-pressed groundnut oil. It was a time before the street food culture of Mumbai was born, meaning these ingredients were consumed separately and strictly within private domestic or colonial settings.",
+    image: "/images/dishes/vada-pav-stage-1.webp",
+    generationRecipe: {
+      recipeName: "19th Century Domestic Prototype",
+      historicalCookware: "Smoky heavy iron pots & domestic hearth",
+      heatSource: "Smoky wood fires",
+      ingredientsList: ["Potatoes", "Pav (Bread rolls)", "Gram flour (Besan)", "Garlic", "Green chillies"],
+      preparationMethod: "Roughly hand-mashed potato filling, dense toddy-fermented pav, deep frying in cold-pressed groundnut oil in heavy iron pots over wood fires.",
+      contemporaryDifference: "Potatoes and European pav were separate domestic novelties; pav was socially shunned due to toddy fermentation, and street food culture did not yet exist."
+    },
+    technologicalLeap: "Early domestic adoption of New World potatoes and European baking techniques prior to street commercialization.",
+    documentedCitation: ""
+  },
+  {
+    generationNumber: 2,
+    eraTitle: "The Mid-1900s",
+    yearRange: "1966",
+    centuryLabel: "Epoch II",
+    headline: "The Birth of an Icon (1966)",
+    shortDescription: "The 1960s changed everything when Ashok Vaidya combined the potato dumpling and the bread roll to create a cheap, rapid meal for Mumbai's booming working class. Stationed outside the Dadar railway station in 1966, Vaidya realized that mill workers rushing to their shifts needed something hot, filling, and completely portable. By splitting a now-socially-accepted commercial yeast pav, smearing it with fiery chutneys, and stuffing it with a fresh batata vada, the legendary street food was officially born. Preparing it in this era relied on portable kerosene stoves and mass-produced vegetable oils. The chutneys—especially the signature dry red garlic powder—were hand-ground daily on stone slabs, and the final product was handed over wrapped in sheets of old, ink-stained vernacular newspaper, instantly becoming the fuel of the city's political and industrial labor movements.",
+    image: "/images/dishes/vada-pav-stage-2.webp",
+    generationRecipe: {
+      recipeName: "Original Dadar Station Batata Vada Pav",
+      historicalCookware: "Street-side deep frying kadai",
+      heatSource: "Portable kerosene stove",
+      ingredientsList: ["Potatoes", "Pav (Bread rolls)", "Gram flour (Besan)", "Garlic", "Green chillies"],
+      preparationMethod: "Fresh batata vada dipped in spiced gram flour batter, deep-fried in vegetable oil, stuffed into a split commercial yeast pav with stone-ground dry garlic and green chilli chutneys, wrapped in vernacular newspaper.",
+      contemporaryDifference: "Invention of the batata vada inside commercial yeast pav pairing; rapid street-side kerosene frying replacing slow home hearths."
+    },
+    technologicalLeap: "Ashok Vaidya's Dadar Station innovation creating portable, affordable nutrition for Mumbai mill workers.",
+    documentedCitation: ""
+  },
+  {
+    generationNumber: 3,
+    eraTitle: "The Present Day",
+    yearRange: "2020s–2026",
+    centuryLabel: "Epoch III",
+    headline: "The Global Evolution",
+    shortDescription: "Today, Vada Pav has transcended its humble train-station origins to become a globally recognized gourmet food and a symbol of culinary pride. The preparation has evolved from simple street-side frying to standardized, high-speed commercial kitchen operations using temperature-controlled LPG gas burners and refined sunflower or palm oils. While classic street carts still thrive, the modern era has introduced massive fast-food chains that flash-freeze the vadas for consistency. The presentation has shifted away from old newspapers to eco-friendly biodegradable boxes, and the flavor profile has exploded with fusion adaptations. It is now common to see the pav heavily toasted on a griddle with Amul butter and filled with everything from liquid cheese and Schezwan sauce to baked panko-crusted potato patties, completing its journey from a working-class snack to a versatile global delicacy.",
+    image: "/images/dishes/vada-pav-stage-3.webp",
+    generationRecipe: {
+      recipeName: "Modern Gourmet & Fusion Vada Pav",
+      historicalCookware: "Commercial deep fryer & flat butter griddle",
+      heatSource: "Precision temperature-controlled LPG burners",
+      ingredientsList: ["Potatoes", "Pav (Bread rolls)", "Gram flour (Besan)", "Garlic", "Green chillies"],
+      preparationMethod: "Standardized frying with flash-frozen consistency or artisanal street cart frying, pav griddled in Amul butter, served in biodegradable boxes with fusion chutneys.",
+      contemporaryDifference: "Transition from street newspaper wraps to standardized fast-food chains, biodegradable packaging, butter toasting, and global gourmet adaptations."
+    },
+    technologicalLeap: "Precision temperature-controlled frying, flash-freezing technology, and global culinary franchising.",
+    documentedCitation: ""
+  },
+  {
+    generationNumber: 4,
+    eraTitle: "Serving & Plating",
+    yearRange: "Present Day",
+    centuryLabel: "Epoch IV",
+    headline: "The Definitive Mumbai Street Icon",
+    shortDescription: "Served hot in crisp ladi pav with fiery dry garlic-peanut chutney, fried green chillies, and tangy tamarind-mint dips.",
+    image: "/images/dishes/vada-pav-stage-4.webp",
+    generationRecipe: {
+      recipeName: "Plated Vada Pav",
+      historicalCookware: "Street cart plating board",
+      heatSource: "Immediate service",
+      ingredientsList: ["Potatoes", "Pav (Bread rolls)", "Gram flour (Besan)", "Garlic", "Green chillies"],
+      preparationMethod: "Served hot with salted fried green chillies and garlic chutney.",
+      contemporaryDifference: "Modern street presentation."
+    },
+    technologicalLeap: "Iconic Mumbai street presentation.",
+    documentedCitation: ""
+  }
+];
+
+export const PURAN_POLI_GENERATIONS: GenerationWaypoint[] = [
+  {
+    generationNumber: 1,
+    eraTitle: "The 1800s",
+    yearRange: "1800s",
+    centuryLabel: "Epoch I",
+    headline: "The Royal & Ritual Heritage",
+    shortDescription: "In the 19th century, Puran Poli was treated as a labor-intensive royal delicacy and a sacred festive offering, prepared exclusively during occasions like Holi and Gudi Padwa. Every single step of the preparation was a grueling test of patience and muscle. The chana dal (split chickpeas) and jaggery were boiled in heavy brass vessels (patelya) over slow-burning wood or cow-dung fires, filling the kitchen with dense smoke. Because there were no mechanical grinders, the hot lentils had to be painstakingly pressed through a heavy, hot wooden or stone sieve called a puran yantra, or manually mashed on a stone sil-batta to get a perfectly smooth, lump-free paste. The outer cover was made from maida (refined flour) or whole wheat flour, hand-kneaded for hours to develop high elasticity. It was rolled using a wooden rolling pin (latre) and roasted on a thick iron tawa (griddle) over an open hearth, continuously slathered with pure, aromatic homemade cow ghee. It was served hot on fresh banana leaves, primarily to deities and upper-class households.",
+    image: "/images/dishes/puran-poli-stage-1.webp",
+    generationRecipe: {
+      recipeName: "19th Century Festive Offering",
+      historicalCookware: "Heavy brass patelya & stone sil-batta / wooden puran yantra",
+      heatSource: "Slow-burning wood or cow-dung fires",
+      ingredientsList: ["Gavacha Atta", "Harbhara Dal", "Kala Gur", "Sajuk Tup", "Velchi & Jaiphal"],
+      preparationMethod: "Chana dal and jaggery boiled in heavy brass patelya, painstakingly hand-sieved through wooden or stone puran yantras, enveloped in hand-kneaded dough, roasted on thick iron tawas over open hearths with homemade cow ghee.",
+      contemporaryDifference: "Laborious multi-hour manual stone-mashing without mechanical grinders, wood-smoke hearth cooking, reserved for sacred festive rituals."
+    },
+    technologicalLeap: "Mastery of hand-kneaded dough elasticity and manual puran yantra filtering.",
+    documentedCitation: ""
+  },
+  {
+    generationNumber: 2,
+    eraTitle: "The Mid-1900s",
+    yearRange: "Mid-1900s",
+    centuryLabel: "Epoch II",
+    headline: "The Domestic Tradition",
+    shortDescription: "By the mid-20th century, Puran Poli transitioned into a cherished domestic tradition, becoming the ultimate benchmark of a homemaker's culinary skill in Maharashtrian, Gujarati, and South Indian homes. As industrialization brought portable kerosene stoves and early gas burners into kitchens, managing the cooking temperature became significantly easier. While the recipe remained fiercely traditional, the introduction of the hand-cranked, metal puran yantra (a food mill attachment) revolutionized the process, cutting down the grueling hours spent mashing the dal by hand. The ingredients became more standardized with the mass availability of commercial jaggery, refined oils, and packaged flour. In this era, making Puran Poli remained a communal affair; women from joint families or neighborhoods would gather together, one rolling the dough, another stuffing the puran, and a third roasting them on the griddle. It was a time of pure domestic mastery, served to guests on stainless steel plates during family gatherings.",
+    image: "/images/dishes/puran-poli-stage-2.webp",
+    generationRecipe: {
+      recipeName: "Mid-20th Century Domestic Benchmark",
+      historicalCookware: "Hand-cranked metal puran yantra & heavy griddle",
+      heatSource: "Portable kerosene stoves & early domestic gas burners",
+      ingredientsList: ["Maida", "Chana Dal", "Pila Gul", "Vanaspati", "Velchi Pood"],
+      preparationMethod: "Dal boiled and passed through mechanical hand-cranked metal puran yantras, communal rolling and stuffing by neighborhood women, griddled on controlled gas flames, served on stainless steel plates.",
+      contemporaryDifference: "Hand-cranked metal puran yantra reducing manual labor; transition to domestic kerosene and gas stoves."
+    },
+    technologicalLeap: "Introduction of hand-cranked metal puran yantra and controlled domestic gas flames.",
+    documentedCitation: ""
+  },
+  {
+    generationNumber: 3,
+    eraTitle: "The Present Day",
+    yearRange: "2020s–2026",
+    centuryLabel: "Epoch III",
+    headline: "The Commercial & Convenient Era",
+    shortDescription: "Today, Puran Poli has broken out of the traditional kitchen to become a highly accessible, year-round commercial product, balancing heritage with modern convenience. In the busy lifestyle of the 2020s, the time-consuming process has been drastically shortened. The dal is rapidly cooked in electric pressure cookers and pulverized to a flawless consistency inside high-speed food processors or mixer-grinders in seconds. Modern health-conscious variations have also emerged, swapping out refined flour entirely for organic whole wheat or multi-grain flour, and replacing traditional jaggery with low-calorie sweeteners or dates. For those who lack the time to make it from scratch, the present era offers instant solutions: ready-to-eat Puran Polis are sold at local sweet shops, vacuum-packed versions are available in supermarkets, and frozen variants are exported globally to the diaspora. Despite being prepared on modern induction cooktops and non-stick pans, it remains the soul of festive dining.",
+    image: "/images/dishes/puran-poli-stage-3.webp",
+    generationRecipe: {
+      recipeName: "Modern Commercial & Convenient Formulation",
+      historicalCookware: "Electric pressure cooker, high-speed food processor & non-stick pan",
+      heatSource: "Induction cooktops & precision LPG burners",
+      ingredientsList: ["Sharbati Atta", "Packaged Chana Dal", "Organic Jaggery Powder", "Branded Cow Ghee", "Spice Extracts"],
+      preparationMethod: "Dal pressure-cooked and pulverized in high-speed mixer-grinders, rolled with organic whole-wheat or multi-grain flour, roasted on non-stick pans or packaged into vacuum-sealed commercial packs.",
+      contemporaryDifference: "Electric pressure cooking, mixer-grinder pulverization, vacuum-sealed packaging, and global export."
+    },
+    technologicalLeap: "High-speed mechanical pulverization, vacuum packaging, and instant flash-freezing.",
+    documentedCitation: ""
+  },
+  {
+    generationNumber: 4,
+    eraTitle: "Serving & Plating",
+    yearRange: "Present Day",
+    centuryLabel: "Epoch IV",
+    headline: "The Soul of Festive Dining",
+    shortDescription: "Served hot, generously drizzled with melted pure desi cow ghee, paired with katachi amti (spicy dal broth) or cold milk.",
+    image: "/images/dishes/puran-poli-stage-4.webp",
+    generationRecipe: {
+      recipeName: "Plated Puran Poli with Ghee",
+      historicalCookware: "Festive thali platter",
+      heatSource: "Immediate service",
+      ingredientsList: ["Sharbati Atta", "Packaged Chana Dal", "Organic Jaggery Powder", "Branded Cow Ghee", "Spice Extracts"],
+      preparationMethod: "Served hot with a pool of pure cow ghee.",
+      contemporaryDifference: "Traditional festival plating."
+    },
+    technologicalLeap: "Festive plating aesthetics.",
+    documentedCitation: ""
+  }
+];
+
+export const MODAK_GENERATIONS: GenerationWaypoint[] = [
+  {
+    generationNumber: 1,
+    eraTitle: "The 1800s",
+    yearRange: "1800s",
+    centuryLabel: "Epoch I",
+    headline: "The Sacred Harvest Ritual",
+    shortDescription: "In the 19th century, Ukadiche Modak was purely a seasonal, ritualistic creation tied to the local autumn harvest. Crafted primarily during the Ganesh Chaturthi festival, it celebrated the freshly harvested rice crop and the abundance of local coconut groves. The preparation was deeply spiritual and physically demanding. The rice dough (peeth) was made by hand-pounding raw, indigenous fragrant rice variants in a heavy stone mortar and pestle (ukhal-musal) to get a fine flour, which was then steamed in heavy copper vessels (hunda) over slow charcoal fires to make it pliable. The filling utilized fresh, juicy coconut scraped on a traditional spiked iron blade stool (advi) and dark, unrefined winter jaggery. Expert women hand-shaped the outer shell into perfect, intricate petals without any mechanical assistance. The final dumplings were steamed on a bed of fresh, fragrant turmeric leaves, which infused the modaks with an irreplaceable herbal aroma and a faint golden tint.",
+    image: "/images/dishes/ukadiche-modak-stage-1.webp",
+    generationRecipe: {
+      recipeName: "19th Century Sacred Harvest Offering",
+      historicalCookware: "Heavy stone mortar (ukhal-musal), copper hunda & iron advi",
+      heatSource: "Slow charcoal hearth fires",
+      ingredientsList: ["Tandalacha Peeth", "Ola Naral", "Kala Gur", "Sajuk Tup", "Haladichi Paane"],
+      preparationMethod: "Hand-pounded fragrant rice flour steamed into ukad dough, coconut grated on spiked iron advi blades, hand-pleated into flower petals, steamed over aromatic turmeric leaves.",
+      contemporaryDifference: "Laborious hand-pounding of indigenous rice in stone mortars, hand-folded pleats without molds, steamed on wild turmeric leaves."
+    },
+    technologicalLeap: "Mastery of gelatinized ukad dough steaming and intricate manual hand-pleating.",
+    documentedCitation: ""
+  },
+  {
+    generationNumber: 2,
+    eraTitle: "The Mid-1900s",
+    yearRange: "Mid-1900s",
+    centuryLabel: "Epoch II",
+    headline: "The Domestic Artform",
+    shortDescription: "By the mid-20th century, Ukadiche Modak became the ultimate test of domestic artistry in Maharashtrian households, standardizing into a cherished family tradition. The introduction of local commercial flour mills (girnis) eliminated the arduous task of hand-pounding rice at home, making fine rice flour easily accessible. Kerosene stoves and early LPG gas burners replaced smoky wood fires, giving homemakers far better control over the delicate steaming process. While the recipe remained fiercely loyal to tradition, the tools began to shift. The filling now used block jaggery sold in local markets and standard factory-made cardamom powder. Making modaks remained a highly communal activity within joint families, where generations sat together to master the difficult art of hand-folding the dough pleats. The traditional turmeric leaves were often substituted with clean banana leaves or thin muslin cloths placed inside basic heavy-bottomed metal steamers.",
+    image: "/images/dishes/ukadiche-modak-stage-2.webp",
+    generationRecipe: {
+      recipeName: "Mid-20th Century Domestic Benchmark",
+      historicalCookware: "Metal steamer pot, rolling pin & muslin cloth",
+      heatSource: "Kerosene stoves & early domestic LPG gas burners",
+      ingredientsList: ["Girni Millet Tandalache Peeth", "Scraped Coconut Block", "Pila Gul", "Commercial Ghee", "Velchi Pood"],
+      preparationMethod: "Girni-milled rice flour steamed into dough, filled with market block jaggery and coconut, pleated communally by joint family members, steamed on banana leaves or muslin cloth.",
+      contemporaryDifference: "Shift from hand stone-pounding to commercial girni milling; replacement of turmeric leaves with muslin or banana leaves."
+    },
+    technologicalLeap: "Access to electric/mechanical grain milling (girnis) and controlled domestic gas steaming.",
+    documentedCitation: ""
+  },
+  {
+    generationNumber: 3,
+    eraTitle: "The Present Day",
+    yearRange: "2020s–2026",
+    centuryLabel: "Epoch III",
+    headline: "The High-Tech Delicacy",
+    shortDescription: "Today, Ukadiche Modak has transitioned into a highly commercialized, year-round gourmet delicacy that balances modern convenience with heritage flavors. The time-consuming process has been heavily automated. The rice dough is quickly steamed using high-pressure kitchen steamers or modern induction cooktops, and high-speed mixer-grinders blitz the coconut and jaggery filling in seconds. For those who find the intricate hand-pleating too difficult, plastic, brass, and silicone modak molds have become standard household tools to achieve perfect shapes instantly. Health-conscious updates feature organic red rice or brown rice flour, alongside sugar-free alternatives like dates or stevia. Furthermore, the present era has turned this festive homemade item into a booming commercial venture; during festival seasons, massive sweet chains use automated machinery to mass-produce thousands of modaks, while vacuum-packing and flash-freezing technology allow these delicate steamed sweets to be exported globally to the Indian diaspora.",
+    image: "/images/dishes/ukadiche-modak-stage-3.webp",
+    generationRecipe: {
+      recipeName: "Modern Commercial & Automated Formulation",
+      historicalCookware: "High-pressure kitchen steamer, mixer-grinder & precision molds",
+      heatSource: "Induction cooktops & precision LPG burners",
+      ingredientsList: ["Organic Rice Flour", "Fresh Grated Coconut", "Organic Jaggery Powder", "Branded Cow Ghee", "Cardamom & Nutmeg Extracts"],
+      preparationMethod: "Dough prepared with precision electric steamers, filling pulverized in high-speed mixer-grinders, shaped with silicone or brass molds, steamed with induction precision or flash-frozen for global export.",
+      contemporaryDifference: "Use of silicone/brass molds, mixer-grinders, electric steamers, vacuum packaging, and year-round commercial availability."
+    },
+    technologicalLeap: "Precision induction steaming, mold shaping, and commercial flash-freeze preservation.",
+    documentedCitation: ""
+  },
+  {
+    generationNumber: 4,
+    eraTitle: "Serving & Plating",
+    yearRange: "Present Day",
+    centuryLabel: "Epoch IV",
+    headline: "Sacred Festive Offering",
+    shortDescription: "Served piping hot, crowned with a generous spoonful of warm fragrant cow ghee drizzled through the central peak.",
+    image: "/images/dishes/ukadiche-modak-stage-4.webp",
+    generationRecipe: {
+      recipeName: "Sacred Naivedya Plating",
+      historicalCookware: "Brass puja thali",
+      heatSource: "Immediate service",
+      ingredientsList: ["Organic Rice Flour", "Fresh Grated Coconut", "Organic Jaggery Powder", "Branded Cow Ghee", "Cardamom & Nutmeg Extracts"],
+      preparationMethod: "Served hot with a pool of warm pure cow ghee.",
+      contemporaryDifference: "Contemporary living heritage."
+    },
+    technologicalLeap: "Sacred Naivedya aesthetics.",
+    documentedCitation: ""
+  }
+];
+
+export const MAKKI_ROTI_SARSON_SAAG_GENERATIONS: GenerationWaypoint[] = [
+  {
+    generationNumber: 1,
+    eraTitle: "The 1800s",
+    yearRange: "1800s",
+    centuryLabel: "Epoch I",
+    headline: "The Winter Harvest Fuel",
+    shortDescription: "In the 19th century, Makki di Roti and Sarson ka Saag was a rustic, cold-weather staple born entirely out of survival and the seasonal agricultural cycle of rural Punjab. During the brutal winter months, farmers needed high-calorie, warming food to sustain heavy manual labor. The greens—mustard leaves, bathua, and spinach—were plucked fresh from the fields and slow-cooked for hours in heavy clay pots (haandi) over open wood or cow-dung fires, filling the village air with a distinct earthy smoke. Without any mechanical tools, the cooked greens were laboriously hand-churned and mashed using a heavy wooden whisk (madhani) until creamy. The maize flour was coarsely stone-ground at local watermills (gharats) and patted by hand into thick flatbreads, as maize lacks gluten and cannot be rolled. The meal was cooked on an outdoor mud stove (chulha), heavily enriched with fresh, hand-churned white butter, and eaten fresh in the fields to beat the winter chill.",
+    image: "/images/dishes/makki-di-roti-sarson-saag-stage-1.webp",
+    generationRecipe: {
+      recipeName: "Winter Harvest Hearth Saag & Roti",
+      historicalCookware: "Heavy clay pot (haandi), wooden whisk (madhani) & outdoor mud chulha",
+      heatSource: "Open wood or cow-dung fires",
+      ingredientsList: [
+        "Desi Makki Atta",
+        "Khet ki Sarson",
+        "Bathua",
+        "Safed Makkhan",
+        "Hari Mirch"
+      ],
+      preparationMethod: "Slow-simmered greens in clay pots over open embers, hand-churned with wooden madhani until creamy, hand-patted coarse watermill maize rotis on mud chulha.",
+      contemporaryDifference: "Rustic winter survival food cooked in fields without mechanical mills or blenders, featuring coarse hand-patted flatbreads."
+    },
+    technologicalLeap: "Stone watermill grain milling (gharats) and slow clay-pot open-hearth simmering with wooden churning tools.",
+    documentedCitation: ""
+  },
+  {
+    generationNumber: 2,
+    eraTitle: "The Mid-1900s",
+    yearRange: "Mid-1900s",
+    centuryLabel: "Epoch II",
+    headline: "The Domestic Punjabi Identity",
+    shortDescription: "By the mid-20th century, this rural combination moved firmly into the domestic kitchens of urbanized Punjab, becoming a proud cultural symbol of Punjabi hospitality and festival cooking. The introduction of mechanized diesel flour mills made finely ground maize flour readily available, which slightly eased the process of binding the difficult dough. Kerosene stoves and early LPG gas burners replaced the outdoor mud chulhas, bringing the preparation indoors into brass and aluminum cookware. While the saag was still slow-cooked, the hand-churning process became faster with sturdier metal madhanis. The dish became the ultimate centerpiece for winter gatherings and festivals like Lohri, where homemakers vied to create the smoothest saag and the thinnest, un-broken rotis. It was traditionally served on large brass plates (thalis) with blocks of commercial yellow jaggery on the side.",
+    image: "/images/dishes/makki-di-roti-sarson-saag-stage-2.webp",
+    generationRecipe: {
+      recipeName: "Mid-Century Domestic Hospitality Feast",
+      historicalCookware: "Heavy brass & aluminum cookware, metal madhani & indoor iron tawa",
+      heatSource: "Kerosene stoves and early domestic LPG gas burners",
+      ingredientsList: [
+        "Girni Makki Atta",
+        "Market Sarson Leaves",
+        "Palak",
+        "Commercial White Butter",
+        "Pila Gul"
+      ],
+      preparationMethod: "Indoor simmering in brass vessels, metal-madhani whisking, thinner flatbreads prepared from mechanized mill flour, served with yellow jaggery on brass thalis.",
+      contemporaryDifference: "Transition from outdoor farm survival food to an indoor festival centerpiece for Lohri and family hospitality."
+    },
+    technologicalLeap: "Diesel mill flour grinding and domestic kerosene/gas stoves replacing outdoor mud chulhas.",
+    documentedCitation: ""
+  },
+  {
+    generationNumber: 3,
+    eraTitle: "The Present Day",
+    yearRange: "2020s–2026",
+    centuryLabel: "Epoch III",
+    headline: "The Global Gourmet Phenomenon",
+    shortDescription: "Today, Makki di Roti and Sarson ka Saag has transcended its rustic roots to become a highly celebrated global gourmet item found in elite Indian restaurants worldwide. The traditional hours-long mashing process has been replaced by electric pressure cookers and high-speed hand blenders that emulsify the greens into a perfectly smooth puree in seconds. Modern cooking techniques often use non-stick griddles and parchment paper techniques to easily shape and flip the notoriously fragile maize flatbreads. Health-conscious updates include mixing the maize flour with a bit of whole wheat or millet flour for easier rolling, and substituting traditional heavy fats with olive oil or low-fat vegan butter. For the global diaspora, the present era offers ultimate convenience: pre-cooked Sarson ka Saag is widely sold in ready-to-eat cans or vacuum-sealed pouches, allowing people to enjoy this complex, time-consuming winter tradition instantly anywhere in the world.",
+    image: "/images/dishes/makki-di-roti-sarson-saag-stage-3.webp",
+    generationRecipe: {
+      recipeName: "Modern Global Gourmet Presentation",
+      historicalCookware: "Electric pressure cooker, immersion hand blender & non-stick griddle with parchment",
+      heatSource: "Induction cooktop and precision flame burners",
+      ingredientsList: [
+        "Organic Yellow Cornmeal",
+        "Packaged Mustard Greens",
+        "Canned Spinach Puree",
+        "Branded Yellow Butter",
+        "Organic Garlic Paste"
+      ],
+      preparationMethod: "High-pressure electric steaming, immersion blending to silky puree, parchment-assisted non-stick griddling, vacuum-packaging for diaspora export.",
+      contemporaryDifference: "Hours of manual wood-fire churning replaced by seconds of electric blending, parchment-paper griddling, and global gourmet export."
+    },
+    technologicalLeap: "High-speed electric immersion blending, electric pressure cookers, and vacuum retort packaging.",
+    documentedCitation: ""
+  },
+  {
+    generationNumber: 4,
+    eraTitle: "Serving & Plating",
+    yearRange: "Present Day",
+    centuryLabel: "Epoch IV",
+    headline: "The Soul of Punjabi Winter Cuisine",
+    shortDescription: "Served piping hot, crowned with an overflowing dollop of churned white butter, golden jaggery cubes, and fresh green chillies.",
+    image: "/images/dishes/makki-di-roti-sarson-saag-stage-4.webp",
+    generationRecipe: {
+      recipeName: "Grand Punjabi Dhaba & Home Service",
+      historicalCookware: "Kansa or stainless steel thali",
+      heatSource: "Immediate service",
+      ingredientsList: [
+        "Organic Yellow Cornmeal",
+        "Packaged Mustard Greens",
+        "Canned Spinach Puree",
+        "Branded Yellow Butter",
+        "Organic Garlic Paste"
+      ],
+      preparationMethod: "Served steaming hot with fresh churned white butter melting over dark velvety saag, paired with crisp hot makki rotis.",
+      contemporaryDifference: "Living winter heritage celebrated worldwide."
+    },
+    technologicalLeap: "Global cold-weather cultural icon.",
+    documentedCitation: ""
+  }
+];
+
+export const AMRITSARI_KULCHA_GENERATIONS: GenerationWaypoint[] = [
+  {
+    generationNumber: 1,
+    eraTitle: "The 1800s",
+    yearRange: "1800s",
+    centuryLabel: "Epoch I",
+    headline: "The Shahi Khansama Innovation",
+    shortDescription:
+      "In the 19th century, the Amritsari Kulcha was born out of the royal kitchens of the Sikh Empire and Punjab's princely states, created as a luxurious variation of the standard tandoori roti. Royal chefs (khansamas) experimented with the dough by incorporating large amounts of lard or hand-churned white butter into multiple folds, creating an early prototype of an indigenous puff pastry. Cooked inside deep, underground clay tandoors fired with slow-burning wood, the bread developed a deeply smoky flavor and an incredible flaky crunch. The stuffing was simple but premium, featuring seasonal potatoes or fresh chenna (paneer) hand-crushed with wild green chillies and whole coriander seeds. It was a decadent delicacy reserved for nobility and wealthy landlords, served dripping with melted ghee alongside rich, slow-simmered black lentils.",
+    image: "/images/dishes/amritsari-kulcha-stage-1.webp",
+    generationRecipe: {
+      recipeName: "Sikh Empire Royal Laminated Kulcha",
+      historicalCookware: "Deep underground clay tandoor & iron skewers",
+      heatSource: "Slow-burning wood fire hearth",
+      ingredientsList: [
+        "Local Maida",
+        "Ola Chenna",
+        "Ubalela Aloo",
+        "Hand-Churned Ghee",
+        "Whole Coriander Seeds"
+      ],
+      preparationMethod:
+        "Hand-folded multi-layered dough enriched with churned butter and ghee, stuffed with fresh chenna and boiled potatoes crushed with whole coriander and wild green chillies, baked inside an underground clay tandoor.",
+      contemporaryDifference:
+        "Royal princely delicacy folded like indigenous puff pastry, cooked in underground wood-fired tandoors for nobility.",
+    },
+    technologicalLeap: "Indigenous multi-layer fat lamination producing flaky, tandoor-baked layered flatbreads.",
+    documentedCitation: "",
+  },
+  {
+    generationNumber: 2,
+    eraTitle: "The Mid-1900s",
+    yearRange: "Mid-1900s",
+    centuryLabel: "Epoch II",
+    headline: "The Street Food of the Holy City",
+    shortDescription:
+      "By the mid-20th century, the Amritsari Kulcha transitioned into the ultimate community breakfast for the working class and pilgrims visiting the Golden Temple. Local bakers standardized the recipe by using commercial yeast or sour dough starters (khameer) to make the dough incredibly pliable, allowing them to laminate it with multiple layers of vegetable fat or commercial butter. Stationed in the narrow lanes of old Amritsar, vendors used massive, above-ground clay tandoors fueled by coal or wood to churn out hundreds of kulchas an hour. The bread became distinctly characterized by its multi-layered, shattered-glass texture, achieved by aggressively slapping the stuffed dough by hand before sticking it to the tandoor walls. It was served hot on old newspapers or tin plates, paired with spicy, tangy pindi chole (chickpeas) and a unique watery onion-tamarind chutney.",
+    image: "/images/dishes/amritsari-kulcha-stage-2.webp",
+    generationRecipe: {
+      recipeName: "Golden Temple Alleyway Community Kulcha",
+      historicalCookware: "Massive above-ground brick & clay tandoor",
+      heatSource: "Coal and wood embers",
+      ingredientsList: [
+        "Standard Maida",
+        "Market Potatoes",
+        "Dalda Vanaspati",
+        "Commercial Butter",
+        "Dry Pomegranate Seeds"
+      ],
+      preparationMethod:
+        "Pliable khameer-fermented dough laminated with vanaspati and butter, filled with spiced mashed potatoes and dry pomegranate seeds (anardana), slapped onto incandescent tandoor walls, and crushed with commercial butter.",
+      contemporaryDifference:
+        "Transitioned into a fast-paced community breakfast for pilgrims, paired with spicy pindi chole and tangy onion-tamarind chutney.",
+    },
+    technologicalLeap: "Khameer fermentation and high-speed above-ground clay tandoor baking for mass pilgrim feeding.",
+    documentedCitation: "",
+  },
+  {
+    generationNumber: 3,
+    eraTitle: "The Present Day",
+    yearRange: "2020s–2026",
+    centuryLabel: "Epoch III",
+    headline: "The Global Crunch Legend",
+    shortDescription:
+      "Today, the Amritsari Kulcha is a globally celebrated culinary masterpiece, fiercely protected by its geographical identity and sought after by food lovers worldwide. While high-tech commercial kitchens use temperature-controlled gas or electric tandoors to maintain consistency, the gold standard remains the charcoal-fired clay tandoor that delivers the signature charred, flaky crust. Modern preparation has been optimized: dough lamination is done precisely with premium pasteurized butter (like Amul) to create dozens of microscopic layers that shatter upon impact. The stuffing has expanded into gourmet territories, featuring combinations like spicy minced mushrooms, cheese, and seasoned cauliflower. For travelers and the global Punjabi diaspora, high-end food chains now offer flash-frozen, vacuum-packed kulchas that can be reheated in a home oven or air fryer, delivering the authentic crunch of Amritsar anywhere in the world.",
+    image: "/images/dishes/amritsari-kulcha-stage-3.webp",
+    generationRecipe: {
+      recipeName: "Precision Laminated Amritsari Masterpiece",
+      historicalCookware: "Precision clay tandoor, convection ovens & air fryers",
+      heatSource: "Charcoal embers or precision temperature gas tandoor",
+      ingredientsList: [
+        "Premium Unbleached Maida",
+        "Cold-Pressed Amul Butter",
+        "Organic Spice Stuffed Potatoes",
+        "Kasuri Methi",
+        "Anardana Powder"
+      ],
+      preparationMethod:
+        "Micro-laminated dough folded with Amul butter, packed with organic spiced potato-anardana filling, baked until blistering, and shattered by hand, or flash-frozen for global diaspora export.",
+      contemporaryDifference:
+        "Precision multi-layer micro-lamination, gourmet stuffing variations, and retort flash-freezing for oven or air-fryer finishing worldwide.",
+    },
+    technologicalLeap: "Precision fat micro-lamination, blast-freezing, and air-fryer regeneration technology.",
+    documentedCitation: "",
+  },
+  {
+    generationNumber: 4,
+    eraTitle: "Serving & Plating",
+    yearRange: "Present Day",
+    centuryLabel: "Epoch IV",
+    headline: "The Soul of Amritsari Breakfast",
+    shortDescription:
+      "Served piping hot, crushed by hand so the flaky layers shatter, crowned with melting butter and accompanied by dark pindi chole, pickled onions, and tamarind chutney.",
+    image: "/images/dishes/amritsari-kulcha-stage-4.webp",
+    generationRecipe: {
+      recipeName: "Iconic Amritsar Street Thali Service",
+      historicalCookware: "Stainless steel compartmentalized thali",
+      heatSource: "Immediate service",
+      ingredientsList: [
+        "Premium Unbleached Maida",
+        "Cold-Pressed Amul Butter",
+        "Organic Spice Stuffed Potatoes",
+        "Kasuri Methi",
+        "Anardana Powder"
+      ],
+      preparationMethod: "Hand-crushed with a thud to release steam and shatter layers, topped with white butter and served with chole.",
+      contemporaryDifference: "Cherished breakfast ritual preserved across generations.",
+    },
+    technologicalLeap: "Authentic shatter-crush plating aesthetic.",
+    documentedCitation: "",
+  },
+];
+
 function legacyGenerationsForDish(dishId: string, dish: Dish): GenerationWaypoint[] {
   switch (dishId) {
+    case "vada-pav":
+      return VADA_PAV_GENERATIONS;
+    case "puran-poli":
+      return PURAN_POLI_GENERATIONS;
+    case "ukadiche-modak":
+      return MODAK_GENERATIONS;
+    case "makki-di-roti-sarson-saag":
+      return MAKKI_ROTI_SARSON_SAAG_GENERATIONS;
+    case "amritsari-kulcha":
+      return AMRITSARI_KULCHA_GENERATIONS;
     case "masala-dosa":
       return DOSA_GENERATIONS;
     case "hyderabadi-biryani":
@@ -1039,9 +1482,9 @@ export function getGenerationsForDish(dishId: string): GenerationWaypoint[] {
         historicalCookware: source.generationRecipe.historicalCookware,
         heatSource: source.generationRecipe.heatSource,
         ingredientsList:
-          stage.key === "ingredients" && dish.ingredients.length
-            ? dish.ingredients
-            : source.generationRecipe.ingredientsList,
+          source.generationRecipe.ingredientsList && source.generationRecipe.ingredientsList.length
+            ? source.generationRecipe.ingredientsList
+            : dish.ingredients,
         preparationMethod:
           stage.key === "method"
             ? `${dish.keyTechnique}. ${stage.details[0]}`

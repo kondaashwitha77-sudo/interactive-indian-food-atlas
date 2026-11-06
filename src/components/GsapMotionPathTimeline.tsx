@@ -687,7 +687,7 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                               : "text-emerald-400 bg-emerald-500/10 border-emerald-500/30"
                           }`}
                         >
-                          {allStageIngredients.length} Documented Ingredients
+                          {allStageIngredients.length} Ingredients
                         </span>
                       </div>
 
@@ -898,25 +898,6 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                         </strong>
                         {waypoint.generationRecipe.contemporaryDifference}
                       </div>
-                    </div>
-
-                    {/* Scholarly Citation Link */}
-                    <div
-                      className={`flex items-center gap-2 text-[11px] pt-1 ${
-                        isLight ? "text-slate-600" : "text-slate-400"
-                      }`}
-                    >
-                      <Scroll
-                        className={`w-3.5 h-3.5 ${isLight ? "text-amber-700" : "text-amber-400"}`}
-                      />
-                      <span>Documented in: </span>
-                      <span
-                        className={
-                          isLight ? "text-slate-900 font-semibold" : "text-slate-300 italic"
-                        }
-                      >
-                        {waypoint.documentedCitation}
-                      </span>
                     </div>
                   </div>
                 </div>
