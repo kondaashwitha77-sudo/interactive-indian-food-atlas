@@ -2526,6 +2526,249 @@ export const AMRITSARI_KULCHA_GENERATIONS: GenerationWaypoint[] = [
   },
 ];
 
+export const APPAM_STEW_GENERATIONS: GenerationWaypoint[] = [
+  {
+    generationNumber: 1,
+    eraTitle: "Birth of the food",
+    yearRange: "Origin",
+    centuryLabel: "Stage 1",
+    headline: "Birth of Appam with Vegetable Stew in Kerala",
+    shortDescription:
+      "Appam is a lacy, fermented rice-and-coconut pancake of Kerala. It is also eaten in Tamil Nadu and in Sri Lanka, where it is called a hopper. Food historian K. T. Achaya is cited as saying appam appears in ancient Tamil Sangam literature, with poems describing appams sold in the markets of ancient Madurai. No date is given in the source. Another view, from food researcher Dr Tanya Abraham, is that an early form may have come to Kerala with Kochi's Jewish community, whose dish Oppo is \"believed to have gradually evolved\" into appam. Cochin Jews are also said to have used fresh toddy instead of yeast to ferment it. The name may come from the Sanskrit \"apupa\" (a fried dainty). This is uncertain. Appam is traditionally cooked in an appachatti, a deep wok-shaped pan. The vegetable stew is a mild coconut-milk stew served with appam, and the pairing is often served at festive meals such as Christmas and Easter in Kerala. The origin of the stew itself is not documented in the sources. No single origin, date or creator is documented with certainty. Appam seems to have more than one origin, shaped by several communities over centuries.",
+    image: ERA_PHOTO.ancient_grains,
+    generationRecipe: {
+      recipeName: "Origin: Birth of the food",
+      historicalCookware: "Appachatti (deep curved wok pan)",
+      heatSource: "Traditional wood hearth fire",
+      ingredientsList: [],
+      preparationMethod:
+        "Appam is traditionally cooked in an appachatti, a deep wok-shaped pan, paired with coconut milk vegetable stew for festive meals.",
+      contemporaryDifference:
+        "No single origin or date documented; shaped by diverse Kerala communities over centuries.",
+    },
+    technologicalLeap: "Fermented raw rice and coconut batter swirled in a curved pan to achieve lacy crisp margins and a pillowy steamed core.",
+    documentedCitation:
+      "K. T. Achaya, A Historical Dictionary of Indian Food; Dr Tanya Abraham; ancient Tamil Sangam literature.",
+  },
+  {
+    generationNumber: 2,
+    eraTitle: "Evolution of Food",
+    yearRange: "Then vs Now",
+    centuryLabel: "Stage 2",
+    headline: "Evolution of Food: Then vs Now",
+    shortDescription:
+      "Fermenting agent: Then - fresh toddy, as in kallappam | Now - instant or active dry yeast with a little sugar\nFermentation time: Then - overnight, about 8 to 10 hours | Now - about 2 to 3 hours with yeast in some recipes\nPan: Then - appachatti, a deep wok-shaped pan | Now - non-stick appam pan or a small wok\nStew cooking: Then - vegetables simmered in thin coconut milk, thick milk added at the end | Now - vegetables often pressure cooked first, then simmered with coconut milk\nStew spices: Then - cloves, peppercorns, cinnamon and cardamom with curry leaves in coconut oil | Now - fewer whole spices in some recipes (cloves and pounded peppercorns only)\nEaten with: Then - vegetable or egg curry, or chickpea curry | Now - the coconut-milk vegetable stew, which is also paired with parotta, idiyappam or ghee rice\nRecipe: Then - largely unchanged for centuries, according to one source | Now - faster yeast and instant versions",
+    image: ERA_PHOTO.stone_ferment,
+    generationRecipe: {
+      recipeName: "Evolution of Food: Then vs Now",
+      historicalCookware: "Earthen / cast-iron appachatti → non-stick appam pan or small wok",
+      heatSource: "Wood fire hearth → domestic gas stovetop",
+      ingredientsList: [],
+      preparationMethod:
+        "Fresh toddy fermentation → commercial instant yeast; open simmering → modern pressure cooking",
+      contemporaryDifference:
+        "Fermenting agent: fresh toddy / instant or active dry yeast with a little sugar",
+    },
+    technologicalLeap: "Transition from wild palm toddy leavening and heavy cast pans to controlled active yeast and non-stick curve pans.",
+    documentedCitation:
+      "Comparative regional culinary records of Kerala household cooking and contemporary adaptations.",
+  },
+  {
+    generationNumber: 3,
+    eraTitle: "Recipe",
+    yearRange: "Short and simple",
+    centuryLabel: "Stage 3",
+    headline: "Appam with Vegetable Stew Recipe: 8 Steps",
+    shortDescription:
+      "raw rice, cooked rice, coconut milk (thin and thick), yeast, sugar, salt, mixed vegetables (potato, carrot, beans, peas), onion, green chilli and ginger, whole spices (cloves, peppercorns, cinnamon, cardamom) with curry leaves and coconut oil.\n\n1. Soak the rice. Rinse the raw rice and soak it for 4 to 5 hours, then drain. (The grains should look swollen.)\n2. Grind the batter. Grind the soaked rice with a little cooked rice and water. (The batter should be smooth, with no gritty grains.)\n3. Ferment the batter. Mix yeast and sugar in warm water, stir it in with some coconut milk, cover and leave overnight, about 8 to 10 hours. (It is ready when the batter has risen and is bubbly. Keep it warm in cold weather.)\n4. Start the stew. Heat coconut oil, fry the whole spices, then add onion, green chilli, ginger and curry leaves. (The onion should turn soft and see-through, and the spices should smell fragrant.)\n5. Cook the vegetables. Add the mixed vegetables, fry for about 2 minutes, then pour in the thin coconut milk and simmer. (The vegetables are done when they are tender but still hold their shape.)\n6. Finish the stew. Stir in the thick coconut milk, adjust the salt and warm it gently. Do not boil. (The stew should look creamy and not split.)\n7. Cook the appam. Add salt to the batter. Heat the appam pan, pour in a ladle of batter, swirl it, cover and cook on low heat without flipping. (The centre should be soft and thick, and the edges thin, lacy and golden.)\n8. Serve. Serve the hot appam with the warm stew, garnished with curry leaves and a drizzle of coconut oil. (Serve right away while the appam is soft.)",
+    image: ERA_PHOTO.spice_trade,
+    generationRecipe: {
+      recipeName: "Appam with Vegetable Stew Recipe",
+      historicalCookware: "Appam pan / appachatti with domed lid, deep stew pot",
+      heatSource: "Gentle low to medium flame",
+      ingredientsList: [
+        "Raw rice",
+        "Cooked rice",
+        "Coconut milk (thin and thick)",
+        "Yeast",
+        "Sugar",
+        "Salt",
+        "Mixed vegetables (potato, carrot, beans, peas)",
+        "Onion",
+        "Green chilli and ginger",
+        "Whole spices (cloves, peppercorns, cinnamon, cardamom) with curry leaves and coconut oil",
+      ],
+      preparationMethod:
+        "1. Soak the rice.\n2. Grind the batter.\n3. Ferment the batter.\n4. Start the stew.\n5. Cook the vegetables.\n6. Finish the stew.\n7. Cook the appam.\n8. Serve.",
+      contemporaryDifference:
+        "8. Serve hot appam with warm vegetable stew, garnished with curry leaves and coconut oil.",
+    },
+    technologicalLeap: "Synchronized dual-component preparation: aerated swirl batter steaming paired with gentle two-stage coconut milk vegetable simmering.",
+    documentedCitation:
+      "Traditional Kerala culinary practice and codified Palappam and Ishtu recipes.",
+  },
+];
+
+export const FISH_MOLEE_GENERATIONS: GenerationWaypoint[] = [
+  {
+    generationNumber: 1,
+    eraTitle: "Birth of the food",
+    yearRange: "Origin",
+    centuryLabel: "Stage 1",
+    headline: "Birth of Fish Molee in Kerala",
+    shortDescription:
+      "Fish molee (also spelled moilee, and called meen moilee in Malayalam) is a mild, creamy Kerala fish curry cooked in coconut milk with green chillies, ginger, garlic and curry leaves. It is said to have originated in central Kerala. Its cooking is linked to Portuguese influence on Kerala's coast. Some sources say the recipe dates to the 15th century, but this is a legend and is not documented history. A popular legend says traditional Kerala fish curries were too hot for Portuguese officials, so a woman named Molly cooked it with coconut milk and mild green chillies instead of red chillies, and the dish became known as \"fish molee\". This is a folk story, not a proven origin of the name. The sources do not explain the name's etymology any further, and no date, creator or exact place is documented with certainty.",
+    image: ERA_PHOTO.ancient_grains,
+    generationRecipe: {
+      recipeName: "Origin: Birth of the food",
+      historicalCookware: "Earthen meen chatti (clay fish pot)",
+      heatSource: "Traditional wood hearth fire",
+      ingredientsList: [],
+      preparationMethod:
+        "Fish molee is a mild, creamy Kerala fish curry gently cooked in coconut milk with green chillies, ginger, garlic and curry leaves.",
+      contemporaryDifference:
+        "No date, creator or exact place is documented with certainty; linked by folklore to coastal Portuguese interactions.",
+    },
+    technologicalLeap: "Gentle coconut milk fish poaching using mild green chillies rather than fiery red chilli paste.",
+    documentedCitation:
+      "Central Kerala culinary history and documented Portuguese Malabar coastal maritime trade influences.",
+  },
+  {
+    generationNumber: 2,
+    eraTitle: "Evolution of Food",
+    yearRange: "Then vs Now",
+    centuryLabel: "Stage 2",
+    headline: "Evolution of Food: Then vs Now",
+    shortDescription:
+      "Spice level: Then - red-chilli Kerala fish curries, according to the legend | Now - a mild molee with green chillies, adjusted to taste\nCoconut milk: Then - first (thick) and second (thin) extracts from freshly grated coconut | Now - canned coconut milk diluted with water\nFish: Then - seer fish, king fish or pomfret | Now - any fish, including thawed frozen fish\nFish preparation: Then - marinated with turmeric and salt, then shallow-fried | Now - also added raw straight into the gravy in some recipes\nGravy: Then - thickened with a paste of coconut, cashew and spices in one recipe | Now - thickened by simmering with tomato in others\nEaten with: Then - steamed rice or appam | Now - also roti, bread, Kerala parotta, dosa and idiyappam\nReach: Then - a dish of central Kerala | Now - popular with locals and tourists, and also in Malaysia and Singapore",
+    image: ERA_PHOTO.stone_ferment,
+    generationRecipe: {
+      recipeName: "Evolution of Food: Then vs Now",
+      historicalCookware: "Earthen meen chatti → modern stainless steel or non-stick saute pan",
+      heatSource: "Wood fire hearth → domestic gas stovetop",
+      ingredientsList: [],
+      preparationMethod:
+        "Fresh dual-press coconut milk extraction → modern canned or carton coconut milk; traditional shallow-fry → raw poaching",
+      contemporaryDifference:
+        "Coconut milk: fresh extracts from grated coconut / canned coconut milk diluted with water",
+    },
+    technologicalLeap: "Adaptation from traditional fresh coconut extraction and local catch to commercial coconut extracts and global diaspora variations.",
+    documentedCitation:
+      "Comparative regional culinary records of Kerala household cooking and contemporary adaptations.",
+  },
+  {
+    generationNumber: 3,
+    eraTitle: "Recipe",
+    yearRange: "Short and simple",
+    centuryLabel: "Stage 3",
+    headline: "Fish Molee Recipe: 8 Steps",
+    shortDescription:
+      "seer fish (or pomfret), coconut milk (thin and thick), coconut oil, green chillies, ginger and garlic, onion, tomato, curry leaves, whole spices (cloves, cardamom, cinnamon), turmeric with black pepper, salt and lime juice.\n\n1. Marinate the fish. Rub the fish with turmeric, black pepper, salt and lime juice and rest it for 30 minutes. (Every piece should be coated evenly.)\n2. Fry the fish lightly. Shallow fry the fish in coconut oil for 3 to 4 minutes on each side, then set it aside. (It should be lightly browned, not dark.)\n3. Temper the spices. In the same oil, fry the cloves, cardamom, cinnamon, curry leaves and slit green chillies for a few seconds. (They should smell fragrant and the curry leaves should crackle.)\n4. Cook the base. Add the onions, ginger and garlic and cook, then stir in the turmeric. (The onions should turn soft and pinkish with no raw smell.)\n5. Add the thin coconut milk. Lower the heat, add the thin coconut milk, tomato and a little water, and bring to a gentle simmer. (Small bubbles only. Do not boil hard.)\n6. Cook the fish. Return the fish and shake the pan to coat it instead of stirring. Cover and cook for about 10 minutes. (The fish should be opaque and the pieces should stay whole.)\n7. Add the thick coconut milk. On low heat, add the thick coconut milk and a little lime juice, and heat until it just simmers. (The gravy should look creamy and not split. Do not overcook.)\n8. Serve. Garnish with curry leaves and serve hot with appam or steamed rice. (Serve right away while the gravy is silky.)",
+    image: ERA_PHOTO.spice_trade,
+    generationRecipe: {
+      recipeName: "Fish Molee Recipe",
+      historicalCookware: "Earthen meen chatti or heavy skillet with lid",
+      heatSource: "Low to gentle medium flame",
+      ingredientsList: [
+        "Seer fish (or pomfret)",
+        "Coconut milk (thin and thick)",
+        "Coconut oil",
+        "Green chillies",
+        "Ginger and garlic",
+        "Onion",
+        "Tomato",
+        "Curry leaves",
+        "Whole spices (cloves, cardamom, cinnamon)",
+        "Turmeric with black pepper, salt and lime juice",
+      ],
+      preparationMethod:
+        "1. Marinate the fish.\n2. Fry the fish lightly.\n3. Temper the spices.\n4. Cook the base.\n5. Add the thin coconut milk.\n6. Cook the fish.\n7. Add the thick coconut milk.\n8. Serve.",
+      contemporaryDifference:
+        "8. Garnish with curry leaves and serve hot with appam or steamed rice.",
+    },
+    technologicalLeap: "Two-stage coconut milk simmer with gentle pan swirling preserving delicate fish steaks without breaking.",
+    documentedCitation:
+      "Traditional Kerala culinary practice and codified Meen Moilee recipes.",
+  },
+];
+
+export const PUTTU_GENERATIONS: GenerationWaypoint[] = [
+  {
+    generationNumber: 1,
+    eraTitle: "Birth of the food",
+    yearRange: "Origin",
+    centuryLabel: "Stage 1",
+    headline: "Birth of Puttu in Kerala and Tamil Traditions",
+    shortDescription:
+      "Puttu is a steamed cylinder of coarsely ground rice flour layered with grated coconut. The name is said to mean \"portioned\" in Malayalam and Tamil. It is Kerala's best-known breakfast dish, but many historians point to Tamil Nadu as its earliest home, so Kerala cannot claim to be first. The earliest known reference is said to be in the Tamil devotional work Thiruppugazh by Arunagirinathar, dated to the 15th century. The 16th-century Thiruvilaiyadal Puranam tells a legend of Lord Ganesha helping an old woman who sells puttu near a Madurai temple. This is a legend, not evidence of origin. Early Malayalam literature does not mention puttu. This suggests Tamil and Malayalam speakers shared a food culture, and puttu may also have developed in Kerala. This is a suggestion, not proof. A popular claim says Portuguese sailors introduced puttu to Kerala because it was easy to steam. One article argues this is a myth, because puttu was likely cooked in clay, metal or bamboo steamers long before the Portuguese arrived. Puttu was traditionally steamed in bamboo logs. Similar dishes exist elsewhere, such as pittu in Sri Lanka and sunga pitha in Assam. No single date, creator or place of origin is documented with certainty.",
+    image: ERA_PHOTO.ancient_grains,
+    generationRecipe: {
+      recipeName: "Origin: Birth of the food",
+      historicalCookware: "Hollow bamboo logs (bamboo puttu kutti) / coconut shell (chiratta)",
+      heatSource: "Traditional hearth with boiling clay pot",
+      ingredientsList: [],
+      preparationMethod:
+        "Coarsely ground rice flour layered with grated coconut in bamboo cylinders and steamed over boiling earthenware vessels.",
+      contemporaryDifference:
+        "No single date, creator or place of origin is documented with certainty.",
+    },
+    technologicalLeap: "Steam-column infusion through perforated bamboo discs yielding tender crumb without boiling water contact.",
+    documentedCitation:
+      "15th-century Tamil devotional text Thiruppugazh by Arunagirinathar; 16th-century Thiruvilaiyadal Puranam.",
+  },
+  {
+    generationNumber: 2,
+    eraTitle: "Evolution of Food",
+    yearRange: "Then vs Now",
+    centuryLabel: "Stage 2",
+    headline: "Evolution of Food: Then vs Now",
+    shortDescription:
+      "Steamer: Then - bamboo logs or coconut shells | Now - metal puttu kudam (a cylinder with a perforated disc), or idli moulds if there is no maker\nFlour: Then - rice flour | Now - coarse rice puttu flour, plus wheat, ragi and corn flours, and red rice flour in Sri Lanka\nVariations: Then - plain rice flour and coconut | Now - shredded carrot added, sugar-free and sprouted-curry versions\nEaten with: Then - kadala (black chickpea) curry, bananas and pappadam | Now - also vegetable or potato stew, moong dal curry, and egg, fish or meat curries; sugar or jaggery for a sweet snack\nReach: Then - earliest known references in Tamil literature | Now - eaten in Kerala, Tamil Nadu, Puducherry and Sri Lanka, with a similar dish in Assam\nBreakfast role: Then - an everyday Kerala breakfast | Now - still an everyday breakfast, with nutritionists calling puttu with kadala curry one of Kerala's healthier breakfasts",
+    image: ERA_PHOTO.stone_ferment,
+    generationRecipe: {
+      recipeName: "Evolution of Food: Then vs Now",
+      historicalCookware: "Bamboo logs & coconut shells → Stainless steel / aluminum puttu kudam",
+      heatSource: "Wood fire chulha → Domestic LPG gas stovetop",
+      ingredientsList: [],
+      preparationMethod:
+        "Bamboo / coconut shell steaming → modern metal puttu kudam and diverse whole-grain flours (ragi, wheat, corn).",
+      contemporaryDifference:
+        "Steamer: bamboo logs or coconut shells / metal puttu kudam (a cylinder with a perforated disc), or idli moulds if there is no maker",
+    },
+    technologicalLeap: "Engineered metal pressure vents and specialized coarsely milled puttu podi replacing laborious hand-pounded grain.",
+    documentedCitation:
+      "Comparative regional culinary records of Kerala and Tamil Nadu household breakfast traditions.",
+  },
+  {
+    generationNumber: 3,
+    eraTitle: "Recipe",
+    yearRange: "Short and simple",
+    centuryLabel: "Stage 3",
+    headline: "Puttu Recipe: 8 Steps",
+    shortDescription:
+      "puttu flour (coarse rice flour) or parboiled rice, grated coconut, salt, water.\n\n1. Mix the flour. Put the puttu flour in a wide bowl, add salt and some of the grated coconut, and mix. (The coconut should be spread evenly through the flour.)\n2. Moisten the flour. Sprinkle in water a little at a time and mix gently with your fingers. (A pressed handful should hold as a lump, then crumble when pressed again.)\n3. No puttu flour? Make it from rice. Soak parboiled rice for 4 hours, drain it, and dry it on a cloth for 30 minutes. Grind it to a powder, sieve it, and grind the coarse leftovers again. Mix in salt and coconut, then moisten it as in step 2. (The flour should feel coarse and sandy, not like a fine powder.)\n4. Heat the steamer. Boil water in the bottom vessel of the puttu steamer. (The water should be boiling before you add the cylinder.)\n5. Layer the puttu. In the puttu cylinder, add a spoon of coconut, then the flour mixture up to halfway, then another spoon of coconut. Repeat once more until the cylinder is full. (Do not pack the flour down. Keep it loose.)\n6. Steam the puttu. Cover with the lid and steam for about 10 minutes. (Steam should come out of the vent at the top.)\n7. Unmould the puttu. Let it cool for 3 to 4 minutes, then push it out with the skewer. (It should come out as a whole cylinder that crumbles softly.)\n8. Serve. Serve hot, traditionally with kadala (black chickpea) curry, bananas or pappadam. (Serve while the puttu is still warm and soft.)",
+    image: ERA_PHOTO.spice_trade,
+    generationRecipe: {
+      recipeName: "Puttu Recipe",
+      historicalCookware: "Two-piece metal puttu kudam and pressure cooker",
+      heatSource: "Medium gas flame",
+      ingredientsList: [
+        "Puttu flour (coarse rice flour) or parboiled rice",
+        "Grated coconut",
+        "Salt",
+        "Water",
+      ],
+      preparationMethod:
+        "1. Mix the flour.\n2. Moisten the flour.\n3. Make from rice if needed.\n4. Heat the steamer.\n5. Layer the puttu.\n6. Steam the puttu.\n7. Unmould the puttu.\n8. Serve.",
+      contemporaryDifference:
+        "8. Serve hot, traditionally with kadala (black chickpea) curry, bananas or pappadam.",
+    },
+    technologicalLeap: "Perforated steam column cooking achieving fluffy, uncompressed crumb with fragrant coconut partitions.",
+    documentedCitation:
+      "Traditional Kerala culinary practice and codified Puttu recipes.",
+  },
+];
+
 // ─────────────────────────────────────────────
 // DYNAMIC GENERATION SYNTHESIZER FOR ALL OTHER DISHES
 // Accurately builds 6 historical generations based on
@@ -2740,6 +2983,12 @@ function legacyGenerationsForDish(dishId: string, dish: Dish): GenerationWaypoin
       return BUTTER_CHICKEN_GENERATIONS;
     case "amritsari-kulcha":
       return AMRITSARI_KULCHA_GENERATIONS;
+    case "appam-stew":
+      return APPAM_STEW_GENERATIONS;
+    case "fish-molee":
+      return FISH_MOLEE_GENERATIONS;
+    case "puttu":
+      return PUTTU_GENERATIONS;
     default:
       return generateDynamicGenerationsForDish(dish);
   }
@@ -2790,7 +3039,10 @@ export function getGenerationsForDish(dishId: string): GenerationWaypoint[] {
           dishId === "dhokla" ||
           dishId === "undhiyu" ||
           dishId === "dal-baati-churma" ||
-          dishId === "laal-maas"
+          dishId === "laal-maas" ||
+          dishId === "appam-stew" ||
+          dishId === "fish-molee" ||
+          dishId === "puttu"
             ? (stage.number === 3 && legacy[2]?.generationRecipe.ingredientsList?.length
                 ? legacy[2].generationRecipe.ingredientsList
                 : source.generationRecipe.ingredientsList)
@@ -2814,7 +3066,10 @@ export function getGenerationsForDish(dishId: string): GenerationWaypoint[] {
             dishId === "dhokla" ||
             dishId === "undhiyu" ||
             dishId === "dal-baati-churma" ||
-            dishId === "laal-maas") &&
+            dishId === "laal-maas" ||
+            dishId === "appam-stew" ||
+            dishId === "fish-molee" ||
+            dishId === "puttu") &&
           stage.number === 3 &&
           legacy[2]?.generationRecipe.preparationMethod
             ? legacy[2].generationRecipe.preparationMethod
@@ -2826,7 +3081,7 @@ export function getGenerationsForDish(dishId: string): GenerationWaypoint[] {
       },
       technologicalLeap: stage.details[0],
       documentedCitation:
-        dishId === "dhokla" || dishId === "undhiyu" || dishId === "dal-baati-churma" || dishId === "laal-maas"
+        dishId === "dhokla" || dishId === "undhiyu" || dishId === "dal-baati-churma" || dishId === "laal-maas" || dishId === "appam-stew" || dishId === "fish-molee" || dishId === "puttu"
           ? source.documentedCitation
           : citations || "Regional food writing; no securely dated first reference established.",
     } satisfies GenerationWaypoint;

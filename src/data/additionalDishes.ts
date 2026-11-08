@@ -25,7 +25,12 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
       category: "fermented-steamed",
       description:
         "Cylinders of coarsely moistened rice flour and grated coconut steamed in a two-part puttu kutti, eaten hot with kadala curry, banana or a spoon of sugar.",
-      ingredients: ["Raw rice flour", "Grated coconut", "Salt", "Water"],
+      ingredients: [
+        "Puttu flour (coarse rice flour) or parboiled rice",
+        "Grated coconut",
+        "Salt",
+        "Water",
+      ],
       tasteProfile: "Nutty, Soft-Steamed & Coconut-Fragrant",
       era: "Sangam-era Kerala & Tamil kitchen continuity (tradition; no securely dated first reference)",
       keyTechnique: "Puttu Kutti Steam-Column Layering",

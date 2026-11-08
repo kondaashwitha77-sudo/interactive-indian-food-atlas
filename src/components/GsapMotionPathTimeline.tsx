@@ -110,7 +110,10 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
           dishId === "dhokla" ||
           dishId === "undhiyu" ||
           dishId === "dal-baati-churma" ||
-          dishId === "laal-maas"
+          dishId === "laal-maas" ||
+          dishId === "appam-stew" ||
+          dishId === "fish-molee" ||
+          dishId === "puttu"
             ? "Evolution of Food"
             : "Evolution of food",
         photo: photography?.ingredients,
@@ -199,6 +202,12 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
         } else if (index === 1) {
           nextUrl = "/images/dishes/amritsari-kulcha-2.png";
         }
+      } else if (dishId === "puttu") {
+        nextUrl = "/images/dishes/puttu-circle-1.jpg";
+      } else if (dishId === "fish-molee") {
+        nextUrl = "/images/dishes/fish-molee-circle-1.jpg";
+      } else if (dishId === "appam-stew") {
+        nextUrl = "/images/dishes/appam-circle-2.jpg";
       }
 
       const caption =
@@ -223,6 +232,38 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
         image: resolvedImage,
         imageAlt: stateMainImg ? `${dish.state} Regional Cuisine — ${entry.title}` : (entry.photo ? `${dishName} — ${entry.title}` : `${dish.state} — ${entry.title}`),
         secondaryImage: nextUrl || undefined,
+        secondaryImageAlt:
+          dishId === "puttu"
+            ? "Puttu with egg roast and pappadam on a banana leaf"
+            : dishId === "fish-molee"
+            ? "Fish molee in a stone bowl with coconut gravy"
+            : dishId === "appam-stew"
+            ? "Appam with a bowl of coconut stew and a curry leaf"
+            : undefined,
+        secondaryImagePosition:
+          dishId === "appam-stew" ? "center 38%" : undefined,
+        floatingOrbImage:
+          dishId === "puttu"
+            ? "/images/dishes/puttu-circle-2.jpg"
+            : dishId === "fish-molee"
+            ? "/images/dishes/fish-molee-circle-2.jpg"
+            : dishId === "appam-stew"
+            ? "/images/dishes/appam-circle-1.jpg"
+            : undefined,
+        floatingOrbAlt:
+          dishId === "puttu"
+            ? "Steaming puttu rolls on a plate"
+            : dishId === "fish-molee"
+            ? "Fish molee in a pan with tomato slices and curry leaves"
+            : dishId === "appam-stew"
+            ? "Lacy appams on a metal plate with coconut milk and sugar"
+            : undefined,
+        floatingOrbPosition:
+          dishId === "fish-molee"
+            ? "58% center"
+            : dishId === "appam-stew"
+            ? "center 72%"
+            : undefined,
         eyebrow: entry.eyebrow,
         title: entry.title,
         tagline: caption,
@@ -846,7 +887,10 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                       dishId === "dhokla" ||
                       dishId === "undhiyu" ||
                       dishId === "dal-baati-churma" ||
-                      dishId === "laal-maas") &&
+                      dishId === "laal-maas" ||
+                      dishId === "appam-stew" ||
+                      dishId === "fish-molee" ||
+                      dishId === "puttu") &&
                       stageNum === 3 && (
                       <div className="pt-2 relative z-30">
                         <a
@@ -881,6 +925,12 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                               ? "https://youtu.be/D_fYk8mBaF4?si=3DBkbxk0dzjxELBy"
                               : dishId === "amritsari-kulcha"
                               ? "https://www.youtube.com/watch?v=pbI8PkiSB8E"
+                              : dishId === "appam-stew"
+                              ? "https://www.youtube.com/watch?v=pDyRKvvFiYc"
+                              : dishId === "fish-molee"
+                              ? "https://www.youtube.com/watch?v=UzrlIEGr-lw"
+                              : dishId === "puttu"
+                              ? "https://www.youtube.com/watch?v=XeUA3niRw8A&t=1s"
                               : "https://www.youtube.com/watch?v=8Fw_zWPbGog"
                           }
                           target="_blank"

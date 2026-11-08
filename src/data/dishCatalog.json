@@ -944,11 +944,15 @@
       "description": "Bowl-shaped fermented rice hoppers with gossamer lacy edges and soft, spongy steamed centers, paired with a fragrant coconut milk stew perfumed with green peppercorn and cinnamon.",
       "ingredients": [
         "Raw rice",
-        "Coconut toddy/yeast",
-        "Fresh coconut milk",
-        "Black peppercorns",
-        "Cinnamon",
-        "Curry leaves"
+        "Cooked rice",
+        "Coconut milk (thin and thick)",
+        "Yeast",
+        "Sugar",
+        "Salt",
+        "Mixed vegetables (potato, carrot, beans, peas)",
+        "Onion",
+        "Green chilli and ginger",
+        "Whole spices (cloves, peppercorns, cinnamon, cardamom) with curry leaves and coconut oil"
       ],
       "tasteProfile": "Delicate, Sweet-Tangy & Creamy",
       "era": "1st Century CE Syrian Christian & Malabar Maritime Heritage",
@@ -962,12 +966,16 @@
       "category": "curry-stew",
       "description": "Tender Karimeen (pearl spot) fish fillets gently poached in silky fresh coconut milk, golden turmeric, mild green chillies, and curry leaves with zero heavy browning.",
       "ingredients": [
-        "Karimeen / Seer fish",
-        "First & second press coconut milk",
+        "Seer fish (or pomfret)",
+        "Coconut milk (thin and thick)",
+        "Coconut oil",
         "Green chillies",
+        "Ginger and garlic",
+        "Onion",
+        "Tomato",
         "Curry leaves",
-        "Turmeric",
-        "Tomatoes"
+        "Whole spices (cloves, cardamom, cinnamon)",
+        "Turmeric with black pepper, salt and lime juice"
       ],
       "tasteProfile": "Mild, Aromatic & Velvety",
       "era": "17th Century Portuguese-Dutch Malabar Trade",
@@ -981,7 +989,7 @@
       "category": "fermented-steamed",
       "description": "Cylinders of coarsely moistened rice flour and grated coconut steamed in a two-part puttu kutti, eaten hot with kadala curry, banana or a spoon of sugar.",
       "ingredients": [
-        "Raw rice flour",
+        "Puttu flour (coarse rice flour) or parboiled rice",
         "Grated coconut",
         "Salt",
         "Water"

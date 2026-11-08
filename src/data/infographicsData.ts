@@ -1812,109 +1812,127 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
   {
     "id": "info-101",
     "dishId": "fish-molee",
-    "title": "Kerala Fish I",
-    "subtitle": "Documented culinary technique, ingredients and preparation method for Kerala Fish Molee",
-    "era": "1800s Traditional",
+    "title": "Fish Molee - Origin (Birth of the food)",
+    "subtitle": "Fish molee is a mild, creamy Kerala fish curry cooked in coconut milk with green chillies, ginger, garlic and curry leaves.",
+    "era": "Birth of the food",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 11.33.42 PM (1).jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 1,
-    "ingredients": [
-      "Karimeen / Seer fish",
-      "First & second press coconut milk",
-      "Green chillies",
-      "Curry leaves",
-      "Turmeric",
-      "Tomatoes"
-    ]
-  },
-  {
-    "id": "info-102",
-    "dishId": "fish-molee",
-    "title": "Kerala Fish Molee — Contemporary / Present Guide",
-    "subtitle": "Documented culinary technique, ingredients and preparation method for Kerala Fish Molee",
-    "era": "Contemporary / Present",
-    "image": "/images_updated/WhatsApp Image 2026-11-03 at 11.33.42 PM (2).jpeg",
-    "isFullTimelinePoster": false,
-    "stageNumber": 3,
-    "ingredients": [
-      "Karimeen / Seer fish",
-      "First & second press coconut milk",
-      "Green chillies",
-      "Curry leaves",
-      "Turmeric",
-      "Tomatoes"
-    ]
+    "ingredients": []
   },
   {
     "id": "info-103",
     "dishId": "fish-molee",
-    "title": "Kerala Fish Molee — Heritage & Evolution Guide",
-    "subtitle": "Documented culinary technique, ingredients and preparation method for Kerala Fish Molee",
-    "era": "Heritage & Evolution",
+    "title": "Fish Molee - Evolution of Food",
+    "subtitle": "Then vs Now: Spice level, coconut milk, fish, preparation, gravy, pairings, and reach.",
+    "era": "Evolution of Food",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 11.33.42 PM.jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 2,
+    "ingredients": []
+  },
+  {
+    "id": "info-102",
+    "dishId": "fish-molee",
+    "title": "Fish Molee - Recipe",
+    "subtitle": "Key ingredients and 8-step preparation for authentic Kerala Fish Molee.",
+    "era": "Recipe",
+    "image": "/images_updated/WhatsApp Image 2026-11-03 at 11.33.42 PM (2).jpeg",
+    "isFullTimelinePoster": false,
+    "stageNumber": 3,
     "ingredients": [
-      "Karimeen / Seer fish",
-      "First & second press coconut milk",
+      "Seer fish (or pomfret)",
+      "Coconut milk (thin and thick)",
+      "Coconut oil",
       "Green chillies",
+      "Ginger and garlic",
+      "Onion",
+      "Tomato",
       "Curry leaves",
-      "Turmeric",
-      "Tomatoes"
+      "Whole spices (cloves, cardamom, cinnamon)",
+      "Turmeric with black pepper, salt and lime juice"
     ]
   },
   {
     "id": "info-104",
     "dishId": "appam-stew",
-    "title": "Appam with S",
-    "subtitle": "Documented culinary technique, ingredients and preparation method for Appam with Vegetable Stew",
-    "era": "1800s Traditional",
+    "title": "Appam with Vegetable Stew - Origin (Birth of the food)",
+    "subtitle": "Appam is a lacy fermented rice-and-coconut pancake of Kerala; no single origin or date is documented.",
+    "era": "Birth of the food",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 11.33.43 PM (1).jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 1,
-    "ingredients": [
-      "Raw rice",
-      "Coconut toddy/yeast",
-      "Fresh coconut milk",
-      "Black peppercorns",
-      "Cinnamon",
-      "Curry leaves"
-    ]
+    "ingredients": []
   },
   {
     "id": "info-105",
     "dishId": "appam-stew",
-    "title": "Appam with Vegetable Stew — Heritage & Evolution Guide",
-    "subtitle": "Documented culinary technique, ingredients and preparation method for Appam with Vegetable Stew",
-    "era": "Heritage & Evolution",
+    "title": "Appam with Vegetable Stew - Evolution of Food",
+    "subtitle": "Then vs Now: Fermenting agent, fermentation time, pan, stew cooking, stew spices, pairings, and recipe evolution.",
+    "era": "Evolution of Food",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 11.33.43 PM (2).jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 2,
-    "ingredients": [
-      "Raw rice",
-      "Coconut toddy/yeast",
-      "Fresh coconut milk",
-      "Black peppercorns",
-      "Cinnamon",
-      "Curry leaves"
-    ]
+    "ingredients": []
   },
   {
     "id": "info-106",
     "dishId": "appam-stew",
-    "title": "Appam with Vegetable Stew — Heritage & Evolution Guide",
-    "subtitle": "Documented culinary technique, ingredients and preparation method for Appam with Vegetable Stew",
-    "era": "Heritage & Evolution",
+    "title": "Appam with Vegetable Stew - Recipe",
+    "subtitle": "Key ingredients and 8-step preparation for authentic Appam with Vegetable Stew.",
+    "era": "Recipe",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 11.33.43 PM.jpeg",
     "isFullTimelinePoster": false,
-    "stageNumber": 2,
+    "stageNumber": 3,
     "ingredients": [
       "Raw rice",
-      "Coconut toddy/yeast",
-      "Fresh coconut milk",
-      "Black peppercorns",
-      "Cinnamon",
-      "Curry leaves"
+      "Cooked rice",
+      "Coconut milk (thin and thick)",
+      "Yeast",
+      "Sugar",
+      "Salt",
+      "Mixed vegetables (potato, carrot, beans, peas)",
+      "Onion",
+      "Green chilli and ginger",
+      "Whole spices (cloves, peppercorns, cinnamon, cardamom) with curry leaves and coconut oil"
+    ]
+  },
+  {
+    "id": "info-puttu-1",
+    "dishId": "puttu",
+    "title": "Puttu - Origin (Birth of the food)",
+    "subtitle": "Puttu is a steamed cylinder of coarsely ground rice flour layered with grated coconut.",
+    "era": "Birth of the food",
+    "image": "/images/dishes/puttu-stage-1.webp",
+    "isFullTimelinePoster": false,
+    "stageNumber": 1,
+    "ingredients": []
+  },
+  {
+    "id": "info-puttu-2",
+    "dishId": "puttu",
+    "title": "Puttu - Evolution of Food",
+    "subtitle": "Then vs Now: Steamer, flour, variations, eaten with, reach, and breakfast role.",
+    "era": "Evolution of Food",
+    "image": "/images/dishes/puttu-stage-2.webp",
+    "isFullTimelinePoster": false,
+    "stageNumber": 2,
+    "ingredients": []
+  },
+  {
+    "id": "info-puttu-3",
+    "dishId": "puttu",
+    "title": "Puttu - Recipe",
+    "subtitle": "Key ingredients and 8-step preparation for authentic Kerala Puttu.",
+    "era": "Recipe",
+    "image": "/images/dishes/puttu-stage-3.webp",
+    "isFullTimelinePoster": false,
+    "stageNumber": 3,
+    "ingredients": [
+      "Puttu flour (coarse rice flour) or parboiled rice",
+      "Grated coconut",
+      "Salt",
+      "Water"
     ]
   },
   {

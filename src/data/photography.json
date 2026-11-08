@@ -1141,23 +1141,19 @@
     "appam-stew": {
       "origin": {
         "library": "banana-leaf",
-        "caption": "Kerala — the regional kitchen where Appam with Vegetable Stew belongs."
+        "caption": "Appam with Vegetable Stew - Origin (Birth of the food)",
+        "label": "Appam with Vegetable Stew - Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-bowls",
-        "caption": "Ingredients for Appam with Vegetable Stew: raw rice, coconut toddy/yeast, fresh coconut milk, black peppercorns.",
-        "items": [
-          "Raw rice",
-          "Coconut toddy/yeast",
-          "Fresh coconut milk",
-          "Black peppercorns",
-          "Cinnamon",
-          "Curry leaves"
-        ]
+        "caption": "Appam with Vegetable Stew - Evolution of Food",
+        "label": "Appam with Vegetable Stew - Evolution of Food",
+        "items": []
       },
       "method": {
         "library": "grindstone",
-        "caption": "Appam with Vegetable Stew — Deep Appachatti Swirl & Dual Coconut Milk Extraction."
+        "caption": "Appam with Vegetable Stew - Recipe",
+        "label": "Appam with Vegetable Stew - Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/65/GKN_Appam_Veg_Stew_DSC_1292.JPG",
@@ -1177,23 +1173,19 @@
     "fish-molee": {
       "origin": {
         "library": "banana-leaf",
-        "caption": "Kerala — the regional kitchen where Kerala Fish Molee belongs."
+        "caption": "Fish Molee - Origin (Birth of the food)",
+        "label": "Fish Molee - Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-palette",
-        "caption": "Ingredients for Kerala Fish Molee: karimeen / seer fish, first & second press coconut milk, green chillies, curry leaves.",
-        "items": [
-          "Karimeen / Seer fish",
-          "First & second press coconut milk",
-          "Green chillies",
-          "Curry leaves",
-          "Turmeric",
-          "Tomatoes"
-        ]
+        "caption": "Fish Molee - Evolution of Food",
+        "label": "Fish Molee - Evolution of Food",
+        "items": []
       },
       "method": {
         "library": "spice-bowls",
-        "caption": "Kerala Fish Molee — Delicate Fish Poach in Layered Coconut Milk Presses."
+        "caption": "Fish Molee - Recipe",
+        "label": "Fish Molee - Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Fish_Moilee.jpg",
@@ -3023,8 +3015,8 @@
           "width": 4032,
           "height": 2688
         },
-        "caption": "Alappuzha, Kerala — the waterside belt where puttu is a daily breakfast.",
-        "label": "Regional context"
+        "caption": "Puttu - Origin (Birth of the food)",
+        "label": "Puttu - Origin (Birth of the food)"
       },
       "ingredients": {
         "photo": {
@@ -3041,14 +3033,9 @@
           "width": 4208,
           "height": 2368
         },
-        "caption": "Rice flour, the base of puttu; the dish also uses grated coconut and salt.",
-        "label": "Ingredient reference",
-        "items": [
-          "Raw rice flour",
-          "Grated coconut",
-          "Salt",
-          "Water"
-        ]
+        "caption": "Puttu - Evolution of Food",
+        "label": "Puttu - Evolution of Food",
+        "items": []
       },
       "method": {
         "photo": {
@@ -3065,8 +3052,8 @@
           "width": 1920,
           "height": 1080
         },
-        "caption": "The steamed cylinder being released from the puttu kutti.",
-        "label": "Preparation technique"
+        "caption": "Puttu - Recipe",
+        "label": "Puttu - Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/Puttu_with_kadala_curry.jpg",

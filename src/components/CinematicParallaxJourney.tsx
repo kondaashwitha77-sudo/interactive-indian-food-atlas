@@ -13,6 +13,12 @@ export interface CinematicStage {
   imageAlt: string;
   /** Plate that pops out in front of the hero card; omit to hide it. */
   secondaryImage?: string;
+  secondaryImageAlt?: string;
+  secondaryImagePosition?: string;
+  /** Optional floating orb image override. */
+  floatingOrbImage?: string;
+  floatingOrbAlt?: string;
+  floatingOrbPosition?: string;
   eyebrow: string;
   title: string;
   /** Optional one-line punchline under the headline. */
@@ -122,7 +128,11 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
 
   useEffect(() => {
     preloadImages([
-      ...stages.flatMap((s) => (s.secondaryImage ? [s.image, s.secondaryImage] : [s.image])),
+      ...stages.flatMap((s) => [
+        s.image,
+        ...(s.secondaryImage ? [s.secondaryImage] : []),
+        ...(s.floatingOrbImage ? [s.floatingOrbImage] : []),
+      ]),
       ...(outro ? [outro.image] : []),
     ]);
   }, [stages, outro]);
@@ -351,7 +361,9 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
         style={{ background: panelBg }}
       >
         {stages.map((stage, i) => {
-          const orbImages = [1, 2, stageCount - 1].map((o) => stages[(i + o) % stageCount].image);
+          const orbImages = stage.floatingOrbImage
+            ? [stage.floatingOrbImage, stage.floatingOrbImage, stage.floatingOrbImage]
+            : [1, 2, stageCount - 1].map((o) => stages[(i + o) % stageCount].image);
           return (
             <div
               key={stage.id}
@@ -421,15 +433,18 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
                   key={k}
                   data-orb={orb.depth}
                   aria-hidden
-                  className={`${orb.mobile ? "block" : "hidden md:block"} absolute ${orb.depth > 1 ? "z-[15]" : "z-[5]"} ${orb.size} rounded-full overflow-hidden border-2 shadow-2xl will-change-transform ${
+                  className={`${orb.mobile ? "block" : "hidden md:block"} pointer-events-none absolute ${orb.depth > 1 ? "z-[15]" : "z-[5]"} ${orb.size} rounded-full overflow-hidden border-2 shadow-2xl will-change-transform ${
                     isLight ? "border-white/80" : "border-amber-400/40"
                   }`}
                   style={{ ...orb.pos, filter: `blur(${orb.blur}px)` }}
                 >
                   <img
                     src={orbImages[k]}
-                    alt=""
+                    alt={stage.floatingOrbAlt ?? ""}
                     className="w-full h-full object-cover"
+                    style={{
+                      objectPosition: stage.floatingOrbPosition || "center",
+                    }}
                     onError={(event) => {
                       event.currentTarget.hidden = true;
                     }}
@@ -474,15 +489,18 @@ export const CinematicParallaxJourney: React.FC<CinematicParallaxJourneyProps> =
                     <div
                       data-pop
                       aria-hidden
-                      className={`absolute -bottom-[10%] -right-[6%] w-[28%] aspect-square rounded-full overflow-hidden border-4 shadow-2xl will-change-transform ${
+                      className={`absolute pointer-events-none -bottom-[10%] -right-[6%] w-[28%] aspect-square rounded-full overflow-hidden border-4 shadow-2xl will-change-transform ${
                         isLight ? "border-white" : "border-amber-400/60"
                       }`}
                       style={{ transform: "translateZ(90px)" }}
                     >
                       <img
                         src={stage.secondaryImage}
-                        alt=""
+                        alt={stage.secondaryImageAlt ?? ""}
                         className="w-full h-full object-cover"
+                        style={{
+                          objectPosition: stage.secondaryImagePosition || "center",
+                        }}
                         onError={(event) => {
                           event.currentTarget.hidden = true;
                         }}
