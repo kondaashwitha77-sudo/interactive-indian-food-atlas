@@ -46,7 +46,13 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
       category: "beverage",
       description:
         "A two-tier steel filter drips a dark coffee-chicory decoction overnight; it is cut with boiling milk and pulled between a dabarah and tumbler until a crown of froth forms.",
-      ingredients: ["Coffee powder with chicory", "Boiling water", "Full-cream milk", "Sugar"],
+      ingredients: [
+        "Filter coffee powder (medium to dark roast)",
+        "Chicory (blended into the powder)",
+        "Freshly boiled water",
+        "Full-cream milk",
+        "Sugar (or jaggery)",
+      ],
       tasteProfile: "Bittersweet, Milky-Heavy & Deeply Roasted",
       era: "Madras coffee-house culture, documented from the early 20th century",
       keyTechnique: "Two-Tier Drip Filter & Dabarah Frothing",

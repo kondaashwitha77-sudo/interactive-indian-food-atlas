@@ -124,7 +124,10 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
             dishId === "ghewar" ||
             dishId === "appam-stew" ||
             dishId === "fish-molee" ||
-            dishId === "puttu"
+            dishId === "puttu" ||
+            dishId === "chettinad-chicken" ||
+            dishId === "idli-sambar" ||
+            dishId === "filter-coffee"
             ? "Evolution of Food"
             : "Evolution of food",
         photo: photography?.ingredients,
@@ -245,6 +248,12 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
         nextUrl = "/images/dishes/fish-molee-circle-1.jpg";
       } else if (dishId === "appam-stew") {
         nextUrl = "/images/dishes/appam-circle-2.jpg";
+      } else if (dishId === "filter-coffee") {
+        nextUrl = "/images/dishes/filter-coffee-circle.jpg";
+      } else if (dishId === "idli-sambar") {
+        nextUrl = "/images/dishes/idli-sambar-circle.jpg";
+      } else if (dishId === "chettinad-chicken") {
+        nextUrl = "/images/dishes/chettinad-chicken-circle.jpg";
       }
 
       const caption =
@@ -284,7 +293,13 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
               ? "Fish molee in a stone bowl with coconut gravy"
               : dishId === "appam-stew"
                 ? "Appam with a bowl of coconut stew and a curry leaf"
-                : undefined,
+                : dishId === "filter-coffee"
+                  ? "South Indian filter coffee in a steel tumbler and dabara"
+                  : dishId === "idli-sambar"
+                    ? "Idli served in sambar"
+                    : dishId === "chettinad-chicken"
+                      ? "Chettinad chicken curry"
+                      : undefined,
         secondaryImagePosition:
           dishId === "appam-stew" ? "center 38%" : undefined,
         floatingOrbImage:
@@ -918,7 +933,10 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                       dishId === "ghewar" ||
                       dishId === "appam-stew" ||
                       dishId === "fish-molee" ||
-                      dishId === "puttu") &&
+                      dishId === "puttu" ||
+                      dishId === "chettinad-chicken" ||
+                      dishId === "idli-sambar" ||
+                      dishId === "filter-coffee") &&
                       stageNum === 3 && (
                         <div className="pt-2 relative z-30">
                           <a
@@ -973,7 +991,13 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                                                                               ? "https://www.youtube.com/watch?v=UzrlIEGr-lw"
                                                                               : dishId === "puttu"
                                                                                 ? "https://www.youtube.com/watch?v=XeUA3niRw8A&t=1s"
-                                                                                : "https://www.youtube.com/watch?v=8Fw_zWPbGog"
+                                                                                : dishId === "chettinad-chicken"
+                                                                                  ? "https://www.youtube.com/watch?v=hACJjRsoBgs"
+                                                                                  : dishId === "idli-sambar"
+                                                                                    ? "https://www.youtube.com/watch?v=RmRCwGTSiRM"
+                                                                                    : dishId === "filter-coffee"
+                                                                                      ? "https://www.youtube.com/shorts/NE3Evbu3siY"
+                                                                                      : "https://www.youtube.com/watch?v=8Fw_zWPbGog"
                             }
                             target="_blank"
                             rel="noopener noreferrer"

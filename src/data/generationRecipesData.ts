@@ -3582,6 +3582,251 @@ export const PUTTU_GENERATIONS: GenerationWaypoint[] = [
       "Traditional Kerala culinary practice and codified Puttu recipes.",
   },
 ];
+
+export const CHETTINAD_CHICKEN_GENERATIONS: GenerationWaypoint[] = [
+  {
+    generationNumber: 1,
+    eraTitle: "Birth of the food",
+    yearRange: "Origin",
+    centuryLabel: "Stage 1",
+    headline: "Birth of Chettinad Chicken in Tamil Nadu",
+    shortDescription:
+      "Chettinad chicken (Chettinad kozhi) is a spicy chicken curry from the Chettinad region of Tamil Nadu, around Karaikudi in the Sivaganga and Pudukkottai districts. It is linked to the Nattukottai Chettiars, a community of traders, merchants and bankers. The Chettiars traded with Burma, Java, Cambodia, Sri Lanka and Mauritius, and some sources say their travels across Southeast Asia brought new spices and influences into an already bold local cooking culture. A legend says a major 8th-century flood drove the community from the Chola-era coastal towns of Poompuhar and Kaveripatnam to the dry Tamil heartland. This is a legend, not documented history. The cuisine is known for whole spices that are dry-roasted and ground fresh, such as star anise, black pepper and kalpasi (stone flower, a dried lichen). Women traditionally pounded the spices by hand in stone grinders, and each household kept its own proportions. Chettinad chicken is made by simmering chicken in roasted spices and coconut. One source says it was traditionally cooked in clay pots over a wood fire, which gave a slight smokiness. No date or creator of the dish itself is documented with certainty, and the sources give no record of who first made it.",
+    image: ERA_PHOTO.ancient_grains,
+    generationRecipe: {
+      recipeName: "Origin: Birth of the food",
+      historicalCookware: "Clay pot (mann paanai) / heavy uruli over wood fire",
+      heatSource: "Wood fire hearth",
+      ingredientsList: [],
+      preparationMethod:
+        "Chicken simmered in fresh hand-pounded roasted spices and coconut in clay pots over wood fire.",
+      contemporaryDifference:
+        "No single date, creator or place of origin is documented with certainty.",
+    },
+    technologicalLeap: "Dry-roasting whole spices with kalpasi and stone hand-pounding yielding layered depth without pre-made powders.",
+    documentedCitation:
+      "Regional maritime history of the Nattukottai Chettiars and Tamil food traditions.",
+  },
+  {
+    generationNumber: 2,
+    eraTitle: "Evolution of Food",
+    yearRange: "Then vs Now",
+    centuryLabel: "Stage 2",
+    headline: "Evolution of Food: Then vs Now",
+    shortDescription:
+      "Grinding: Then - spices pounded by hand in stone grinders | Now - roasted whole spices ground in a home grinder\nMarinade: Then - traditionally the chicken is not marinated | Now - many modern recipes marinate with turmeric, salt, lemon juice or yoghurt to remove the raw chicken smell\nThickener: Then - poppy seeds in the traditional paste | Now - roasted chana dal in many restaurants, or cashews\nVessel: Then - clay pot over a wood fire, according to one source | Now - pressure cooker, then a pan, or a heavy pan\nTomato: Then - Chettinad curry is not primarily tomato-based | Now - many recipes use tomato, which cooks can reduce\nOil: Then - gingelly (sesame) oil | Now - any cooking oil, with gingelly oil optional\nMeat: Then - chicken, with game birds such as jungle fowl and quail also eaten inland | Now - chicken is the most popular choice\nEaten with: Then - rice and rice-based foods such as dosa, appam and idiyappam | Now - also idli, chapati and porotta",
+    image: ERA_PHOTO.stone_ferment,
+    generationRecipe: {
+      recipeName: "Evolution of Food: Then vs Now",
+      historicalCookware: "Clay pot over wood fire → Pressure cooker / heavy pan",
+      heatSource: "Wood fire chulha → Domestic LPG gas stovetop",
+      ingredientsList: [],
+      preparationMethod:
+        "Stone-ground whole spice paste → home electric mixer-grinder; clay pot simmer → modern heavy pan / pressure cooker.",
+      contemporaryDifference:
+        "Grinding: Then - spices pounded by hand in stone grinders | Now - roasted whole spices ground in a home grinder",
+    },
+    technologicalLeap: "Domestic electric mixer-grinders and pressure cookers preserving the intense roasted spice profile with shortened preparation times.",
+    documentedCitation:
+      "Comparative regional culinary records of Chettinad household and restaurant traditions.",
+  },
+  {
+    generationNumber: 3,
+    eraTitle: "Recipe",
+    yearRange: "Short and simple",
+    centuryLabel: "Stage 3",
+    headline: "Chettinad Chicken Curry Recipe: 8 Steps",
+    shortDescription:
+      "chicken, onion, tomato, ginger-garlic paste, dried red chillies, coriander, fennel and cumin seeds, black pepper, cardamom, cloves, cinnamon and star anise, kalpasi (stone flower), grated coconut, curry leaves with oil (gingelly if you like), turmeric, salt and lemon juice.\n\n1. Marinate the chicken. Coat the chicken with turmeric, salt, ginger-garlic paste and lemon juice and rest it for 15 to 20 minutes. (Every piece should be coated evenly.)\n2. Roast the spices. Dry roast the dried chillies, coriander, fennel, cumin, black pepper, cardamom, cloves, cinnamon, star anise and a tiny piece of kalpasi on low heat, then let them cool. (They should be golden and fragrant, not burnt. Use only a tiny piece of kalpasi, as too much makes the dish bitter.)\n3. Roast the coconut. Roast the grated coconut with a curry leaf sprig until lightly golden. (It should smell nutty and look light golden, not brown.)\n4. Grind the masala. Grind the cooled spices and the coconut with a little water into a smooth paste. (The paste should feel smooth, not gritty.)\n5. Cook the base. Heat oil and fry the onions and curry leaves until light golden, add the chicken and fry for a few minutes, then add the tomato and cook. (The tomato is ready when the raw smell is gone and oil floats at the edges.)\n6. Add the masala. Stir in the ground masala paste and a little hot water. (Add the water in small batches to get a gravy that is not too thin.)\n7. Simmer the curry. Cover and simmer until the chicken is cooked through. (The juices should run clear and the chicken should be tender.)\n8. Finish and serve. Adjust the salt and lemon juice, garnish with coriander leaves and serve hot with rice, idli, dosa, appam or porotta. (The gravy should coat the chicken and be neither watery nor dry.)",
+    image: ERA_PHOTO.spice_trade,
+    generationRecipe: {
+      recipeName: "Chettinad Chicken Curry Recipe",
+      historicalCookware: "Heavy bottomed pan or kadaai",
+      heatSource: "Medium gas flame",
+      ingredientsList: [
+        "Chicken",
+        "Onion",
+        "Tomato",
+        "Ginger-garlic paste",
+        "Dried red chillies, coriander, fennel and cumin seeds",
+        "Black pepper, cardamom, cloves, cinnamon and star anise",
+        "Kalpasi (stone flower)",
+        "Grated coconut",
+        "Curry leaves with oil (gingelly if you like)",
+        "Turmeric, salt and lemon juice",
+      ],
+      preparationMethod:
+        "1. Marinate the chicken.\n2. Roast the spices.\n3. Roast the coconut.\n4. Grind the masala.\n5. Cook the base.\n6. Add the masala.\n7. Simmer the curry.\n8. Finish and serve.",
+      contemporaryDifference:
+        "8. Finish and serve. Adjust the salt and lemon juice, garnish with coriander leaves and serve hot with rice, idli, dosa, appam or porotta.",
+    },
+    technologicalLeap: "Two-stage dry spice and coconut toasting followed by smooth wet emulsification producing a thick, coating gravy.",
+    documentedCitation:
+      "Traditional Chettinad culinary practice and codified Chettinad kozhi recipes.",
+  },
+];
+
+export const IDLI_SAMBAR_GENERATIONS: GenerationWaypoint[] = [
+  {
+    generationNumber: 1,
+    eraTitle: "Birth of the food",
+    yearRange: "Origin",
+    centuryLabel: "Stage 1",
+    headline: "Birth of Idli and Sambar in South Indian Traditions",
+    shortDescription:
+      "Idli sambar is a South Indian meal of steamed idlis (soft cakes of fermented rice and black gram batter) served with sambar, a lentil and tamarind vegetable stew. It is eaten across South India and is closely linked with Tamil Nadu. Idli: the earliest mentions are in Kannada and Sanskrit texts of the 9th to 13th centuries. These include Vaddaradhane (c. 920 CE, \"iddalige\") and Manasollasa (1130 CE, \"iddarika\"). Those early versions are described as made from black gram, without rice, without long fermentation and without steaming. The modern idli is mentioned only from about 1250 CE onwards. Food historian K. T. Achaya has suggested that the steamed idli may have reached India from present-day Indonesia (a dish called \"kedli\") between 800 and 1200 CE. Others argue that batter fermentation developed independently in India. A third theory credits Arab traders. These are theories, and none is settled. Sambar: an early reference to a similar dish appears in the Telugu poem Amuktamalyada (c. 1517). Another appears in a Kannada text of 1648 (Kanthirava Narasaraja Vijaya), which describes a similar curry of vegetables and toor dal. A popular legend says sambar was first made in the Thanjavur Maratha court (in the time of Shahuji I) and named after Sambhaji. Historians treat this as a story, not proven history. The exact origin, date and creator of idli and of sambar are not documented with certainty.",
+    image: ERA_PHOTO.ancient_grains,
+    generationRecipe: {
+      recipeName: "Origin: Birth of the food",
+      historicalCookware: "Earthenware pots, woven leaf cups & stone mortar",
+      heatSource: "Traditional wood fire hearth",
+      ingredientsList: [],
+      preparationMethod:
+        "Ancient black-gram batter preparations evolving into steamed fermented cakes paired with early lentil-tamarind stews.",
+      contemporaryDifference:
+        "The exact origin, date and creator of idli and of sambar are not documented with certainty.",
+    },
+    technologicalLeap: "Discovery of ambient microbial lactic-yeast aeration producing pillowy steamed texture from soaked pulses and rice.",
+    documentedCitation:
+      "9th-13th century Kannada and Sanskrit culinary records (Vaddaradhane, Manasollasa) and early sambar citations in Telugu and Kannada texts.",
+  },
+  {
+    generationNumber: 2,
+    eraTitle: "Evolution of Food",
+    yearRange: "Then vs Now",
+    centuryLabel: "Stage 2",
+    headline: "Evolution of Food: Then vs Now",
+    shortDescription:
+      "Batter: Then - early idli of black gram and buttermilk, without rice, long fermentation or steaming | Now - rice and black gram batter, fermented overnight\nGrinding: Then - manual rocking stone grinder | Now - electric wet grinder or blender\nMoulds: Then - leaves (such as jackfruit leaves), coconut shells or bamboo baskets | Now - greased perforated steel idli plates\nCooking method: Then - steamed in leaves or baskets over boiling water | Now - steamed in a pressure-free cooker, idli steamer or electric steamer for about 10 to 25 minutes\nSize: Then - large temple idlis, such as the kudalai idli of Kanchipuram, steamed in bamboo baskets and said to be about 400 years old | Now - small, round, soft idlis made in standard plates\nConvenience: Then - batter made from scratch at home | Now - ready-made batter, packaged mixes and instant versions such as rava idli\nSambar: Then - a thick dal-and-vegetable stew with tamarind, in early forms | Now - a thinner stew of toor dal, tamarind and vegetables such as drumstick, brinjal, carrot and potato, finished with a spice powder and tempering\nEaten with: Then - sambar and chutney | Now - sambar, coconut chutney, medu vada and idli podi",
+    image: ERA_PHOTO.stone_ferment,
+    generationRecipe: {
+      recipeName: "Evolution of Food: Then vs Now",
+      historicalCookware: "Manual stone grinder & leaf moulds → Electric wet grinder & perforated stainless steel idli stands",
+      heatSource: "Wood fire hearth → Domestic LPG gas stovetop",
+      ingredientsList: [],
+      preparationMethod:
+        "Manual stone grinding & leaf basket steaming → domestic electric wet grinders, stainless steel multi-tier steamers, and pressure-cooked toor dal sambar.",
+      contemporaryDifference:
+        "Batter: Then - early idli of black gram and buttermilk, without rice, long fermentation or steaming | Now - rice and black gram batter, fermented overnight",
+    },
+    technologicalLeap: "Perforated stainless steel idli plates and electric tilting wet grinders streamlining uniform fermentation and rapid domestic steaming.",
+    documentedCitation:
+      "Comparative regional culinary records of Tamil Nadu household and temple breakfast traditions.",
+  },
+  {
+    generationNumber: 3,
+    eraTitle: "Recipe",
+    yearRange: "Short and simple",
+    centuryLabel: "Stage 3",
+    headline: "Idli Sambar Recipe: 8 Steps",
+    shortDescription:
+      "idli rice (parboiled rice), whole black gram (urad dal), fenugreek seeds, salt, toor dal, tamarind, mixed vegetables (drumstick, carrot, brinjal, potato), shallots or onion and tomato, sambar powder with turmeric, mustard seeds, curry leaves and asafoetida (hing).\n\n1. Soak the rice and dal. Wash the idli rice, and soak it separately from the black gram and fenugreek for a few hours. (The grains should be soft enough to press between two fingers.)\n2. Grind the batter. Grind the black gram and fenugreek with a little water until light and fluffy, then grind the rice more coarsely. (The black gram batter should look airy and smooth, and the rice batter slightly grainy.)\n3. Ferment the batter. Mix the two batters with salt and leave the batter covered in a warm place overnight. (It is ready when it has risen and smells mildly sour.)\n4. Steam the idlis. Grease the idli plates, pour in the batter and steam over boiling water for about 10 to 15 minutes. (A knife pushed in should come out clean.)\n5. Cook the dal. Pressure cook the toor dal with turmeric until it is very soft, then mash it lightly. (It should look creamy with no whole grains.)\n6. Cook the vegetables. Fry shallots or onion and tomato, add the vegetables and cook until they soften. (They should be soft but still hold their shape.)\n7. Make the sambar. Add tamarind extract, salt and sambar powder to the vegetables, stir in the dal and simmer. (The raw smell of the tamarind should go, and the sambar should thicken slightly.)\n8. Temper and serve. Splutter mustard seeds, curry leaves and hing in hot oil, pour it over the sambar and serve it with the hot idlis. (The sambar should smell fragrant. Serve while the idlis are still soft and steaming.)",
+    image: ERA_PHOTO.spice_trade,
+    generationRecipe: {
+      recipeName: "Idli Sambar Recipe",
+      historicalCookware: "Idli steamer stand & deep saucepan or pressure cooker",
+      heatSource: "Medium gas flame",
+      ingredientsList: [
+        "Idli rice (parboiled rice)",
+        "Whole black gram (urad dal)",
+        "Fenugreek seeds",
+        "Salt",
+        "Toor dal",
+        "Tamarind",
+        "Mixed vegetables (drumstick, carrot, brinjal, potato)",
+        "Shallots or onion and tomato",
+        "Sambar powder with turmeric",
+        "Mustard seeds, curry leaves and asafoetida (hing)",
+      ],
+      preparationMethod:
+        "1. Soak the rice and dal.\n2. Grind the batter.\n3. Ferment the batter.\n4. Steam the idlis.\n5. Cook the dal.\n6. Cook the vegetables.\n7. Make the sambar.\n8. Temper and serve.",
+      contemporaryDifference:
+        "8. Splutter mustard seeds, curry leaves and hing in hot oil, pour it over the sambar and serve it with the hot idlis.",
+    },
+    technologicalLeap: "Two-stage separately ground batter with overnight ambient fermentation yielding cloud-soft steamed idlis paired with fragrant tempered toor dal stew.",
+    documentedCitation:
+      "Traditional South Indian culinary practice and codified Idli Sambar recipes.",
+  },
+];
+
+export const FILTER_COFFEE_GENERATIONS: GenerationWaypoint[] = [
+  {
+    generationNumber: 1,
+    eraTitle: "Birth of the food",
+    yearRange: "Origin",
+    centuryLabel: "Stage 1",
+    headline: "Birth of Filter Coffee in South India",
+    shortDescription:
+      "Filter coffee (filter kaapi) is a South Indian drink of strong coffee decoction mixed with hot milk and sugar. It is made in a two-part metal filter and served in a steel tumbler and dabara. It is popular across Tamil Nadu, Karnataka, Kerala and Andhra Pradesh, and is especially linked with Tamil households. A popular belief says a Sufi named Baba Budan brought seven coffee beans from the Middle East (accounts say Mecca or Yemen) and planted them in the Chandragiri hills of Chikmagalur, Karnataka. This is widely told as a belief and is not established fact. Sources place it in the 16th or the 17th century, and they do not agree. Coffee was expensive at first. Cultivation was promoted in the colonial era, and the drink moved from the elite to ordinary people. By the early 20th century, filter coffee was a staple in homes, restaurants and roadside stalls. Chicory, a roasted ground root, was added to the coffee. Sources say it gives body and a bold flavour. Outlook Traveller says it was reportedly added for medicinal reasons. The Indian Coffee House, which emerged in the mid-20th century, helped carry coffee to northern India. The exact origin, date and creator of filter coffee are not documented with certainty.",
+    image: ERA_PHOTO.spice_trade,
+    generationRecipe: {
+      recipeName: "Origin: Birth of the food",
+      historicalCookware: "Earthen pots, brass vessels & early cloth or metal drips",
+      heatSource: "Traditional wood fire hearth",
+      ingredientsList: [],
+      preparationMethod:
+        "Early decoction brewing moving from elite colonial households to broad regional South Indian adoption.",
+      contemporaryDifference:
+        "The exact origin, date and creator of filter coffee are not documented with certainty.",
+    },
+    technologicalLeap: "Introduction of coffee cultivation in Chikmagalur hills and the evolution of the slow-gravity drip extraction process.",
+    documentedCitation:
+      "Legends of Baba Budan, colonial plantation records, and South Indian coffee-house literature.",
+  },
+  {
+    generationNumber: 2,
+    eraTitle: "Evolution of Food",
+    yearRange: "Then vs Now",
+    centuryLabel: "Stage 2",
+    headline: "Evolution of Food: Then vs Now",
+    shortDescription:
+      "Price and access: a costly drink of the elite at first | Now - an everyday drink in homes, hotels and roadside stalls\nBlend: pure coffee | Now - coffee with chicory (sources suggest about 20 to 30 percent) for body and a bold flavour\nSweetener: jaggery or honey in some households | Now - mostly sugar\nBrewing: a two-part metal filter with the decoction dripping slowly | Now - the same filter, plus electric and instant versions\nDecoction strength: \"first, second or third degree\" coffee, by how many times the grounds were decocted | Now - the strength is chosen by taste\nServing: steel tumbler and dabara, poured back and forth to cool and froth the coffee | Now - the same set, still used, with paper cups and takeaway cups in cafes\nMilk: \"degree milk\" meant pure milk | Now - full-cream milk heated until hot\nWhere it is drunk: homes and local coffee houses | Now - homes, Indian Coffee House-style coffee houses and modern cafes that sell new variants at higher prices",
+    image: ERA_PHOTO.colonial_modern,
+    generationRecipe: {
+      recipeName: "Evolution of Food: Then vs Now",
+      historicalCookware: "Brass filter & dabara -> Stainless steel two-chamber drip filter & tumbler-dabara set",
+      heatSource: "Charcoal sigri -> Domestic LPG gas stovetop",
+      ingredientsList: [],
+      preparationMethod:
+        "Slow drip gravity filtration through perforated stainless steel chamber cut with scalding fresh milk and aerated back and forth.",
+      contemporaryDifference:
+        "Price and access: a costly drink of the elite at first | Now - an everyday drink in homes, hotels and roadside stalls",
+    },
+    technologicalLeap: "Adoption of chicory blending for depth and viscosity, paired with the two-piece perforated metal gravity filter and aerodynamic dabara aeration.",
+    documentedCitation:
+      "Early 20th-century Madras coffee-house chronicles and Coffee Board historical documentation.",
+  },
+  {
+    generationNumber: 3,
+    eraTitle: "Recipe",
+    yearRange: "Short and simple",
+    centuryLabel: "Stage 3",
+    headline: "Filter Coffee Recipe: 8 Steps",
+    shortDescription:
+      "filter coffee powder (medium to dark roast), chicory (blended into the powder), freshly boiled water, full-cream milk, sugar (or jaggery).\n\n1. Set up the filter. Place the upper cup of the filter on the lower cup. (The perforated base should sit flat with no gaps.)\n2. Add the coffee powder. Put the coffee-chicory powder into the upper cup and press it gently with the disc. (Press lightly, because packing it too hard slows the drip too much.)\n3. Add boiling water. Pour freshly boiled water over the powder and put the lid on. (The water must be boiling, not just warm.)\n4. Let the decoction drip. Leave it for about 10 to 15 minutes. (The decoction should collect in the lower cup as a thick, dark liquid. Do not leave it much beyond 20 minutes, or it turns bitter.)\n5. Heat the milk. Warm full-cream milk on the stove until it is hot. (It should be steaming, and not boiled over.)\n6. Mix the coffee. Pour a little decoction into the tumbler, add the hot milk and sugar, and stir. (The colour should be a rich brown. Adjust the decoction and milk to taste.)\n7. Aerate the coffee. Pour the coffee back and forth between the tumbler and the dabara in a high arc. (It should turn frothy and cool to a drinkable temperature.)\n8. Serve. Set the tumbler in the dabara and serve at once. (Serve it hot, while the froth is still on top.)",
+    image: ERA_PHOTO.stone_ferment,
+    generationRecipe: {
+      recipeName: "Filter Coffee Recipe",
+      historicalCookware: "Two-tier stainless steel or brass coffee filter & dabara tumbler set",
+      heatSource: "Medium gas flame",
+      ingredientsList: [
+        "Filter coffee powder (medium to dark roast)",
+        "Chicory (blended into the powder)",
+        "Freshly boiled water",
+        "Full-cream milk",
+        "Sugar (or jaggery)",
+      ],
+      preparationMethod:
+        "1. Set up the filter.\n2. Add the coffee powder.\n3. Add boiling water.\n4. Let the decoction drip.\n5. Heat the milk.\n6. Mix the coffee.\n7. Aerate the coffee.\n8. Serve.",
+      contemporaryDifference:
+        "8. Set the tumbler in the dabara and serve at once. (Serve it hot, while the froth is still on top.)",
+    },
+    technologicalLeap: "Precision gravity percolation producing viscous decoction emulsified with hot boiled milk and aerated for crown froth.",
+    documentedCitation:
+      "Traditional South Indian coffee-making practice and codified filter kaapi preparation.",
+  },
+];
+
 // ─────────────────────────────────────────────
 // DYNAMIC GENERATION SYNTHESIZER FOR ALL OTHER DISHES
 // Accurately builds 6 historical generations based on
@@ -3816,6 +4061,12 @@ function legacyGenerationsForDish(dishId: string, dish: Dish): GenerationWaypoin
       return FISH_MOLEE_GENERATIONS;
     case "puttu":
       return PUTTU_GENERATIONS;
+    case "chettinad-chicken":
+      return CHETTINAD_CHICKEN_GENERATIONS;
+    case "idli-sambar":
+      return IDLI_SAMBAR_GENERATIONS;
+    case "filter-coffee":
+      return FILTER_COFFEE_GENERATIONS;
     default:
       return generateDynamicGenerationsForDish(dish);
   }
@@ -3876,7 +4127,10 @@ export function getGenerationsForDish(dishId: string): GenerationWaypoint[] {
             dishId === "ghewar" ||
             dishId === "appam-stew" ||
             dishId === "fish-molee" ||
-            dishId === "puttu"
+            dishId === "puttu" ||
+            dishId === "chettinad-chicken" ||
+            dishId === "idli-sambar" ||
+            dishId === "filter-coffee"
 
 
             ? (stage.number === 3 && legacy[2]?.generationRecipe.ingredientsList?.length
@@ -3912,7 +4166,10 @@ export function getGenerationsForDish(dishId: string): GenerationWaypoint[] {
             dishId === "ghewar" ||
             dishId === "appam-stew" ||
             dishId === "fish-molee" ||
-            dishId === "puttu") &&
+            dishId === "puttu" ||
+            dishId === "chettinad-chicken" ||
+            dishId === "idli-sambar" ||
+            dishId === "filter-coffee") &&
             stage.number === 3 &&
             legacy[2]?.generationRecipe.preparationMethod
             ? legacy[2].generationRecipe.preparationMethod
@@ -3924,7 +4181,7 @@ export function getGenerationsForDish(dishId: string): GenerationWaypoint[] {
       },
       technologicalLeap: stage.details[0],
       documentedCitation:
-        dishId === "dhokla" || dishId === "undhiyu" || dishId === "dal-baati-churma" || dishId === "laal-maas" || dishId === "dalma" || dishId === "chhena-poda" || dishId === "pakhala" || dishId === "goan-fish-curry" || dishId === "pork-vindaloo" || dishId === "bebinca" || dishId === "ghewar" || dishId === "appam-stew" || dishId === "fish-molee" || dishId === "puttu"
+        dishId === "dhokla" || dishId === "undhiyu" || dishId === "dal-baati-churma" || dishId === "laal-maas" || dishId === "dalma" || dishId === "chhena-poda" || dishId === "pakhala" || dishId === "goan-fish-curry" || dishId === "pork-vindaloo" || dishId === "bebinca" || dishId === "ghewar" || dishId === "appam-stew" || dishId === "fish-molee" || dishId === "puttu" || dishId === "chettinad-chicken" || dishId === "idli-sambar" || dishId === "filter-coffee"
           ? source.documentedCitation
           : citations || "Regional food writing; no securely dated first reference established.",
     } satisfies GenerationWaypoint;

@@ -2145,23 +2145,19 @@
     "chettinad-chicken": {
       "origin": {
         "library": "banana-leaf",
-        "caption": "Tamil Nadu — the regional kitchen where Chettinad Chicken Curry belongs."
+        "caption": "Chettinad Chicken Curry - Origin (Birth of the food)",
+        "label": "Chettinad Chicken Curry - Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-bowls",
-        "caption": "Ingredients for Chettinad Chicken Curry: country chicken, kalpasi (black stone flower), tellicherry black peppercorns, star anise.",
-        "items": [
-          "Country chicken",
-          "Kalpasi (Black stone flower)",
-          "Tellicherry black peppercorns",
-          "Star anise",
-          "Fennel seeds",
-          "Shallots"
-        ]
+        "caption": "Chettinad Chicken Curry - Evolution of Food",
+        "label": "Chettinad Chicken Curry - Evolution of Food",
+        "items": []
       },
       "method": {
         "library": "spice-bowls",
-        "caption": "Chettinad Chicken Curry — Whole Spice Dry Roasting & Heavy Cast Bronze Uruli Simmer."
+        "caption": "Chettinad Chicken Curry - Recipe",
+        "label": "Chettinad Chicken Curry - Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/c/c6/ChickenChettinad.JPG",
@@ -2194,8 +2190,8 @@
           "width": 2589,
           "height": 1598
         },
-        "caption": "Madurai, Tamil Nadu — temple-town Tamil country, where idli is eaten at dawn.",
-        "label": "Regional context"
+        "caption": "Idli Sambar - Origin (Birth of the food)",
+        "label": "Idli Sambar - Origin (Birth of the food)"
       },
       "ingredients": {
         "photo": {
@@ -2212,17 +2208,9 @@
           "width": 3070,
           "height": 2182
         },
-        "caption": "Urad dal — soaked and ground with rice; the batter is salted and fermented overnight.",
-        "label": "Ingredient reference",
-        "items": [
-          "Parboiled idli rice",
-          "Urad dal",
-          "Toor dal",
-          "Shallots (Madras onions)",
-          "Drumsticks",
-          "Tamarind",
-          "Curry leaves"
-        ]
+        "caption": "Idli Sambar - Evolution of Food",
+        "label": "Idli Sambar - Evolution of Food",
+        "items": []
       },
       "method": {
         "photo": {
@@ -2239,8 +2227,8 @@
           "width": 1116,
           "height": 960
         },
-        "caption": "Batter poured into the idli plates and steamed; the fermented batter rises into soft cakes.",
-        "label": "Preparation technique"
+        "caption": "Idli Sambar - Recipe",
+        "label": "Idli Sambar - Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Idli_Sambar.JPG",
@@ -3066,8 +3054,8 @@
           "width": 3792,
           "height": 2582
         },
-        "caption": "Mylapore, Chennai — the temple-quarter streets where the coffee-house habit took hold.",
-        "label": "Regional context"
+        "caption": "Filter Coffee - Origin (Birth of the food)",
+        "label": "Filter Coffee - Origin (Birth of the food)"
       },
       "ingredients": {
         "photo": {
@@ -3084,14 +3072,9 @@
           "width": 1800,
           "height": 1200
         },
-        "caption": "Roasted coffee beans — ground with chicory for the decoction; milk and sugar complete it.",
-        "label": "Ingredient reference",
-        "items": [
-          "Coffee powder with chicory",
-          "Boiling water",
-          "Full-cream milk",
-          "Sugar"
-        ]
+        "caption": "Filter Coffee - Evolution of Food",
+        "label": "Filter Coffee - Evolution of Food",
+        "items": []
       },
       "method": {
         "photo": {
@@ -3108,8 +3091,8 @@
           "width": 614,
           "height": 461
         },
-        "caption": "The two chambers of the steel filter: grounds above, decoction dripping below.",
-        "label": "Preparation technique"
+        "caption": "Filter Coffee - Recipe",
+        "label": "Filter Coffee - Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Foaming_filter_coffee.jpg",

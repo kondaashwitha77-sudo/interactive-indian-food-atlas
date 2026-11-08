@@ -3013,74 +3013,128 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
   {
     "id": "info-151",
     "dishId": "chettinad-chicken",
-    "title": "Chettinad Chicken Curry — c. 1800 Recipe",
-    "subtitle": "Traditional seafaring Chettiar spice formulation with stone-ground kalpasi and country chicken",
-    "era": "1800s Traditional",
+    "title": "Chettinad Chicken Curry - Origin (Birth of the food)",
+    "subtitle": "Chettinad chicken (Chettinad kozhi) is a spicy chicken curry from the Chettinad region of Tamil Nadu.",
+    "era": "Birth of the food",
     "image": "/images_updated/WhatsApp Image 2026-11-04 at 2.50.19 AM.jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 1,
-    "ingredients": [
-      "Country chicken (naatu kozhi)",
-      "Kalpasi (black stone flower)",
-      "Star anise & marathi moggu",
-      "Shallots (small onions)",
-      "Gingelly (sesame) oil",
-      "Curry leaves"
-    ]
+    "ingredients": []
   },
   {
     "id": "info-152",
     "dishId": "chettinad-chicken",
-    "title": "Chettinad Chicken Curry — c. 1900 Recipe",
-    "subtitle": "Refined mercantile feast recipe with roasted coriander, black pepper, and coconut paste",
-    "era": "1900s Early Modern",
+    "title": "Chettinad Chicken Curry - Evolution of Food",
+    "subtitle": "Then vs Now: Grinding, marinade, thickener, vessel, tomato, oil, meat, and eaten with.",
+    "era": "Evolution of Food",
     "image": "/images_updated/WhatsApp Image 2026-11-04 at 2.51.48 AM.jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 2,
-    "ingredients": [
-      "Country chicken",
-      "Roasted coriander seeds",
-      "Black peppercorns",
-      "Fresh grated coconut",
-      "Dry red chillies",
-      "Curry leaves"
-    ]
+    "ingredients": []
   },
   {
     "id": "info-153",
     "dishId": "chettinad-chicken",
-    "title": "Chettinad Chicken Curry — Present Recipe",
-    "subtitle": "Contemporary vibrant Chettinad pepper chicken curry with rich roasted masala and coconut",
-    "era": "Contemporary / Present",
+    "title": "Chettinad Chicken Curry - Recipe",
+    "subtitle": "Key ingredients and 8-step preparation for traditional Chettinad Chicken Curry.",
+    "era": "Recipe",
     "image": "/images_updated/WhatsApp Image 2026-11-04 at 2.54.27 AM.jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 3,
     "ingredients": [
       "Chicken",
-      "Chettinad roasted masala powder",
-      "Fresh coconut paste",
-      "Shallots & ginger-garlic",
-      "Black pepper & fennel",
-      "Curry leaves"
+      "Onion",
+      "Tomato",
+      "Ginger-garlic paste",
+      "Dried red chillies, coriander, fennel and cumin seeds",
+      "Black pepper, cardamom, cloves, cinnamon and star anise",
+      "Kalpasi (stone flower)",
+      "Grated coconut",
+      "Curry leaves with oil (gingelly if you like)",
+      "Turmeric, salt and lemon juice"
     ]
   },
   {
     "id": "info-154",
     "dishId": "idli-sambar",
-    "title": "Idli Sambar — c. 1800 Recipe",
-    "subtitle": "Historic Thanjavur Maratha court sambar with freshly ground spices, lentils, and steamed idlis",
-    "era": "1800s Traditional",
+    "title": "Idli Sambar - Origin (Birth of the food)",
+    "subtitle": "Idli sambar is a South Indian meal of steamed idlis served with sambar, a lentil and tamarind vegetable stew.",
+    "era": "Birth of the food",
     "image": "/images_updated/WhatsApp Image 2026-11-04 at 2.57.05 AM.jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 1,
+    "ingredients": []
+  },
+  {
+    "id": "info-idli-sambar-2",
+    "dishId": "idli-sambar",
+    "title": "Idli Sambar - Evolution of Food",
+    "subtitle": "Then vs Now: Batter, grinding, moulds, cooking method, size, convenience, sambar, and eaten with.",
+    "era": "Evolution of Food",
+    "image": "/images/dishes/idli-sambar-stage-2.webp",
+    "isFullTimelinePoster": false,
+    "stageNumber": 2,
+    "ingredients": []
+  },
+  {
+    "id": "info-idli-sambar-3",
+    "dishId": "idli-sambar",
+    "title": "Idli Sambar - Recipe",
+    "subtitle": "Key ingredients and 8-step preparation for authentic South Indian Idli Sambar.",
+    "era": "Recipe",
+    "image": "/images/dishes/idli-sambar-stage-3.webp",
+    "isFullTimelinePoster": false,
+    "stageNumber": 3,
     "ingredients": [
-      "Parboiled idli rice",
-      "Urad dal",
+      "Idli rice (parboiled rice)",
+      "Whole black gram (urad dal)",
+      "Fenugreek seeds",
+      "Salt",
       "Toor dal",
-      "Shallots (Madras onions)",
-      "Drumsticks",
       "Tamarind",
-      "Curry leaves"
+      "Mixed vegetables (drumstick, carrot, brinjal, potato)",
+      "Shallots or onion and tomato",
+      "Sambar powder with turmeric",
+      "Mustard seeds, curry leaves and asafoetida (hing)"
+    ]
+  },
+  {
+    "id": "info-filter-coffee-1",
+    "dishId": "filter-coffee",
+    "title": "Filter Coffee - Origin (Birth of the food)",
+    "subtitle": "Filter coffee (filter kaapi) is a South Indian drink of strong coffee decoction mixed with hot milk and sugar.",
+    "era": "Birth of the food",
+    "image": "/images/dishes/filter-coffee-stage-1.webp",
+    "isFullTimelinePoster": false,
+    "stageNumber": 1,
+    "ingredients": []
+  },
+  {
+    "id": "info-filter-coffee-2",
+    "dishId": "filter-coffee",
+    "title": "Filter Coffee - Evolution of Food",
+    "subtitle": "Then vs Now: Price and access, blend, sweetener, brewing, decoction strength, serving, milk, and where it is drunk.",
+    "era": "Evolution of Food",
+    "image": "/images/dishes/filter-coffee-stage-2.webp",
+    "isFullTimelinePoster": false,
+    "stageNumber": 2,
+    "ingredients": []
+  },
+  {
+    "id": "info-filter-coffee-3",
+    "dishId": "filter-coffee",
+    "title": "Filter Coffee - Recipe",
+    "subtitle": "Key ingredients and 8-step preparation for traditional South Indian Filter Coffee.",
+    "era": "Recipe",
+    "image": "/images/dishes/filter-coffee-stage-3.webp",
+    "isFullTimelinePoster": false,
+    "stageNumber": 3,
+    "ingredients": [
+      "Filter coffee powder (medium to dark roast)",
+      "Chicory (blended into the powder)",
+      "Freshly boiled water",
+      "Full-cream milk",
+      "Sugar (or jaggery)"
     ]
   },
   {
