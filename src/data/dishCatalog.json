@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedFrom": "src/data/foodData.ts",
-  "totalDishes": 91,
+  "totalDishes": 88,
   "groups": [
     {
       "state": "Andhra Pradesh",
@@ -48,8 +48,7 @@
       "tagline": "The rice bowl of India — tribal flavors, forest ingredients",
       "dishIds": [
         "chhattisgarhi-chila",
-        "fara",
-        "bafauri"
+        "fara"
       ]
     },
     {
@@ -77,8 +76,7 @@
       "tagline": "Agricultural heartland — wholesome dairy-rich comfort food",
       "dishIds": [
         "bajra-khichdi",
-        "haryanvi-kadhi",
-        "haryanvi-churma"
+        "haryanvi-kadhi"
       ]
     },
     {
@@ -87,8 +85,7 @@
       "tagline": "Mountain serenity on a plate — simple, hearty highland fare",
       "dishIds": [
         "siddu",
-        "himachali-dham",
-        "chana-madra"
+        "himachali-dham"
       ]
     },
     {
@@ -97,8 +94,7 @@
       "tagline": "Tribal wisdom, forest bounty — earthy and nourishing",
       "dishIds": [
         "dhuska",
-        "chilka-roti",
-        "pittha"
+        "chilka-roti"
       ]
     },
     {
@@ -145,8 +141,7 @@
       "tagline": "Valley of jewels — fermented flavors and tribal culinary art",
       "dishIds": [
         "eromba",
-        "singju",
-        "chak-hao-kheer"
+        "singju"
       ]
     },
     {
@@ -215,8 +210,7 @@
       "tagline": "Himalayan serenity — momos, thukpa and organic mountain bounty",
       "dishIds": [
         "sikkimese-momos",
-        "gundruk-soup",
-        "sel-roti"
+        "gundruk-soup"
       ]
     },
     {
@@ -585,26 +579,6 @@
       "keyTechnique": "Clay Steaming & Crisp Pan Tempering"
     },
     {
-      "id": "bafauri",
-      "name": "Bafauri",
-      "alternateName": "Steamed Gram-Flour Dumplings",
-      "state": "Chhattisgarh",
-      "category": "fermented-steamed",
-      "description": "Spiced gram-flour dumplings steamed until firm, then sliced and tempered with mustard, curry leaves and green chilli — a protein-rich, oil-light dish from Chhattisgarhi home kitchens.",
-      "ingredients": [
-        "Gram flour (besan)",
-        "Green chilli",
-        "Ginger",
-        "Mustard seeds",
-        "Curry leaves",
-        "Turmeric",
-        "Salt"
-      ],
-      "tasteProfile": "Earthy, Savoury & Gently Piquant",
-      "era": "Regional household technique; no securely dated first written reference",
-      "keyTechnique": "Besan Batter Steaming & Post-Steam Tempering"
-    },
-    {
       "id": "goan-fish-curry",
       "name": "Goan Fish Curry",
       "alternateName": "Xitt Kodi",
@@ -754,24 +728,6 @@
       "keyTechnique": "Prolonged Simmering (Kadhna) to Prevent Curdling"
     },
     {
-      "id": "haryanvi-churma",
-      "name": "Haryanvi Churma",
-      "alternateName": "Churma / Choori",
-      "state": "Haryana",
-      "category": "sweet-dessert",
-      "description": "Coarse wheat-flour rotis baked over a cow-dung-fired hearth, crushed by hand and kneaded with desi ghee and jaggery or sugar; traditionally eaten with bajra roti, milk and seasonal greens.",
-      "ingredients": [
-        "Whole-wheat flour",
-        "Desi ghee",
-        "Jaggery or sugar",
-        "Bajra",
-        "Milk"
-      ],
-      "tasteProfile": "Rustic, Ghee-Rich & Caramel-Sweet",
-      "era": "Agrarian Haryanvi food tradition; documented in regional food writing",
-      "keyTechnique": "Hearth-Baked Roti Crushing & Ghee Binding"
-    },
-    {
       "id": "siddu",
       "name": "Siddu",
       "alternateName": "Stuffed Himalayan Steamed Bread",
@@ -809,79 +765,50 @@
       "keyTechnique": "Wood-Fire Brass Deg Simmering Without Onion-Garlic"
     },
     {
-      "id": "chana-madra",
-      "name": "Chana Madra",
-      "alternateName": "Himachali Chickpea Yoghurt Curry",
-      "state": "Himachal Pradesh",
-      "category": "curry-stew",
-      "description": "Chickpeas simmered in a whisked yoghurt and gram-flour gravy with ghee, cumin and asafoetida, thickened slowly without a tomato base; the centrepiece of a Chamba–Kangra Dham feast.",
-      "ingredients": [
-        "Chickpeas",
-        "Curd (yoghurt)",
-        "Gram flour",
-        "Ghee",
-        "Cumin",
-        "Asafoetida",
-        "Turmeric"
-      ],
-      "tasteProfile": "Creamy, Tangy & Warmly Aromatic",
-      "era": "Himachali Dham tradition; documented in regional festival cookery",
-      "keyTechnique": "Slow Yoghurt Gravy Simmering Without Curdling"
-    },
-    {
       "id": "dhuska",
       "name": "Dhuska",
-      "alternateName": "Fried Rice & Lentil Cakes",
+      "alternateName": "Deep-Fried Savory Rice & Lentil Cakes",
       "state": "Jharkhand",
       "category": "grain-bread",
-      "description": "Deep-golden crispy pancakes prepared by soaking and grinding short-grain rice and chana dal into a thick batter, fried in mustard oil and served with spicy aloo-chana sabzi.",
+      "description": "Deep-golden crispy savoury cakes prepared by soaking and wet-grinding raw rice with chana and urad lentils into a thick batter, fried in cold-pressed mustard oil and served hot with spicy aloo-chana sabzi.",
       "ingredients": [
-        "Short-grain rice",
-        "Chana dal",
-        "Ginger",
+        "Raw rice (arwa chawal)",
+        "Chana dal (split Bengal gram)",
+        "Urad dal (split black gram)",
+        "Fresh ginger",
         "Green chillies",
-        "Cumin",
+        "Cumin seeds (jeera)",
+        "Carom seeds (ajwain)",
+        "Turmeric powder",
+        "Asafoetida (hing)",
         "Mustard oil"
       ],
-      "tasteProfile": "Crispy, Savory & Earthy",
-      "era": "Indigenous Chota Nagpur Tribal Heritage",
-      "keyTechnique": "Wet-Stone Grinding & Rapid Immersion Frying"
+      "tasteProfile": "Crispy-Puffed, Savory & Earthy",
+      "era": "Indigenous Chota Nagpur Tribal Antiquity",
+      "keyTechnique": "Stone-Ground Unfermented Batter & Immersion Mustard-Oil Frying"
     },
     {
       "id": "chilka-roti",
       "name": "Chilka Roti",
-      "alternateName": "Indigenous Red Rice Flatbread",
+      "alternateName": "Delicate Red Rice & Chana Dal Crepe",
       "state": "Jharkhand",
       "category": "grain-bread",
-      "description": "Traditional delicate tribal flatbreads prepared from coarse unpolished red rice and chana dal batter, poured on earthen tawas greased with sal leaf twigs.",
+      "description": "Delicate, paper-thin tribal flatbreads prepared from unpolished red rice and chana dal batter, poured and swirled over earthen or seasoned cast-iron tawas greased with oil.",
       "ingredients": [
-        "Unpolished red rice",
-        "Chana dal",
+        "Raw unpolished rice (arwa chawal)",
+        "Chana dal (split Bengal gram)",
+        "Fresh ginger",
+        "Cumin seeds (jeera)",
+        "Green chillies",
+        "Rock salt",
+        "Mustard oil",
+        "Fresh coriander leaves",
         "Water",
-        "Sal tree seed oil",
-        "Salt"
+        "Sal leaf wrap"
       ],
-      "tasteProfile": "Rustic, Nutty & Delicate",
-      "era": "Santhal & Munda Pre-Historic Antiquity",
-      "keyTechnique": "Earthen Tawa Pouring with Botanical Swab"
-    },
-    {
-      "id": "pittha",
-      "name": "Pittha",
-      "alternateName": "Jharkhandi Rice Dumplings",
-      "state": "Jharkhand",
-      "category": "fermented-steamed",
-      "description": "Rice-flour dough shaped by hand into crescents or cups, sometimes filled with jaggery and sesame, steamed over a cloth-lined pot and eaten at harvest festivals across Jharkhand's tribal communities.",
-      "ingredients": [
-        "Rice flour",
-        "Jaggery",
-        "Sesame seeds",
-        "Water",
-        "Salt"
-      ],
-      "tasteProfile": "Soft, Mildly Sweet & Rice-Forward",
-      "era": "Tribal harvest-festival tradition; documented in ethnographic and regional accounts",
-      "keyTechnique": "Hand-Shaped Rice Dough & Cloth Steaming"
+      "tasteProfile": "Rustic, Soft-Edged & Earthy",
+      "era": "Santhal, Munda & Oraon Agrarian Traditions",
+      "keyTechnique": "Wet-Ground Fluid Batter Pouring & Circular Tawa Swirl"
     },
     {
       "id": "masala-dosa",
@@ -1102,57 +1029,48 @@
     {
       "id": "eromba",
       "name": "Eromba",
-      "alternateName": "Fermented Fish & Tuber Mash",
+      "alternateName": "Hand-Mashed Fermented Fish & Mountain Vegetable Chutney",
       "state": "Manipur",
       "category": "curry-stew",
-      "description": "Iconic Meitei dish of boiled mountain potatoes, tree beans (yongchak), and water greens mashed with toasted sun-dried fermented fish (ngari) and fiery king chillies.",
+      "description": "An iconic Meitei delicacy of tender boiled potatoes, seasonal tree beans (yongchak), and tender bamboo shoots hand-mashed with dry-roasted fermented fish (ngari) and fiery king chillies.",
       "ingredients": [
-        "Ngari (Fermented fish)",
+        "Ngari (fermented freshwater fish)",
         "Mountain potatoes",
-        "Yongchak (Tree beans)",
-        "Ghost chillies",
-        "Spring onions"
+        "Yongchak (tree beans) / seasonal beans",
+        "Umorok (fiery king chilli) / dry chillies",
+        "Tender bamboo shoot (soibum)",
+        "Maroi nakupi (Manipuri chives)",
+        "Fresh coriander leaves",
+        "Spring onions",
+        "Vegetable cooking broth",
+        "Rock salt"
       ],
       "tasteProfile": "Pungent, Fiery & Umami-Rich",
       "era": "Ancient Meitei Valley Antiquity",
-      "keyTechnique": "Dry Earthen Pot Roasting of Ngari & Hand Mashing"
+      "keyTechnique": "Banana-Leaf Ngari Toasting, Root Boiling & Coarse Hand Mashing"
     },
     {
       "id": "singju",
       "name": "Singju",
-      "alternateName": "Herbal Mountain Salad",
+      "alternateName": "Fiery Raw Botanical & Perilla Seed Salad",
       "state": "Manipur",
       "category": "snack",
-      "description": "A fiery raw tribal salad featuring crunchy lotus stems, shredded cabbage, and seasonal herbs tossed with roasted black sesame, perilla seeds, and toasted ngari.",
+      "description": "A fiery raw botanical salad featuring crisp finely shredded cabbage, lotus stems, and wetland herbs hand-tossed with roasted perilla seeds (thoiding), roasted gram flour, and toasted ngari.",
       "ingredients": [
-        "Lotus stems",
-        "Cabbage",
-        "Roasted perilla seeds (Thoiding)",
-        "Roasted chickpea powder",
-        "Ngari",
-        "Chillies"
+        "Crisp cabbage (fine chiffonade)",
+        "Lotus stems (thambou) / green papaya",
+        "Thoiding (roasted perilla seeds)",
+        "Roasted gram flour (besan)",
+        "Ngari (fermented fish) / roasted peas",
+        "Sun-dried red chillies (morok)",
+        "Umorok (king chilli)",
+        "Phakpai (Himalayan knotweed) / herbs",
+        "Rock salt",
+        "Fresh lemon juice"
       ],
-      "tasteProfile": "Crisp, Tangy & Aromatic",
-      "era": "Indigenous Herbal Foraging Traditions",
-      "keyTechnique": "Raw Julian Chiffonade & Dry Seed Dressing"
-    },
-    {
-      "id": "chak-hao-kheer",
-      "name": "Chak-Hao Kheer",
-      "alternateName": "Manipuri Black Rice Pudding",
-      "state": "Manipur",
-      "category": "sweet-dessert",
-      "description": "A slow-cooked pudding of aromatic Manipuri black rice (Chak-Hao), milk and jaggery or sugar, served at feasts and now protected by the Chak-Hao geographical indication.",
-      "ingredients": [
-        "Chak-Hao black rice",
-        "Milk",
-        "Jaggery or sugar",
-        "Cardamom",
-        "Cashew nuts"
-      ],
-      "tasteProfile": "Nutty, Fragrant & Deeply Violet",
-      "era": "Manipuri rice-cultivation tradition; Chak-Hao registered as a GI in 2020",
-      "keyTechnique": "Long Soak & Low-Heat Black-Rice Reduction"
+      "tasteProfile": "Crisp, Nutty, Pungent & Blazing",
+      "era": "Ancient Meitei Foraging & Wetland Traditions",
+      "keyTechnique": "Fine Chiffonade Shredding, Roasted Seed Crushing & Hand Bruising"
     },
     {
       "id": "jadoh",
@@ -1526,60 +1444,48 @@
     {
       "id": "sikkimese-momos",
       "name": "Sikkimese Momos",
-      "alternateName": "Steamed Himalayan Dumplings",
+      "alternateName": "Steamed Himalayan Pleated Dumplings",
       "state": "Sikkim",
       "category": "fermented-steamed",
-      "description": "Delicate pleated parcels of hand-rolled dough filled with seasoned pork mince or mountain vegetables and ginger, steamed over boiling herb water, served with fiery dalle khursani dip.",
+      "description": "Delicate pleated parcels of hand-rolled dough filled with juicy hand-minced pork or mountain greens, ginger, and garlic, steamed in tiered moktus and served with blistering dalle khursani dip.",
       "ingredients": [
-        "Wheat flour",
-        "Minced pork / local greens",
-        "Ginger",
-        "Garlic",
-        "Dalle Khursani chillies",
-        "Fermented bamboo"
+        "Refined wheat flour (maida)",
+        "Minced pork or chicken",
+        "Spring onions",
+        "Fresh ginger",
+        "Mountain garlic",
+        "Black pepper powder",
+        "Refined oil / pork lard",
+        "Water",
+        "Dalle khursani chillies (for dip)",
+        "Ripe tomatoes (for dip)"
       ],
-      "tasteProfile": "Juicy, Savory & Fiery Dip",
-      "era": "Ancient Trans-Himalayan Buddhist Trade Routes",
-      "keyTechnique": "Thin Pleated Pinching & Tiered Aluminium/Bamboo Steaming"
+      "tasteProfile": "Juicy, Savory & Fiery-Pepper Heat",
+      "era": "Ancient Trans-Himalayan Trade Routes & Bhutia Culture",
+      "keyTechnique": "Accordion Edge Pleating & Tiered Moktu High-Steam Cooking"
     },
     {
       "id": "gundruk-soup",
       "name": "Gundruk Soup",
-      "alternateName": "Fermented Greens Broth",
+      "alternateName": "Gundruk ko Jhol / Fermented Greens Broth",
       "state": "Sikkim",
       "category": "curry-stew",
-      "description": "Sun-dried fermented mustard and radish leaves slow-simmered with tomatoes, green chillies, and ginger into a sour, mineral-dense curative alpine soup.",
+      "description": "A curative Himalayan broth of sun-dried lactic-fermented mustard greens slow-simmered with country tomatoes, crushed garlic, and roasted soybeans in smoking mustard oil.",
       "ingredients": [
-        "Gundruk (Fermented sun-dried greens)",
-        "Tomatoes",
-        "Garlic",
-        "Ginger",
-        "Himalayan rock salt",
-        "Mustard oil"
+        "Dried gundruk (fermented mustard/radish greens)",
+        "Cold-pressed mustard oil",
+        "Medium onion",
+        "Fresh garlic cloves",
+        "Fresh ginger",
+        "Ripe country tomatoes",
+        "Dried red chillies / dalle khursani",
+        "Bhatmas (parched soybeans) / potato",
+        "Turmeric powder",
+        "Fresh coriander leaves"
       ],
-      "tasteProfile": "Sour, Tangy & Earthy",
-      "era": "Ancient Himalayan Winter Preservation Traditions",
-      "keyTechnique": "Earthen Jar Fermentation, Sun Dehydration & Clear Broth Boil"
-    },
-    {
-      "id": "sel-roti",
-      "name": "Sel Roti",
-      "alternateName": "Nepali-Sikkimese Ring Bread",
-      "state": "Sikkim",
-      "category": "grain-bread",
-      "description": "A ring-shaped, slightly sweet bread from a poured rice-flour and banana batter, deep-fried in a wide karahi and made for Tihar, Dashain and Sikkimese Nepali weddings.",
-      "ingredients": [
-        "Rice flour",
-        "Wheat flour",
-        "Banana",
-        "Sugar",
-        "Milk",
-        "Ghee",
-        "Cardamom"
-      ],
-      "tasteProfile": "Crisp-Edged, Mildly Sweet & Fragrant",
-      "era": "Nepali–Sikkimese festival tradition; documented in regional food writing",
-      "keyTechnique": "Poured-Ring Batter Frying"
+      "tasteProfile": "Sour, Tangy, Earthy & Pungent",
+      "era": "Ancient Himalayan Agropastoral Winter Survival Traditions",
+      "keyTechnique": "Salt-Free Anaerobic Fermentation, Sun Dehydration & Tempered Broth Boil"
     },
     {
       "id": "chettinad-chicken",

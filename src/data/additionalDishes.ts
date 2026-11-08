@@ -140,21 +140,7 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
     },
   ],
 
-  Chhattisgarh: [
-    {
-      id: "bafauri",
-      name: "Bafauri",
-      alternateName: "Steamed Gram-Flour Dumplings",
-      state: "Chhattisgarh",
-      category: "fermented-steamed",
-      description:
-        "Spiced gram-flour dumplings steamed until firm, then sliced and tempered with mustard, curry leaves and green chilli — a protein-rich, oil-light dish from Chhattisgarhi home kitchens.",
-      ingredients: ["Gram flour (besan)", "Green chilli", "Ginger", "Mustard seeds", "Curry leaves", "Turmeric", "Salt"],
-      tasteProfile: "Earthy, Savoury & Gently Piquant",
-      era: "Regional household technique; no securely dated first written reference",
-      keyTechnique: "Besan Batter Steaming & Post-Steam Tempering",
-    },
-  ],
+  Chhattisgarh: [],
 
   Goa: [
     {
@@ -185,53 +171,11 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
 
   Gujarat: [],
 
-  Haryana: [
-    {
-      id: "haryanvi-churma",
-      name: "Haryanvi Churma",
-      alternateName: "Churma / Choori",
-      state: "Haryana",
-      category: "sweet-dessert",
-      description:
-        "Coarse wheat-flour rotis baked over a cow-dung-fired hearth, crushed by hand and kneaded with desi ghee and jaggery or sugar; traditionally eaten with bajra roti, milk and seasonal greens.",
-      ingredients: ["Whole-wheat flour", "Desi ghee", "Jaggery or sugar", "Bajra", "Milk"],
-      tasteProfile: "Rustic, Ghee-Rich & Caramel-Sweet",
-      era: "Agrarian Haryanvi food tradition; documented in regional food writing",
-      keyTechnique: "Hearth-Baked Roti Crushing & Ghee Binding",
-    },
-  ],
+  Haryana: [],
 
-  "Himachal Pradesh": [
-    {
-      id: "chana-madra",
-      name: "Chana Madra",
-      alternateName: "Himachali Chickpea Yoghurt Curry",
-      state: "Himachal Pradesh",
-      category: "curry-stew",
-      description:
-        "Chickpeas simmered in a whisked yoghurt and gram-flour gravy with ghee, cumin and asafoetida, thickened slowly without a tomato base; the centrepiece of a Chamba–Kangra Dham feast.",
-      ingredients: ["Chickpeas", "Curd (yoghurt)", "Gram flour", "Ghee", "Cumin", "Asafoetida", "Turmeric"],
-      tasteProfile: "Creamy, Tangy & Warmly Aromatic",
-      era: "Himachali Dham tradition; documented in regional festival cookery",
-      keyTechnique: "Slow Yoghurt Gravy Simmering Without Curdling",
-    },
-  ],
+  "Himachal Pradesh": [],
 
-  Jharkhand: [
-    {
-      id: "pittha",
-      name: "Pittha",
-      alternateName: "Jharkhandi Rice Dumplings",
-      state: "Jharkhand",
-      category: "fermented-steamed",
-      description:
-        "Rice-flour dough shaped by hand into crescents or cups, sometimes filled with jaggery and sesame, steamed over a cloth-lined pot and eaten at harvest festivals across Jharkhand's tribal communities.",
-      ingredients: ["Rice flour", "Jaggery", "Sesame seeds", "Water", "Salt"],
-      tasteProfile: "Soft, Mildly Sweet & Rice-Forward",
-      era: "Tribal harvest-festival tradition; documented in ethnographic and regional accounts",
-      keyTechnique: "Hand-Shaped Rice Dough & Cloth Steaming",
-    },
-  ],
+  Jharkhand: [],
 
   Karnataka: [],
 
@@ -264,21 +208,7 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
     },
   ],
 
-  Manipur: [
-    {
-      id: "chak-hao-kheer",
-      name: "Chak-Hao Kheer",
-      alternateName: "Manipuri Black Rice Pudding",
-      state: "Manipur",
-      category: "sweet-dessert",
-      description:
-        "A slow-cooked pudding of aromatic Manipuri black rice (Chak-Hao), milk and jaggery or sugar, served at feasts and now protected by the Chak-Hao geographical indication.",
-      ingredients: ["Chak-Hao black rice", "Milk", "Jaggery or sugar", "Cardamom", "Cashew nuts"],
-      tasteProfile: "Nutty, Fragrant & Deeply Violet",
-      era: "Manipuri rice-cultivation tradition; Chak-Hao registered as a GI in 2020",
-      keyTechnique: "Long Soak & Low-Heat Black-Rice Reduction",
-    },
-  ],
+  Manipur: [],
 
   Meghalaya: [
     {
@@ -384,21 +314,7 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
     },
   ],
 
-  Sikkim: [
-    {
-      id: "sel-roti",
-      name: "Sel Roti",
-      alternateName: "Nepali-Sikkimese Ring Bread",
-      state: "Sikkim",
-      category: "grain-bread",
-      description:
-        "A ring-shaped, slightly sweet bread from a poured rice-flour and banana batter, deep-fried in a wide karahi and made for Tihar, Dashain and Sikkimese Nepali weddings.",
-      ingredients: ["Rice flour", "Wheat flour", "Banana", "Sugar", "Milk", "Ghee", "Cardamom"],
-      tasteProfile: "Crisp-Edged, Mildly Sweet & Fragrant",
-      era: "Nepali–Sikkimese festival tradition; documented in regional food writing",
-      keyTechnique: "Poured-Ring Batter Frying",
-    },
-  ],
+  Sikkim: [],
 
 
   Tripura: [

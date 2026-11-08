@@ -814,18 +814,14 @@
     "siddu": {
       "origin": {
         "library": "spice-street",
-        "caption": "Himachal Pradesh — the regional kitchen where Siddu belongs."
+        "caption": "Siddu - Origin (Birth of the food)",
+        "label": "Siddu - Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-bowls",
-        "caption": "Ingredients for Siddu: fermented wheat flour, crushed walnuts, poppy seeds (khus khus), pure ghee.",
-        "items": [
-          "Fermented wheat flour",
-          "Crushed walnuts",
-          "Poppy seeds (Khus Khus)",
-          "Pure ghee",
-          "Wild herbs"
-        ]
+        "caption": "Siddu - Evolution of Food",
+        "label": "Siddu - Evolution of Food",
+        "items": []
       },
       "method": {
         "photo": {
@@ -837,13 +833,13 @@
           "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AKullvi_Siddu_%28Himachal_Pradesh%29.jpg",
           "alt": "Steamed stuffed Siddu bread resting on a cutting surface",
-          "caption": "Traditional Kullu Siddu preparation: fermented wheat dough parcels stuffed with crushed walnuts, poppy seeds, and roasted spices before steam cooking.",
+          "caption": "Siddu - Recipe",
           "fallback": null,
           "width": 960,
           "height": 1280
         },
-        "caption": "Traditional Kullu Siddu preparation: fermented wheat dough parcels stuffed with crushed walnuts, poppy seeds, and roasted spices before steam cooking.",
-        "label": "Preparation technique"
+        "caption": "Siddu - Recipe",
+        "label": "Siddu - Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Kullvi_Siddu_%28Himachal_Pradesh%29.jpg",
