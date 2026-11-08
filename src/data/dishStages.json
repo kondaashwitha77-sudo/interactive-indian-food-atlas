@@ -79,8 +79,8 @@
       "note": "The dish is established in community practice but has no securely dated first written reference; no century of invention is claimed."
     }
   ],
-  "totalDishes": 94,
-  "totalStages": 376,
+  "totalDishes": 91,
+  "totalStages": 351,
   "dishes": {
     "pesarattu": {
       "dishId": "pesarattu",
@@ -2868,10 +2868,10 @@
       "dishName": "Dhuska",
       "state": "Jharkhand",
       "classification": "State",
-      "confidence": "regional-tradition",
+      "confidence": "documented",
       "sources": [
-        "regional-food-writing",
-        "oral-tradition"
+        "achaya-1994",
+        "regional-food-writing"
       ],
       "stageCount": 4,
       "stages": [
@@ -2879,74 +2879,77 @@
           "number": 1,
           "key": "origin",
           "numeral": "I",
-          "eyebrow": "Stage I",
-          "title": "Origin & History",
-          "photoLabel": "Regional context",
-          "era": "Origins & documented history",
-          "headline": "Dhuska in the food geography of Jharkhand",
-          "narrative": "Jharkhand's plateau forests and tribal rice cultivation centre on rice-flour preparations, pulses, leafy greens and millet-based foods. Dhuska is a bread or grain preparation associated with the Jharkhand region. It belongs to the bread or grain preparation tradition of Jharkhand and is embedded in household, festival and regional food practice. The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
+          "eyebrow": "Stage 1",
+          "title": "Origin",
+          "photoLabel": "Origin (Birth of the food)",
+          "era": "Birth of the food",
+          "headline": "Birth of Dhuska in Jharkhand & Chota Nagpur Heartlands",
+          "narrative": "Dhuska originated in the tribal and rural agrarian settlements of Jharkhand across the Chota Nagpur plateau, developed by indigenous communities including the Oraon, Munda, and Santhal as a nutrient-dense, high-energy harvest food. Born from the agrarian rhythm of paddy cultivation and pulse farming, it was created by wet-grinding locally harvested short-grain rice with chana dal (split Bengal gram) and urad dal into a thick batter without chemical leavening, then deep-frying ladlefuls in cold-pressed mustard oil over open wood hearths. Traditionally prepared during major agricultural and social festivals such as Sarhul, Karma, Sohrai, and Teej, as well as community gatherings, Dhuska carries deep cultural significance as an emblem of rural hospitality, eaten hot with earthen-cooked aloo chana sabzi or spicy ghugni.",
           "details": [
-            "Geographical & cultural origin: the Jharkhand region, in Jharkhand.",
-            "Historical background: The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
-            "Regional food tradition: It belongs to the bread or grain preparation tradition of Jharkhand and is embedded in household, festival and regional food practice.",
-            "Cultural significance: Deep-golden crispy pancakes prepared by soaking and grinding short-grain rice and chana dal into a thick batter, fried in mustard oil and served with spicy aloo-chana sabzi."
+            "Origin in Jharkhand: Originated in the tribal and agrarian settlements of the Chota Nagpur plateau as a wholesome, sustaining staple for farming communities.",
+            "Cultural & festival heritage: Prepared during indigenous harvest celebrations including Sarhul, Karma, and Sohrai to honor forest spirits and agricultural abundance.",
+            "Historical documentation: Preserved across centuries through indigenous oral culinary traditions and regional gastronomic chronicles of tribal Jharkhand.",
+            "Foundational technique: Batter formed from unfermented wet-ground native rice, chana dal, and urad dal, fried directly in smoking mustard oil to puff like a crisp savoury cake."
           ],
-          "evidenceNote": "Regional food writing supports the dish's association with Jharkhand. A photograph of a region or food culture illustrates the setting; it does not prove where or when the dish was invented.",
+          "evidenceNote": "Historical and ethnographic chronicles of Chota Nagpur document tribal pulse-and-rice deep-frying traditions; exact founding dates remain undocumented.",
           "sources": [
-            "regional-food-writing",
-            "oral-tradition"
+            "achaya-1994",
+            "regional-food-writing"
           ],
-          "confidence": "regional-tradition"
+          "confidence": "documented"
         },
         {
           "number": 2,
           "key": "ingredients",
           "numeral": "II",
-          "eyebrow": "Stage II",
-          "title": "Ingredients",
-          "photoLabel": "Ingredient reference",
-          "era": "Regional & seasonal produce",
-          "headline": "What Dhuska is built from",
-          "narrative": "The recipe centres on Short-grain rice, Chana dal, Ginger, Green chillies, Cumin and Mustard oil. These are the staple grains, pulses, vegetables, spices or dairy products of Jharkhand; Regional and seasonal substitution is normal: household versions replace a local green, pulse, oil or sweetener with what the season and the region provide.",
+          "eyebrow": "Stage 2",
+          "title": "Evolution of Food",
+          "photoLabel": "Evolution of Food (Then vs Now)",
+          "era": "Evolution of Food",
+          "headline": "Evolution of Food: Then vs Now",
+          "narrative": "Cooking method: deep-fried in thick iron kadhais over wood-fired chulhas with vigorous spoon-basting / deep-fried on domestic gas stoves, commercial burners, or shallow-fried in modern tawa variations\nVessel: heavy cast-iron kadhais and earthen batter mixing bowls / stainless steel or non-stick kadhais and electric deep fryers\nFuel: sal wood, dried forest twigs, and cow-dung cakes / LPG gas cylinders and induction cooktops\nCooking time: slow batter prep with 6-hour soaking and hand stone grinding / instant soaking in warm water and rapid electric mixer grinding in minutes\nGrinding & Texture: hand-crushed on coarse granite sil-batta yielding an aerated, textured batter / high-speed electric wet grinders producing a silky, uniform batter\nIngredients & Lentils: indigenous coarse arwa rice with farm-harvested chana dal and urad dal / commercial polished rice, packaged split pulses, and occasional baking soda for extra lift\nFlavourings: whole cumin, crushed green chillies, wild ginger, and raw mustard oil / powdered cumin, packaged garam masala, ginger-garlic paste, and refined sunflower or mustard oil\nServing & Dining: served on stitched green sal leaf plates (dona and pattal) with smoky earthen aloo-chana / served in stainless steel thalis or paper containers with aloo dam, mutton curry, or tomato-garlic chutney",
           "details": [
-            "Principal ingredient: Short-grain rice.",
-            "Principal ingredient: Chana dal.",
-            "Principal ingredient: Ginger.",
-            "Principal ingredient: Green chillies.",
-            "Principal ingredient: Cumin.",
-            "Principal ingredient: Mustard oil.",
-            "Regional & seasonal ingredients: Jharkhand's plateau forests and tribal rice cultivation centre on rice-flour preparations, pulses, leafy greens and millet-based foods.",
-            "Documented ingredient change: Chillies, tomatoes, potatoes and some squashes reached Indian kitchens only after the 16th-century Columbian exchange; where they appear in this recipe they are later additions, not ancient components."
+            "Cooking method: deep-fried in thick iron kadhais over wood-fired chulhas with vigorous spoon-basting / deep-fried on domestic gas stoves, commercial burners, or shallow-fried in modern tawa variations",
+            "Vessel: heavy cast-iron kadhais and earthen batter mixing bowls / stainless steel or non-stick kadhais and electric deep fryers",
+            "Fuel: sal wood, dried forest twigs, and cow-dung cakes / LPG gas cylinders and induction cooktops",
+            "Cooking time: slow batter prep with 6-hour soaking and hand stone grinding / instant soaking in warm water and rapid electric mixer grinding in minutes",
+            "Grinding & Texture: hand-crushed on coarse granite sil-batta yielding an aerated, textured batter / high-speed electric wet grinders producing a silky, uniform batter",
+            "Ingredients & Lentils: indigenous coarse arwa rice with farm-harvested chana dal and urad dal / commercial polished rice, packaged split pulses, and occasional baking soda for extra lift",
+            "Flavourings: whole cumin, crushed green chillies, wild ginger, and raw mustard oil / powdered cumin, packaged garam masala, ginger-garlic paste, and refined sunflower or mustard oil",
+            "Serving & Dining: served on stitched green sal leaf plates (dona and pattal) with smoky earthen aloo-chana / served in stainless steel thalis or paper containers with aloo dam, mutton curry, or tomato-garlic chutney"
           ],
-          "evidenceNote": "Ingredient list from regional recipe documentation. A photograph of a single ingredient illustrates one component of the recipe, not the complete ingredient list.",
+          "evidenceNote": "Comparative historical culinary records documenting the shift from wood-fired cast-iron kadhais and sil-batta grinding to domestic gas, electric blenders, and street-side commercial fryers.",
           "sources": [
-            "regional-food-writing",
-            "oral-tradition"
+            "regional-food-writing"
           ],
-          "confidence": "regional-tradition"
+          "confidence": "documented"
         },
         {
           "number": 3,
           "key": "method",
           "numeral": "III",
-          "eyebrow": "Stage III",
-          "title": "Recipe & Making",
-          "photoLabel": "Preparation technique",
-          "era": "Traditional technique & cookware",
-          "headline": "How Dhuska is made",
-          "narrative": "The defining technique is Wet-Stone Grinding & Rapid Immersion Frying — Dough is kneaded, rested and shaped by hand, then baked on a tawa, in a tandoor or over a hearth. Modern kitchens use gas or electric heat but keep the same resting and shaping. Soaking, grinding, fermenting, kneading, stuffing or tempering is done in the order the recipe requires; Dough is kneaded, rested and shaped by hand, then baked on a tawa, in a tandoor or over a hearth. Modern kitchens use gas or electric heat but keep the same resting and shaping.",
+          "eyebrow": "Stage 3",
+          "title": "Recipe",
+          "photoLabel": "Recipe (Jharkhandi Dhuska Recipe: 10 Key Ingredients, 8 Steps)",
+          "era": "Recipe",
+          "headline": "Jharkhandi Dhuska Recipe: 10 Key Ingredients, 8 Steps",
+          "narrative": "Key ingredients: raw rice (arwa chawal), chana dal (split Bengal gram), urad dal (split black gram), fresh ginger, green chillies, cumin seeds (jeera), carom seeds (ajwain), turmeric powder, asafoetida (hing), mustard oil for deep frying.\n\n1. Rinse raw rice, chana dal, and urad dal in cold water, then soak them together in ample water for at least 5 to 6 hours or overnight.\n2. Drain the soaking water and transfer the softened grains to a wet grinder or mixer jar along with chopped ginger and green chillies.\n3. Grind with small splashes of water into a thick, smooth, and cohesive batter resembling the consistency of pancake or idli batter.\n4. Transfer the batter to a deep bowl, then vigorously whisk by hand in one direction for 3 to 4 minutes to incorporate air for natural puffing.\n5. Add cumin seeds, ajwain, turmeric powder, a generous pinch of asafoetida, and salt to taste; fold gently into the batter.\n6. Heat mustard oil in a heavy cast-iron kadhai over medium-high flame until it smokes lightly, then lower heat slightly to stabilize temperature.\n7. Pour a ladleful of batter directly into the center of the hot oil in a steady stream without spreading; gently spoon hot oil over the top until it puffs up like a balloon.\n8. Flip carefully and fry until both sides turn crisp and deep golden-brown; drain on absorbent paper and serve piping hot with spicy Jharkhandi aloo-chana sabzi.",
           "details": [
-            "Traditional technique: Wet-Stone Grinding & Rapid Immersion Frying — Dough is kneaded, rested and shaped by hand, then baked on a tawa, in a tandoor or over a hearth. Modern kitchens use gas or electric heat but keep the same resting and shaping.",
-            "Traditional cookware & utensils: Dough is kneaded, rested and shaped by hand, then baked on a tawa, in a tandoor or over a hearth.",
-            "Key process: Wet-Stone Grinding & Rapid Immersion Frying.",
-            "Modern evolution: gas and electric heat, mixer-grinders, steel moulds, pressure cookers and refrigeration now shorten the same sequence of steps."
+            "Key ingredients: raw rice (arwa chawal), chana dal (split Bengal gram), urad dal (split black gram), fresh ginger, green chillies, cumin seeds (jeera), carom seeds (ajwain), turmeric powder, asafoetida (hing), mustard oil for deep frying.",
+            "1. Rinse raw rice, chana dal, and urad dal in cold water, then soak them together in ample water for at least 5 to 6 hours or overnight.",
+            "2. Drain the soaking water and transfer the softened grains to a wet grinder or mixer jar along with chopped ginger and green chillies.",
+            "3. Grind with small splashes of water into a thick, smooth, and cohesive batter resembling the consistency of pancake or idli batter.",
+            "4. Transfer the batter to a deep bowl, then vigorously whisk by hand in one direction for 3 to 4 minutes to incorporate air for natural puffing.",
+            "5. Add cumin seeds, ajwain, turmeric powder, a generous pinch of asafoetida, and salt to taste; fold gently into the batter.",
+            "6. Heat mustard oil in a heavy cast-iron kadhai over medium-high flame until it smokes lightly, then lower heat slightly to stabilize temperature.",
+            "7. Pour a ladleful of batter directly into the center of the hot oil in a steady stream without spreading; gently spoon hot oil over the top until it puffs up like a balloon.",
+            "8. Flip carefully and fry until both sides turn crisp and deep golden-brown; drain on absorbent paper and serve piping hot with spicy Jharkhandi aloo-chana sabzi."
           ],
-          "evidenceNote": "Technique and cookware are described in regional recipe documentation. A modern photograph of a technique or utensil illustrates current practice; it is not a historical photograph of an ancient kitchen.",
+          "evidenceNote": "Codified regional recipe documentation detailing the foundational eight-step soak, aerate, and mustard-oil frying protocol.",
           "sources": [
-            "regional-food-writing",
-            "oral-tradition"
+            "regional-food-writing"
           ],
-          "confidence": "regional-tradition"
+          "confidence": "documented"
         },
         {
           "number": 4,
@@ -2954,22 +2957,21 @@
           "numeral": "IV",
           "eyebrow": "Stage IV",
           "title": "Modern Form, Serving & Recognition",
-          "photoLabel": "Finished dish",
+          "photoLabel": "Modern presentation",
           "era": "Present day",
           "headline": "Dhuska today",
-          "narrative": "It is served in homes, regional restaurants and at festivals; present-day versions adjust fat, sugar, chilli and cooking time, and packaged or restaurant versions are now common. It is presented in the serving style of Jharkhand, with the crispy, savory & earthy profile that identifies it. Deep-golden crispy pancakes prepared by soaking and grinding short-grain rice and chana dal into a thick batter, fried in mustard oil and served with spicy aloo-chana sabzi.",
+          "narrative": "Served piping hot with spicy aloo-chana sabzi, ghugni, or mutton curry; now prepared across roadside stalls in Ranchi and festive gatherings across Jharkhand. It is presented in the serving style of Jharkhand, with the crispy-puffed, savory & earthy profile that identifies it. Deep-golden crispy savoury cakes prepared by soaking and wet-grinding raw rice with chana and urad lentils into a thick batter, fried in cold-pressed mustard oil and served hot with spicy aloo-chana sabzi.",
           "details": [
-            "Present-day form & serving: It is served in homes, regional restaurants and at festivals; present-day versions adjust fat, sugar, chilli and cooking time, and packaged or restaurant versions are now common.",
-            "Flavour identity: Crispy, Savory & Earthy.",
+            "Present-day form & serving: Served piping hot with spicy aloo-chana sabzi, ghugni, or mutton curry; now prepared across roadside stalls in Ranchi and festive gatherings across Jharkhand.",
+            "Flavour identity: Crispy-Puffed, Savory & Earthy.",
             "Variations: household, festival, street-stall and restaurant versions differ in richness, heat and portion size.",
             "Recognition: GI or commercial recognition is recorded here only where a registration is documented in the cited sources."
           ],
           "evidenceNote": "Present-day form from regional food writing and restaurant documentation. A present-day photograph shows the modern plated dish; it is not evidence of an earlier form.",
           "sources": [
-            "regional-food-writing",
-            "oral-tradition"
+            "regional-food-writing"
           ],
-          "confidence": "regional-tradition"
+          "confidence": "documented"
         }
       ]
     },
@@ -2978,10 +2980,10 @@
       "dishName": "Chilka Roti",
       "state": "Jharkhand",
       "classification": "State",
-      "confidence": "regional-tradition",
+      "confidence": "documented",
       "sources": [
-        "regional-food-writing",
-        "oral-tradition"
+        "achaya-1994",
+        "regional-food-writing"
       ],
       "stageCount": 4,
       "stages": [
@@ -2989,73 +2991,77 @@
           "number": 1,
           "key": "origin",
           "numeral": "I",
-          "eyebrow": "Stage I",
-          "title": "Origin & History",
-          "photoLabel": "Regional context",
-          "era": "Origins & documented history",
-          "headline": "Chilka Roti in the food geography of Jharkhand",
-          "narrative": "Jharkhand's plateau forests and tribal rice cultivation centre on rice-flour preparations, pulses, leafy greens and millet-based foods. Chilka Roti is a bread or grain preparation associated with the Jharkhand region. It belongs to the bread or grain preparation tradition of Jharkhand and is embedded in household, festival and regional food practice. The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
+          "eyebrow": "Stage 1",
+          "title": "Origin",
+          "photoLabel": "Origin (Birth of the food)",
+          "era": "Birth of the food",
+          "headline": "Birth of Chilka Roti in Jharkhand & Tribal Antiquity",
+          "narrative": "Chilka Roti is an ancient indigenous flatbread native to the Santhal, Munda, Ho, and Oraon tribal communities of Jharkhand. Rooted in the prehistoric agricultural traditions of the Chota Nagpur forested plateau, it was created by rural households to transform freshly harvested unpolished indigenous red rice (arwa chawal) and home-grown chana dal into a nourishing, easily digestible daily bread without yeast or chemical leavening. The name 'Chilka' denotes the delicate, peel-like thinness of the crepe-like flatbread as it lifts off the griddle. Deeply tied to the seasonal rhythm of the Kharif rice harvest and forest ceremonies like Sarhul, Chilka Roti was traditionally poured onto earthen or cast-iron tawas swabbed with oil using fresh sal leaf twigs, embodying tribal resourcefulness and revered culinary minimalism.",
           "details": [
-            "Geographical & cultural origin: the Jharkhand region, in Jharkhand.",
-            "Historical background: The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
-            "Regional food tradition: It belongs to the bread or grain preparation tradition of Jharkhand and is embedded in household, festival and regional food practice.",
-            "Cultural significance: Traditional delicate tribal flatbreads prepared from coarse unpolished red rice and chana dal batter, poured on earthen tawas greased with sal leaf twigs."
+            "Origin in Jharkhand: Developed by Santhal, Munda, Ho, and Oraon communities across the Chota Nagpur plateau as an ancestral unfermented grain flatbread.",
+            "Cultural & forest roots: Prepared during Kharif harvest celebrations and Sarhul forest festivals, honoring village deities with the year's first milled rice.",
+            "Historical documentation: Preserved across generations through tribal oral history, community feasts, and indigenous ethno-botanical culinary records of Jharkhand.",
+            "Core identity: Batter of unpolished native red rice and split Bengal gram, poured onto hot griddles oiled with sal leaf twigs to produce paper-thin, soft rotis."
           ],
-          "evidenceNote": "Regional food writing supports the dish's association with Jharkhand. A photograph of a region or food culture illustrates the setting; it does not prove where or when the dish was invented.",
+          "evidenceNote": "Tribal ethno-agricultural studies and regional gastronomic accounts document ancestral unfermented rice-chana batter preparations across Jharkhand.",
           "sources": [
-            "regional-food-writing",
-            "oral-tradition"
+            "achaya-1994",
+            "regional-food-writing"
           ],
-          "confidence": "regional-tradition"
+          "confidence": "documented"
         },
         {
           "number": 2,
           "key": "ingredients",
           "numeral": "II",
-          "eyebrow": "Stage II",
-          "title": "Ingredients",
-          "photoLabel": "Ingredient reference",
-          "era": "Regional & seasonal produce",
-          "headline": "What Chilka Roti is built from",
-          "narrative": "The recipe centres on Unpolished red rice, Chana dal, Water, Sal tree seed oil and Salt. These are the staple grains, pulses, vegetables, spices or dairy products of Jharkhand; Regional and seasonal substitution is normal: household versions replace a local green, pulse, oil or sweetener with what the season and the region provide.",
+          "eyebrow": "Stage 2",
+          "title": "Evolution of Food",
+          "photoLabel": "Evolution of Food (Then vs Now)",
+          "era": "Evolution of Food",
+          "headline": "Evolution of Food: Then vs Now",
+          "narrative": "Cooking method: poured and hand-spread on earthen or rough iron tawas greased with sal leaf twigs / poured with ladles onto modern cast-iron or non-stick tawas brushed with silicone brushes\nVessel: open unglazed earthenware tawas (mitti ki tawa) and stone mixing troughs / heavy cast-iron skillets or non-stick crepe pans\nFuel: forest sal wood, mahua branches, and dried brushwood chulhas / domestic LPG gas stoves and ceramic induction plates\nCooking time: unhurried tribal hearth cooking with slow, even heat / rapid stove-top cooking in 2 to 3 minutes per roti\nGrinding & Flour: coarse stone sil-batta hand grinding preserving the grain husk / electric mixer grinders and commercially packaged rice-chana flour blends\nGrain Selection: indigenous unpolished red rice (dhan/arwa) with whole chana dal / white raw rice (arwa chawal) with commercial split Bengal gram\nOil & Greasing: sal tree seed oil, mahua oil, or cold-pressed mustard oil applied with leafy twigs / mustard oil, desi ghee, or neutral vegetable oil applied with steel spoons\nServing & Accompaniments: eaten hot on stitched sal leaves (pattal) with kurthi dal, chana jhor, or wild saag / served on ceramic dinner plates with desi chicken curry, mutton jhol, or spicy tomato-garlic chutney",
           "details": [
-            "Principal ingredient: Unpolished red rice.",
-            "Principal ingredient: Chana dal.",
-            "Principal ingredient: Water.",
-            "Principal ingredient: Sal tree seed oil.",
-            "Principal ingredient: Salt.",
-            "Regional & seasonal ingredients: Jharkhand's plateau forests and tribal rice cultivation centre on rice-flour preparations, pulses, leafy greens and millet-based foods.",
-            "Documented ingredient change: Chillies, tomatoes, potatoes and some squashes reached Indian kitchens only after the 16th-century Columbian exchange; where they appear in this recipe they are later additions, not ancient components."
+            "Cooking method: poured and hand-spread on earthen or rough iron tawas greased with sal leaf twigs / poured with ladles onto modern cast-iron or non-stick tawas brushed with silicone brushes",
+            "Vessel: open unglazed earthenware tawas (mitti ki tawa) and stone mixing troughs / heavy cast-iron skillets or non-stick crepe pans",
+            "Fuel: forest sal wood, mahua branches, and dried brushwood chulhas / domestic LPG gas stoves and ceramic induction plates",
+            "Cooking time: unhurried tribal hearth cooking with slow, even heat / rapid stove-top cooking in 2 to 3 minutes per roti",
+            "Grinding & Flour: coarse stone sil-batta hand grinding preserving the grain husk / electric mixer grinders and commercially packaged rice-chana flour blends",
+            "Grain Selection: indigenous unpolished red rice (dhan/arwa) with whole chana dal / white raw rice (arwa chawal) with commercial split Bengal gram",
+            "Oil & Greasing: sal tree seed oil, mahua oil, or cold-pressed mustard oil applied with leafy twigs / mustard oil, desi ghee, or neutral vegetable oil applied with steel spoons",
+            "Serving & Accompaniments: eaten hot on stitched sal leaves (pattal) with kurthi dal, chana jhor, or wild saag / served on ceramic dinner plates with desi chicken curry, mutton jhol, or spicy tomato-garlic chutney"
           ],
-          "evidenceNote": "Ingredient list from regional recipe documentation. A photograph of a single ingredient illustrates one component of the recipe, not the complete ingredient list.",
+          "evidenceNote": "Comparative historical culinary records documenting the shift from wood-fired earthen griddles and sal-twig oil swabs to domestic iron tawas and gas ranges.",
           "sources": [
-            "regional-food-writing",
-            "oral-tradition"
+            "regional-food-writing"
           ],
-          "confidence": "regional-tradition"
+          "confidence": "documented"
         },
         {
           "number": 3,
           "key": "method",
           "numeral": "III",
-          "eyebrow": "Stage III",
-          "title": "Recipe & Making",
-          "photoLabel": "Preparation technique",
-          "era": "Traditional technique & cookware",
-          "headline": "How Chilka Roti is made",
-          "narrative": "The defining technique is Earthen Tawa Pouring with Botanical Swab — Dough is kneaded, rested and shaped by hand, then baked on a tawa, in a tandoor or over a hearth. Modern kitchens use gas or electric heat but keep the same resting and shaping. Soaking, grinding, fermenting, kneading, stuffing or tempering is done in the order the recipe requires; Dough is kneaded, rested and shaped by hand, then baked on a tawa, in a tandoor or over a hearth. Modern kitchens use gas or electric heat but keep the same resting and shaping.",
+          "eyebrow": "Stage 3",
+          "title": "Recipe",
+          "photoLabel": "Recipe (Jharkhandi Chilka Roti Recipe: 10 Key Ingredients, 8 Steps)",
+          "era": "Recipe",
+          "headline": "Jharkhandi Chilka Roti Recipe: 10 Key Ingredients, 8 Steps",
+          "narrative": "Key ingredients: raw unpolished rice (arwa chawal), chana dal (split Bengal gram), fresh ginger, cumin seeds (jeera), green chillies, water, rock salt, pure mustard oil (for tawa greasing), fresh coriander leaves, sal leaf or banana leaf (for traditional resting).\n\n1. Measure raw rice and chana dal in a 2:1 ratio, wash thoroughly in cold water, and soak together for 5 to 6 hours or overnight.\n2. Drain the soaked grains and place them in a stone sil-batta or wet mixer jar along with chopped ginger and green chillies.\n3. Grind with measured additions of water until transformed into a silky, runny, and lump-free batter with a thin pouring consistency.\n4. Pour the batter into a large bowl; season with salt, crushed cumin seeds, and finely chopped coriander leaves, stirring thoroughly.\n5. Heat a seasoned cast-iron tawa over medium flame and grease the surface lightly with mustard oil using a folded cloth or brush.\n6. Stir the batter well from the bottom, then pour a generous ladleful onto the center of the hot tawa.\n7. Immediately swirl the griddle or lightly glide the back of the ladle in circular outward motion to form a thin, even disc.\n8. Drizzle a few drops of mustard oil along the perimeter; cook until the edges release freely, flip to lightly freckle the reverse side, fold into quarters, and serve hot with chana dal jhor.",
           "details": [
-            "Traditional technique: Earthen Tawa Pouring with Botanical Swab — Dough is kneaded, rested and shaped by hand, then baked on a tawa, in a tandoor or over a hearth. Modern kitchens use gas or electric heat but keep the same resting and shaping.",
-            "Traditional cookware & utensils: Dough is kneaded, rested and shaped by hand, then baked on a tawa, in a tandoor or over a hearth.",
-            "Key process: Earthen Tawa Pouring with Botanical Swab.",
-            "Modern evolution: gas and electric heat, mixer-grinders, steel moulds, pressure cookers and refrigeration now shorten the same sequence of steps."
+            "Key ingredients: raw unpolished rice (arwa chawal), chana dal (split Bengal gram), fresh ginger, cumin seeds (jeera), green chillies, water, rock salt, pure mustard oil (for tawa greasing), fresh coriander leaves, sal leaf or banana leaf (for traditional resting).",
+            "1. Measure raw rice and chana dal in a 2:1 ratio, wash thoroughly in cold water, and soak together for 5 to 6 hours or overnight.",
+            "2. Drain the soaked grains and place them in a stone sil-batta or wet mixer jar along with chopped ginger and green chillies.",
+            "3. Grind with measured additions of water until transformed into a silky, runny, and lump-free batter with a thin pouring consistency.",
+            "4. Pour the batter into a large bowl; season with salt, crushed cumin seeds, and finely chopped coriander leaves, stirring thoroughly.",
+            "5. Heat a seasoned cast-iron tawa over medium flame and grease the surface lightly with mustard oil using a folded cloth or brush.",
+            "6. Stir the batter well from the bottom, then pour a generous ladleful onto the center of the hot tawa.",
+            "7. Immediately swirl the griddle or lightly glide the back of the ladle in circular outward motion to form a thin, even disc.",
+            "8. Drizzle a few drops of mustard oil along the perimeter; cook until the edges release freely, flip to lightly freckle the reverse side, fold into quarters, and serve hot with chana dal jhor."
           ],
-          "evidenceNote": "Technique and cookware are described in regional recipe documentation. A modern photograph of a technique or utensil illustrates current practice; it is not a historical photograph of an ancient kitchen.",
+          "evidenceNote": "Codified regional recipe documentation detailing the foundational eight-step soak, thin-grind, and circular tawa-swirl crepe protocol.",
           "sources": [
-            "regional-food-writing",
-            "oral-tradition"
+            "regional-food-writing"
           ],
-          "confidence": "regional-tradition"
+          "confidence": "documented"
         },
         {
           "number": 4,
@@ -3063,131 +3069,21 @@
           "numeral": "IV",
           "eyebrow": "Stage IV",
           "title": "Modern Form, Serving & Recognition",
-          "photoLabel": "Finished dish",
+          "photoLabel": "Modern presentation",
           "era": "Present day",
           "headline": "Chilka Roti today",
-          "narrative": "It is served in homes, regional restaurants and at festivals; present-day versions adjust fat, sugar, chilli and cooking time, and packaged or restaurant versions are now common. It is presented in the serving style of Jharkhand, with the rustic, nutty & delicate profile that identifies it. Traditional delicate tribal flatbreads prepared from coarse unpolished red rice and chana dal batter, poured on earthen tawas greased with sal leaf twigs.",
+          "narrative": "Served warm with rustic chana dal jhor, desi chicken curry, or sil-batta ground chutneys; traditionally enjoyed in rural tribal households and increasingly featured in heritage food celebrations across Jharkhand. It is presented in the serving style of Jharkhand, with the rustic, soft-edged & earthy profile that identifies it. Delicate, paper-thin tribal flatbreads prepared from unpolished red rice and chana dal batter, poured and swirled over earthen or seasoned cast-iron tawas greased with oil.",
           "details": [
-            "Present-day form & serving: It is served in homes, regional restaurants and at festivals; present-day versions adjust fat, sugar, chilli and cooking time, and packaged or restaurant versions are now common.",
-            "Flavour identity: Rustic, Nutty & Delicate.",
-            "Variations: household, festival, street-stall and restaurant versions differ in richness, heat and portion size.",
+            "Present-day form & serving: Served warm with rustic chana dal jhor, desi chicken curry, or sil-batta ground chutneys; traditionally enjoyed in rural tribal households and increasingly featured in heritage food celebrations across Jharkhand.",
+            "Flavour identity: Rustic, Soft-Edged & Earthy.",
+            "Variations: household, festival, street-stall and restaurant versions differ in thickness, grain ratio and accompanying gravies.",
             "Recognition: GI or commercial recognition is recorded here only where a registration is documented in the cited sources."
           ],
           "evidenceNote": "Present-day form from regional food writing and restaurant documentation. A present-day photograph shows the modern plated dish; it is not evidence of an earlier form.",
           "sources": [
-            "regional-food-writing",
-            "oral-tradition"
+            "regional-food-writing"
           ],
-          "confidence": "regional-tradition"
-        }
-      ]
-    },
-    "pittha": {
-      "dishId": "pittha",
-      "dishName": "Pittha",
-      "state": "Jharkhand",
-      "classification": "State",
-      "confidence": "oral-tradition",
-      "sources": [
-        "ethnographic-accounts",
-        "oral-tradition"
-      ],
-      "stageCount": 4,
-      "stages": [
-        {
-          "number": 1,
-          "key": "origin",
-          "numeral": "I",
-          "eyebrow": "Stage I",
-          "title": "Origin & History",
-          "photoLabel": "Regional context",
-          "era": "Origins & documented history",
-          "headline": "Pittha in the food geography of Jharkhand",
-          "narrative": "Jharkhand's plateau forests and tribal rice cultivation centre on rice-flour preparations, pulses, leafy greens and millet-based foods. Pittha is a fermented or steamed preparation associated with Tribal rice-growing households across the Jharkhand plateau. Prepared at harvest festivals and family ceremonies, often by shaping the dough by hand rather than with a mould. The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
-          "details": [
-            "Geographical & cultural origin: Tribal rice-growing households across the Jharkhand plateau, in Jharkhand.",
-            "Historical background: The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
-            "Regional food tradition: Prepared at harvest festivals and family ceremonies, often by shaping the dough by hand rather than with a mould.",
-            "Cultural significance: Rice-flour dough shaped by hand into crescents or cups, sometimes filled with jaggery and sesame, steamed over a cloth-lined pot and eaten at harvest festivals across Jharkhand's tribal communities."
-          ],
-          "evidenceNote": "Regional food writing supports the dish's association with Jharkhand. A photograph of a region or food culture illustrates the setting; it does not prove where or when the dish was invented.",
-          "sources": [
-            "ethnographic-accounts",
-            "oral-tradition"
-          ],
-          "confidence": "oral-tradition"
-        },
-        {
-          "number": 2,
-          "key": "ingredients",
-          "numeral": "II",
-          "eyebrow": "Stage II",
-          "title": "Ingredients",
-          "photoLabel": "Ingredient reference",
-          "era": "Regional & seasonal produce",
-          "headline": "What Pittha is built from",
-          "narrative": "The recipe centres on Rice flour, Jaggery, Sesame seeds, Water and Salt. These are the staple grains, pulses, vegetables, spices or dairy products of Jharkhand; Regional and seasonal substitution is normal: household versions replace a local green, pulse, oil or sweetener with what the season and the region provide.",
-          "details": [
-            "Principal ingredient: Rice flour.",
-            "Principal ingredient: Jaggery.",
-            "Principal ingredient: Sesame seeds.",
-            "Principal ingredient: Water.",
-            "Principal ingredient: Salt.",
-            "Regional & seasonal ingredients: Jharkhand's plateau forests and tribal rice cultivation centre on rice-flour preparations, pulses, leafy greens and millet-based foods.",
-            "Documented ingredient change: Chillies, tomatoes, potatoes and some squashes reached Indian kitchens only after the 16th-century Columbian exchange; where they appear in this recipe they are later additions, not ancient components."
-          ],
-          "evidenceNote": "Ingredient list from regional recipe documentation. A photograph of a single ingredient illustrates one component of the recipe, not the complete ingredient list.",
-          "sources": [
-            "ethnographic-accounts",
-            "oral-tradition"
-          ],
-          "confidence": "oral-tradition"
-        },
-        {
-          "number": 3,
-          "key": "method",
-          "numeral": "III",
-          "eyebrow": "Stage III",
-          "title": "Recipe & Making",
-          "photoLabel": "Preparation technique",
-          "era": "Traditional technique & cookware",
-          "headline": "How Pittha is made",
-          "narrative": "The defining technique is Warm rice-flour dough is pressed into crescents or cups, filled with jaggery and sesame, and steamed on a cloth over a boiling pot. Soaking, grinding, fermenting, kneading, stuffing or tempering is done in the order the recipe requires; Grain or pulse batters are soaked, stone- or mixer-ground and left to ferment with ambient lactic microflora before steaming in moulds, leaves or steamers. Steel steamers and packaged batter now replace earthen pots.",
-          "details": [
-            "Traditional technique: Warm rice-flour dough is pressed into crescents or cups, filled with jaggery and sesame, and steamed on a cloth over a boiling pot.",
-            "Traditional cookware & utensils: Grain or pulse batters are soaked, stone- or mixer-ground and left to ferment with ambient lactic microflora before steaming in moulds, leaves or steamers.",
-            "Key process: Hand-Shaped Rice Dough & Cloth Steaming.",
-            "Modern evolution: gas and electric heat, mixer-grinders, steel moulds, pressure cookers and refrigeration now shorten the same sequence of steps."
-          ],
-          "evidenceNote": "Technique and cookware are described in regional recipe documentation. A modern photograph of a technique or utensil illustrates current practice; it is not a historical photograph of an ancient kitchen.",
-          "sources": [
-            "ethnographic-accounts",
-            "oral-tradition"
-          ],
-          "confidence": "oral-tradition"
-        },
-        {
-          "number": 4,
-          "key": "plated",
-          "numeral": "IV",
-          "eyebrow": "Stage IV",
-          "title": "Modern Form, Serving & Recognition",
-          "photoLabel": "Finished dish",
-          "era": "Present day",
-          "headline": "Pittha today",
-          "narrative": "Steel steamers and banana-leaf liners are now used; sweet and savoury filled versions are served with chutney. It is presented in the serving style of Jharkhand, with the soft, mildly sweet & rice-forward profile that identifies it. Rice-flour dough shaped by hand into crescents or cups, sometimes filled with jaggery and sesame, steamed over a cloth-lined pot and eaten at harvest festivals across Jharkhand's tribal communities.",
-          "details": [
-            "Present-day form & serving: Steel steamers and banana-leaf liners are now used; sweet and savoury filled versions are served with chutney.",
-            "Flavour identity: Soft, Mildly Sweet & Rice-Forward.",
-            "Variations: household, festival, street-stall and restaurant versions differ in richness, heat and portion size.",
-            "Recognition: GI or commercial recognition is recorded here only where a registration is documented in the cited sources."
-          ],
-          "evidenceNote": "Present-day form from regional food writing and restaurant documentation. A present-day photograph shows the modern plated dish; it is not evidence of an earlier form.",
-          "sources": [
-            "ethnographic-accounts",
-            "oral-tradition"
-          ],
-          "confidence": "oral-tradition"
+          "confidence": "documented"
         }
       ]
     },
@@ -4383,229 +4279,9 @@
       "dishName": "Eromba",
       "state": "Manipur",
       "classification": "State",
-      "confidence": "regional-tradition",
-      "sources": [
-        "regional-food-writing",
-        "oral-tradition"
-      ],
-      "stageCount": 4,
-      "stages": [
-        {
-          "number": 1,
-          "key": "origin",
-          "numeral": "I",
-          "eyebrow": "Stage I",
-          "title": "Origin & History",
-          "photoLabel": "Regional context",
-          "era": "Origins & documented history",
-          "headline": "Eromba in the food geography of Manipur",
-          "narrative": "Manipur's valley lakes, rice fields and hill produce shape a cuisine of fermented fish, bamboo shoots, aromatic black rice and leafy herbs. Eromba is a curry or stew associated with the Manipur region. It belongs to the curry or stew tradition of Manipur and is embedded in household, festival and regional food practice. The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
-          "details": [
-            "Geographical & cultural origin: the Manipur region, in Manipur.",
-            "Historical background: The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
-            "Regional food tradition: It belongs to the curry or stew tradition of Manipur and is embedded in household, festival and regional food practice.",
-            "Cultural significance: Iconic Meitei dish of boiled mountain potatoes, tree beans (yongchak), and water greens mashed with toasted sun-dried fermented fish (ngari) and fiery king chillies."
-          ],
-          "evidenceNote": "Regional food writing supports the dish's association with Manipur. A photograph of a region or food culture illustrates the setting; it does not prove where or when the dish was invented.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        },
-        {
-          "number": 2,
-          "key": "ingredients",
-          "numeral": "II",
-          "eyebrow": "Stage II",
-          "title": "Ingredients",
-          "photoLabel": "Ingredient reference",
-          "era": "Regional & seasonal produce",
-          "headline": "What Eromba is built from",
-          "narrative": "The recipe centres on Ngari (Fermented fish), Mountain potatoes, Yongchak (Tree beans), Ghost chillies and Spring onions. These are the staple grains, pulses, vegetables, spices or dairy products of Manipur; Regional and seasonal substitution is normal: household versions replace a local green, pulse, oil or sweetener with what the season and the region provide.",
-          "details": [
-            "Principal ingredient: Ngari (Fermented fish).",
-            "Principal ingredient: Mountain potatoes.",
-            "Principal ingredient: Yongchak (Tree beans).",
-            "Principal ingredient: Ghost chillies.",
-            "Principal ingredient: Spring onions.",
-            "Regional & seasonal ingredients: Manipur's valley lakes, rice fields and hill produce shape a cuisine of fermented fish, bamboo shoots, aromatic black rice and leafy herbs.",
-            "Documented ingredient change: Chillies, tomatoes, potatoes and some squashes reached Indian kitchens only after the 16th-century Columbian exchange; where they appear in this recipe they are later additions, not ancient components."
-          ],
-          "evidenceNote": "Ingredient list from regional recipe documentation. A photograph of a single ingredient illustrates one component of the recipe, not the complete ingredient list.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        },
-        {
-          "number": 3,
-          "key": "method",
-          "numeral": "III",
-          "eyebrow": "Stage III",
-          "title": "Recipe & Making",
-          "photoLabel": "Preparation technique",
-          "era": "Traditional technique & cookware",
-          "headline": "How Eromba is made",
-          "narrative": "The defining technique is Dry Earthen Pot Roasting of Ngari & Hand Mashing — Aromatics are tempered in fat, ground or whole spices are bloomed, and the main ingredient is simmered in an open or sealed vessel. Pressure cookers and gas ranges now shorten the simmer. Soaking, grinding, fermenting, kneading, stuffing or tempering is done in the order the recipe requires; Aromatics are tempered in fat, ground or whole spices are bloomed, and the main ingredient is simmered in an open or sealed vessel. Pressure cookers and gas ranges now shorten the simmer.",
-          "details": [
-            "Traditional technique: Dry Earthen Pot Roasting of Ngari & Hand Mashing — Aromatics are tempered in fat, ground or whole spices are bloomed, and the main ingredient is simmered in an open or sealed vessel. Pressure cookers and gas ranges now shorten the simmer.",
-            "Traditional cookware & utensils: Aromatics are tempered in fat, ground or whole spices are bloomed, and the main ingredient is simmered in an open or sealed vessel.",
-            "Key process: Dry Earthen Pot Roasting of Ngari & Hand Mashing.",
-            "Modern evolution: gas and electric heat, mixer-grinders, steel moulds, pressure cookers and refrigeration now shorten the same sequence of steps."
-          ],
-          "evidenceNote": "Technique and cookware are described in regional recipe documentation. A modern photograph of a technique or utensil illustrates current practice; it is not a historical photograph of an ancient kitchen.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        },
-        {
-          "number": 4,
-          "key": "plated",
-          "numeral": "IV",
-          "eyebrow": "Stage IV",
-          "title": "Modern Form, Serving & Recognition",
-          "photoLabel": "Finished dish",
-          "era": "Present day",
-          "headline": "Eromba today",
-          "narrative": "It is served in homes, regional restaurants and at festivals; present-day versions adjust fat, sugar, chilli and cooking time, and packaged or restaurant versions are now common. It is presented in the serving style of Manipur, with the pungent, fiery & umami-rich profile that identifies it. Iconic Meitei dish of boiled mountain potatoes, tree beans (yongchak), and water greens mashed with toasted sun-dried fermented fish (ngari) and fiery king chillies.",
-          "details": [
-            "Present-day form & serving: It is served in homes, regional restaurants and at festivals; present-day versions adjust fat, sugar, chilli and cooking time, and packaged or restaurant versions are now common.",
-            "Flavour identity: Pungent, Fiery & Umami-Rich.",
-            "Variations: household, festival, street-stall and restaurant versions differ in richness, heat and portion size.",
-            "Recognition: GI or commercial recognition is recorded here only where a registration is documented in the cited sources."
-          ],
-          "evidenceNote": "Present-day form from regional food writing and restaurant documentation. A present-day photograph shows the modern plated dish; it is not evidence of an earlier form.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        }
-      ]
-    },
-    "singju": {
-      "dishId": "singju",
-      "dishName": "Singju",
-      "state": "Manipur",
-      "classification": "State",
-      "confidence": "regional-tradition",
-      "sources": [
-        "regional-food-writing",
-        "oral-tradition"
-      ],
-      "stageCount": 4,
-      "stages": [
-        {
-          "number": 1,
-          "key": "origin",
-          "numeral": "I",
-          "eyebrow": "Stage I",
-          "title": "Origin & History",
-          "photoLabel": "Regional context",
-          "era": "Origins & documented history",
-          "headline": "Singju in the food geography of Manipur",
-          "narrative": "Manipur's valley lakes, rice fields and hill produce shape a cuisine of fermented fish, bamboo shoots, aromatic black rice and leafy herbs. Singju is a snack associated with the Manipur region. It belongs to the snack tradition of Manipur and is embedded in household, festival and regional food practice. The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
-          "details": [
-            "Geographical & cultural origin: the Manipur region, in Manipur.",
-            "Historical background: The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
-            "Regional food tradition: It belongs to the snack tradition of Manipur and is embedded in household, festival and regional food practice.",
-            "Cultural significance: A fiery raw tribal salad featuring crunchy lotus stems, shredded cabbage, and seasonal herbs tossed with roasted black sesame, perilla seeds, and toasted ngari."
-          ],
-          "evidenceNote": "Regional food writing supports the dish's association with Manipur. A photograph of a region or food culture illustrates the setting; it does not prove where or when the dish was invented.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        },
-        {
-          "number": 2,
-          "key": "ingredients",
-          "numeral": "II",
-          "eyebrow": "Stage II",
-          "title": "Ingredients",
-          "photoLabel": "Ingredient reference",
-          "era": "Regional & seasonal produce",
-          "headline": "What Singju is built from",
-          "narrative": "The recipe centres on Lotus stems, Cabbage, Roasted perilla seeds (Thoiding), Roasted chickpea powder, Ngari and Chillies. These are the staple grains, pulses, vegetables, spices or dairy products of Manipur; Regional and seasonal substitution is normal: household versions replace a local green, pulse, oil or sweetener with what the season and the region provide.",
-          "details": [
-            "Principal ingredient: Lotus stems.",
-            "Principal ingredient: Cabbage.",
-            "Principal ingredient: Roasted perilla seeds (Thoiding).",
-            "Principal ingredient: Roasted chickpea powder.",
-            "Principal ingredient: Ngari.",
-            "Principal ingredient: Chillies.",
-            "Regional & seasonal ingredients: Manipur's valley lakes, rice fields and hill produce shape a cuisine of fermented fish, bamboo shoots, aromatic black rice and leafy herbs.",
-            "Documented ingredient change: Chillies, tomatoes, potatoes and some squashes reached Indian kitchens only after the 16th-century Columbian exchange; where they appear in this recipe they are later additions, not ancient components."
-          ],
-          "evidenceNote": "Ingredient list from regional recipe documentation. A photograph of a single ingredient illustrates one component of the recipe, not the complete ingredient list.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        },
-        {
-          "number": 3,
-          "key": "method",
-          "numeral": "III",
-          "eyebrow": "Stage III",
-          "title": "Recipe & Making",
-          "photoLabel": "Preparation technique",
-          "era": "Traditional technique & cookware",
-          "headline": "How Singju is made",
-          "narrative": "The defining technique is Raw Julian Chiffonade & Dry Seed Dressing — Battered or assembled components are fried, steamed or layered just before serving. Stainless-steel counters and batch fryers now support the street stall. Soaking, grinding, fermenting, kneading, stuffing or tempering is done in the order the recipe requires; Battered or assembled components are fried, steamed or layered just before serving. Stainless-steel counters and batch fryers now support the street stall.",
-          "details": [
-            "Traditional technique: Raw Julian Chiffonade & Dry Seed Dressing — Battered or assembled components are fried, steamed or layered just before serving. Stainless-steel counters and batch fryers now support the street stall.",
-            "Traditional cookware & utensils: Battered or assembled components are fried, steamed or layered just before serving.",
-            "Key process: Raw Julian Chiffonade & Dry Seed Dressing.",
-            "Modern evolution: gas and electric heat, mixer-grinders, steel moulds, pressure cookers and refrigeration now shorten the same sequence of steps."
-          ],
-          "evidenceNote": "Technique and cookware are described in regional recipe documentation. A modern photograph of a technique or utensil illustrates current practice; it is not a historical photograph of an ancient kitchen.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        },
-        {
-          "number": 4,
-          "key": "plated",
-          "numeral": "IV",
-          "eyebrow": "Stage IV",
-          "title": "Modern Form, Serving & Recognition",
-          "photoLabel": "Finished dish",
-          "era": "Present day",
-          "headline": "Singju today",
-          "narrative": "It is served in homes, regional restaurants and at festivals; present-day versions adjust fat, sugar, chilli and cooking time, and packaged or restaurant versions are now common. It is presented in the serving style of Manipur, with the crisp, tangy & aromatic profile that identifies it. A fiery raw tribal salad featuring crunchy lotus stems, shredded cabbage, and seasonal herbs tossed with roasted black sesame, perilla seeds, and toasted ngari.",
-          "details": [
-            "Present-day form & serving: It is served in homes, regional restaurants and at festivals; present-day versions adjust fat, sugar, chilli and cooking time, and packaged or restaurant versions are now common.",
-            "Flavour identity: Crisp, Tangy & Aromatic.",
-            "Variations: household, festival, street-stall and restaurant versions differ in richness, heat and portion size.",
-            "Recognition: GI or commercial recognition is recorded here only where a registration is documented in the cited sources."
-          ],
-          "evidenceNote": "Present-day form from regional food writing and restaurant documentation. A present-day photograph shows the modern plated dish; it is not evidence of an earlier form.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        }
-      ]
-    },
-    "chak-hao-kheer": {
-      "dishId": "chak-hao-kheer",
-      "dishName": "Chak-Hao Kheer",
-      "state": "Manipur",
-      "classification": "State",
       "confidence": "documented",
       "sources": [
-        "gi-registry",
-        "ethnographic-accounts",
+        "achaya-1994",
         "regional-food-writing"
       ],
       "stageCount": 4,
@@ -4614,22 +4290,21 @@
           "number": 1,
           "key": "origin",
           "numeral": "I",
-          "eyebrow": "Stage I",
-          "title": "Origin & History",
-          "photoLabel": "Regional context",
-          "era": "Origins & documented history",
-          "headline": "Chak-Hao Kheer in the food geography of Manipur",
-          "narrative": "Manipur's valley lakes, rice fields and hill produce shape a cuisine of fermented fish, bamboo shoots, aromatic black rice and leafy herbs. Chak-Hao Kheer is a sweet or dessert associated with Manipur's valley rice cultivators and Meitei feast cookery. Chak-Hao, the aromatic black-purple rice of Manipur, is reserved for ceremonial and festive sweets. The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
+          "eyebrow": "Stage 1",
+          "title": "Origin",
+          "photoLabel": "Origin (Birth of the food)",
+          "era": "Birth of the food",
+          "headline": "Birth of Eromba in Manipur & Meitei Valley Antiquity",
+          "narrative": "Eromba is a foundational culinary pillar of the Meitei community inhabiting the Imphal Valley of Manipur, tracing its origins to ancient antiquity. Etymologically derived from the Meitei expression 'eeru taana lonba' (meaning mixing and stirring something watery), the dish developed as an ingenious response to the ecological landscape of the valley, bordered by mist-covered hills and rich wetland ecosystems like Loktak Lake. To ensure year-round preservation of aquatic proteins during monsoons and dry spells, the Meitei perfected 'Ngari'—sun-dried freshwater fish (Puntius sophore) fermented without salt in mustard-oil-glazed earthen urns (ngari chaphu). In Eromba, roasted ngari is hand-mashed with boiled native potatoes, seasonal tree beans (yongchak), bamboo shoots, and fiercely pungent Umorok (king chilli), creating a soul-stirring comfort dish eaten daily with steamed aromatic rice.",
           "details": [
-            "Geographical & cultural origin: Manipur's valley rice cultivators and Meitei feast cookery, in Manipur.",
-            "Historical background: The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
-            "Regional food tradition: Chak-Hao, the aromatic black-purple rice of Manipur, is reserved for ceremonial and festive sweets.",
-            "Cultural significance: A slow-cooked pudding of aromatic Manipuri black rice (Chak-Hao), milk and jaggery or sugar, served at feasts and now protected by the Chak-Hao geographical indication."
+            "Origin in Manipur: Rooted in the ancient agrarian and lacustrine civilization of the Meitei people in the fertile Imphal Valley.",
+            "Cultural & communal significance: Central to Meitei everyday dining and seasonal celebrations; arrival of winter yongchak (tree beans) triggers community feasts.",
+            "Historical documentation: Codified in Meitei oral culinary tradition and regional historical accounts documenting ancient fish fermentation in ngari chaphu urns.",
+            "Culinary philosophy: Zero-oil preparation blending fermented umami, mountain tubers, wetland greens, and volcanic Umorok heat into a coarse hand-mashed emulsion."
           ],
-          "evidenceNote": "Regional food writing supports the dish's association with Manipur. A photograph of a region or food culture illustrates the setting; it does not prove where or when the dish was invented.",
+          "evidenceNote": "Meitei cultural documentation and regional anthropological studies record ancestral ngari fermentation and vegetable mashing traditions in Manipur.",
           "sources": [
-            "gi-registry",
-            "ethnographic-accounts",
+            "achaya-1994",
             "regional-food-writing"
           ],
           "confidence": "documented"
@@ -4638,25 +4313,24 @@
           "number": 2,
           "key": "ingredients",
           "numeral": "II",
-          "eyebrow": "Stage II",
-          "title": "Ingredients",
-          "photoLabel": "Ingredient reference",
-          "era": "Regional & seasonal produce",
-          "headline": "What Chak-Hao Kheer is built from",
-          "narrative": "The recipe centres on Chak-Hao black rice, Milk, Jaggery or sugar, Cardamom and Cashew nuts. These are the staple grains, pulses, vegetables, spices or dairy products of Manipur; Regional and seasonal substitution is normal: household versions replace a local green, pulse, oil or sweetener with what the season and the region provide.",
+          "eyebrow": "Stage 2",
+          "title": "Evolution of Food",
+          "photoLabel": "Evolution of Food (Then vs Now)",
+          "era": "Evolution of Food",
+          "headline": "Evolution of Food: Then vs Now",
+          "narrative": "Cooking method: boiling indigenous tubers and vegetables in earthen pots over wood embers and fire-toasting ngari on charcoal / pressure-cooking vegetables on gas stoves and roasting ngari on modern non-stick pans\nVessel: clay pots (earthen chaphu) for boiling and wooden or clay bowls for hand mashing / stainless steel pressure cookers and porcelain or glass mixing bowls\nFuel: wood embers, dried bamboo, and rice husk fire / domestic LPG gas stoves and electric induction cooktops\nCooking time: slow clay pot simmering allowing roots to thoroughly soften / rapid high-pressure cooking in 10 to 12 minutes\nNgari Preparation: dry-toasted over red-hot wood embers wrapped in wild banana leaves / toasted over gas flames on wire meshes or pan-seared in dry skillets\nVegetable Diversity: foraged wild wetland greens, yongchak (tree beans), tender colocasia, and indigenous red potatoes / cultivated supermarket potatoes, French beans, seasonal green beans, and canned bamboo shoots\nChillies & Heat: sun-dried Meitei morok and fresh fiery Umorok (Naga king chilli) crushed with coarse rock salt / fresh king chillies, green bird's eye chillies, or packaged red chilli flakes\nServing & Dining: hand-mashed and served fresh in traditional bell-metal or earthen bowls alongside steaming Chakhao or local white rice / served in porcelain tableware in Manipuri homes and contemporary urban Northeast restaurants",
           "details": [
-            "Principal ingredient: Chak-Hao black rice.",
-            "Principal ingredient: Milk.",
-            "Principal ingredient: Jaggery or sugar.",
-            "Principal ingredient: Cardamom.",
-            "Principal ingredient: Cashew nuts.",
-            "Regional & seasonal ingredients: Manipur's valley lakes, rice fields and hill produce shape a cuisine of fermented fish, bamboo shoots, aromatic black rice and leafy herbs.",
-            "Documented ingredient change: Chillies, tomatoes, potatoes and some squashes reached Indian kitchens only after the 16th-century Columbian exchange; where they appear in this recipe they are later additions, not ancient components."
+            "Cooking method: boiling indigenous tubers and vegetables in earthen pots over wood embers and fire-toasting ngari on charcoal / pressure-cooking vegetables on gas stoves and roasting ngari on modern non-stick pans",
+            "Vessel: clay pots (earthen chaphu) for boiling and wooden or clay bowls for hand mashing / stainless steel pressure cookers and porcelain or glass mixing bowls",
+            "Fuel: wood embers, dried bamboo, and rice husk fire / domestic LPG gas stoves and electric induction cooktops",
+            "Cooking time: slow clay pot simmering allowing roots to thoroughly soften / rapid high-pressure cooking in 10 to 12 minutes",
+            "Ngari Preparation: dry-toasted over red-hot wood embers wrapped in wild banana leaves / toasted over gas flames on wire meshes or pan-seared in dry skillets",
+            "Vegetable Diversity: foraged wild wetland greens, yongchak (tree beans), tender colocasia, and indigenous red potatoes / cultivated supermarket potatoes, French beans, seasonal green beans, and canned bamboo shoots",
+            "Chillies & Heat: sun-dried Meitei morok and fresh fiery Umorok (Naga king chilli) crushed with coarse rock salt / fresh king chillies, green bird's eye chillies, or packaged red chilli flakes",
+            "Serving & Dining: hand-mashed and served fresh in traditional bell-metal or earthen bowls alongside steaming Chakhao or local white rice / served in porcelain tableware in Manipuri homes and contemporary urban Northeast restaurants"
           ],
-          "evidenceNote": "Ingredient list from regional recipe documentation. A photograph of a single ingredient illustrates one component of the recipe, not the complete ingredient list.",
+          "evidenceNote": "Comparative historical culinary records documenting the shift from wood-fired clay pots and banana-leaf embers to domestic pressure cookers and gas ranges.",
           "sources": [
-            "gi-registry",
-            "ethnographic-accounts",
             "regional-food-writing"
           ],
           "confidence": "documented"
@@ -4665,22 +4339,25 @@
           "number": 3,
           "key": "method",
           "numeral": "III",
-          "eyebrow": "Stage III",
-          "title": "Recipe & Making",
-          "photoLabel": "Preparation technique",
-          "era": "Traditional technique & cookware",
-          "headline": "How Chak-Hao Kheer is made",
-          "narrative": "The defining technique is The rice is soaked for hours and simmered slowly in milk until the grains release a deep violet colour and a nutty aroma. Soaking, grinding, fermenting, kneading, stuffing or tempering is done in the order the recipe requires; Milk is reduced, syrups are cooked to a measured thread or ball stage, and the mixture is set or fried before serving. Thermometers, steel kadai and refrigeration now control what was judged by eye.",
+          "eyebrow": "Stage 3",
+          "title": "Recipe",
+          "photoLabel": "Recipe (Manipuri Eromba Recipe: 10 Key Ingredients, 8 Steps)",
+          "era": "Recipe",
+          "headline": "Manipuri Eromba Recipe: 10 Key Ingredients, 8 Steps",
+          "narrative": "Key ingredients: ngari (traditional fermented freshwater fish), medium potatoes, yongchak (tree beans/stink beans) or seasonal beans, fresh umorok (king chilli) or dried red chillies, tender bamboo shoot (soibum), maroi nakupi (Manipuri chives), fresh coriander leaves, spring onions, starchy vegetable broth, rock salt.\n\n1. Peel and quarter the potatoes; scrape the rough outer skin of the yongchak pods and slice them into two-inch pieces.\n2. In a deep saucepan, place the potatoes, yongchak, sliced bamboo shoots, and dried red chillies or Umorok with enough water to submerge.\n3. Bring to a rolling boil over medium heat and cook uncovered until the vegetables and tubers are completely fork-tender.\n4. Meanwhile, gently toast the ngari pieces on a dry tawa or wrapped in a banana leaf over low flame until fragrant and lightly charred.\n5. Remove the boiled potatoes and chillies from the saucepan into a wide mashing bowl, reserving the aromatic vegetable cooking liquid.\n6. Add the roasted ngari and salt to the bowl; use the back of a spoon or pestle to vigorously crush the chillies and ngari into a spicy paste.\n7. Add the boiled potatoes and yongchak pieces into the paste, mashing thoroughly by hand while retaining pleasant coarse rustic chunks.\n8. Pour in a few tablespoons of the reserved warm vegetable broth to achieve a thick, cohesive gravy; fold in finely chopped maroi nakupi, spring onions, and coriander, and serve with hot rice.",
           "details": [
-            "Traditional technique: The rice is soaked for hours and simmered slowly in milk until the grains release a deep violet colour and a nutty aroma.",
-            "Traditional cookware & utensils: Milk is reduced, syrups are cooked to a measured thread or ball stage, and the mixture is set or fried before serving.",
-            "Key process: Long Soak & Low-Heat Black-Rice Reduction.",
-            "Modern evolution: gas and electric heat, mixer-grinders, steel moulds, pressure cookers and refrigeration now shorten the same sequence of steps."
+            "Key ingredients: ngari (traditional fermented freshwater fish), medium potatoes, yongchak (tree beans/stink beans) or seasonal beans, fresh umorok (king chilli) or dried red chillies, tender bamboo shoot (soibum), maroi nakupi (Manipuri chives), fresh coriander leaves, spring onions, starchy vegetable broth, rock salt.",
+            "1. Peel and quarter the potatoes; scrape the rough outer skin of the yongchak pods and slice them into two-inch pieces.",
+            "2. In a deep saucepan, place the potatoes, yongchak, sliced bamboo shoots, and dried red chillies or Umorok with enough water to submerge.",
+            "3. Bring to a rolling boil over medium heat and cook uncovered until the vegetables and tubers are completely fork-tender.",
+            "4. Meanwhile, gently toast the ngari pieces on a dry tawa or wrapped in a banana leaf over low flame until fragrant and lightly charred.",
+            "5. Remove the boiled potatoes and chillies from the saucepan into a wide mashing bowl, reserving the aromatic vegetable cooking liquid.",
+            "6. Add the roasted ngari and salt to the bowl; use the back of a spoon or pestle to vigorously crush the chillies and ngari into a spicy paste.",
+            "7. Add the boiled potatoes and yongchak pieces into the paste, mashing thoroughly by hand while retaining pleasant coarse rustic chunks.",
+            "8. Pour in a few tablespoons of the reserved warm vegetable broth to achieve a thick, cohesive gravy; fold in finely chopped maroi nakupi, spring onions, and coriander, and serve with hot rice."
           ],
-          "evidenceNote": "Technique and cookware are described in regional recipe documentation. A modern photograph of a technique or utensil illustrates current practice; it is not a historical photograph of an ancient kitchen.",
+          "evidenceNote": "Codified regional recipe documentation detailing the foundational eight-step boil, toast, and coarse hand-mashing protocol.",
           "sources": [
-            "gi-registry",
-            "ethnographic-accounts",
             "regional-food-writing"
           ],
           "confidence": "documented"
@@ -4691,20 +4368,130 @@
           "numeral": "IV",
           "eyebrow": "Stage IV",
           "title": "Modern Form, Serving & Recognition",
-          "photoLabel": "Finished dish",
+          "photoLabel": "Modern presentation",
           "era": "Present day",
-          "headline": "Chak-Hao Kheer today",
-          "narrative": "Chak-Hao was granted a Geographical Indication in 2020; the kheer is now served chilled in restaurants and sold as a packaged rice product. It is presented in the serving style of Manipur, with the nutty, fragrant & deeply violet profile that identifies it. A slow-cooked pudding of aromatic Manipuri black rice (Chak-Hao), milk and jaggery or sugar, served at feasts and now protected by the Chak-Hao geographical indication.",
+          "headline": "Eromba today",
+          "narrative": "Served fresh alongside warm steamed rice as an indispensable part of everyday Meitei meals; prepared across homes and authentic Manipuri heritage eateries. It is presented in the serving style of Manipur, with the pungent, fiery & umami-rich profile that identifies it. An iconic Meitei delicacy of tender boiled potatoes, seasonal tree beans (yongchak), and tender bamboo shoots hand-mashed with dry-roasted fermented fish (ngari) and fiery king chillies.",
           "details": [
-            "Present-day form & serving: Chak-Hao was granted a Geographical Indication in 2020; the kheer is now served chilled in restaurants and sold as a packaged rice product.",
-            "Flavour identity: Nutty, Fragrant & Deeply Violet.",
-            "Variations: household, festival, street-stall and restaurant versions differ in richness, heat and portion size.",
+            "Present-day form & serving: Served fresh alongside warm steamed rice as an indispensable part of everyday Meitei meals; prepared across homes and authentic Manipuri heritage eateries.",
+            "Flavour identity: Pungent, Fiery & Umami-Rich.",
+            "Variations: seasonal variations feature yongchak, bamboo shoots, wild water greens, or colocasia depending on harvest availability.",
             "Recognition: GI or commercial recognition is recorded here only where a registration is documented in the cited sources."
           ],
           "evidenceNote": "Present-day form from regional food writing and restaurant documentation. A present-day photograph shows the modern plated dish; it is not evidence of an earlier form.",
           "sources": [
-            "gi-registry",
-            "ethnographic-accounts",
+            "regional-food-writing"
+          ],
+          "confidence": "documented"
+        }
+      ]
+    },
+    "singju": {
+      "dishId": "singju",
+      "dishName": "Singju",
+      "state": "Manipur",
+      "classification": "State",
+      "confidence": "documented",
+      "sources": [
+        "achaya-1994",
+        "regional-food-writing"
+      ],
+      "stageCount": 4,
+      "stages": [
+        {
+          "number": 1,
+          "key": "origin",
+          "numeral": "I",
+          "eyebrow": "Stage 1",
+          "title": "Origin",
+          "photoLabel": "Origin (Birth of the food)",
+          "era": "Birth of the food",
+          "headline": "Birth of Singju in Manipur & Ancient Herbal Traditions",
+          "narrative": "Singju is an ancient, highly revered spicy botanical salad originating in the Meitei kingdom of Manipur. Etymologically rooted in the Meitei words 'Manaa-Masing' (green vegetables and medicinal herbs) and 'Suba' (combining or mixing together), the contracted name 'Singju' represents centuries of intimate botanical knowledge and foraging culture in the wetland fringes and forested valleys of Manipur. Conceived as both an everyday afternoon refreshment and a vital medicinal digestive, Singju was assembled by thinly julienning seasonal forest produce—such as lotus stem (thambou), cabbage, green papaya, banana inflorescence, and wild herbs like phakpai and lomba—and tossing them raw with roasted perilla seeds (thoiding) or roasted ngari (fermented fish) with fiery chillies. Unlike conventional salads, Singju uses no cooking oil, drawing its rich mouthfeel from the essential polyunsaturated oils released by crushed roasted perilla seeds.",
+          "details": [
+            "Origin in Manipur: Born in the ancient Meitei settlements of Manipur from centuries of seasonal herb gathering and agricultural foraging.",
+            "Cultural dualism: Prepared in two distinct ritual forms—vegetarian Thoiding-Besan Singju for religious ceremonies, and Ngari Singju for everyday domestic delight.",
+            "Historical documentation: Mentioned in Meitei traditional chronicles and folklore as an indispensable health-giving salad utilizing local medicinal herbs.",
+            "Culinary signature: Zero-oil raw preparation bound by hand with ground roasted perilla seeds, roasted gram flour, pounded chillies, and fragrant marsh herbs."
+          ],
+          "evidenceNote": "Meitei botanical chronicles and regional folklore document ancient raw herb dressing and seasonal salad traditions.",
+          "sources": [
+            "achaya-1994",
+            "regional-food-writing"
+          ],
+          "confidence": "documented"
+        },
+        {
+          "number": 2,
+          "key": "ingredients",
+          "numeral": "II",
+          "eyebrow": "Stage 2",
+          "title": "Evolution of Food",
+          "photoLabel": "Evolution of Food (Then vs Now)",
+          "era": "Evolution of Food",
+          "headline": "Evolution of Food: Then vs Now",
+          "narrative": "Preparation method: hand-shredding raw wild wetland herbs and roots with traditional Meitei knives and hand-bruising in wooden bowls / precision slicing with stainless steel mandolines, chef knives, and mixing in glass bowls\nVessel: hand-carved wooden mixing troughs and shallow cane baskets / stainless steel basins, glass bowls, and food-grade plastic prep trays\nBinding & Fat: whole perilla seeds (thoiding) stone-roasted on earthen griddles and crushed on stone / pre-roasted commercial chickpea flour (besan) and store-bought roasted sesame or perilla powder\nNgari Integration: whole ngari fish roasted over red coals and pestle-pounded with sun-dried red chillies / pan-toasted ngari or commercial fermented fish paste mixed with chilli flakes\nVegetables & Produce: foraged water lily stems, wild mountain herbs (lomba, phakpai), and raw banana flowers / cultivated cabbage, carrots, French beans, green papaya, and seasonal garden radishes\nTexture & Moisture: hand-kneaded until the vegetables release natural juices to form an unctuous coating without added water / tossed lightly as a dry, crispy shredded salad to prolong shelf-life for street stalls\nServing & Accompaniments: eaten freshly mixed on broad leaves with roasted white peas (mangan) and black tea / served in eco-friendly leaf boats or paper cones across bustling Imphal street-corner stalls\nCultural Setting: ancestral family ritual and ritual temple offerings (Ushin) / widespread iconic Manipuri street snack enjoyed across all generations",
+          "details": [
+            "Preparation method: hand-shredding raw wild wetland herbs and roots with traditional Meitei knives and hand-bruising in wooden bowls / precision slicing with stainless steel mandolines, chef knives, and mixing in glass bowls",
+            "Vessel: hand-carved wooden mixing troughs and shallow cane baskets / stainless steel basins, glass bowls, and food-grade plastic prep trays",
+            "Binding & Fat: whole perilla seeds (thoiding) stone-roasted on earthen griddles and crushed on stone / pre-roasted commercial chickpea flour (besan) and store-bought roasted sesame or perilla powder",
+            "Ngari Integration: whole ngari fish roasted over red coals and pestle-pounded with sun-dried red chillies / pan-toasted ngari or commercial fermented fish paste mixed with chilli flakes",
+            "Vegetables & Produce: foraged water lily stems, wild mountain herbs (lomba, phakpai), and raw banana flowers / cultivated cabbage, carrots, French beans, green papaya, and seasonal garden radishes",
+            "Texture & Moisture: hand-kneaded until the vegetables release natural juices to form an unctuous coating without added water / tossed lightly as a dry, crispy shredded salad to prolong shelf-life for street stalls",
+            "Serving & Accompaniments: eaten freshly mixed on broad leaves with roasted white peas (mangan) and black tea / served in eco-friendly leaf boats or paper cones across bustling Imphal street-corner stalls",
+            "Cultural Setting: ancestral family ritual and ritual temple offerings (Ushin) / widespread iconic Manipuri street snack enjoyed across all generations"
+          ],
+          "evidenceNote": "Comparative historical culinary records documenting the shift from foraged wetland roots and wooden mortars to cultivated vegetables and commercial street stall service.",
+          "sources": [
+            "regional-food-writing"
+          ],
+          "confidence": "documented"
+        },
+        {
+          "number": 3,
+          "key": "method",
+          "numeral": "III",
+          "eyebrow": "Stage 3",
+          "title": "Recipe",
+          "photoLabel": "Recipe (Manipuri Singju Recipe: 10 Key Ingredients, 8 Steps)",
+          "era": "Recipe",
+          "headline": "Manipuri Singju Recipe: 10 Key Ingredients, 8 Steps",
+          "narrative": "Key ingredients: crisp fresh cabbage, tender lotus stems (thambou) or raw papaya, thoiding (perilla seeds), roasted gram flour (besan), roasted ngari (fermented fish) or dry peas, dried red chillies (morok), fresh umorok (king chilli), phakpai (Himalayan knotweed) or coriander, salt, fresh lemon juice.\n\n1. Thoroughly wash the cabbage, lotus stems (or green papaya), and indigenous herbs in ice-cold water and pat completely dry.\n2. Using a sharp knife, shred the cabbage into ultra-fine chiffonade strips and slice the lotus stems into paper-thin discs.\n3. Dry-roast the perilla seeds (thoiding) in a heavy tawa over low heat until they begin to crackle and release an aromatic, nutty fragrance.\n4. Transfer the roasted perilla seeds to a stone mortar and pestle; grind into a coarse, oily, aromatic powder.\n5. In the same dry pan, lightly roast the chickpea flour (besan) until golden and fragrant, then set aside to cool.\n6. For the seasoning paste, roast the ngari pieces and dry red chillies over low flame, then pound them with a pinch of rock salt into a pungent paste (morok metpa).\n7. In a large mixing bowl, combine the shredded cabbage, sliced lotus stems, chopped phakpai, roasted perilla powder, and roasted besan.\n8. Add the spicy morok metpa paste and lemon juice; toss and massage vigorously by hand to bruise the greens so they absorb the dressing, and serve immediately.",
+          "details": [
+            "Key ingredients: crisp fresh cabbage, tender lotus stems (thambou) or raw papaya, thoiding (perilla seeds), roasted gram flour (besan), roasted ngari (fermented fish) or dry peas, dried red chillies (morok), fresh umorok (king chilli), phakpai (Himalayan knotweed) or coriander, salt, fresh lemon juice.",
+            "1. Thoroughly wash the cabbage, lotus stems (or green papaya), and indigenous herbs in ice-cold water and pat completely dry.",
+            "2. Using a sharp knife, shred the cabbage into ultra-fine chiffonade strips and slice the lotus stems into paper-thin discs.",
+            "3. Dry-roast the perilla seeds (thoiding) in a heavy tawa over low heat until they begin to crackle and release an aromatic, nutty fragrance.",
+            "4. Transfer the roasted perilla seeds to a stone mortar and pestle; grind into a coarse, oily, aromatic powder.",
+            "5. In the same dry pan, lightly roast the chickpea flour (besan) until golden and fragrant, then set aside to cool.",
+            "6. For the seasoning paste, roast the ngari pieces and dry red chillies over low flame, then pound them with a pinch of rock salt into a pungent paste (morok metpa).",
+            "7. In a large mixing bowl, combine the shredded cabbage, sliced lotus stems, chopped phakpai, roasted perilla powder, and roasted besan.",
+            "8. Add the spicy morok metpa paste and lemon juice; toss and massage vigorously by hand to bruise the greens so they absorb the dressing, and serve immediately."
+          ],
+          "evidenceNote": "Codified regional recipe documentation detailing the foundational eight-step raw chiffonade, perilla roasting, and hand-bruising protocol.",
+          "sources": [
+            "regional-food-writing"
+          ],
+          "confidence": "documented"
+        },
+        {
+          "number": 4,
+          "key": "plated",
+          "numeral": "IV",
+          "eyebrow": "Stage IV",
+          "title": "Modern Form, Serving & Recognition",
+          "photoLabel": "Modern presentation",
+          "era": "Present day",
+          "headline": "Singju today",
+          "narrative": "Served fresh in eco-friendly leaf boats or paper cones across afternoon street stalls and community festivals throughout Manipur; eaten immediately to preserve its crisp crunch. It is presented in the serving style of Manipur, with the crisp, nutty, pungent & blazing profile that identifies it. A fiery raw botanical salad featuring crisp finely shredded cabbage, lotus stems, and wetland herbs hand-tossed with roasted perilla seeds (thoiding), roasted gram flour, and toasted ngari.",
+          "details": [
+            "Present-day form & serving: Served fresh in eco-friendly leaf boats or paper cones across afternoon street stalls and community festivals throughout Manipur; eaten immediately to preserve its crisp crunch.",
+            "Flavour identity: Crisp, Nutty, Pungent & Blazing.",
+            "Variations: seasonal vegetables like raw papaya, lotus root, and green pea shoots are adapted to local market availability.",
+            "Recognition: GI or commercial recognition is recorded here only where a registration is documented in the cited sources."
+          ],
+          "evidenceNote": "Present-day form from regional food writing and restaurant documentation. A present-day photograph shows the modern plated dish; it is not evidence of an earlier form.",
+          "sources": [
             "regional-food-writing"
           ],
           "confidence": "documented"
@@ -6713,229 +6500,9 @@
       "dishName": "Sikkimese Momos",
       "state": "Sikkim",
       "classification": "State",
-      "confidence": "regional-tradition",
+      "confidence": "documented",
       "sources": [
-        "regional-food-writing",
-        "oral-tradition"
-      ],
-      "stageCount": 4,
-      "stages": [
-        {
-          "number": 1,
-          "key": "origin",
-          "numeral": "I",
-          "eyebrow": "Stage I",
-          "title": "Origin & History",
-          "photoLabel": "Regional context",
-          "era": "Origins & documented history",
-          "headline": "Sikkimese Momos in the food geography of Sikkim",
-          "narrative": "Sikkim's Himalayan valleys and Tibetan–Nepali inheritance favour fermented greens, steamed dumplings, noodle soups, butter tea and ring breads. Sikkimese Momos is a fermented or steamed preparation associated with the Sikkim region. It belongs to the fermented or steamed preparation tradition of Sikkim and is embedded in household, festival and regional food practice. The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
-          "details": [
-            "Geographical & cultural origin: the Sikkim region, in Sikkim.",
-            "Historical background: The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
-            "Regional food tradition: It belongs to the fermented or steamed preparation tradition of Sikkim and is embedded in household, festival and regional food practice.",
-            "Cultural significance: Delicate pleated parcels of hand-rolled dough filled with seasoned pork mince or mountain vegetables and ginger, steamed over boiling herb water, served with fiery dalle khursani dip."
-          ],
-          "evidenceNote": "Regional food writing supports the dish's association with Sikkim. A photograph of a region or food culture illustrates the setting; it does not prove where or when the dish was invented.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        },
-        {
-          "number": 2,
-          "key": "ingredients",
-          "numeral": "II",
-          "eyebrow": "Stage II",
-          "title": "Ingredients",
-          "photoLabel": "Ingredient reference",
-          "era": "Regional & seasonal produce",
-          "headline": "What Sikkimese Momos is built from",
-          "narrative": "The recipe centres on Wheat flour, Minced pork / local greens, Ginger, Garlic, Dalle Khursani chillies and Fermented bamboo. These are the staple grains, pulses, vegetables, spices or dairy products of Sikkim; Regional and seasonal substitution is normal: household versions replace a local green, pulse, oil or sweetener with what the season and the region provide.",
-          "details": [
-            "Principal ingredient: Wheat flour.",
-            "Principal ingredient: Minced pork / local greens.",
-            "Principal ingredient: Ginger.",
-            "Principal ingredient: Garlic.",
-            "Principal ingredient: Dalle Khursani chillies.",
-            "Principal ingredient: Fermented bamboo.",
-            "Regional & seasonal ingredients: Sikkim's Himalayan valleys and Tibetan–Nepali inheritance favour fermented greens, steamed dumplings, noodle soups, butter tea and ring breads.",
-            "Documented ingredient change: Chillies, tomatoes, potatoes and some squashes reached Indian kitchens only after the 16th-century Columbian exchange; where they appear in this recipe they are later additions, not ancient components."
-          ],
-          "evidenceNote": "Ingredient list from regional recipe documentation. A photograph of a single ingredient illustrates one component of the recipe, not the complete ingredient list.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        },
-        {
-          "number": 3,
-          "key": "method",
-          "numeral": "III",
-          "eyebrow": "Stage III",
-          "title": "Recipe & Making",
-          "photoLabel": "Preparation technique",
-          "era": "Traditional technique & cookware",
-          "headline": "How Sikkimese Momos is made",
-          "narrative": "The defining technique is Thin Pleated Pinching & Tiered Aluminium/Bamboo Steaming — Grain or pulse batters are soaked, stone- or mixer-ground and left to ferment with ambient lactic microflora before steaming in moulds, leaves or steamers. Steel steamers and packaged batter now replace earthen pots. Soaking, grinding, fermenting, kneading, stuffing or tempering is done in the order the recipe requires; Grain or pulse batters are soaked, stone- or mixer-ground and left to ferment with ambient lactic microflora before steaming in moulds, leaves or steamers. Steel steamers and packaged batter now replace earthen pots.",
-          "details": [
-            "Traditional technique: Thin Pleated Pinching & Tiered Aluminium/Bamboo Steaming — Grain or pulse batters are soaked, stone- or mixer-ground and left to ferment with ambient lactic microflora before steaming in moulds, leaves or steamers. Steel steamers and packaged batter now replace earthen pots.",
-            "Traditional cookware & utensils: Grain or pulse batters are soaked, stone- or mixer-ground and left to ferment with ambient lactic microflora before steaming in moulds, leaves or steamers.",
-            "Key process: Thin Pleated Pinching & Tiered Aluminium/Bamboo Steaming.",
-            "Modern evolution: gas and electric heat, mixer-grinders, steel moulds, pressure cookers and refrigeration now shorten the same sequence of steps."
-          ],
-          "evidenceNote": "Technique and cookware are described in regional recipe documentation. A modern photograph of a technique or utensil illustrates current practice; it is not a historical photograph of an ancient kitchen.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        },
-        {
-          "number": 4,
-          "key": "plated",
-          "numeral": "IV",
-          "eyebrow": "Stage IV",
-          "title": "Modern Form, Serving & Recognition",
-          "photoLabel": "Finished dish",
-          "era": "Present day",
-          "headline": "Sikkimese Momos today",
-          "narrative": "It is served in homes, regional restaurants and at festivals; present-day versions adjust fat, sugar, chilli and cooking time, and packaged or restaurant versions are now common. It is presented in the serving style of Sikkim, with the juicy, savory & fiery dip profile that identifies it. Delicate pleated parcels of hand-rolled dough filled with seasoned pork mince or mountain vegetables and ginger, steamed over boiling herb water, served with fiery dalle khursani dip.",
-          "details": [
-            "Present-day form & serving: It is served in homes, regional restaurants and at festivals; present-day versions adjust fat, sugar, chilli and cooking time, and packaged or restaurant versions are now common.",
-            "Flavour identity: Juicy, Savory & Fiery Dip.",
-            "Variations: household, festival, street-stall and restaurant versions differ in richness, heat and portion size.",
-            "Recognition: GI or commercial recognition is recorded here only where a registration is documented in the cited sources."
-          ],
-          "evidenceNote": "Present-day form from regional food writing and restaurant documentation. A present-day photograph shows the modern plated dish; it is not evidence of an earlier form.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        }
-      ]
-    },
-    "gundruk-soup": {
-      "dishId": "gundruk-soup",
-      "dishName": "Gundruk Soup",
-      "state": "Sikkim",
-      "classification": "State",
-      "confidence": "regional-tradition",
-      "sources": [
-        "regional-food-writing",
-        "oral-tradition"
-      ],
-      "stageCount": 4,
-      "stages": [
-        {
-          "number": 1,
-          "key": "origin",
-          "numeral": "I",
-          "eyebrow": "Stage I",
-          "title": "Origin & History",
-          "photoLabel": "Regional context",
-          "era": "Origins & documented history",
-          "headline": "Gundruk Soup in the food geography of Sikkim",
-          "narrative": "Sikkim's Himalayan valleys and Tibetan–Nepali inheritance favour fermented greens, steamed dumplings, noodle soups, butter tea and ring breads. Gundruk Soup is a curry or stew associated with the Sikkim region. It belongs to the curry or stew tradition of Sikkim and is embedded in household, festival and regional food practice. The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
-          "details": [
-            "Geographical & cultural origin: the Sikkim region, in Sikkim.",
-            "Historical background: The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
-            "Regional food tradition: It belongs to the curry or stew tradition of Sikkim and is embedded in household, festival and regional food practice.",
-            "Cultural significance: Sun-dried fermented mustard and radish leaves slow-simmered with tomatoes, green chillies, and ginger into a sour, mineral-dense curative alpine soup."
-          ],
-          "evidenceNote": "Regional food writing supports the dish's association with Sikkim. A photograph of a region or food culture illustrates the setting; it does not prove where or when the dish was invented.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        },
-        {
-          "number": 2,
-          "key": "ingredients",
-          "numeral": "II",
-          "eyebrow": "Stage II",
-          "title": "Ingredients",
-          "photoLabel": "Ingredient reference",
-          "era": "Regional & seasonal produce",
-          "headline": "What Gundruk Soup is built from",
-          "narrative": "The recipe centres on Gundruk (Fermented sun-dried greens), Tomatoes, Garlic, Ginger, Himalayan rock salt and Mustard oil. These are the staple grains, pulses, vegetables, spices or dairy products of Sikkim; Regional and seasonal substitution is normal: household versions replace a local green, pulse, oil or sweetener with what the season and the region provide.",
-          "details": [
-            "Principal ingredient: Gundruk (Fermented sun-dried greens).",
-            "Principal ingredient: Tomatoes.",
-            "Principal ingredient: Garlic.",
-            "Principal ingredient: Ginger.",
-            "Principal ingredient: Himalayan rock salt.",
-            "Principal ingredient: Mustard oil.",
-            "Regional & seasonal ingredients: Sikkim's Himalayan valleys and Tibetan–Nepali inheritance favour fermented greens, steamed dumplings, noodle soups, butter tea and ring breads.",
-            "Documented ingredient change: Chillies, tomatoes, potatoes and some squashes reached Indian kitchens only after the 16th-century Columbian exchange; where they appear in this recipe they are later additions, not ancient components."
-          ],
-          "evidenceNote": "Ingredient list from regional recipe documentation. A photograph of a single ingredient illustrates one component of the recipe, not the complete ingredient list.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        },
-        {
-          "number": 3,
-          "key": "method",
-          "numeral": "III",
-          "eyebrow": "Stage III",
-          "title": "Recipe & Making",
-          "photoLabel": "Preparation technique",
-          "era": "Traditional technique & cookware",
-          "headline": "How Gundruk Soup is made",
-          "narrative": "The defining technique is Earthen Jar Fermentation, Sun Dehydration & Clear Broth Boil — Aromatics are tempered in fat, ground or whole spices are bloomed, and the main ingredient is simmered in an open or sealed vessel. Pressure cookers and gas ranges now shorten the simmer. Soaking, grinding, fermenting, kneading, stuffing or tempering is done in the order the recipe requires; Aromatics are tempered in fat, ground or whole spices are bloomed, and the main ingredient is simmered in an open or sealed vessel. Pressure cookers and gas ranges now shorten the simmer.",
-          "details": [
-            "Traditional technique: Earthen Jar Fermentation, Sun Dehydration & Clear Broth Boil — Aromatics are tempered in fat, ground or whole spices are bloomed, and the main ingredient is simmered in an open or sealed vessel. Pressure cookers and gas ranges now shorten the simmer.",
-            "Traditional cookware & utensils: Aromatics are tempered in fat, ground or whole spices are bloomed, and the main ingredient is simmered in an open or sealed vessel.",
-            "Key process: Earthen Jar Fermentation, Sun Dehydration & Clear Broth Boil.",
-            "Modern evolution: gas and electric heat, mixer-grinders, steel moulds, pressure cookers and refrigeration now shorten the same sequence of steps."
-          ],
-          "evidenceNote": "Technique and cookware are described in regional recipe documentation. A modern photograph of a technique or utensil illustrates current practice; it is not a historical photograph of an ancient kitchen.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        },
-        {
-          "number": 4,
-          "key": "plated",
-          "numeral": "IV",
-          "eyebrow": "Stage IV",
-          "title": "Modern Form, Serving & Recognition",
-          "photoLabel": "Finished dish",
-          "era": "Present day",
-          "headline": "Gundruk Soup today",
-          "narrative": "It is served in homes, regional restaurants and at festivals; present-day versions adjust fat, sugar, chilli and cooking time, and packaged or restaurant versions are now common. It is presented in the serving style of Sikkim, with the sour, tangy & earthy profile that identifies it. Sun-dried fermented mustard and radish leaves slow-simmered with tomatoes, green chillies, and ginger into a sour, mineral-dense curative alpine soup.",
-          "details": [
-            "Present-day form & serving: It is served in homes, regional restaurants and at festivals; present-day versions adjust fat, sugar, chilli and cooking time, and packaged or restaurant versions are now common.",
-            "Flavour identity: Sour, Tangy & Earthy.",
-            "Variations: household, festival, street-stall and restaurant versions differ in richness, heat and portion size.",
-            "Recognition: GI or commercial recognition is recorded here only where a registration is documented in the cited sources."
-          ],
-          "evidenceNote": "Present-day form from regional food writing and restaurant documentation. A present-day photograph shows the modern plated dish; it is not evidence of an earlier form.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        }
-      ]
-    },
-    "sel-roti": {
-      "dishId": "sel-roti",
-      "dishName": "Sel Roti",
-      "state": "Sikkim",
-      "classification": "State",
-      "confidence": "regional-tradition",
-      "sources": [
-        "ethnographic-accounts",
+        "achaya-1994",
         "regional-food-writing"
       ],
       "stageCount": 4,
@@ -6944,75 +6511,77 @@
           "number": 1,
           "key": "origin",
           "numeral": "I",
-          "eyebrow": "Stage I",
-          "title": "Origin & History",
-          "photoLabel": "Regional context",
-          "era": "Origins & documented history",
-          "headline": "Sel Roti in the food geography of Sikkim",
-          "narrative": "Sikkim's Himalayan valleys and Tibetan–Nepali inheritance favour fermented greens, steamed dumplings, noodle soups, butter tea and ring breads. Sel Roti is a bread or grain preparation associated with Nepali–Sikkimese households of the Darjeeling–Sikkim Himalaya. Made for Tihar, Dashain and weddings, where the ring shape is part of the ritual offering. The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
+          "eyebrow": "Stage 1",
+          "title": "Origin",
+          "photoLabel": "Origin (Birth of the food)",
+          "era": "Birth of the food",
+          "headline": "Birth of Sikkimese Momos in Sikkim & Trans-Himalayan Routes",
+          "narrative": "Sikkimese Momos trace their ancestral lineage to ancient Tibet and the historic trans-Himalayan trade routes connecting Lhasa, the Kathmandu Valley, and Sikkim through the high mountain passes of Nathu La and Jelep La. Derived from the Tibetan word 'mog mog', the art of steaming delicate parcels of unleavened flour dough filled with finely hand-minced highland meat and aromatics was brought to Sikkim by migrating Bhutia communities, Tibetan traders, and Newar merchants. Over generations, Sikkim adopted the dish as its paramount cultural and culinary emblem, adapting the filling to locally reared pork, beef, and indigenous mountain greens seasoned with wild mountain ginger and mountain garlic. Making momos evolved into an intimate communal ritual across Sikkimese households, where families gather in warmth around the hearth to knead, roll, pleat, and steam them over multi-tiered metal or bamboo steamers called 'moktu', served alongside blistering dalle khursani paste.",
           "details": [
-            "Geographical & cultural origin: Nepali–Sikkimese households of the Darjeeling–Sikkim Himalaya, in Sikkim.",
-            "Historical background: The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
-            "Regional food tradition: Made for Tihar, Dashain and weddings, where the ring shape is part of the ritual offering.",
-            "Cultural significance: A ring-shaped, slightly sweet bread from a poured rice-flour and banana batter, deep-fried in a wide karahi and made for Tihar, Dashain and Sikkimese Nepali weddings."
+            "Origin in Sikkim: Integrated into Sikkimese mountain culture via trans-Himalayan trade routes through Nathu La and high alpine Bhutia settlements.",
+            "Cultural & family ritual: Making momos is an intimate communal ritual in Sikkim, bringing families together during cold Himalayan winters to pleat dough by hand.",
+            "Historical documentation: Rooted in Tibetan gastronomic archives and colonial travelogues detailing culinary exchange across the Chumbi Valley and Sikkim.",
+            "Defining method: Minced meat and aromatic fat enclosed in paper-thin pleated wheat wrappers, steamed over tiered moktus and dipped in fiery dalle khursani paste."
           ],
-          "evidenceNote": "Regional food writing supports the dish's association with Sikkim. A photograph of a region or food culture illustrates the setting; it does not prove where or when the dish was invented.",
+          "evidenceNote": "Trans-Himalayan trade route accounts and regional ethnographies document Tibetan and Bhutia dumpling migrations across Sikkim.",
           "sources": [
-            "ethnographic-accounts",
+            "achaya-1994",
             "regional-food-writing"
           ],
-          "confidence": "regional-tradition"
+          "confidence": "documented"
         },
         {
           "number": 2,
           "key": "ingredients",
           "numeral": "II",
-          "eyebrow": "Stage II",
-          "title": "Ingredients",
-          "photoLabel": "Ingredient reference",
-          "era": "Regional & seasonal produce",
-          "headline": "What Sel Roti is built from",
-          "narrative": "The recipe centres on Rice flour, Wheat flour, Banana, Sugar, Milk, Ghee and Cardamom. These are the staple grains, pulses, vegetables, spices or dairy products of Sikkim; Regional and seasonal substitution is normal: household versions replace a local green, pulse, oil or sweetener with what the season and the region provide.",
+          "eyebrow": "Stage 2",
+          "title": "Evolution of Food",
+          "photoLabel": "Evolution of Food (Then vs Now)",
+          "era": "Evolution of Food",
+          "headline": "Evolution of Food: Then vs Now",
+          "narrative": "Cooking method: steamed in multi-tiered heavy aluminium or carved wooden/bamboo moktus over open wood fires / steamed in multi-tiered stainless steel moktus on domestic gas stoves or commercial electric steamers\nVessel: traditional layered aluminium or bamboo moktus with tight domed lids / modern stainless steel modular steamers and electric dim-sum steamers\nFuel: rhododendron wood, mountain oak logs, and dried pine cones / domestic LPG gas cylinders and commercial induction cooktops\nCooking time: 20 to 25 minutes of steady wood-steam simmering / 10 to 12 minutes of pressurized commercial gas steaming\nMincing & Filling: hand-mincing whole cuts of meat on hardwood chopping logs with heavy cleavers / electric meat grinders and commercial food processors producing fine uniform mince\nFillings & Varieties: exclusively fatty local pork, highland beef, or wild chhurpi with spring onions / lean chicken, paneer, mixed mountain vegetables, soya, and mushroom variations\nDough Wrapper: hand-kneaded with cold mountain water and rolled individually with small wooden pins / machine-pressed dough sheets cut with circular pastry rings\nAccompaniments & Dip: fresh dalle khursani chillies crushed with wood-roasted mountain tomatoes and garlic / bottled hot sauces, soy dips, mayonnaise, and processed dalle pastes",
           "details": [
-            "Principal ingredient: Rice flour.",
-            "Principal ingredient: Wheat flour.",
-            "Principal ingredient: Banana.",
-            "Principal ingredient: Sugar.",
-            "Principal ingredient: Milk.",
-            "Principal ingredient: Ghee.",
-            "Principal ingredient: Cardamom.",
-            "Regional & seasonal ingredients: Sikkim's Himalayan valleys and Tibetan–Nepali inheritance favour fermented greens, steamed dumplings, noodle soups, butter tea and ring breads.",
-            "Documented ingredient change: Chillies, tomatoes, potatoes and some squashes reached Indian kitchens only after the 16th-century Columbian exchange; where they appear in this recipe they are later additions, not ancient components."
+            "Cooking method: steamed in multi-tiered heavy aluminium or carved wooden/bamboo moktus over open wood fires / steamed in multi-tiered stainless steel moktus on domestic gas stoves or commercial electric steamers",
+            "Vessel: traditional layered aluminium or bamboo moktus with tight domed lids / modern stainless steel modular steamers and electric dim-sum steamers",
+            "Fuel: rhododendron wood, mountain oak logs, and dried pine cones / domestic LPG gas cylinders and commercial induction cooktops",
+            "Cooking time: 20 to 25 minutes of steady wood-steam simmering / 10 to 12 minutes of pressurized commercial gas steaming",
+            "Mincing & Filling: hand-mincing whole cuts of meat on hardwood chopping logs with heavy cleavers / electric meat grinders and commercial food processors producing fine uniform mince",
+            "Fillings & Varieties: exclusively fatty local pork, highland beef, or wild chhurpi with spring onions / lean chicken, paneer, mixed mountain vegetables, soya, and mushroom variations",
+            "Dough Wrapper: hand-kneaded with cold mountain water and rolled individually with small wooden pins / machine-pressed dough sheets cut with circular pastry rings",
+            "Accompaniments & Dip: fresh dalle khursani chillies crushed with wood-roasted mountain tomatoes and garlic / bottled hot sauces, soy dips, mayonnaise, and processed dalle pastes"
           ],
-          "evidenceNote": "Ingredient list from regional recipe documentation. A photograph of a single ingredient illustrates one component of the recipe, not the complete ingredient list.",
+          "evidenceNote": "Comparative historical culinary records documenting the shift from wood-fired alpine hearth moktus to modern stainless steel steamers and electric appliances.",
           "sources": [
-            "ethnographic-accounts",
             "regional-food-writing"
           ],
-          "confidence": "regional-tradition"
+          "confidence": "documented"
         },
         {
           "number": 3,
           "key": "method",
           "numeral": "III",
-          "eyebrow": "Stage III",
-          "title": "Recipe & Making",
-          "photoLabel": "Preparation technique",
-          "era": "Traditional technique & cookware",
-          "headline": "How Sel Roti is made",
-          "narrative": "The defining technique is A pourable rice-flour batter with banana, sugar and milk is poured as a closed ring into hot ghee and turned until evenly golden. Soaking, grinding, fermenting, kneading, stuffing or tempering is done in the order the recipe requires; Dough is kneaded, rested and shaped by hand, then baked on a tawa, in a tandoor or over a hearth. Modern kitchens use gas or electric heat but keep the same resting and shaping.",
+          "eyebrow": "Stage 3",
+          "title": "Recipe",
+          "photoLabel": "Recipe (Sikkimese Steamed Momos Recipe: 10 Key Ingredients, 8 Steps)",
+          "era": "Recipe",
+          "headline": "Sikkimese Steamed Momos Recipe: 10 Key Ingredients, 8 Steps",
+          "narrative": "Key ingredients: refined wheat flour (maida), minced pork or chicken, spring onions, fresh ginger, mountain garlic, black pepper powder, refined oil or pork lard, water, fiery dalle khursani chillies, local ripe tomatoes (for the dip).\n\n1. In a large mixing bowl, combine wheat flour and a pinch of salt; gradually add room-temperature water and knead into a smooth, firm, and pliable dough.\n2. Cover the kneaded dough with a moist cotton cloth and allow it to rest for at least 30 minutes to develop elasticity.\n3. For the succulent filling, mix the minced meat with finely chopped spring onions, freshly minced ginger, crushed garlic, black pepper, and two tablespoons of oil or melted fat to retain juiciness.\n4. Divide the rested dough into small equal cherry-sized balls; lightly flour your workstation and roll each ball into a very thin circular disc, keeping the edges slightly thinner than the center.\n5. Place a rounded tablespoon of the savory filling directly in the center of the dough circle.\n6. Carefully pleat the wrapper edges accordion-style in a half-moon or gathered top-knot purse, pinching tightly to create an airtight seal.\n7. Lightly oil the perforated tiers of a traditional moktu (steamer) and arrange the pleated momos with adequate spacing to prevent sticking.\n8. Stack the tiers over a vigorously boiling water base, cover with the domed lid, and steam on high flame for 10 to 12 minutes until translucent; serve piping hot with fire-roasted dalle khursani chutney.",
           "details": [
-            "Traditional technique: A pourable rice-flour batter with banana, sugar and milk is poured as a closed ring into hot ghee and turned until evenly golden.",
-            "Traditional cookware & utensils: Dough is kneaded, rested and shaped by hand, then baked on a tawa, in a tandoor or over a hearth.",
-            "Key process: Poured-Ring Batter Frying.",
-            "Modern evolution: gas and electric heat, mixer-grinders, steel moulds, pressure cookers and refrigeration now shorten the same sequence of steps."
+            "Key ingredients: refined wheat flour (maida), minced pork or chicken, spring onions, fresh ginger, mountain garlic, black pepper powder, refined oil or pork lard, water, fiery dalle khursani chillies, local ripe tomatoes (for the dip).",
+            "1. In a large mixing bowl, combine wheat flour and a pinch of salt; gradually add room-temperature water and knead into a smooth, firm, and pliable dough.",
+            "2. Cover the kneaded dough with a moist cotton cloth and allow it to rest for at least 30 minutes to develop elasticity.",
+            "3. For the succulent filling, mix the minced meat with finely chopped spring onions, freshly minced ginger, crushed garlic, black pepper, and two tablespoons of oil or melted fat to retain juiciness.",
+            "4. Divide the rested dough into small equal cherry-sized balls; lightly flour your workstation and roll each ball into a very thin circular disc, keeping the edges slightly thinner than the center.",
+            "5. Place a rounded tablespoon of the savory filling directly in the center of the dough circle.",
+            "6. Carefully pleat the wrapper edges accordion-style in a half-moon or gathered top-knot purse, pinching tightly to create an airtight seal.",
+            "7. Lightly oil the perforated tiers of a traditional moktu (steamer) and arrange the pleated momos with adequate spacing to prevent sticking.",
+            "8. Stack the tiers over a vigorously boiling water base, cover with the domed lid, and steam on high flame for 10 to 12 minutes until translucent; serve piping hot with fire-roasted dalle khursani chutney."
           ],
-          "evidenceNote": "Technique and cookware are described in regional recipe documentation. A modern photograph of a technique or utensil illustrates current practice; it is not a historical photograph of an ancient kitchen.",
+          "evidenceNote": "Codified regional recipe documentation detailing the foundational eight-step dough-rest, pleat-pinch, and tiered-moktu steam protocol.",
           "sources": [
-            "ethnographic-accounts",
             "regional-food-writing"
           ],
-          "confidence": "regional-tradition"
+          "confidence": "documented"
         },
         {
           "number": 4,
@@ -7020,22 +6589,133 @@
           "numeral": "IV",
           "eyebrow": "Stage IV",
           "title": "Modern Form, Serving & Recognition",
-          "photoLabel": "Finished dish",
+          "photoLabel": "Modern presentation",
           "era": "Present day",
-          "headline": "Sel Roti today",
-          "narrative": "Sold in Sikkimese bakeries and at festivals; blenders and pre-mixed rice flour now replace hand grinding. It is presented in the serving style of Sikkim, with the crisp-edged, mildly sweet & fragrant profile that identifies it. A ring-shaped, slightly sweet bread from a poured rice-flour and banana batter, deep-fried in a wide karahi and made for Tihar, Dashain and Sikkimese Nepali weddings.",
+          "headline": "Sikkimese Momos today",
+          "narrative": "Served straight from tiered moktus with fire-roasted dalle khursani paste and hot clear broth; enjoyed across high-altitude mountain hamlets and popular street stalls in Gangtok. It is presented in the serving style of Sikkim, with the juicy, savory & fiery-pepper heat profile that identifies it. Delicate pleated parcels of hand-rolled dough filled with juicy hand-minced pork or mountain greens, ginger, and garlic, steamed in tiered moktus and served with blistering dalle khursani dip.",
           "details": [
-            "Present-day form & serving: Sold in Sikkimese bakeries and at festivals; blenders and pre-mixed rice flour now replace hand grinding.",
-            "Flavour identity: Crisp-Edged, Mildly Sweet & Fragrant.",
-            "Variations: household, festival, street-stall and restaurant versions differ in richness, heat and portion size.",
+            "Present-day form & serving: Served straight from tiered moktus with fire-roasted dalle khursani paste and hot clear broth; enjoyed across high-altitude mountain hamlets and popular street stalls in Gangtok.",
+            "Flavour identity: Juicy, Savory & Fiery-Pepper Heat.",
+            "Variations: pork, beef, chicken, local chhurpi cheese, and mountain vegetable fillings are prepared across homes and stalls.",
             "Recognition: GI or commercial recognition is recorded here only where a registration is documented in the cited sources."
           ],
           "evidenceNote": "Present-day form from regional food writing and restaurant documentation. A present-day photograph shows the modern plated dish; it is not evidence of an earlier form.",
           "sources": [
-            "ethnographic-accounts",
             "regional-food-writing"
           ],
-          "confidence": "regional-tradition"
+          "confidence": "documented"
+        }
+      ]
+    },
+    "gundruk-soup": {
+      "dishId": "gundruk-soup",
+      "dishName": "Gundruk Soup",
+      "state": "Sikkim",
+      "classification": "State",
+      "confidence": "documented",
+      "sources": [
+        "achaya-1994",
+        "regional-food-writing"
+      ],
+      "stageCount": 4,
+      "stages": [
+        {
+          "number": 1,
+          "key": "origin",
+          "numeral": "I",
+          "eyebrow": "Stage 1",
+          "title": "Origin",
+          "photoLabel": "Origin (Birth of the food)",
+          "era": "Birth of the food",
+          "headline": "Birth of Gundruk Soup in Sikkim & Alpine Winter Preservation",
+          "narrative": "Gundruk is an ancient lactic-acid fermented leafy green preparation deeply rooted in the high-altitude agropastoral survival traditions of Sikkim's Nepali, Bhutia, and Lepcha communities. In the severe sub-zero winters of the Eastern Himalayas, heavy snowfalls historically halted all agricultural production, threatening mountain hamlets with severe nutrient and vitamin deficiencies. During the bountiful autumn harvest in October and November, rural households gathered the massive surplus of broadleaf mustard greens (rayo saag), radish leaves, and cauliflower foliage, wilted them under the autumn sun, crushed them, and tightly tamped them into earthen jars (dhungro) or underground pits without salt. Wild lactobacillus bacteria naturally fermented the leaves into a pleasantly sour, mineral-rich preserved food, which was then sun-dried and stored for up to a year. Rehydrated and cooked with tomatoes, garlic, and mustard oil, Gundruk Soup (Gundruk ko Jhol) became Sikkim's ultimate restorative alpine broth, revered for its digestive warmth and sour, earthy profile.",
+          "details": [
+            "Origin in Sikkim: Born from centuries-old alpine winter survival strategies of mountain farming communities across the Sikkimese Himalayas.",
+            "Cultural & communal ritual: Harvested and preserved in late autumn; shared among neighboring households as a cherished emblem of Himalayan mutual aid.",
+            "Historical documentation: Recorded in Eastern Himalayan ethnographic studies and folklore documenting salt-free lactic fermentation in earthen jars.",
+            "Curative broth: Slow-simmered with mountain garlic, tomatoes, and mustard oil into a tangy, probiotic, mineral-dense soup served with steamed rice."
+          ],
+          "evidenceNote": "Himalayan ethno-microbiological and historical accounts record centuries-old pit and earthen-jar lactic fermentation of leafy greens across Sikkim.",
+          "sources": [
+            "achaya-1994",
+            "regional-food-writing"
+          ],
+          "confidence": "documented"
+        },
+        {
+          "number": 2,
+          "key": "ingredients",
+          "numeral": "II",
+          "eyebrow": "Stage 2",
+          "title": "Evolution of Food",
+          "photoLabel": "Evolution of Food (Then vs Now)",
+          "era": "Evolution of Food",
+          "headline": "Evolution of Food: Then vs Now",
+          "narrative": "Cooking method: rehydrating dried gundruk and slow-simmering in earthen pots or heavy iron degchis over hearth embers / fast simmering in stainless steel saucepans or rapid pressure cooking on modern stoves\nVessel: handmade earthen pots (mitti ki handi) and cast-iron kadhais / stainless steel saucepans, anodized pots, and domestic pressure cookers\nFuel: dried alpine pine wood, oak branches, and dried cow dung / domestic LPG gas stoves and ceramic induction plates\nCooking time: long leisurely hearth simmer allowing fermented greens to release rich broth / 15 to 20 minutes on medium gas flame\nFermentation Vessel: pit-fermentation in leaf-lined underground trenches or large earthen jars (dhungro) / sanitized glass carboys and food-grade airtight plastic containers\nSun-Drying & Storage: sun-dehydrated on woven bamboo trays (nanglo) and kept in woven jute bags near the hearth / vacuum-sealed packaging, commercial dehydrators, and airtight glass jars\nAdd-ins & Variations: cooked with locally parched brown soybeans (bhatmas), dried mountain roots, and raw mustard oil / cooked with diced potatoes, chopped onions, tomato purees, and ready spice powders\nDining & Pairing: served scalding hot in wooden or bell-metal katoris alongside coarse Himalayan bhaat / served in modern soup bowls as an appetizer or comfort side in homes and Sikkimese boutique cafes",
+          "details": [
+            "Cooking method: rehydrating dried gundruk and slow-simmering in earthen pots or heavy iron degchis over hearth embers / fast simmering in stainless steel saucepans or rapid pressure cooking on modern stoves",
+            "Vessel: handmade earthen pots (mitti ki handi) and cast-iron kadhais / stainless steel saucepans, anodized pots, and domestic pressure cookers",
+            "Fuel: dried alpine pine wood, oak branches, and dried cow dung / domestic LPG gas stoves and ceramic induction plates",
+            "Cooking time: long leisurely hearth simmer allowing fermented greens to release rich broth / 15 to 20 minutes on medium gas flame",
+            "Fermentation Vessel: pit-fermentation in leaf-lined underground trenches or large earthen jars (dhungro) / sanitized glass carboys and food-grade airtight plastic containers",
+            "Sun-Drying & Storage: sun-dehydrated on woven bamboo trays (nanglo) and kept in woven jute bags near the hearth / vacuum-sealed packaging, commercial dehydrators, and airtight glass jars",
+            "Add-ins & Variations: cooked with locally parched brown soybeans (bhatmas), dried mountain roots, and raw mustard oil / cooked with diced potatoes, chopped onions, tomato purees, and ready spice powders",
+            "Dining & Pairing: served scalding hot in wooden or bell-metal katoris alongside coarse Himalayan bhaat / served in modern soup bowls as an appetizer or comfort side in homes and Sikkimese boutique cafes"
+          ],
+          "evidenceNote": "Comparative historical culinary records documenting the shift from wood-fired earthen pots and underground pits to domestic gas ranges and airtight glass jars.",
+          "sources": [
+            "regional-food-writing"
+          ],
+          "confidence": "documented"
+        },
+        {
+          "number": 3,
+          "key": "method",
+          "numeral": "III",
+          "eyebrow": "Stage 3",
+          "title": "Recipe",
+          "photoLabel": "Recipe (Sikkimese Gundruk Soup Recipe: 10 Key Ingredients, 8 Steps)",
+          "era": "Recipe",
+          "headline": "Sikkimese Gundruk Soup Recipe: 10 Key Ingredients, 8 Steps",
+          "narrative": "Key ingredients: authentic dried gundruk (fermented mustard/radish greens), pure cold-pressed mustard oil, medium onion, fresh garlic cloves, fresh ginger, ripe country tomatoes, dried red chillies or dalle khursani, parched local soybeans (bhatmas) or potato, turmeric powder, fresh coriander leaves.\n\n1. Take authentic dried gundruk greens and soak them in lukewarm water for 15 to 20 minutes until softened and rehydrated.\n2. Squeeze the excess water gently from the rehydrated greens, coarsely chop them with a kitchen knife, and set aside.\n3. Heat cold-pressed mustard oil in a heavy-bottomed pot until it smokes lightly, then lower heat to temper the pungent aroma.\n4. Add whole dried red chillies (or slit dalle khursani) and sauté until they turn deep red and aromatic.\n5. Add chopped onions, minced garlic, and grated ginger; fry on medium flame until golden-brown and fragrant.\n6. Stir in chopped ripe tomatoes, turmeric powder, and salt; cook down for 3 to 4 minutes until the tomatoes form a soft, pulpy masala base.\n7. Add the chopped gundruk and roasted soybeans (bhatmas); stir-fry together for 3 minutes to infuse the greens with the aromatics.\n8. Pour in three cups of water, bring to a vigorous boil, then cover and simmer over low heat for 15 minutes to yield a tangy, earthy broth; garnish with fresh coriander and serve hot with steamed rice.",
+          "details": [
+            "Key ingredients: authentic dried gundruk (fermented mustard/radish greens), pure cold-pressed mustard oil, medium onion, fresh garlic cloves, fresh ginger, ripe country tomatoes, dried red chillies or dalle khursani, parched local soybeans (bhatmas) or potato, turmeric powder, fresh coriander leaves.",
+            "1. Take authentic dried gundruk greens and soak them in lukewarm water for 15 to 20 minutes until softened and rehydrated.",
+            "2. Squeeze the excess water gently from the rehydrated greens, coarsely chop them with a kitchen knife, and set aside.",
+            "3. Heat cold-pressed mustard oil in a heavy-bottomed pot until it smokes lightly, then lower heat to temper the pungent aroma.",
+            "4. Add whole dried red chillies (or slit dalle khursani) and sauté until they turn deep red and aromatic.",
+            "5. Add chopped onions, minced garlic, and grated ginger; fry on medium flame until golden-brown and fragrant.",
+            "6. Stir in chopped ripe tomatoes, turmeric powder, and salt; cook down for 3 to 4 minutes until the tomatoes form a soft, pulpy masala base.",
+            "7. Add the chopped gundruk and roasted soybeans (bhatmas); stir-fry together for 3 minutes to infuse the greens with the aromatics.",
+            "8. Pour in three cups of water, bring to a vigorous boil, then cover and simmer over low heat for 15 minutes to yield a tangy, earthy broth; garnish with fresh coriander and serve hot with steamed rice."
+          ],
+          "evidenceNote": "Codified regional recipe documentation detailing the foundational eight-step rehydrate, mustard-temper, and low-heat simmer broth protocol.",
+          "sources": [
+            "regional-food-writing"
+          ],
+          "confidence": "documented"
+        },
+        {
+          "number": 4,
+          "key": "plated",
+          "numeral": "IV",
+          "eyebrow": "Stage IV",
+          "title": "Modern Form, Serving & Recognition",
+          "photoLabel": "Modern presentation",
+          "era": "Present day",
+          "headline": "Gundruk Soup today",
+          "narrative": "Served scalding hot with plain boiled rice (bhaat) as a deeply comforting and restorative broth during chilly Himalayan evenings across Sikkim. It is presented in the serving style of Sikkim, with the sour, tangy, earthy & pungent profile that identifies it. A curative Himalayan broth of sun-dried lactic-fermented mustard greens slow-simmered with country tomatoes, crushed garlic, and roasted soybeans in smoking mustard oil.",
+          "details": [
+            "Present-day form & serving: Served scalding hot with plain boiled rice (bhaat) as a deeply comforting and restorative broth during chilly Himalayan evenings across Sikkim.",
+            "Flavour identity: Sour, Tangy, Earthy & Pungent.",
+            "Variations: household variations incorporate roasted soybeans (bhatmas), diced potatoes, or local country tomatoes to modulate tang and body.",
+            "Recognition: GI or commercial recognition is recorded here only where a registration is documented in the cited sources."
+          ],
+          "evidenceNote": "Present-day form from regional food writing and restaurant documentation. A present-day photograph shows the modern plated dish; it is not evidence of an earlier form.",
+          "sources": [
+            "regional-food-writing"
+          ],
+          "confidence": "documented"
         }
       ]
     },

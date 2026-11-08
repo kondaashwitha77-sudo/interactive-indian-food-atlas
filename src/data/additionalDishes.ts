@@ -169,21 +169,7 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
 
   "Himachal Pradesh": [],
 
-  Jharkhand: [
-    {
-      id: "pittha",
-      name: "Pittha",
-      alternateName: "Jharkhandi Rice Dumplings",
-      state: "Jharkhand",
-      category: "fermented-steamed",
-      description:
-        "Rice-flour dough shaped by hand into crescents or cups, sometimes filled with jaggery and sesame, steamed over a cloth-lined pot and eaten at harvest festivals across Jharkhand's tribal communities.",
-      ingredients: ["Rice flour", "Jaggery", "Sesame seeds", "Water", "Salt"],
-      tasteProfile: "Soft, Mildly Sweet & Rice-Forward",
-      era: "Tribal harvest-festival tradition; documented in ethnographic and regional accounts",
-      keyTechnique: "Hand-Shaped Rice Dough & Cloth Steaming",
-    },
-  ],
+  Jharkhand: [],
 
   Karnataka: [],
 
@@ -216,21 +202,7 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
     },
   ],
 
-  Manipur: [
-    {
-      id: "chak-hao-kheer",
-      name: "Chak-Hao Kheer",
-      alternateName: "Manipuri Black Rice Pudding",
-      state: "Manipur",
-      category: "sweet-dessert",
-      description:
-        "A slow-cooked pudding of aromatic Manipuri black rice (Chak-Hao), milk and jaggery or sugar, served at feasts and now protected by the Chak-Hao geographical indication.",
-      ingredients: ["Chak-Hao black rice", "Milk", "Jaggery or sugar", "Cardamom", "Cashew nuts"],
-      tasteProfile: "Nutty, Fragrant & Deeply Violet",
-      era: "Manipuri rice-cultivation tradition; Chak-Hao registered as a GI in 2020",
-      keyTechnique: "Long Soak & Low-Heat Black-Rice Reduction",
-    },
-  ],
+  Manipur: [],
 
   Meghalaya: [
     {
@@ -336,21 +308,7 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
     },
   ],
 
-  Sikkim: [
-    {
-      id: "sel-roti",
-      name: "Sel Roti",
-      alternateName: "Nepali-Sikkimese Ring Bread",
-      state: "Sikkim",
-      category: "grain-bread",
-      description:
-        "A ring-shaped, slightly sweet bread from a poured rice-flour and banana batter, deep-fried in a wide karahi and made for Tihar, Dashain and Sikkimese Nepali weddings.",
-      ingredients: ["Rice flour", "Wheat flour", "Banana", "Sugar", "Milk", "Ghee", "Cardamom"],
-      tasteProfile: "Crisp-Edged, Mildly Sweet & Fragrant",
-      era: "Nepali–Sikkimese festival tradition; documented in regional food writing",
-      keyTechnique: "Poured-Ring Batter Frying",
-    },
-  ],
+  Sikkim: [],
 
 
   Tripura: [
