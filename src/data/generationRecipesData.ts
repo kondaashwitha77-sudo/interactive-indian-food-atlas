@@ -3582,6 +3582,89 @@ export const PUTTU_GENERATIONS: GenerationWaypoint[] = [
       "Traditional Kerala culinary practice and codified Puttu recipes.",
   },
 ];
+
+export const SIDDU_GENERATIONS: GenerationWaypoint[] = [
+  {
+    generationNumber: 1,
+    eraTitle: "Birth of the food",
+    yearRange: "Origin",
+    centuryLabel: "Stage 1",
+    headline: "Birth of Siddu in Himachal Pradesh",
+    shortDescription:
+      "Siddu (also spelled sidu or sidku) is a steamed, stuffed wheat bread of Himachal Pradesh, traditionally made by the Pahari people of the mountain areas and mostly eaten in winter.\n\nIt is believed to have started in the Mahasu region, now part of Shimla district, and later spread to Kullu, Mandi and Sirmaur. It is made today in places such as Kullu, Manali, Shimla, Mandi and Rohru.\n\nIt is described as a portable food of shepherds and travellers. This comes from popular accounts without cited sources.\n\nOne theory says the name may come from a Tibetan word meaning steamed bread, and that siddu is a likely relative of the Chinese-Tibetan bao, spread by cross-Himalayan trade. This is a theory, not proven.\n\nThe dough is made from wheat flour and leavened with yeast. It is wrapped around a savoury or sweet filling, steamed, and served with melted ghee. In Shimla it is shaped oval and in Kullu it is shaped like a disc.\n\nA cook in Old Manali says her family has made and changed the recipe for 200 years. This is one cook's claim, not documented history.\n\nThe exact origin, date and creator are not documented with certainty. Its development is tied to local customs, seasonal ingredients and cultural exchange.",
+    image: ERA_PHOTO.ancient_grains,
+    generationRecipe: {
+      recipeName: "Origin: Birth of the food",
+      historicalCookware: "Traditional tiered wooden or metal steamer, brass mixing vessel",
+      heatSource: "Traditional hearth fire (chulha)",
+      ingredientsList: [],
+      preparationMethod:
+        "Wheat flour dough leavened with yeast, wrapped around savory or sweet fillings, steamed until puffy, and eaten with melted ghee.",
+      contemporaryDifference:
+        "The exact origin, date and creator are not documented with certainty; development is tied to local customs and cross-Himalayan trade.",
+    },
+    technologicalLeap: "Fermented wheat dough shaped into oval or disc envelopes, enclosing mountain harvest fillings and steamed over boiling water.",
+    documentedCitation:
+      "Regional oral traditions, popular mountain accounts, and cultural history of the western Himalayas.",
+  },
+  {
+    generationNumber: 2,
+    eraTitle: "Evolution of Food",
+    yearRange: "Then vs Now",
+    centuryLabel: "Stage 2",
+    headline: "Evolution of Food: Then vs Now",
+    shortDescription:
+      "Fillings: Then - ground lentils, spinach or turnip greens, and poppy seeds with jaggery in Kullu | Now - paneer, chicken, mutton, potato, peas and rajma as well\nDough: Then - whole wheat flour | Now - wheat mixed with rice flour in some Manali homes for a softer dough\nSweet versions: Then - mainly savoury fillings | Now - sweet siddu with coconut, walnuts, sesame and jaggery\nServing: Then - melted ghee | Now - ghee with green and red chutney, and jaggery syrup instead of ghee in vegan versions\nRising time: Then - overnight in some households | Now - about 1 to 2 hours in quicker home recipes\nRole: Then - a portable food of shepherds | Now - festival, wedding and family food, and a breakfast dish\nReach: Then - hill-town kitchens in Kullu, Shimla, Mandi and Sirmaur | Now - restaurants, food festivals and siddu workshops for travellers across India",
+    image: ERA_PHOTO.stone_ferment,
+    generationRecipe: {
+      recipeName: "Evolution of Food: Then vs Now",
+      historicalCookware: "Rustic chulha and wood/brass steamer → modern multi-tier aluminium and stainless steel steamers",
+      heatSource: "Wood fire hearth → domestic gas stovetop and induction",
+      ingredientsList: [],
+      preparationMethod:
+        "Slow overnight natural fermentation → rapid 1-2 hour commercial yeast dough; rustic hearth fare → celebrated festival delicacy.",
+      contemporaryDifference:
+        "Fillings: ground lentils and wild greens / paneer, chicken, potato, peas and more.",
+    },
+    technologicalLeap: "Evolution from rustic shepherd hearth bread with wild greens to diverse multi-protein and sweet artisan festival variations.",
+    documentedCitation:
+      "Comparative regional culinary records of Himachal Pradesh household cookery and contemporary food festival documentation.",
+  },
+  {
+    generationNumber: 3,
+    eraTitle: "Recipe",
+    yearRange: "Short and simple",
+    centuryLabel: "Stage 3",
+    headline: "Siddu Recipe: 10 Key Ingredients, 8 Steps",
+    shortDescription:
+      "Key ingredients: whole wheat flour, yeast, ghee, salt, lukewarm water, poppy seeds, walnuts, onion, ginger, garlic and green chilli, red chilli, turmeric and garam masala powders.\n\n1. Make the dough. Mix the flour, salt, ghee and yeast, add lukewarm water and knead. (The dough should be smooth and pliable, neither too hard nor too soft.)\n2. Let the dough rise. Rub it with a little ghee, cover it and leave it to rise, about 1 to 1 and a half hours. (It is ready when it has doubled in size. Some households leave it overnight.)\n3. Make the filling paste. Soak the walnuts for 20 to 30 minutes, dry roast the poppy seeds on low heat for about a minute, then grind both together. (The poppy seeds should smell nutty but not brown. The paste should be thick, not watery.)\n4. Season the filling. Mix the paste with the onion, a few chopped walnuts, ginger, garlic, green chilli, the spice powders and salt. (It should hold together when you pinch it.)\n5. Shape the siddu. Knock back the dough, divide it, roll each piece into a ball, press a small cup, add filling, pinch the edges shut and flatten slightly. (The seams should be sealed with no filling showing.)\n6. Prepare the steamer. Boil water in a steamer, grease the perforated tray well and arrange the buns on it. (The water must stay below the tray and not touch the buns.)\n7. Steam the siddu. Cover and steam for about 20 minutes. (The buns should look puffy and be cooked through, and they should lift off the tray without sticking.)\n8. Serve. Serve warm with plenty of melted ghee and green chutney. (Siddu tastes best hot.)",
+    image: ERA_PHOTO.spice_trade,
+    generationRecipe: {
+      recipeName: "Siddu Recipe",
+      historicalCookware: "Steamer with perforated tray, kneading parat, mortar and pestle or grinding stone",
+      heatSource: "Steaming over briskly boiling water",
+      ingredientsList: [
+        "Whole wheat flour",
+        "Yeast",
+        "Ghee",
+        "Salt",
+        "Lukewarm water",
+        "Poppy seeds",
+        "Walnuts",
+        "Onion",
+        "Ginger, garlic and green chilli",
+        "Red chilli, turmeric and garam masala powders",
+      ],
+      preparationMethod:
+        "1. Make the dough.\n2. Let the dough rise.\n3. Make the filling paste.\n4. Season the filling.\n5. Shape the siddu.\n6. Prepare the steamer.\n7. Steam the siddu.\n8. Serve.",
+      contemporaryDifference:
+        "8. Serve warm with plenty of melted ghee and green chutney. (Siddu tastes best hot.)",
+    },
+    technologicalLeap: "Precise two-phase technique: tender yeast-fermented wheat envelope enclosing aromatic walnut-poppy seed filling, gently steam-cooked.",
+    documentedCitation:
+      "Authentic Pahari culinary tradition and documented home kitchen recipes of Himachal Pradesh.",
+  },
+];
 // ─────────────────────────────────────────────
 // DYNAMIC GENERATION SYNTHESIZER FOR ALL OTHER DISHES
 // Accurately builds 6 historical generations based on
@@ -3816,6 +3899,8 @@ function legacyGenerationsForDish(dishId: string, dish: Dish): GenerationWaypoin
       return FISH_MOLEE_GENERATIONS;
     case "puttu":
       return PUTTU_GENERATIONS;
+    case "siddu":
+      return SIDDU_GENERATIONS;
     default:
       return generateDynamicGenerationsForDish(dish);
   }
@@ -3876,7 +3961,8 @@ export function getGenerationsForDish(dishId: string): GenerationWaypoint[] {
             dishId === "ghewar" ||
             dishId === "appam-stew" ||
             dishId === "fish-molee" ||
-            dishId === "puttu"
+            dishId === "puttu" ||
+            dishId === "siddu"
 
 
             ? (stage.number === 3 && legacy[2]?.generationRecipe.ingredientsList?.length
@@ -3912,7 +3998,8 @@ export function getGenerationsForDish(dishId: string): GenerationWaypoint[] {
             dishId === "ghewar" ||
             dishId === "appam-stew" ||
             dishId === "fish-molee" ||
-            dishId === "puttu") &&
+            dishId === "puttu" ||
+            dishId === "siddu") &&
             stage.number === 3 &&
             legacy[2]?.generationRecipe.preparationMethod
             ? legacy[2].generationRecipe.preparationMethod
@@ -3924,7 +4011,7 @@ export function getGenerationsForDish(dishId: string): GenerationWaypoint[] {
       },
       technologicalLeap: stage.details[0],
       documentedCitation:
-        dishId === "dhokla" || dishId === "undhiyu" || dishId === "dal-baati-churma" || dishId === "laal-maas" || dishId === "dalma" || dishId === "chhena-poda" || dishId === "pakhala" || dishId === "goan-fish-curry" || dishId === "pork-vindaloo" || dishId === "bebinca" || dishId === "ghewar" || dishId === "appam-stew" || dishId === "fish-molee" || dishId === "puttu"
+        dishId === "dhokla" || dishId === "undhiyu" || dishId === "dal-baati-churma" || dishId === "laal-maas" || dishId === "dalma" || dishId === "chhena-poda" || dishId === "pakhala" || dishId === "goan-fish-curry" || dishId === "pork-vindaloo" || dishId === "bebinca" || dishId === "ghewar" || dishId === "appam-stew" || dishId === "fish-molee" || dishId === "puttu" || dishId === "siddu"
           ? source.documentedCitation
           : citations || "Regional food writing; no securely dated first reference established.",
     } satisfies GenerationWaypoint;

@@ -2558,25 +2558,28 @@
         "regional-food-writing",
         "oral-tradition"
       ],
-      "stageCount": 4,
+      "stageCount": 3,
       "stages": [
         {
           "number": 1,
           "key": "origin",
           "numeral": "I",
-          "eyebrow": "Stage I",
-          "title": "Origin & History",
-          "photoLabel": "Regional context",
-          "era": "Origins & documented history",
-          "headline": "Siddu in the food geography of Himachal Pradesh",
-          "narrative": "The western Himalayan valleys of Himachal rely on lentils, curd, ghee and the slow, communal dham feast cooked by hereditary cooks. Siddu is a bread or grain preparation associated with the Himachal Pradesh region. It belongs to the bread or grain preparation tradition of Himachal Pradesh and is embedded in household, festival and regional food practice. The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
+          "eyebrow": "Stage 1",
+          "title": "Origin",
+          "photoLabel": "Siddu - Origin (Birth of the food)",
+          "era": "Birth of the food",
+          "headline": "Birth of Siddu in Himachal Pradesh",
+          "narrative": "Siddu (also spelled sidu or sidku) is a steamed, stuffed wheat bread of Himachal Pradesh, traditionally made by the Pahari people of the mountain areas and mostly eaten in winter. It is believed to have started in the Mahasu region, now part of Shimla district, and later spread to Kullu, Mandi and Sirmaur. It is made today in places such as Kullu, Manali, Shimla, Mandi and Rohru. It is described as a portable food of shepherds and travellers. This comes from popular accounts without cited sources. One theory says the name may come from a Tibetan word meaning steamed bread, and that siddu is a likely relative of the Chinese-Tibetan bao, spread by cross-Himalayan trade. This is a theory, not proven. The dough is made from wheat flour and leavened with yeast. It is wrapped around a savoury or sweet filling, steamed, and served with melted ghee. In Shimla it is shaped oval and in Kullu it is shaped like a disc. A cook in Old Manali says her family has made and changed the recipe for 200 years. This is one cook's claim, not documented history. The exact origin, date and creator are not documented with certainty. Its development is tied to local customs, seasonal ingredients and cultural exchange.",
           "details": [
-            "Geographical & cultural origin: the Himachal Pradesh region, in Himachal Pradesh.",
-            "Historical background: The dish is documented in regional cookery and food writing, but no securely dated earliest written reference has been established for it; this atlas therefore claims no century of invention.",
-            "Regional food tradition: It belongs to the bread or grain preparation tradition of Himachal Pradesh and is embedded in household, festival and regional food practice.",
-            "Cultural significance: A pillowy, crescent-shaped fermented wheat dough bread filled with a rich paste of toasted local walnuts, poppy seeds, and wild herbs, drenched in hot desi ghee."
+            "Siddu (also spelled sidu or sidku) is a steamed, stuffed wheat bread of Himachal Pradesh, traditionally made by the Pahari people of the mountain areas and mostly eaten in winter.",
+            "It is believed to have started in the Mahasu region, now part of Shimla district, and later spread to Kullu, Mandi and Sirmaur. It is made today in places such as Kullu, Manali, Shimla, Mandi and Rohru.",
+            "It is described as a portable food of shepherds and travellers. This comes from popular accounts without cited sources.",
+            "One theory says the name may come from a Tibetan word meaning steamed bread, and that siddu is a likely relative of the Chinese-Tibetan bao, spread by cross-Himalayan trade. This is a theory, not proven.",
+            "The dough is made from wheat flour and leavened with yeast. It is wrapped around a savoury or sweet filling, steamed, and served with melted ghee. In Shimla it is shaped oval and in Kullu it is shaped like a disc.",
+            "A cook in Old Manali says her family has made and changed the recipe for 200 years. This is one cook's claim, not documented history.",
+            "The exact origin, date and creator are not documented with certainty. Its development is tied to local customs, seasonal ingredients and cultural exchange."
           ],
-          "evidenceNote": "Regional food writing supports the dish's association with Himachal Pradesh. A photograph of a region or food culture illustrates the setting; it does not prove where or when the dish was invented.",
+          "evidenceNote": "Regional food writing and oral tradition. The exact origin, date and creator are not documented with certainty.",
           "sources": [
             "regional-food-writing",
             "oral-tradition"
@@ -2587,22 +2590,22 @@
           "number": 2,
           "key": "ingredients",
           "numeral": "II",
-          "eyebrow": "Stage II",
-          "title": "Ingredients",
-          "photoLabel": "Ingredient reference",
-          "era": "Regional & seasonal produce",
-          "headline": "What Siddu is built from",
-          "narrative": "The recipe centres on Fermented wheat flour, Crushed walnuts, Poppy seeds (Khus Khus), Pure ghee and Wild herbs. These are the staple grains, pulses, vegetables, spices or dairy products of Himachal Pradesh; Regional and seasonal substitution is normal: household versions replace a local green, pulse, oil or sweetener with what the season and the region provide.",
+          "eyebrow": "Stage 2",
+          "title": "Evolution of Food",
+          "photoLabel": "Siddu - Evolution of Food",
+          "era": "Evolution of Food",
+          "headline": "Evolution of Food: Then vs Now",
+          "narrative": "Fillings: Then - ground lentils, spinach or turnip greens, and poppy seeds with jaggery in Kullu | Now - paneer, chicken, mutton, potato, peas and rajma as well\nDough: Then - whole wheat flour | Now - wheat mixed with rice flour in some Manali homes for a softer dough\nSweet versions: Then - mainly savoury fillings | Now - sweet siddu with coconut, walnuts, sesame and jaggery\nServing: Then - melted ghee | Now - ghee with green and red chutney, and jaggery syrup instead of ghee in vegan versions\nRising time: Then - overnight in some households | Now - about 1 to 2 hours in quicker home recipes\nRole: Then - a portable food of shepherds | Now - festival, wedding and family food, and a breakfast dish\nReach: Then - hill-town kitchens in Kullu, Shimla, Mandi and Sirmaur | Now - restaurants, food festivals and siddu workshops for travellers across India",
           "details": [
-            "Principal ingredient: Fermented wheat flour.",
-            "Principal ingredient: Crushed walnuts.",
-            "Principal ingredient: Poppy seeds (Khus Khus).",
-            "Principal ingredient: Pure ghee.",
-            "Principal ingredient: Wild herbs.",
-            "Regional & seasonal ingredients: The western Himalayan valleys of Himachal rely on lentils, curd, ghee and the slow, communal dham feast cooked by hereditary cooks.",
-            "Documented ingredient change: Chillies, tomatoes, potatoes and some squashes reached Indian kitchens only after the 16th-century Columbian exchange; where they appear in this recipe they are later additions, not ancient components."
+            "Fillings: Then - ground lentils, spinach or turnip greens, and poppy seeds with jaggery in Kullu | Now - paneer, chicken, mutton, potato, peas and rajma as well",
+            "Dough: Then - whole wheat flour | Now - wheat mixed with rice flour in some Manali homes for a softer dough",
+            "Sweet versions: Then - mainly savoury fillings | Now - sweet siddu with coconut, walnuts, sesame and jaggery",
+            "Serving: Then - melted ghee | Now - ghee with green and red chutney, and jaggery syrup instead of ghee in vegan versions",
+            "Rising time: Then - overnight in some households | Now - about 1 to 2 hours in quicker home recipes",
+            "Role: Then - a portable food of shepherds | Now - festival, wedding and family food, and a breakfast dish",
+            "Reach: Then - hill-town kitchens in Kullu, Shimla, Mandi and Sirmaur | Now - restaurants, food festivals and siddu workshops for travellers across India"
           ],
-          "evidenceNote": "Ingredient list from regional recipe documentation. A photograph of a single ingredient illustrates one component of the recipe, not the complete ingredient list.",
+          "evidenceNote": "Evolution documented through comparative oral histories and culinary accounts across Himachal Pradesh.",
           "sources": [
             "regional-food-writing",
             "oral-tradition"
@@ -2613,42 +2616,24 @@
           "number": 3,
           "key": "method",
           "numeral": "III",
-          "eyebrow": "Stage III",
-          "title": "Recipe & Making",
-          "photoLabel": "Preparation technique",
-          "era": "Traditional technique & cookware",
-          "headline": "How Siddu is made",
-          "narrative": "The defining technique is Yeast Fermentation & Alpine Herbal Steaming — Dough is kneaded, rested and shaped by hand, then baked on a tawa, in a tandoor or over a hearth. Modern kitchens use gas or electric heat but keep the same resting and shaping. Soaking, grinding, fermenting, kneading, stuffing or tempering is done in the order the recipe requires; Dough is kneaded, rested and shaped by hand, then baked on a tawa, in a tandoor or over a hearth. Modern kitchens use gas or electric heat but keep the same resting and shaping.",
+          "eyebrow": "Stage 3",
+          "title": "Recipe",
+          "photoLabel": "Siddu - Recipe",
+          "era": "Recipe",
+          "headline": "Siddu Recipe: 10 Key Ingredients, 8 Steps",
+          "narrative": "Key ingredients: whole wheat flour, yeast, ghee, salt, lukewarm water, poppy seeds, walnuts, onion, ginger, garlic and green chilli, red chilli, turmeric and garam masala powders.\n\n1. Make the dough. Mix the flour, salt, ghee and yeast, add lukewarm water and knead. (The dough should be smooth and pliable, neither too hard nor too soft.)\n2. Let the dough rise. Rub it with a little ghee, cover it and leave it to rise, about 1 to 1 and a half hours. (It is ready when it has doubled in size. Some households leave it overnight.)\n3. Make the filling paste. Soak the walnuts for 20 to 30 minutes, dry roast the poppy seeds on low heat for about a minute, then grind both together. (The poppy seeds should smell nutty but not brown. The paste should be thick, not watery.)\n4. Season the filling. Mix the paste with the onion, a few chopped walnuts, ginger, garlic, green chilli, the spice powders and salt. (It should hold together when you pinch it.)\n5. Shape the siddu. Knock back the dough, divide it, roll each piece into a ball, press a small cup, add filling, pinch the edges shut and flatten slightly. (The seams should be sealed with no filling showing.)\n6. Prepare the steamer. Boil water in a steamer, grease the perforated tray well and arrange the buns on it. (The water must stay below the tray and not touch the buns.)\n7. Steam the siddu. Cover and steam for about 20 minutes. (The buns should look puffy and be cooked through, and they should lift off the tray without sticking.)\n8. Serve. Serve warm with plenty of melted ghee and green chutney. (Siddu tastes best hot.)",
           "details": [
-            "Traditional technique: Yeast Fermentation & Alpine Herbal Steaming — Dough is kneaded, rested and shaped by hand, then baked on a tawa, in a tandoor or over a hearth. Modern kitchens use gas or electric heat but keep the same resting and shaping.",
-            "Traditional cookware & utensils: Dough is kneaded, rested and shaped by hand, then baked on a tawa, in a tandoor or over a hearth.",
-            "Key process: Yeast Fermentation & Alpine Herbal Steaming.",
-            "Modern evolution: gas and electric heat, mixer-grinders, steel moulds, pressure cookers and refrigeration now shorten the same sequence of steps."
+            "Key ingredients: whole wheat flour, yeast, ghee, salt, lukewarm water, poppy seeds, walnuts, onion, ginger, garlic and green chilli, red chilli, turmeric and garam masala powders.",
+            "1. Make the dough. Mix the flour, salt, ghee and yeast, add lukewarm water and knead. (The dough should be smooth and pliable, neither too hard nor too soft.)",
+            "2. Let the dough rise. Rub it with a little ghee, cover it and leave it to rise, about 1 to 1 and a half hours. (It is ready when it has doubled in size. Some households leave it overnight.)",
+            "3. Make the filling paste. Soak the walnuts for 20 to 30 minutes, dry roast the poppy seeds on low heat for about a minute, then grind both together. (The poppy seeds should smell nutty but not brown. The paste should be thick, not watery.)",
+            "4. Season the filling. Mix the paste with the onion, a few chopped walnuts, ginger, garlic, green chilli, the spice powders and salt. (It should hold together when you pinch it.)",
+            "5. Shape the siddu. Knock back the dough, divide it, roll each piece into a ball, press a small cup, add filling, pinch the edges shut and flatten slightly. (The seams should be sealed with no filling showing.)",
+            "6. Prepare the steamer. Boil water in a steamer, grease the perforated tray well and arrange the buns on it. (The water must stay below the tray and not touch the buns.)",
+            "7. Steam the siddu. Cover and steam for about 20 minutes. (The buns should look puffy and be cooked through, and they should lift off the tray without sticking.)",
+            "8. Serve. Serve warm with plenty of melted ghee and green chutney. (Siddu tastes best hot.)"
           ],
-          "evidenceNote": "Technique and cookware are described in regional recipe documentation. A modern photograph of a technique or utensil illustrates current practice; it is not a historical photograph of an ancient kitchen.",
-          "sources": [
-            "regional-food-writing",
-            "oral-tradition"
-          ],
-          "confidence": "regional-tradition"
-        },
-        {
-          "number": 4,
-          "key": "plated",
-          "numeral": "IV",
-          "eyebrow": "Stage IV",
-          "title": "Modern Form, Serving & Recognition",
-          "photoLabel": "Finished dish",
-          "era": "Present day",
-          "headline": "Siddu today",
-          "narrative": "It is served in homes, regional restaurants and at festivals; present-day versions adjust fat, sugar, chilli and cooking time, and packaged or restaurant versions are now common. It is presented in the serving style of Himachal Pradesh, with the nutty, mild & comforting profile that identifies it. A pillowy, crescent-shaped fermented wheat dough bread filled with a rich paste of toasted local walnuts, poppy seeds, and wild herbs, drenched in hot desi ghee.",
-          "details": [
-            "Present-day form & serving: It is served in homes, regional restaurants and at festivals; present-day versions adjust fat, sugar, chilli and cooking time, and packaged or restaurant versions are now common.",
-            "Flavour identity: Nutty, Mild & Comforting.",
-            "Variations: household, festival, street-stall and restaurant versions differ in richness, heat and portion size.",
-            "Recognition: GI or commercial recognition is recorded here only where a registration is documented in the cited sources."
-          ],
-          "evidenceNote": "Present-day form from regional food writing and restaurant documentation. A present-day photograph shows the modern plated dish; it is not evidence of an earlier form.",
+          "evidenceNote": "Authentic Pahari culinary tradition and documented home kitchen recipes of Himachal Pradesh.",
           "sources": [
             "regional-food-writing",
             "oral-tradition"

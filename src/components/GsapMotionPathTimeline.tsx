@@ -124,7 +124,8 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
             dishId === "ghewar" ||
             dishId === "appam-stew" ||
             dishId === "fish-molee" ||
-            dishId === "puttu"
+            dishId === "puttu" ||
+            dishId === "siddu"
             ? "Evolution of Food"
             : "Evolution of food",
         photo: photography?.ingredients,
@@ -276,7 +277,9 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                             ? "Evolution of Food — from seven-leaf earthen tizal baking to modern layered tin ovens."
                             : dishId === "ghewar" && index === 1
                               ? "Evolution of Food — from monsoon-festival sweet shops to modern artisanal rabri varieties."
-                              : entry.photo?.caption || (stateMainImg ? `${dish.state} — Regional heritage & culinary traditions` : undefined);
+                              : dishId === "siddu" && index === 1
+                                ? "Evolution of Food — from rustic shepherd hearth buns to diverse modern sweet and savory festival preparations."
+                                : entry.photo?.caption || (stateMainImg ? `${dish.state} — Regional heritage & culinary traditions` : undefined);
 
       return {
         id: `${dishId}-stage-${entry.key}`,
@@ -926,12 +929,15 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                       dishId === "ghewar" ||
                       dishId === "appam-stew" ||
                       dishId === "fish-molee" ||
-                      dishId === "puttu") &&
+                      dishId === "puttu" ||
+                      dishId === "siddu") &&
                       stageNum === 3 && (
-                        <div className="pt-2 relative z-30">
+                        <div className="pt-2 relative z-30 pointer-events-auto">
                           <a
                             href={
-                              dishId === "hyderabadi-haleem"
+                              dishId === "siddu"
+                                ? "https://www.youtube.com/watch?v=010fW1MqaVc"
+                                : dishId === "hyderabadi-haleem"
                                 ? "https://www.youtube.com/watch?v=dPpERMQzICs"
                                 : dishId === "masala-dosa"
                                   ? "https://www.youtube.com/watch?v=e9XFHjdw3Cg"
