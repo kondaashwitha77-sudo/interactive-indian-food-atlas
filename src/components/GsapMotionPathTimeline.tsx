@@ -29,6 +29,7 @@ import { Skiper6Summarizer, GenerationSummaryMember } from "./ui/skiper6";
 import { useTheme } from "../context/ThemeContext";
 import { CinematicParallaxJourney, CinematicStage, CinematicOutro } from "./CinematicParallaxJourney";
 import { ImageUploadSearchModal } from "./ImageUploadSearchModal";
+import { getDishYoutubeRecipe } from "../data/dishYoutubeRecipes";
 import {
   getInfographicForStage,
   getAllUploadedImages,
@@ -128,7 +129,29 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
             dishId === "siddu" ||
             dishId === "chettinad-chicken" ||
             dishId === "idli-sambar" ||
-            dishId === "filter-coffee"
+            dishId === "filter-coffee" ||
+            dishId === "thukpa" ||
+            dishId === "bamboo-shoot-pork" ||
+            dishId === "apong" ||
+            dishId === "pondicherry-fish-curry" ||
+            dishId === "koli-kari" ||
+            dishId === "litti-chokha" ||
+            dishId === "thekua" ||
+            dishId === "silao-khaja" ||
+            dishId === "banarasi-malaiyo" ||
+            dishId === "kafuli" ||
+            dishId === "bal-mithai" ||
+            dishId === "singori" ||
+            dishId === "shorshe-ilish" ||
+            dishId === "mishti-doi" ||
+            dishId === "rosogolla" ||
+            dishId === "delhi-nihari" ||
+            dishId === "delhi-chaat" ||
+            dishId === "jadoh" ||
+            dishId === "dohneiiong" ||
+            dishId === "pumaloi"
+
+            
             ? "Evolution of Food"
             : "Evolution of food",
         photo: photography?.ingredients,
@@ -288,7 +311,47 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                               ? "Evolution of Food — from monsoon-festival sweet shops to modern artisanal rabri varieties."
                               : dishId === "siddu" && index === 1
                                 ? "Evolution of Food — from rustic shepherd hearth buns to diverse modern sweet and savory festival preparations."
-                                : entry.photo?.caption || (stateMainImg ? `${dish.state} — Regional heritage & culinary traditions` : undefined);
+                                : dishId === "thukpa" && index === 1
+                                  ? "Evolution of Food — from rustic hearth wood pots to modern domestic stainless steel stockpots."
+                                  : dishId === "bamboo-shoot-pork" && index === 1
+                                    ? "Evolution of Food — from green bamboo hollow roasting over wood embers to modern kadhais and pressure cookers."
+                                    : dishId === "apong" && index === 1
+                                      ? "Evolution of Food — from smoked bamboo tubes and terracotta pots to modern glass carboys and stainless steel fermentation vessels."
+                                      : dishId === "pondicherry-fish-curry" && index === 1
+                                        ? "Evolution of Food — from coastal manpanai clay pots over coconut-husk embers to modern stainless steel pans and gas cooktops."
+                                        : dishId === "thekua" && index === 1
+                                            ? "Evolution of Food — from rustic earthen chulha fires and wooden moulds to modern domestic gas stoves and air fryers."
+                                            : dishId === "silao-khaja" && index === 1
+                                            ? "Evolution of Food — from coal bhattis and wayside pilgrimage stalls to modern temperature-controlled fryers and GI-certified retail packaging."
+                                                : dishId === "banarasi-malaiyo" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "kafuli" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "bal-mithai" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "singori" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "shorshe-ilish" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "mishti-doi" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "rosogolla" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "delhi-nihari" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "delhi-chaat" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "jadoh" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "dohneiiong" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "pumaloi" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                            : dishId === "litti-chokha" && index === 1
+                                            ? "Evolution of Food — from rustic cow-dung ember pits to modern domestic ovens and gas tandoors."
+                                            : dishId === "koli-kari" && index === 1
+                                          ? "Evolution of Food — from French heavy-bottomed brass stew pots on charcoal hearths to modern non-stick pans and domestic gas stoves."
+                                          : entry.photo?.caption || (stateMainImg ? `${dish.state} — Regional heritage & culinary traditions` : undefined);
 
       return {
         id: `${dishId}-stage-${entry.key}`,
@@ -785,14 +848,14 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                       className={`text-sm leading-relaxed ${isLight ? "text-slate-700" : "text-slate-200"
                         }`}
                     >
-                      {waypoint.shortDescription.includes("\n") ? (
+                      {(waypoint.shortDescription || "").includes("\n") ? (
                         <div className="space-y-1.5">
-                          {waypoint.shortDescription.split("\n").map((line, lIdx) => (
+                          {(waypoint.shortDescription || "").split("\n").map((line, lIdx) => (
                             <p key={lIdx} className="leading-snug">{line}</p>
                           ))}
                         </div>
                       ) : (
-                        <p>{waypoint.shortDescription}</p>
+                        <p>{waypoint.shortDescription || ""}</p>
                       )}
                     </div>
 
@@ -919,112 +982,23 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                     )}
 
                     {/* YouTube Recipe Link (below ingredients, at the end of Stage 3) */}
-                    {(dishId === "hyderabadi-biryani" ||
-                      dishId === "hyderabadi-haleem" ||
-                      dishId === "masala-dosa" ||
-                      dishId === "bisi-bele-bath" ||
-                      dishId === "indori-poha" ||
-                      dishId === "bhutte-ka-kees" ||
-                      dishId === "dal-bafla" ||
-                      dishId === "makki-di-roti-sarson-saag" ||
-                      dishId === "butter-chicken" ||
-                      dishId === "amritsari-kulcha" ||
-                      dishId === "vada-pav" ||
-                      dishId === "puran-poli" ||
-                      dishId === "dhokla" ||
-                      dishId === "undhiyu" ||
-                      dishId === "dal-baati-churma" ||
-                      dishId === "laal-maas" ||
-                      dishId === "pakhala" ||
-                      dishId === "chhena-poda" ||
-                      dishId === "dalma" ||
-                      dishId === "goan-fish-curry" ||
-                      dishId === "pork-vindaloo" ||
-                      dishId === "bebinca" ||
-                      dishId === "ghewar" ||
-                      dishId === "appam-stew" ||
-                      dishId === "fish-molee" ||
-                      dishId === "puttu" ||
-                      dishId === "siddu" ||
-                      dishId === "chettinad-chicken" ||
-                      dishId === "idli-sambar" ||
-                      dishId === "filter-coffee") &&
-                      stageNum === 3 && (
-                        <div className="pt-2 relative z-30 pointer-events-auto">
-                          <a
-                            href={
-                              dishId === "siddu"
-                                ? "https://www.youtube.com/watch?v=010fW1MqaVc"
-                                : dishId === "hyderabadi-haleem"
-                                  ? "https://www.youtube.com/watch?v=dPpERMQzICs"
-                                  : dishId === "masala-dosa"
-                                    ? "https://www.youtube.com/watch?v=e9XFHjdw3Cg"
-                                    : dishId === "bisi-bele-bath"
-                                      ? "https://www.youtube.com/watch?v=VEArdyBWvdw"
-                                      : dishId === "laal-maas"
-                                        ? "https://www.youtube.com/watch?v=xAhZZiZ5S50"
-                                        : dishId === "dal-baati-churma"
-                                          ? "https://www.youtube.com/watch?v=mZ4xTelTAGk"
-                                          : dishId === "ghewar"
-                                            ? "https://www.youtube.com/watch?v=Bh87si4LpLI"
-                                            : dishId === "undhiyu"
-                                              ? "https://youtu.be/76WP69qtDi8?si=pJ2OxBhrMlE4jino"
-                                              : dishId === "dhokla"
-                                                ? "https://youtu.be/w_2eb9uaXns?si=KIDHVXoEFHrjkhiR"
-                                                : dishId === "puran-poli"
-                                                  ? "https://youtu.be/l7Efb-HjDPU?si=EscTTWw7kdAoJfmO"
-                                                  : dishId === "vada-pav"
-                                                    ? "https://youtu.be/r4saZD0J_gU?si=5bMEbxfAfzxEhTd3"
-                                                    : dishId === "indori-poha"
-                                                      ? "https://youtu.be/XuttnylxuXY?si=ckFXqQLdjLIC2nCB"
-                                                      : dishId === "bhutte-ka-kees"
-                                                        ? "https://www.youtube.com/watch?v=ELuQxGELBgw"
-                                                        : dishId === "dal-bafla"
-                                                          ? "https://www.youtube.com/watch?v=3X0-I1GTOq0"
-                                                          : dishId === "makki-di-roti-sarson-saag"
-                                                            ? "https://youtu.be/-YpLF57Pnec?si=3h_Bvw7MUcU2QhTO"
-                                                            : dishId === "butter-chicken"
-                                                              ? "https://youtu.be/D_fYk8mBaF4?si=3DBkbxk0dzjxELBy"
-                                                              : dishId === "amritsari-kulcha"
-                                                                ? "https://www.youtube.com/watch?v=pbI8PkiSB8E"
-                                                                : dishId === "pakhala"
-                                                                  ? "https://www.youtube.com/watch?v=9kjc-JMFJo8"
-                                                                  : dishId === "chhena-poda"
-                                                                    ? "https://www.youtube.com/watch?v=5g8hrU7sJPg"
-                                                                    : dishId === "dalma"
-                                                                      ? "https://www.youtube.com/watch?v=DKYz5RO1gJQ"
-                                                                      : dishId === "goan-fish-curry"
-                                                                        ? "https://www.youtube.com/watch?v=6Tme3rLiFzg&t=2s"
-                                                                        : dishId === "pork-vindaloo"
-                                                                          ? "https://www.youtube.com/watch?v=VZ7grmNSN_M"
-                                                                          : dishId === "bebinca"
-                                                                            ? "https://www.youtube.com/watch?v=Rg0EAnr21X0"
-                                                                            : dishId === "appam-stew"
-                                                                              ? "https://www.youtube.com/watch?v=pDyRKvvFiYc"
-                                                                              : dishId === "fish-molee"
-                                                                                ? "https://www.youtube.com/watch?v=UzrlIEGr-lw"
-                                                                                : dishId === "puttu"
-                                                                                  ? "https://www.youtube.com/watch?v=XeUA3niRw8A&t=1s"
-                                                                                  : dishId === "chettinad-chicken"
-                                                                                    ? "https://www.youtube.com/watch?v=hACJjRsoBgs"
-                                                                                    : dishId === "idli-sambar"
-                                                                                      ? "https://www.youtube.com/watch?v=RmRCwGTSiRM"
-                                                                                      : dishId === "filter-coffee"
-                                                                                        ? "https://www.youtube.com/shorts/NE3Evbu3siY"
-                                                                                        : "https://www.youtube.com/watch?v=8Fw_zWPbGog"
-                            }
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={`inline-flex items-center gap-1.5 text-xs font-semibold underline underline-offset-4 decoration-dotted transition-colors ${isLight
+                    {stageNum === 3 && getDishYoutubeRecipe(dishId) && (
+                      <div className="pt-2 relative z-30 pointer-events-auto">
+                        <a
+                          href={getDishYoutubeRecipe(dishId)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`inline-flex items-center gap-1.5 text-xs font-semibold underline underline-offset-4 decoration-dotted transition-colors ${
+                            isLight
                               ? "text-amber-800 hover:text-amber-950 decoration-amber-800/60"
                               : "text-amber-400 hover:text-amber-300 decoration-amber-400/60"
-                              }`}
-                          >
-                            <ExternalLink className="w-3.5 h-3.5" />
-                            <span>Watch the full recipe on YouTube</span>
-                          </a>
-                        </div>
-                      )}
+                          }`}
+                        >
+                          <ExternalLink className="w-3.5 h-3.5" />
+                          <span>Watch the full recipe on YouTube</span>
+                        </a>
+                      </div>
+                    )}
 
                     {/* Scholarly Citation Link */}
                     <div

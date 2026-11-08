@@ -261,23 +261,19 @@
     "thukpa": {
       "origin": {
         "library": "spice-street",
-        "caption": "Arunachal Pradesh — the regional kitchen where Thukpa belongs."
+        "caption": "Origin (Birth of the food): Arunachal Pradesh & high Himalayan trade passes, where Tibetan noodle traditions took deep root in Monpa culture.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-bowls",
-        "caption": "Ingredients for Thukpa: handmade wheat noodles, mountain vegetables, yak/pork broth, ginger.",
-        "items": [
-          "Handmade wheat noodles",
-          "Mountain vegetables",
-          "Yak/pork broth",
-          "Ginger",
-          "Garlic",
-          "Sichuan pepper"
-        ]
+        "caption": "Evolution of Food: From rustic hearth-simmered yak bone broths in clay pots to modern quick-simmered noodle bowls on domestic gas.",
+        "label": "Evolution of Food",
+        "items": []
       },
       "method": {
         "library": "spice-bowls",
-        "caption": "Thukpa — Clear Broth Infusion & Clay Pot Simmering."
+        "caption": "Recipe: Hand-rolled wheat noodles steeped in a slow-simmered ginger, garlic, and Sichuan pepper broth with crisp vegetables.",
+        "label": "Recipe"
       },
       "plated": {
         "subject": "dish",
@@ -297,22 +293,19 @@
     "bamboo-shoot-pork": {
       "origin": {
         "library": "spice-market",
-        "caption": "Arunachal Pradesh — the regional kitchen where Bamboo Shoot Pork belongs."
+        "caption": "Origin (Birth of the food): Arunachal Pradesh and the Eastern Himalayas, where ancestral tribal communities paired foraged fermented bamboo shoots with country pork.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-palette",
-        "caption": "Ingredients for Bamboo Shoot Pork: fresh bamboo shoots, country pork, bird's eye chilli, wild garlic.",
-        "items": [
-          "Fresh bamboo shoots",
-          "Country pork",
-          "Bird's eye chilli",
-          "Wild garlic",
-          "Ginger"
-        ]
+        "caption": "Evolution of Food: From slow roasting inside fresh green bamboo tubes over open hearth embers to modern domestic gas stoves and pressure cookers.",
+        "label": "Evolution of Food",
+        "items": []
       },
       "method": {
         "library": "spice-bowls",
-        "caption": "Bamboo Shoot Pork — Flame Roasting Inside Green Bamboo Internodes."
+        "caption": "Recipe: Searing pork belly in its own fat with pounded ginger, garlic, fiery King Chillies, and fermented bamboo shoots, simmered slowly to fork-tender perfection.",
+        "label": "Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Pork_and_bamboo_shoot_curry_%282560159109%29.jpg",
@@ -323,7 +316,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pork_and_bamboo_shoot_curry_(2560159109).jpg",
         "alt": "Tender pork curry cooked with bamboo shoots",
-        "caption": "Tribal-style slow-cooked pork curry prepared with fermented bamboo shoots and fiery bird's eye chillies.",
+        "caption": "Tribal-style slow-cooked pork curry prepared with fermented bamboo shoots (ekung) and fiery King Chillies, served with steamed hill rice.",
         "fallback": null,
         "width": 3008,
         "height": 2000
@@ -411,13 +404,13 @@
           "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Temple_12_-_Nalanda_Mahavihara_(17).jpg",
           "alt": "Ancient brick stupa ruins at Nalanda Mahavihara in Bihar",
-          "caption": "Nalanda Mahavihara, Bihar — ancient Magadha heartland where roasted gram flour (sattu) has been an enduring staple.",
+          "caption": "Origin (Birth of the food): Ancient Magadha heartland and Gangetic plains of Bihar, where roasted gram flour (sattu) has been an enduring staple for millennia.",
           "fallback": null,
           "width": 4323,
           "height": 3097
         },
-        "caption": "Nalanda Mahavihara, Bihar — ancient Magadha heartland where roasted gram flour (sattu) has been an enduring staple.",
-        "label": "Regional context"
+        "caption": "Origin (Birth of the food): Ancient Magadha heartland and Gangetic plains of Bihar, where roasted gram flour (sattu) has been an enduring staple for millennia.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "photo": {
@@ -429,21 +422,14 @@
           "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Litti_being_prepared.png",
           "alt": "Stuffing spiced sattu into dough balls for litti",
-          "caption": "Spiced sattu (roasted gram flour) with ajwain, kalonji and mustard oil stuffed into wheat dough balls.",
+          "caption": "Evolution of Food: From rustic cow-dung ember roasting pits in village fields to domestic gas tandoors, convection ovens, and modern street carts.",
           "fallback": null,
           "width": 1587,
           "height": 2245
         },
-        "caption": "Spiced sattu (roasted gram flour) with ajwain, kalonji and mustard oil stuffed into wheat dough balls.",
-        "label": "Ingredient reference",
-        "items": [
-          "Sattu (roasted gram flour)",
-          "Whole wheat flour",
-          "Mustard oil",
-          "Kalonji (nigella seeds)",
-          "Ajwain",
-          "Brinjal & tomatoes for chokha"
-        ]
+        "caption": "Evolution of Food: From rustic cow-dung ember roasting pits in village fields to domestic gas tandoors, convection ovens, and modern street carts.",
+        "label": "Evolution of Food",
+        "items": []
       },
       "method": {
         "photo": {
@@ -455,13 +441,13 @@
           "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Litti_preparation_in_Kolkata%2C_India.jpg",
           "alt": "Litti roasting over open coals",
-          "caption": "Litti balls roasting over glowing charcoal embers until the crust blisters and hardens.",
+          "caption": "Recipe: Stuffing firm whole-wheat dough with spiced sattu, roasting over glowing embers until blistered, and bathing generously in melted desi cow ghee.",
           "fallback": null,
           "width": 6144,
           "height": 6883
         },
-        "caption": "Litti balls roasting over glowing charcoal embers until the crust blisters and hardens.",
-        "label": "Preparation technique"
+        "caption": "Recipe: Stuffing firm whole-wheat dough with spiced sattu, roasting over glowing embers until blistered, and bathing generously in melted desi cow ghee.",
+        "label": "Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Litti-Chokha-From-Bihar.jpg",
@@ -472,7 +458,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Litti-Chokha-From-Bihar.jpg",
         "alt": "Litti Chokha — Bihar",
-        "caption": "Litti Chokha, Bihar.",
+        "caption": "Traditional Bihari Litti Chokha: ember-roasted whole-wheat dough globes stuffed with spiced sattu, bathed in desi cow ghee and served with smoky baingan-aloo-tamatar chokha.",
         "fallback": "/images/dishes/litti-chokha-stage-4.webp",
         "width": null,
         "height": null
@@ -481,19 +467,14 @@
     "thekua": {
       "origin": {
         "library": "spice-market",
-        "caption": "Bihar — the regional kitchen where Thekua belongs."
+        "caption": "Origin (Birth of the food): Bihar and the Gangetic plains, where Thekua developed as the sacred mahaprasad of ancient Chhath Puja Sun-worship traditions.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-palette",
-        "caption": "Ingredients for Thekua: whole wheat flour, sugarcane jaggery, ghee, fennel seeds.",
-        "items": [
-          "Whole wheat flour",
-          "Sugarcane jaggery",
-          "Ghee",
-          "Fennel seeds",
-          "Dry coconut",
-          "Cardamom"
-        ]
+        "caption": "Evolution of Food: From earthen chulhas burning mango wood to modern domestic gas stoves, sugar variants, and air fryers.",
+        "label": "Evolution of Food",
+        "items": []
       },
       "method": {
         "photo": {
@@ -510,8 +491,8 @@
           "width": 4608,
           "height": 3456
         },
-        "caption": "Thekua sancha: whole wheat dough balls pressed onto hand-carved wooden moulds before deep frying in pure desi ghee during Chhath Puja.",
-        "label": "Preparation technique"
+        "caption": "Recipe: Embossing stiff jaggery-wheat dough on carved wooden saancha moulds and deep-frying slowly in pure desi cow ghee until golden and crisp.",
+        "label": "Recipe"
       },
       "plated": {
         "subject": "dish",
@@ -524,30 +505,26 @@
         "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thekua_-_Chhath_Festival_-_Kolkata_2013-11-09_4316.JPG",
         "alt": "Thekua — Bihar",
-        "caption": "Thekua, the Chhath festival wheat-and-jaggery biscuit.",
+        "caption": "Traditional Bihari Thekua: crisp, fragrant whole-wheat and jaggery festive cookies embossed with sacred leaf motifs and fried in pure desi cow ghee.",
         "fallback": "/images/dishes/thekua-stage-4.webp"
       }
     },
     "chhattisgarhi-chila": {
       "origin": {
         "library": "spice-street",
-        "caption": "Chhattisgarh — the regional kitchen where Chila belongs."
+        "caption": "Birth of Chila in Chhattisgarh & the Mahanadi Basin.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-bowls",
-        "caption": "Ingredients for Chila: rice batter, urad dal, sesame seeds, green chillies.",
-        "items": [
-          "Rice batter",
-          "Urad dal",
-          "Sesame seeds",
-          "Green chillies",
-          "Coriander",
-          "Mustard oil"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "grindstone",
-        "caption": "Chila — Clay Tawa Roasting with Sesame Crust."
+        "caption": "Traditional Chhattisgarhi Chila: thin, crisp rice flour crepe on a seasoned iron tawa.",
+        "label": "Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/5a/CHILA%28THE_DOSA_OF_CHHATTISGARH%29.jpg",
@@ -558,7 +535,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHILA(THE_DOSA_OF_CHHATTISGARH).jpg",
         "alt": "Chila — Chhattisgarh",
-        "caption": "Chila, Chhattisgarh.",
+        "caption": "Crisp golden Chhattisgarhi Chila served with tangy roasted green tomato chutney.",
         "fallback": "/images/dishes/chhattisgarhi-chila-stage-4.webp",
         "width": null,
         "height": null
@@ -567,23 +544,19 @@
     "fara": {
       "origin": {
         "library": "spice-market",
-        "caption": "Chhattisgarh — the regional kitchen where Fara belongs."
+        "caption": "Birth of Fara in Chhattisgarh Tribal & Agrarian Festivals.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-palette",
-        "caption": "Ingredients for Fara: rice flour, chana dal, garlic, green chillies.",
-        "items": [
-          "Rice flour",
-          "Chana dal",
-          "Garlic",
-          "Green chillies",
-          "Mustard seeds",
-          "Curry leaves"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "steam",
-        "caption": "Fara — Clay Steaming & Crisp Pan Tempering."
+        "caption": "Traditional Chhattisgarhi Fara: steamed crescent rice dumplings stuffed with spiced dal.",
+        "label": "Recipe"
       },
       "plated": null
     },
@@ -753,46 +726,38 @@
     "bajra-khichdi": {
       "origin": {
         "library": "spice-street",
-        "caption": "Haryana — the regional kitchen where Bajra Khichdi belongs."
+        "caption": "Birth of Bajra Khichdi in Haryana & Harappan Agrarian Antiquity.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-bowls",
-        "caption": "Ingredients for Bajra Khichdi: bajra (pearl millet), moong dal, desi butter / ghee, cumin.",
-        "items": [
-          "Bajra (Pearl millet)",
-          "Moong dal",
-          "Desi butter / Ghee",
-          "Cumin",
-          "Garlic",
-          "Rock salt"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "grindstone",
-        "caption": "Bajra Khichdi — Mortar De-husking & Slow Earthen Pot Hearth Simmer."
+        "caption": "Traditional Haryanvi Bajra Khichdi: pounded pearl millet and moong dal simmered with ghee.",
+        "label": "Recipe"
       },
       "plated": null
     },
     "haryanvi-kadhi": {
       "origin": {
         "library": "spice-market",
-        "caption": "Haryana — the regional kitchen where Kadhi Pakora belongs."
+        "caption": "Birth of Kadhi Pakora in Haryana Pastoral Dairy Heartland.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-palette",
-        "caption": "Ingredients for Kadhi Pakora: sour buttermilk, gram flour, fenugreek seeds, dried red chillies.",
-        "items": [
-          "Sour buttermilk",
-          "Gram flour",
-          "Fenugreek seeds",
-          "Dried red chillies",
-          "Ghee",
-          "Onion pakoras"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "spice-bowls",
-        "caption": "Kadhi Pakora — Prolonged Simmering (Kadhna) to Prevent Curdling."
+        "caption": "Traditional Haryanvi Kadhi Pakora: slow-simmered buttermilk and besan with crispy onion pakoras.",
+        "label": "Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Kadhi_Pakora.jpg",
@@ -803,7 +768,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kadhi_Pakora.jpg",
         "alt": "Kadhi pakora — gram-flour dumplings in a yoghurt curry, Haryana.",
-        "caption": "Kadhi pakora — gram-flour dumplings in a yoghurt curry, Haryana.",
+        "caption": "Golden Haryanvi Kadhi Pakora topped with sizzling desi ghee, fenugreek, and whole red chillies.",
         "fallback": null,
         "width": 1488,
         "height": 1200,
@@ -814,13 +779,13 @@
     "siddu": {
       "origin": {
         "library": "spice-street",
-        "caption": "Siddu - Origin (Birth of the food)",
-        "label": "Siddu - Origin (Birth of the food)"
+        "caption": "Birth of Siddu in Himachal Pradesh & the Western Himalayas.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-bowls",
-        "caption": "Siddu - Evolution of Food",
-        "label": "Siddu - Evolution of Food",
+        "caption": "Evolution of Food: Then vs Now",
+        "label": "Evolution of Food",
         "items": []
       },
       "method": {
@@ -838,8 +803,8 @@
           "width": 960,
           "height": 1280
         },
-        "caption": "Siddu - Recipe",
-        "label": "Siddu - Recipe"
+        "caption": "Traditional Himachali Siddu: steamed fermented wheat bread stuffed with poppy seeds and walnuts.",
+        "label": "Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Kullvi_Siddu_%28Himachal_Pradesh%29.jpg",
@@ -850,7 +815,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kullvi_Siddu_(Himachal_Pradesh).jpg",
         "alt": "Siddu — Himachal Pradesh",
-        "caption": "Siddu, Himachal Pradesh.",
+        "caption": "Fluffy Himachali Siddu served hot, drenched in pure desi cow ghee with green chutney.",
         "fallback": "/images/dishes/siddu-stage-4.webp",
         "width": null,
         "height": null
@@ -872,20 +837,14 @@
           "width": 640,
           "height": 430
         },
-        "caption": "Historic Mandi town at the confluence of the Beas and Suketi rivers — cultural heart of the centuries-old royal Mandi Dham culinary tradition.",
-        "label": "Regional context"
+        "caption": "Birth of Himachali Dham in Himachal Royal Courts & Temples.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-palette",
-        "caption": "Ingredients for Himachali Dham: chamba rajma, thick curd, ghee, dried raisins.",
-        "items": [
-          "Chamba Rajma",
-          "Thick curd",
-          "Ghee",
-          "Dried raisins",
-          "Cloves",
-          "Cardamom"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "photo": {
@@ -902,8 +861,8 @@
           "width": 4000,
           "height": 2252
         },
-        "caption": "Pattal plate stitched from dry sal leaves (pattal / taur), traditional biodegradable dining serviceware used for serving community Dham.",
-        "label": "Preparation technique"
+        "caption": "Traditional Himachali Dham: slow-simmered in heavy brass charotis by Brahmin Botis.",
+        "label": "Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Mandi_Dham_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -914,7 +873,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMandi_Dham_2.jpg",
         "alt": "Traditional Dham feast platter from Mandi, Himachal Pradesh",
-        "caption": "Traditional Mandi Dham feast: steamed rice served alongside Madra, Sepu Badi, mah ki dal, and sweet meethe chawal.",
+        "caption": "Traditional Himachali Dham festive feast served sequentially on leaf pattals in pangat.",
         "fallback": null,
         "width": 3000,
         "height": 3000
@@ -1492,23 +1451,19 @@
     "jadoh": {
       "origin": {
         "library": "spice-street",
-        "caption": "Meghalaya — the regional kitchen where Jadoh belongs."
+        "caption": "Origin (Birth of the food): Jadoh is the foundational ceremonial dish of the indigenous Khasi people across the Khasi and Jaintia Hills of Meghalaya.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-bowls",
-        "caption": "Ingredients for Jadoh: jaintia red rice, pork belly, black sesame paste, ginger.",
-        "items": [
-          "Jaintia red rice",
-          "Pork belly",
-          "Black sesame paste",
-          "Ginger",
-          "Bay leaves",
-          "Local onions"
-        ]
+        "caption": "Evolution of Food: From traditional methods to modern cooking techniques and equipment.",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "spice-bowls",
-        "caption": "Jadoh — Rendered Pork Fat Rice Braising & Sesame Glaze."
+        "caption": "Recipe: Thoroughly wash the indigenous Khasi red rice in cold water until the rinse runs clear, then drain completely in a colander and set aside for 20 minutes.",
+        "label": "Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Jadoh.jpg",
@@ -1519,7 +1474,7 @@
         "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jadoh.jpg",
         "alt": "Jadoh — Meghalaya",
-        "caption": "Jadoh, Meghalaya.",
+        "caption": "Jadoh, prepared in the authentic tradition of Meghalaya.",
         "fallback": "/images/dishes/jadoh-stage-4.webp",
         "width": null,
         "height": null
@@ -1528,7 +1483,8 @@
     "dohneiiong": {
       "origin": {
         "library": "spice-market",
-        "caption": "Meghalaya — the regional kitchen where Dohneiiong belongs."
+        "caption": "Origin (Birth of the food): Dohneiiong is an ancestral pork specialty native to the Khasi and Jaintia communities of Meghalaya.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "photo": {
@@ -1540,48 +1496,39 @@
           "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/kr/deed.en",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_sesame.jpg",
           "alt": "Black sesame seeds — the defining ingredient of Meghalaya's Dohneiiong.",
-          "caption": "Black sesame seeds — the defining ingredient of Meghalaya's Dohneiiong.",
+          "caption": "Evolution of Food: From traditional methods to modern cooking techniques and equipment.",
           "fallback": null,
           "width": 1600,
           "height": 1067,
           "local": "/images/dishes/dohneiiong-stage-2.webp"
         },
-        "caption": "Black sesame seeds — the defining ingredient of Meghalaya's Dohneiiong.",
-        "label": "Ingredient reference",
-        "items": [
-          "Pork",
-          "Black sesame seeds (Neiiong)",
-          "Garlic",
-          "Ginger",
-          "Mustard oil",
-          "Green chillies"
-        ]
+        "caption": "Evolution of Food: From traditional methods to modern cooking techniques and equipment.",
+        "label": "Evolution of Food",
+        "items": []
       },
       "method": {
         "library": "grindstone",
-        "caption": "Dohneiiong — Dry Seed Roasting, Stone Pounding & Long Braise."
+        "caption": "Recipe: In a dry heavy iron pan over low heat, gently toast the black sesame seeds (nei-iong) for 3 to 4 minutes until they begin to crackle and release a warm, nutty aroma.",
+        "label": "Recipe"
       },
       "plated": null
     },
     "mizo-bai": {
       "origin": {
         "library": "spice-street",
-        "caption": "Mizoram — the regional kitchen where Mizo Bai belongs."
+        "caption": "Birth of Mizo Bai in the Lushai Hills & Forest Foraging Traditions.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-bowls",
-        "caption": "Ingredients for Mizo Bai: wild mustard greens, fermented bamboo shoots, pork skin / smoked meat, alkaline cooking soda.",
-        "items": [
-          "Wild mustard greens",
-          "Fermented bamboo shoots",
-          "Pork skin / Smoked meat",
-          "Alkaline cooking soda",
-          "Salt"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "spice-bowls",
-        "caption": "Mizo Bai — Oil-Free Alkaline Water Simmering."
+        "caption": "Traditional Mizo Bai: oil-free stew of mustard greens, bamboo shoots, and pork in alkaline broth.",
+        "label": "Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/4/40/Mizo_food.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -1592,7 +1539,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMizo_food.jpg",
         "alt": "Traditional Mizo food spread with rice, vegetable Bai soup, and boiled greens",
-        "caption": "Authentic Mizo meal: steamed rice served with traditional Bai (vegetables boiled with sa-um fermented pork fat and Chingal bamboo shoot soda).",
+        "caption": "Fresh Mizo Bai stew served hot with clear botanical broth and seasonal greens.",
         "fallback": null,
         "width": 1026,
         "height": 577
@@ -1601,22 +1548,19 @@
     "sawhchiar": {
       "origin": {
         "library": "spice-market",
-        "caption": "Mizoram — the regional kitchen where Sawhchiar belongs."
+        "caption": "Birth of Sawhchiar in Mizo Community Feasts & Hunting Expeditions.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-palette",
-        "caption": "Ingredients for Sawhchiar: indigenous sticky rice, country chicken / pork, crushed ginger, garlic cloves.",
-        "items": [
-          "Indigenous sticky rice",
-          "Country chicken / Pork",
-          "Crushed ginger",
-          "Garlic cloves",
-          "Black peppercorns"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "grindstone",
-        "caption": "Sawhchiar — Continuous Wood-Fire Stirring to Creamy Rice Gel."
+        "caption": "Traditional Mizo Sawhchiar: chicken or pork slow-simmered with rice and peppercorns into congee.",
+        "label": "Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Sawhchiar.jpg",
@@ -1627,7 +1571,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sawhchiar.jpg",
         "alt": "Sawhchiar — Mizoram",
-        "caption": "Sawhchiar, Mizoram.",
+        "caption": "Comforting, warm Mizo Sawhchiar rice congee garnished with wild mustard greens.",
         "fallback": "/images/dishes/sawhchiar-stage-4.webp",
         "width": null,
         "height": null
@@ -1636,22 +1580,19 @@
     "naga-smoked-pork": {
       "origin": {
         "library": "spice-street",
-        "caption": "Nagaland — the regional kitchen where Naga Smoked Pork with Bamboo Shoots belongs."
+        "caption": "Birth of Naga Smoked Pork in Village Kitchen Hearths.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-bowls",
-        "caption": "Ingredients for Naga Smoked Pork with Bamboo Shoots: hearth-smoked pork, fermented bamboo shoots, bhut jolokia (king chilli), garlic cloves.",
-        "items": [
-          "Hearth-smoked pork",
-          "Fermented bamboo shoots",
-          "Bhut Jolokia (King Chilli)",
-          "Garlic cloves",
-          "Ginger root"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "spice-bowls",
-        "caption": "Naga Smoked Pork with Bamboo Shoots — Multi-Week Kitchen Hearth Smoking & Water Braise."
+        "caption": "Traditional Naga Smoked Pork: wood-smoke cured pork braised with bamboo shoots and Raja Mircha.",
+        "label": "Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Naga_style_smoked_Pork_ribs_with_bamboo_shoots_and_rice.jpg",
@@ -1662,7 +1603,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Naga_style_smoked_Pork_ribs_with_bamboo_shoots_and_rice.jpg",
         "alt": "Naga Smoked Pork with Bamboo Shoots — Nagaland",
-        "caption": "Naga Smoked Pork with Bamboo Shoots, Nagaland.",
+        "caption": "Fiery Naga Smoked Pork with fermented bamboo shoots and Raja Mircha.",
         "fallback": "/images/dishes/naga-smoked-pork-stage-4.webp",
         "width": null,
         "height": null
@@ -1671,22 +1612,19 @@
     "galho": {
       "origin": {
         "library": "spice-market",
-        "caption": "Nagaland — the regional kitchen where Galho belongs."
+        "caption": "Birth of Galho in Angami, Ao & Lotha Agrarian Feasts.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-palette",
-        "caption": "Ingredients for Galho: short hill rice, smoked meat scraps, axone (fermented soybeans), mountain greens.",
-        "items": [
-          "Short hill rice",
-          "Smoked meat scraps",
-          "Axone (Fermented soybeans)",
-          "Mountain greens",
-          "Bird's eye chilli"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "steam",
-        "caption": "Galho — Slow Simmering with Fermented Bean Emulsification."
+        "caption": "Traditional Naga Galho: savoury rice, smoked pork, and axone porridge with mountain greens.",
+        "label": "Recipe"
       },
       "plated": null
     },
@@ -2396,45 +2334,38 @@
     "mui-borok": {
       "origin": {
         "library": "spice-street",
-        "caption": "Tripura — the regional kitchen where Mui Borok belongs."
+        "caption": "Birth of Mui Borok in the Manikya Kingdom & Borok Forest Hearth.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-bowls",
-        "caption": "Ingredients for Mui Borok: river fish, berma (fermented fish paste), green chillies, garlic.",
-        "items": [
-          "River fish",
-          "Berma (Fermented fish paste)",
-          "Green chillies",
-          "Garlic",
-          "Wild coriander",
-          "Lemon basil"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "steam",
-        "caption": "Mui Borok — Zero-Oil Earthen Pot Boil with Fermented Berma."
+        "caption": "Traditional Tripuri Mui Borok: oil-free river fish simmered with fermented berma and lemon basil.",
+        "label": "Recipe"
       },
       "plated": null
     },
     "chakhwi": {
       "origin": {
         "library": "spice-market",
-        "caption": "Tripura — the regional kitchen where Chakhwi belongs."
+        "caption": "Birth of Chakhwi in Borok Alkaline Botanical Traditions.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-palette",
-        "caption": "Ingredients for Chakhwi: fresh bamboo shoots, pork, natural bamboo ash extract (khar/khang), jackfruit seeds.",
-        "items": [
-          "Fresh bamboo shoots",
-          "Pork",
-          "Natural bamboo ash extract (Khar/Khang)",
-          "Jackfruit seeds",
-          "Ginger"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "spice-bowls",
-        "caption": "Chakhwi — Bamboo Ash Filtration & Forest Root Simmer."
+        "caption": "Traditional Tripuri Chakhwi: bamboo shoots and pork simmered in natural plant-ash khar.",
+        "label": "Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Chakhwi.jpg",
@@ -2445,7 +2376,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chakhwi.jpg",
         "alt": "Chakhwi — Tripura",
-        "caption": "Chakhwi, Tripura.",
+        "caption": "Silky, savoury Tripuri Chakhwi stew with tender bamboo shoots and jackfruit seeds.",
         "fallback": "/images/dishes/chakhwi-stage-4.webp",
         "width": null,
         "height": null
@@ -2454,22 +2385,19 @@
     "galouti-kebab": {
       "origin": {
         "library": "spice-street",
-        "caption": "Uttar Pradesh — the regional kitchen where Awadhi Galouti Kebab belongs."
+        "caption": "Birth of the Galouti Kebab in the Royal Court of Lucknow (1784 CE).",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-bowls",
-        "caption": "Ingredients for Awadhi Galouti Kebab: finely ground meat, raw green papaya, potli masala (160 spices), pure desi ghee.",
-        "items": [
-          "Raw green papaya",
-          "Potli masala (160 spices)",
-          "Pure desi ghee",
-          "Rose water",
-          "Saffron"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "kebab-griddle",
-        "caption": "Awadhi Galouti Kebab — Multiple Sil-Batta Grindings, Smoke Infusion (Dhungar) & Mahi Tawa Griddling."
+        "caption": "Royal Awadhi Galouti Kebab: smoked fine mince patties seared in desi ghee on a mahi tawa.",
+        "label": "Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Galouti_kabab_at_Hons_All-Day_Dining,_Le_Press,_Hazratganj,_Lucknow_%282025-08-03%29.jpg",
@@ -2480,7 +2408,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galouti_kabab_at_Hons_All-Day_Dining,_Le_Press,_Hazratganj,_Lucknow_(2025-08-03).jpg",
         "alt": "Galouti kebab served at a Lucknow restaurant.",
-        "caption": "Galouti kebab served at a Lucknow restaurant.",
+        "caption": "Melt-in-the-mouth Awadhi Galouti Kebabs served atop flaky Ulte Tawe ka Paratha.",
         "fallback": null,
         "width": 1600,
         "height": 1200,
@@ -2491,67 +2419,57 @@
     "banarasi-kachori": {
       "origin": {
         "library": "spice-market",
-        "caption": "Uttar Pradesh — the regional kitchen where Banarasi Kachori Sabzi belongs."
+        "caption": "Birth of Banarasi Kachori Sabzi in Ancient Kashi Morning Traditions.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-palette",
-        "caption": "Ingredients for Banarasi Kachori Sabzi: whole wheat flour, spiced urad dal paste, baby potatoes, asafoetida (hing).",
-        "items": [
-          "Whole wheat flour",
-          "Spiced urad dal paste",
-          "Baby potatoes",
-          "Asafoetida (Hing)",
-          "Fenugreek seeds",
-          "Mustard oil"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "grindstone",
-        "caption": "Banarasi Kachori Sabzi — Deep Immersion Frying & Slow Fenugreek-Hing Potato Tempering."
+        "caption": "Traditional Banarasi Kachori: crisp puffed urad dal kachoris fried in mustard oil.",
+        "label": "Recipe"
       },
       "plated": null
     },
     "kafuli": {
       "origin": {
         "library": "spice-street",
-        "caption": "Uttarakhand — the regional kitchen where Kafuli belongs."
+        "caption": "Origin (Birth of the food): Kafuli has sustained the mountain communities of Garhwal and Kumaon for generations through harsh Himalayan winters and monsoon planting cycles.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-bowls",
-        "caption": "Ingredients for Kafuli: mountain spinach, fenugreek leaves, rice flour paste, jakhiya seeds (wild mustard).",
-        "items": [
-          "Mountain spinach",
-          "Fenugreek leaves",
-          "Rice flour paste",
-          "Jakhiya seeds (Wild mustard)",
-          "Mustard oil",
-          "Garlic"
-        ]
+        "caption": "Evolution of Food: From traditional methods to modern cooking techniques and equipment.",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "grindstone",
-        "caption": "Kafuli — Cast Iron Kadhai Boiling & Wood Churning (Mathani)."
+        "caption": "Recipe: Thoroughly wash fresh spinach and fenugreek leaves in cold running water, trim tough stems, and coarsely chop the greens.",
+        "label": "Recipe"
       },
       "plated": null
     },
     "bal-mithai": {
       "origin": {
         "library": "spice-market",
-        "caption": "Uttarakhand — the regional kitchen where Bal Mithai belongs."
+        "caption": "Origin (Birth of the food): Bal Mithai originated in the historic cultural capital of Kumaon, Almora, in the early decades of the twentieth century.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-palette",
-        "caption": "Ingredients for Bal Mithai: hill-cow milk khoya, cane sugar, small sugar-coated beads (khas-khas dana), pure ghee.",
-        "items": [
-          "Hill-cow milk khoya",
-          "Cane sugar",
-          "Small sugar-coated beads (Khas-khas dana)",
-          "Pure ghee"
-        ]
+        "caption": "Evolution of Food: From traditional methods to modern cooking techniques and equipment.",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "grindstone",
-        "caption": "Bal Mithai — 10-Hour Khoya Dark Roasting & Sugar Seed Enrobing."
+        "caption": "Recipe: Place fresh, crumbled full-fat cow milk khoya in a heavy iron kadhai and warm it over low flame, stirring constantly as it melts into a smooth, glossy mass.",
+        "label": "Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Bal_mithai.jpg",
@@ -2562,7 +2480,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by/3.0/deed.en",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bal_mithai.jpg",
         "alt": "Bal Mithai — Uttarakhand",
-        "caption": "Bal Mithai, Uttarakhand.",
+        "caption": "Bal Mithai, prepared in the authentic tradition of Uttarakhand.",
         "fallback": "/images/dishes/bal-mithai-stage-4.webp",
         "width": null,
         "height": null
@@ -2571,22 +2489,19 @@
     "shorshe-ilish": {
       "origin": {
         "library": "spice-street",
-        "caption": "West Bengal — the regional kitchen where Shorshe Ilish belongs."
+        "caption": "Origin (Birth of the food): Shorshe Ilish is the definitive monsoon culinary icon across the fertile Gangetic delta and the river systems of Bengal.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-bowls",
-        "caption": "Ingredients for Shorshe Ilish: hilsa fish (ilish), black and yellow mustard seeds, cold-pressed mustard oil, slit green chillies.",
-        "items": [
-          "Hilsa fish (Ilish)",
-          "Black and yellow mustard seeds",
-          "Cold-pressed mustard oil",
-          "Slit green chillies",
-          "Turmeric powder"
-        ]
+        "caption": "Evolution of Food: From traditional methods to modern cooking techniques and equipment.",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "grindstone",
-        "caption": "Shorshe Ilish — Shil-Nora Mustard Grinding & Raw Mustard Oil Finish."
+        "caption": "Recipe: Gently wash the Hilsa fish steaks under cold water, drain thoroughly, and marinate with half a teaspoon of turmeric powder and salt for 10 minutes.",
+        "label": "Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/2/24/Sorshe_Ilish_%28Ilish_cooked_in_mustard_gravy%29.jpg",
@@ -2597,7 +2512,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sorshe_Ilish_(Ilish_cooked_in_mustard_gravy).jpg",
         "alt": "Shorshe Ilish — West Bengal",
-        "caption": "Shorshe Ilish, West Bengal.",
+        "caption": "Shorshe Ilish, prepared in the authentic tradition of West Bengal.",
         "fallback": "/images/dishes/shorshe-ilish-stage-4.webp",
         "width": null,
         "height": null
@@ -2606,21 +2521,19 @@
     "mishti-doi": {
       "origin": {
         "library": "spice-market",
-        "caption": "West Bengal — the regional kitchen where Mishti Doi belongs."
+        "caption": "Origin (Birth of the food): Mishti Doi flourished across Bengal from the 18th century, with famed heritage hubs in Nabadwip and Bogra.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-palette",
-        "caption": "Ingredients for Mishti Doi: full-cream milk, date palm jaggery (nolen gur), active yoghurt culture, terracotta earthen pot.",
-        "items": [
-          "Full-cream milk",
-          "Date palm jaggery (Nolen gur)",
-          "Active yoghurt culture",
-          "Terracotta earthen pot"
-        ]
+        "caption": "Evolution of Food: From traditional methods to modern cooking techniques and equipment.",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "grindstone",
-        "caption": "Mishti Doi — Slow Milk Reduction & Unglazed Terracotta Moisture Wicking."
+        "caption": "Recipe: In a wide, heavy-bottomed pan, bring full-fat milk and cream to a boil, then simmer over medium-low heat for 35 to 45 minutes, stirring often, until reduced to nearly half its volume.",
+        "label": "Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/3/34/Mishti_Doi.jpg",
@@ -2631,7 +2544,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by/2.0/deed.en",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mishti_Doi.jpg",
         "alt": "Mishti Doi — West Bengal",
-        "caption": "Mishti Doi, West Bengal.",
+        "caption": "Mishti Doi, prepared in the authentic tradition of West Bengal.",
         "fallback": "/images/dishes/mishti-doi-stage-4.webp",
         "width": null,
         "height": null
@@ -2713,24 +2626,19 @@
     "delhi-nihari": {
       "origin": {
         "library": "spice-street",
-        "caption": "Delhi — the regional kitchen where Old Delhi Nihari belongs."
+        "caption": "Origin (Birth of the food): Nihari originated in Old Delhi during the late Mughal era, deriving its name from the Arabic word 'Nahar' meaning morning.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-bowls",
-        "caption": "Ingredients for Old Delhi Nihari: mutton shank & bone marrow, wheat flour (atta), ghee, fried onions.",
-        "items": [
-          "Mutton shank & bone marrow",
-          "Wheat flour (Atta)",
-          "Ghee",
-          "Fried onions",
-          "Ginger juliennes",
-          "Potli spices",
-          "Kewra water"
-        ]
+        "caption": "Evolution of Food: From traditional methods to modern cooking techniques and equipment.",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "spice-bowls",
-        "caption": "Old Delhi Nihari — Overnight Sealed Cauldron Simmer & Bone Marrow Melt."
+        "caption": "Recipe: In a large, heavy-bottomed pot or copper deg, heat desi ghee over medium flame, add thinly sliced onions, and fry patiently until deeply golden and fragrant.",
+        "label": "Recipe"
       },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/0/02/Nihari_at_Karim%27s%2C_Jama_Masjid%2C_Old_Delhi.png",
@@ -2741,7 +2649,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nihari_at_Karim%27s,_Jama_Masjid,_Old_Delhi.png",
         "alt": "Old Delhi Nihari — Delhi",
-        "caption": "Old Delhi Nihari, Delhi.",
+        "caption": "Old Delhi Nihari, prepared in the authentic tradition of Delhi.",
         "fallback": "/images/dishes/delhi-nihari-stage-4.webp",
         "width": null,
         "height": null
@@ -2750,24 +2658,19 @@
     "delhi-chaat": {
       "origin": {
         "library": "spice-market",
-        "caption": "Delhi — the regional kitchen where Chandni Chowk Papdi Chaat belongs."
+        "caption": "Origin (Birth of the food): Chaat culture in Delhi flourished in the bustling markets of Chandni Chowk, Dariba Kalan, and Khari Baoli.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-palette",
-        "caption": "Ingredients for Chandni Chowk Papdi Chaat: crisp papdi wafers, boiled potatoes, whisked sweetened curd, tamarind chutney.",
-        "items": [
-          "Crisp papdi wafers",
-          "Boiled potatoes",
-          "Whisked sweetened curd",
-          "Tamarind chutney",
-          "Mint-coriander chutney",
-          "Chaat masala",
-          "Pomegranate"
-        ]
+        "caption": "Evolution of Food: From traditional methods to modern cooking techniques and equipment.",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": {
         "library": "grindstone",
-        "caption": "Chandni Chowk Papdi Chaat — Layered Chutney Balance & Fresh Crisp Assembly."
+        "caption": "Recipe: In a mixing bowl, combine all-purpose flour, ajwain seeds, melted ghee, and salt, rubbing to a crumbly texture, then knead with cold water into a stiff dough and rest for 20 minutes.",
+        "label": "Recipe"
       },
       "plated": {
         "subject": "dish",
@@ -2780,7 +2683,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chaat-StreetFood-DelhiNCR10.jpg",
         "alt": "Papdi chaat, Delhi street food",
-        "caption": "Papdi chaat, assembled to order at a Delhi street counter.",
+        "caption": "Chandni Chowk Papdi Chaat, prepared in the authentic tradition of Delhi.",
         "fallback": null
       }
     },
@@ -2918,48 +2821,38 @@
     "pondicherry-fish-curry": {
       "origin": {
         "library": "banana-leaf",
-        "caption": "Puducherry — the regional kitchen where Pondicherry Fish Curry belongs."
+        "caption": "Origin (Birth of the food): Puducherry and the Coromandel Coast, where French culinary technique merged with Tamil seaside fish curry traditions.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-bowls",
-        "caption": "Ingredients for Pondicherry Fish Curry: seer fish, fresh coconut milk, tamarind, fenugreek.",
-        "items": [
-          "Seer fish",
-          "Fresh coconut milk",
-          "Tamarind",
-          "Fenugreek",
-          "Aniseed",
-          "Vadouvan spices",
-          "Curry leaves"
-        ]
+        "caption": "Evolution of Food: From coastal manpanai clay pots over coconut-husk fires to modern stainless steel pans and gas cooktops.",
+        "label": "Evolution of Food",
+        "items": []
       },
       "method": {
         "library": "spice-bowls",
-        "caption": "Pondicherry Fish Curry — French Bouquet Garni Fusion with Tamil Tamarind Base."
+        "caption": "Recipe: Searing firm seer fish steaks in aromatic gingelly oil with tempered Vadouvan spices, simmered in tangy tamarind pulp and velvety first-press coconut milk.",
+        "label": "Recipe"
       },
       "plated": null
     },
     "koli-kari": {
       "origin": {
         "library": "banana-leaf",
-        "caption": "Puducherry — the regional kitchen where Koli Kari belongs."
+        "caption": "Origin (Birth of the food): Puducherry White Town Creole mansions, where French velouté stewing traditions harmonized with Tamil chicken curry spices.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": "spice-palette",
-        "caption": "Ingredients for Koli Kari: country chicken, coconut cream, nutmeg, cloves.",
-        "items": [
-          "Country chicken",
-          "Coconut cream",
-          "Nutmeg",
-          "Cloves",
-          "Saffron",
-          "Baby potatoes",
-          "Shallots"
-        ]
+        "caption": "Evolution of Food: From French heavy-bottomed brass stew pots on charcoal hearths to modern non-stick pans and domestic gas stoves.",
+        "label": "Evolution of Food",
+        "items": []
       },
       "method": {
         "library": "spice-bowls",
-        "caption": "Koli Kari — Gentle Wine/Cream Style Velouté with Tropical Spices."
+        "caption": "Recipe: Braising succulent country chicken and baby potatoes in fragrant coconut oil with shallots, crushed ginger-garlic, warm nutmeg, and velvety coconut cream.",
+        "label": "Recipe"
       },
       "plated": null
     },
@@ -3265,25 +3158,25 @@
           "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ziro_valley_of_Aruncahl_in_summer_season.jpg",
           "alt": "Terraced paddy fields in the green Ziro Valley, Arunachal Pradesh",
-          "caption": "Ziro Valley, Arunachal Pradesh — homeland of the Apatani tribe where rice cultivation and traditional home brewing are entwined.",
+          "caption": "Origin (Birth of the food): Arunachal Pradesh & the Eastern Himalayas, where Adi, Nyishi, and Apatani communities created indigenous rice fermentation using wild medicinal herbs.",
           "fallback": null,
           "width": 2048,
           "height": 1350
         },
-        "caption": "Ziro Valley, Arunachal Pradesh — homeland of the Apatani tribe where rice cultivation and traditional home brewing are entwined.",
-        "label": "Regional context"
+        "caption": "Origin (Birth of the food): Arunachal Pradesh & the Eastern Himalayas, where Adi, Nyishi, and Apatani communities created indigenous rice fermentation using wild medicinal herbs.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
-        "library": null,
-        "caption": "",
-        "items": [
-          "Rice",
-          "Fermentation starter (apop/epo)",
-          "Water",
-          "Local herbs"
-        ]
+        "library": "spice-palette",
+        "caption": "Evolution of Food: From smoked bamboo brew tubes and earthen pots over wood fires to modern glass carboys and stainless steel fermentation vessels.",
+        "label": "Evolution of Food",
+        "items": []
       },
-      "method": null,
+      "method": {
+        "library": "spice-bowls",
+        "caption": "Recipe: Steaming indigenous hill rice, blending with roasted paddy husk ash and crushed herbal yeast cakes (apop), slow-fermenting for 5 days, and straining through bamboo cone funnels.",
+        "label": "Recipe"
+      },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Apong_-_Rice_beer_of_Assam_In_A_Traditional_Pot.jpg",
         "subject": "dish",
@@ -3293,7 +3186,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apong_-_Rice_beer_of_Assam_In_A_Traditional_Pot.jpg",
         "alt": "Fermented rice beer served in traditional earthen and bamboo containers",
-        "caption": "Apong: indigenous fermented hill rice beverage prepared with wild medicinal starter cakes (eeppoh).",
+        "caption": "Apong: indigenous fermented hill rice beverage prepared with wild medicinal starter cakes (apop/epoh), strained through bamboo funnels and served in bamboo tumblers.",
         "fallback": null,
         "width": 4608,
         "height": 3456
@@ -3330,7 +3223,11 @@
       }
     },
     "silao-khaja": {
-      "origin": null,
+      "origin": {
+        "library": "spice-street",
+        "caption": "Origin (Birth of the food): Silao in the Nalanda district of Bihar, celebrated for centuries along ancient Buddhist pilgrimage corridors between Nalanda and Rajgir.",
+        "label": "Origin (Birth of the food)"
+      },
       "ingredients": {
         "photo": {
           "src": "https://upload.wikimedia.org/wikipedia/commons/3/39/Khaja_cakes_%2826711978840%29.jpg",
@@ -3346,17 +3243,15 @@
           "width": 1024,
           "height": 768
         },
-        "caption": "Delicate puff-pastry layers rolled from refined wheat flour and ghee, ready for deep-frying.",
-        "label": "Ingredient reference",
-        "items": [
-          "Refined wheat flour (maida)",
-          "Ghee",
-          "Sugar syrup",
-          "Cardamom",
-          "Water"
-        ]
+        "caption": "Evolution of Food: From coal bhattis and wayside pilgrimage stalls to modern temperature-controlled fryers and GI-certified retail packaging.",
+        "label": "Evolution of Food",
+        "items": []
       },
-      "method": null,
+      "method": {
+        "library": "spice-bowls",
+        "caption": "Recipe: Laminating translucent dough sheets with saata paste, rolling, cutting, and basting slowly in hot fat to expand 52 crisp layers before light sugar glazing.",
+        "label": "Recipe"
+      },
       "plated": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Khaja_of_Silao.jpg",
         "subject": "dish",
@@ -3366,7 +3261,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Khaja_of_Silao.jpg",
         "alt": "Golden multi-layered crisp Silao Khaja from Nalanda, Bihar",
-        "caption": "GI-tagged Silao Khaja from Nalanda, Bihar — hundreds of paper-thin, crisp fried layers glazed with sugar syrup.",
+        "caption": "GI-tagged Silao Khaja from Nalanda, Bihar: hundreds of paper-thin, crisp fried layers glazed delicately with cardamom sugar syrup.",
         "fallback": null,
         "width": 3456,
         "height": 4608
@@ -3459,14 +3354,9 @@
       "origin": null,
       "ingredients": {
         "library": null,
-        "caption": "",
-        "items": [
-          "Whole-wheat flour",
-          "Desi ghee",
-          "Jaggery or sugar",
-          "Bajra",
-          "Milk"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": null,
       "plated": {
@@ -3478,7 +3368,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Churma.JPG",
         "alt": "Churma, crumbled wheat roti bound with ghee and sugar",
-        "caption": "Churma — crumbled hearth-baked wheat roti bound with ghee and sugar, Haryana.",
+        "caption": "Rustic Haryanvi Churma enriched with pure desi cow ghee, unrefined jaggery, cardamom, and toasted nuts.",
         "fallback": null,
         "width": 4608,
         "height": 3456,
@@ -3502,21 +3392,14 @@
           "width": 4931,
           "height": 3287
         },
-        "caption": "Kangra Valley, Himachal Pradesh — lush Himalayan foothills where traditional Pahari cooks (Botis) developed the yogurt-based Madra tradition.",
-        "label": "Regional context"
+        "caption": "Birth of Chana Madra in Chamba & Kangra Valley Kitchens.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": null,
-        "caption": "",
-        "items": [
-          "Chickpeas",
-          "Curd (yoghurt)",
-          "Gram flour",
-          "Ghee",
-          "Cumin",
-          "Asafoetida",
-          "Turmeric"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": null,
       "plated": {
@@ -3528,7 +3411,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AWhite_Chana_Madra.jpg",
         "alt": "White Chana Madra in a ceramic bowl with spiced yogurt gravy",
-        "caption": "Pahari Chana Madra: chickpeas simmered in spiced yogurt gravy with cardamom, cloves, and asafoetida.",
+        "caption": "Rich, golden Chana Madra garnished with pure desi ghee and whole spices.",
         "fallback": null,
         "width": 3072,
         "height": 4096
@@ -3705,12 +3588,9 @@
       "origin": null,
       "ingredients": {
         "library": null,
-        "caption": "",
-        "items": [
-          "Rice",
-          "Water",
-          "Salt"
-        ]
+        "caption": "Evolution of Food: From traditional methods to modern cooking techniques and equipment.",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": null,
       "plated": null
@@ -3719,16 +3599,9 @@
       "origin": null,
       "ingredients": {
         "library": null,
-        "caption": "",
-        "items": [
-          "Pork",
-          "Bamboo shoot",
-          "Ginger",
-          "Garlic",
-          "Green chilli",
-          "Local herbs",
-          "Salt"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": null,
       "plated": null
@@ -3737,12 +3610,9 @@
       "origin": null,
       "ingredients": {
         "library": null,
-        "caption": "",
-        "items": [
-          "Rice",
-          "Sprouted rice starter",
-          "Water"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": null,
       "plated": null
@@ -3960,19 +3830,14 @@
           "width": 6000,
           "height": 4000
         },
-        "caption": "Ujjayanta Palace in Agartala — royal heritage center of Tripura where indigenous Tripuri culinary arts are preserved.",
-        "label": "Regional context"
+        "caption": "Birth of Awan Bangwi in Tripuri Harvest Festivals & Leaf Weaving.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": null,
-        "caption": "",
-        "items": [
-          "Glutinous rice",
-          "Jaggery",
-          "Grated coconut",
-          "Banana leaf",
-          "Sesame"
-        ]
+        "caption": "Evolution of Food: Then vs Now",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": null,
       "plated": {
@@ -3984,7 +3849,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Awang_Bangwi.jpg",
         "alt": "Awan Bangwi sticky rice cone wrapped in lairu leaves",
-        "caption": "Tripuri Awan Bangwi: fragrant sticky guria rice mixed with cashews, raisins, and pork, steamed in woven lairu leaf cones.",
+        "caption": "Fragrant, chewy Tripuri Awan Bangwi rice cake unwrapped from its steaming leaf parcel.",
         "fallback": null,
         "width": 552,
         "height": 475
@@ -4001,26 +3866,20 @@
           "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malaiyo_Pehalwaan_lassi_in_front_of_ravidas_gate_LANKA._Varanasi_Uttar_Pradesh.jpg",
           "alt": "A Varanasi street vendor's stall near Ravidas Gate, Lanka",
-          "caption": "A Varanasi street-food stall near Ravidas Gate, Lanka — the winter malaiyo trade. Regional food culture, not a photograph of the dish itself, and not evidence of its origin.",
+          "caption": "Origin (Birth of the food): Malaiyo traces its lineage to the ancient dairy culture of Purvanchal and the refined milk foams developed across Awadh and Varanasi.",
           "fallback": null,
           "width": 3456,
           "height": 4608,
           "local": "/images/dishes/banarasi-malaiyo-stage-1.webp"
         },
-        "caption": "A Varanasi street-food stall near Ravidas Gate, Lanka — the winter malaiyo trade. Regional food culture, not a photograph of the dish itself, and not evidence of its origin.",
-        "label": "Regional context"
+        "caption": "Origin (Birth of the food): Malaiyo traces its lineage to the ancient dairy culture of Purvanchal and the refined milk foams developed across Awadh and Varanasi.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": null,
-        "caption": "",
-        "items": [
-          "Full-fat milk",
-          "Fresh cream (malai)",
-          "Sugar",
-          "Saffron",
-          "Pistachio",
-          "Cardamom"
-        ]
+        "caption": "Evolution of Food: From traditional methods to modern cooking techniques and equipment.",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": null,
       "plated": null
@@ -4036,24 +3895,19 @@
           "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:1_Almora_Uttarakhand_India.jpg",
           "alt": "Almora hillside town overlooking snowcapped Kumaon Himalayas",
-          "caption": "Almora town, Kumaon — historical hill station where Kumaoni halwais invented both Bal Mithai and leaf-wrapped Singori.",
+          "caption": "Origin (Birth of the food): Singori represents one of the most ingenious marriages of dairy confectionery and Himalayan ethnobotany found in the Kumaon region.",
           "fallback": null,
           "width": 1133,
           "height": 750
         },
-        "caption": "Almora town, Kumaon — historical hill station where Kumaoni halwais invented both Bal Mithai and leaf-wrapped Singori.",
-        "label": "Regional context"
+        "caption": "Origin (Birth of the food): Singori represents one of the most ingenious marriages of dairy confectionery and Himalayan ethnobotany found in the Kumaon region.",
+        "label": "Origin (Birth of the food)"
       },
       "ingredients": {
         "library": null,
-        "caption": "",
-        "items": [
-          "Khoya (reduced milk)",
-          "Sugar",
-          "Grated coconut",
-          "Cardamom",
-          "Malu leaf wrapper"
-        ]
+        "caption": "Evolution of Food: From traditional methods to modern cooking techniques and equipment.",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": null,
       "plated": {
@@ -4065,7 +3919,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Singori.jpg",
         "alt": "Singori sweet cones wrapped in maalu leaf",
-        "caption": "Kumaoni Singori: caramelized khoa (mawa) and coconut wrapped in fresh fragrant maalu (Bauhinia vahlii) leaves.",
+        "caption": "Singori, prepared in the authentic tradition of Uttarakhand.",
         "fallback": null,
         "width": 4032,
         "height": 3024
@@ -4075,13 +3929,9 @@
       "origin": null,
       "ingredients": {
         "library": null,
-        "caption": "",
-        "items": [
-          "Fresh chhena (curdled milk solids)",
-          "Sugar",
-          "Water",
-          "Cardamom or rose water"
-        ]
+        "caption": "Evolution of Food: From traditional methods to modern cooking techniques and equipment.",
+        "items": [],
+        "label": "Evolution of Food"
       },
       "method": null,
       "plated": {
@@ -4093,7 +3943,7 @@
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rasgulla_With_Rabdi.jpg",
         "alt": "Rosogolla served with rabdi, saffron and rose petals",
-        "caption": "Rosogolla with rabdi, saffron and rose — a festive Bengali presentation of the chhena sweet.",
+        "caption": "Rosogolla, prepared in the authentic tradition of West Bengal.",
         "fallback": null,
         "width": 3114,
         "height": 1900,
