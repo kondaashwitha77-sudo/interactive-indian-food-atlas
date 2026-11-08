@@ -134,21 +134,7 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
     },
   ],
 
-  Chhattisgarh: [
-    {
-      id: "bafauri",
-      name: "Bafauri",
-      alternateName: "Steamed Gram-Flour Dumplings",
-      state: "Chhattisgarh",
-      category: "fermented-steamed",
-      description:
-        "Spiced gram-flour dumplings steamed until firm, then sliced and tempered with mustard, curry leaves and green chilli — a protein-rich, oil-light dish from Chhattisgarhi home kitchens.",
-      ingredients: ["Gram flour (besan)", "Green chilli", "Ginger", "Mustard seeds", "Curry leaves", "Turmeric", "Salt"],
-      tasteProfile: "Earthy, Savoury & Gently Piquant",
-      era: "Regional household technique; no securely dated first written reference",
-      keyTechnique: "Besan Batter Steaming & Post-Steam Tempering",
-    },
-  ],
+  Chhattisgarh: [],
 
   Goa: [
     {
@@ -179,37 +165,9 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
 
   Gujarat: [],
 
-  Haryana: [
-    {
-      id: "haryanvi-churma",
-      name: "Haryanvi Churma",
-      alternateName: "Churma / Choori",
-      state: "Haryana",
-      category: "sweet-dessert",
-      description:
-        "Coarse wheat-flour rotis baked over a cow-dung-fired hearth, crushed by hand and kneaded with desi ghee and jaggery or sugar; traditionally eaten with bajra roti, milk and seasonal greens.",
-      ingredients: ["Whole-wheat flour", "Desi ghee", "Jaggery or sugar", "Bajra", "Milk"],
-      tasteProfile: "Rustic, Ghee-Rich & Caramel-Sweet",
-      era: "Agrarian Haryanvi food tradition; documented in regional food writing",
-      keyTechnique: "Hearth-Baked Roti Crushing & Ghee Binding",
-    },
-  ],
+  Haryana: [],
 
-  "Himachal Pradesh": [
-    {
-      id: "chana-madra",
-      name: "Chana Madra",
-      alternateName: "Himachali Chickpea Yoghurt Curry",
-      state: "Himachal Pradesh",
-      category: "curry-stew",
-      description:
-        "Chickpeas simmered in a whisked yoghurt and gram-flour gravy with ghee, cumin and asafoetida, thickened slowly without a tomato base; the centrepiece of a Chamba–Kangra Dham feast.",
-      ingredients: ["Chickpeas", "Curd (yoghurt)", "Gram flour", "Ghee", "Cumin", "Asafoetida", "Turmeric"],
-      tasteProfile: "Creamy, Tangy & Warmly Aromatic",
-      era: "Himachali Dham tradition; documented in regional festival cookery",
-      keyTechnique: "Slow Yoghurt Gravy Simmering Without Curdling",
-    },
-  ],
+  "Himachal Pradesh": [],
 
   Jharkhand: [
     {

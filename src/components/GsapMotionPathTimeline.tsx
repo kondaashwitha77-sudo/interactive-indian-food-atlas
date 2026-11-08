@@ -245,6 +245,12 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
         nextUrl = "/images/dishes/fish-molee-circle-1.jpg";
       } else if (dishId === "appam-stew") {
         nextUrl = "/images/dishes/appam-circle-2.jpg";
+      } else if (dishId === "siddu") {
+        if (index === 0) {
+          nextUrl = "/images/dishes/siddu-stage-3.webp";
+        } else if (index === 1) {
+          nextUrl = "/images/dishes/siddu-circle-2.jpg";
+        }
       }
 
       const caption =
@@ -278,7 +284,9 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
         imageAlt: stateMainImg ? `${dish.state} Regional Cuisine — ${entry.title}` : (entry.photo ? `${dishName} — ${entry.title}` : `${dish.state} — ${entry.title}`),
         secondaryImage: nextUrl || undefined,
         secondaryImageAlt:
-          dishId === "puttu"
+          dishId === "siddu"
+            ? (index === 0 ? "Steamer pot for authentic Kullvi Siddu" : "Steamed sliced Siddu served with chutneys")
+            : dishId === "puttu"
             ? "Puttu with egg roast and pappadam on a banana leaf"
             : dishId === "fish-molee"
               ? "Fish molee in a stone bowl with coconut gravy"
