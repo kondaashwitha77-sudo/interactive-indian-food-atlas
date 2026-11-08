@@ -5696,81 +5696,6 @@ export const HARYANVI_CHURMA_GENERATIONS: GenerationWaypoint[] = [
   },
 ];
 
-export const SIDDU_GENERATIONS: GenerationWaypoint[] = [
-  {
-    generationNumber: 1,
-    eraTitle: "Birth of the food",
-    yearRange: "Origin",
-    centuryLabel: "Stage 1",
-    headline: "Birth of Siddu in Himachal Pradesh & the Western Himalayas",
-    shortDescription: "Origin in the Western Himalayas: Deeply embedded in the high-altitude valleys of Kullu, Mandi, Shimla, and Kangra, Siddu evolved as a dense, high-calorie steamed bread designed to provide warmth and stamina during freezing Himalayan winters. Cultural & festive significance: Traditionally prepared during local winter festivals, family weddings, and festive gatherings such as Diwali and Lohri, where piping hot steamed bread drenched in pure cow ghee serves as the supreme gesture of mountain hospitality. Historical documentation: Folkloric oral traditions and regional Himalayan chronicles record the ancient practice of leavening whole wheat dough with wild natural yeast (khameer) and stuffing it with foraged poppy seeds, wild hemp, or walnuts. Cooking method: Hand-shaped into plump oval or crescent pockets around seasoned nut or pulse paste, rested for secondary proofing, and steamed over boiling water in traditional layered copper or brass steamers.",
-    culturalContext: "Ancient regional heritage and indigenous cooking tradition.",
-    flavorProfileSummary: "Authentic, ancestral, wholesome and earthy.",
-    generationRecipe: {
-      title: "Origin: Birth of the food",
-      ingredientsList: [],
-      preparationMethod: ["Origin in the Western Himalayas: Deeply embedded in the high-altitude valleys of Kullu, Mandi, Shimla, and Kangra, Siddu evolved as a dense, high-calorie steamed bread designed to provide warmth and stamina during freezing Himalayan winters.","Cultural & festive significance: Traditionally prepared during local winter festivals, family weddings, and festive gatherings such as Diwali and Lohri, where piping hot steamed bread drenched in pure cow ghee serves as the supreme gesture of mountain hospitality.","Historical documentation: Folkloric oral traditions and regional Himalayan chronicles record the ancient practice of leavening whole wheat dough with wild natural yeast (khameer) and stuffing it with foraged poppy seeds, wild hemp, or walnuts.","Cooking method: Hand-shaped into plump oval or crescent pockets around seasoned nut or pulse paste, rested for secondary proofing, and steamed over boiling water in traditional layered copper or brass steamers."],
-      heatSource: "Wood-fired hearth or direct traditional embers",
-      vessel: "Traditional clay, brass, or seasoned iron cookware",
-      documentedCitation: "Himachal Pradesh Tourism & Regional Folklore Archives (2019)",
-    },
-  },
-  {
-    generationNumber: 2,
-    eraTitle: "Evolution of Food",
-    yearRange: "Evolution of Food",
-    centuryLabel: "Stage 2",
-    headline: "Evolution of Food: Then vs Now",
-    shortDescription: "Leavening agent: wild natural sourdough starter (khameer) cultured in wooden tubs / active dry baker's yeast or instant yeast for consistent rising. Flour composition: stone-ground local whole wheat flour (atta) from watermills (gharats) / fine commercial whole wheat flour blended with refined flour (maida). Stuffing base: wild opium poppy seeds (khus khus) and foraged mountain walnuts / cultivated poppy seeds, soaked urad dal, or seasoned paneer. Steaming vessel: traditional tiered brass or copper steamers (khaste / steamer handi) / multi-tier stainless steel steamers and modern food warmers. Fuel & hearth: crackling pine wood-fired mud hearths / domestic gas stoves and induction cooktops. Fermentation duration: slow overnight dough fermentation in warm blankets / temperature-controlled proofing in under two hours. Serving fat: unpasteurized pahadi cow or yak ghee rendered in mountain hamlets / melted pure desi cow ghee or clarified butter. Dining context: home-cooked winter family warmth / popular street delicacy at Mall Roads in Manali and Shimla, and featured in heritage restaurants.",
-    culturalContext: "Comparative culinary evolution from hearth practices to modern kitchens.",
-    flavorProfileSummary: "Transitional adaptation preserving rustic depth while adopting modern precision.",
-    generationRecipe: {
-      title: "Evolution of Food: Evolution of Food",
-      ingredientsList: [],
-      preparationMethod: ["Leavening agent: wild natural sourdough starter (khameer) cultured in wooden tubs / active dry baker's yeast or instant yeast for consistent rising.","Flour composition: stone-ground local whole wheat flour (atta) from watermills (gharats) / fine commercial whole wheat flour blended with refined flour (maida).","Stuffing base: wild opium poppy seeds (khus khus) and foraged mountain walnuts / cultivated poppy seeds, soaked urad dal, or seasoned paneer.","Steaming vessel: traditional tiered brass or copper steamers (khaste / steamer handi) / multi-tier stainless steel steamers and modern food warmers.","Fuel & hearth: crackling pine wood-fired mud hearths / domestic gas stoves and induction cooktops.","Fermentation duration: slow overnight dough fermentation in warm blankets / temperature-controlled proofing in under two hours.","Serving fat: unpasteurized pahadi cow or yak ghee rendered in mountain hamlets / melted pure desi cow ghee or clarified butter.","Dining context: home-cooked winter family warmth / popular street delicacy at Mall Roads in Manali and Shimla, and featured in heritage restaurants."],
-      heatSource: "Traditional hearth evolved to domestic gas burners",
-      vessel: "Seasoned iron and brass evolved to modern cookware",
-      documentedCitation: "Himachal Pradesh Tourism & Regional Folklore Archives (2019)",
-    },
-  },
-  {
-    generationNumber: 3,
-    eraTitle: "Recipe",
-    yearRange: "Recipe",
-    centuryLabel: "Stage 3",
-    headline: "Siddu Recipe: 10 Key Ingredients, 8 Steps",
-    shortDescription: "1. In a small bowl, dissolve 1 teaspoon of yeast and a pinch of sugar in 1/4 cup of lukewarm water or milk; let stand for 10 minutes until frothy and bubbly. 2. In a large mixing platter, combine 2 cups of whole wheat flour with 1/2 teaspoon of salt and the activated yeast mixture, gradually adding lukewarm water to knead a soft, pliable, smooth dough. 3. Coat the dough with a few drops of oil or ghee, cover with a warm damp cloth, and let rise in a warm spot for 1.5 to 2 hours until doubled in volume. 4. Soak poppy seeds (khus khus) in warm water for 2 hours, drain completely, and grind into a coarse thick paste with walnuts, green chillies, ginger paste, rock salt, and chopped coriander leaves. 5. Punch down the fermented dough, divide into 4 equal balls, and roll each ball on a dusted board into a 5-inch round disc about 1/4-inch thick. 6. Place 2 tablespoons of the poppy seed-walnut stuffing onto one half of the dough disc, fold the other half over to form a crescent half-moon, and firmly crimp or twist the edges to seal. 7. Arrange the stuffed siddus on greased perforated steamer plates, cover, and let rest for 10 minutes for secondary rising while bringing the steamer water to a rapid rolling boil. 8. Steam covered over high heat for 15 to 18 minutes until the dough turns firm, glossy, and sounds hollow when tapped; slice open hot, pour generous spoonfuls of hot melted desi ghee into the centre, and serve with mint-coriander chutney or spicy dal.",
-    culturalContext: "Standardized authentic 8-step culinary methodology.",
-    flavorProfileSummary: "Perfect harmony of texture, spicing, and traditional aroma.",
-    generationRecipe: {
-      title: "Recipe: 10 Key Ingredients, 8 Steps",
-      ingredientsList: ["Whole wheat flour (atta)","Active dry yeast / indigenous starter","Poppy seeds (khus khus)","Crushed walnuts (akhrot)","Finely chopped green chillies","Fresh ginger paste","Fresh coriander leaves","Warm filtered water or milk","Rock salt (sendha namak)","Pure desi cow ghee (for serving)"],
-      preparationMethod: ["1. In a small bowl, dissolve 1 teaspoon of yeast and a pinch of sugar in 1/4 cup of lukewarm water or milk; let stand for 10 minutes until frothy and bubbly.","2. In a large mixing platter, combine 2 cups of whole wheat flour with 1/2 teaspoon of salt and the activated yeast mixture, gradually adding lukewarm water to knead a soft, pliable, smooth dough.","3. Coat the dough with a few drops of oil or ghee, cover with a warm damp cloth, and let rise in a warm spot for 1.5 to 2 hours until doubled in volume.","4. Soak poppy seeds (khus khus) in warm water for 2 hours, drain completely, and grind into a coarse thick paste with walnuts, green chillies, ginger paste, rock salt, and chopped coriander leaves.","5. Punch down the fermented dough, divide into 4 equal balls, and roll each ball on a dusted board into a 5-inch round disc about 1/4-inch thick.","6. Place 2 tablespoons of the poppy seed-walnut stuffing onto one half of the dough disc, fold the other half over to form a crescent half-moon, and firmly crimp or twist the edges to seal.","7. Arrange the stuffed siddus on greased perforated steamer plates, cover, and let rest for 10 minutes for secondary rising while bringing the steamer water to a rapid rolling boil.","8. Steam covered over high heat for 15 to 18 minutes until the dough turns firm, glossy, and sounds hollow when tapped; slice open hot, pour generous spoonfuls of hot melted desi ghee into the centre, and serve with mint-coriander chutney or spicy dal."],
-      heatSource: "Regulated flame on domestic gas or induction stove",
-      vessel: "Heavy-bottomed pot, kadhai, steamer, or tawa as required",
-      documentedCitation: "Himachal Pradesh Tourism & Regional Folklore Archives (2019)",
-    },
-  },
-  {
-    generationNumber: 4,
-    eraTitle: "Present day",
-    yearRange: "Present day",
-    centuryLabel: "Stage IV",
-    headline: "Siddu today",
-    shortDescription: "Present-day form & serving: Served piping hot, sliced down the middle and flooded with warm melted desi cow ghee, accompanied by spicy mint-walnut chutney or thick dal. Flavour identity: Pillow-soft, airy, gently fermented dough contrasting with a rich, nutty, mildly spiced, herbaceous filling and luxurious melted ghee. Variations: Kullu walnut-poppy seed siddu, Kangra urad dal stuffed siddu, sweet jaggery-poppy siddu, and modern cheese-stuffed variations. Recognition: Celebrated by Himachal Pradesh Tourism as the signature indigenous dish of the state and featured prominently at national Himalayan food festivals.",
-    culturalContext: "Contemporary serving traditions, commercial distribution, and cultural pride.",
-    flavorProfileSummary: "Vibrant, celebrated, universally beloved regional classic.",
-    generationRecipe: {
-      title: "Modern Form, Serving & Recognition: Modern Form & Serving",
-      ingredientsList: ["Whole wheat flour (atta)","Active dry yeast / indigenous starter","Poppy seeds (khus khus)","Crushed walnuts (akhrot)","Finely chopped green chillies","Fresh ginger paste","Fresh coriander leaves","Warm filtered water or milk","Rock salt (sendha namak)","Pure desi cow ghee (for serving)"],
-      preparationMethod: ["Present-day form & serving: Served piping hot, sliced down the middle and flooded with warm melted desi cow ghee, accompanied by spicy mint-walnut chutney or thick dal.","Flavour identity: Pillow-soft, airy, gently fermented dough contrasting with a rich, nutty, mildly spiced, herbaceous filling and luxurious melted ghee.","Variations: Kullu walnut-poppy seed siddu, Kangra urad dal stuffed siddu, sweet jaggery-poppy siddu, and modern cheese-stuffed variations.","Recognition: Celebrated by Himachal Pradesh Tourism as the signature indigenous dish of the state and featured prominently at national Himalayan food festivals."],
-      heatSource: "Modern stovetop or artisanal hearth",
-      vessel: "Traditional clay or brass tableware and eco-friendly platters",
-      documentedCitation: "Himachal Pradesh Tourism & Regional Folklore Archives (2019)",
-    },
-  },
-];
-
 export const HIMACHALI_DHAM_GENERATIONS: GenerationWaypoint[] = [
   {
     generationNumber: 1,
@@ -7989,7 +7914,7 @@ export function getGenerationsForDish(dishId: string): GenerationWaypoint[] {
       documentedCitation:
             dishId === "thekua" ||
         dishId === "dhokla" || dishId === "undhiyu" || dishId === "dal-baati-churma" || dishId === "laal-maas" || dishId === "dalma" || dishId === "chhena-poda" || dishId === "pakhala" || dishId === "goan-fish-curry" || dishId === "pork-vindaloo" || dishId === "bebinca" || dishId === "ghewar" || dishId === "appam-stew" || dishId === "fish-molee" || dishId === "puttu" || dishId === "siddu" || dishId === "chettinad-chicken" || dishId === "idli-sambar" || dishId === "filter-coffee" 
-        | dishId === "thukpa" || dishId === "bamboo-shoot-pork" || dishId === "apong" || dishId === "pondicherry-fish-curry" || dishId === "koli-kari" || dishId === "litti-chokha" ||
+        || dishId === "thukpa" || dishId === "bamboo-shoot-pork" || dishId === "apong" || dishId === "pondicherry-fish-curry" || dishId === "koli-kari" || dishId === "litti-chokha" ||
             dishId === "thekua" ||
             dishId === "silao-khaja" ||
             dishId === "chhattisgarhi-chila" ||
