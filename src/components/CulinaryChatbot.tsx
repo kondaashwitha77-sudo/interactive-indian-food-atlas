@@ -3,31 +3,22 @@ import {
   X,
   Send,
   Sparkles,
-  Settings,
   RotateCcw,
-  Key,
-  ExternalLink,
-  ChefHat,
-  Check,
-  Bot,
   Copy,
   CheckCheck,
+  Globe,
+  RefreshCw,
+  ExternalLink,
 } from "lucide-react";
 import {
   ChatMessage,
   DishContextInfo,
-  getStoredGrokApiKey,
-  setStoredGrokApiKey,
-  getStoredGrokModel,
-  setStoredGrokModel,
-  sendChatMessageToGrok,
-  DEFAULT_GROQ_KEY,
-  DEFAULT_GROQ_MODEL,
+  sendChatMessageToBackend,
 } from "../services/grokService";
 import { FormattedAiMessage } from "./FormattedAiMessage";
 
 interface CulinaryChatbotProps {
-  dish: DishContextInfo;
+  dish?: DishContextInfo;
   isLight: boolean;
 }
 
@@ -36,23 +27,10 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [showSettings, setShowSettings] = useState(false);
   const [copiedMessageId, setCopiedMessageId] = useState<string | null>(null);
 
-  // Settings state
-  const [apiKeyInput, setApiKeyInput] = useState("");
-  const [selectedModel, setSelectedModel] = useState(DEFAULT_GROQ_MODEL);
-  const [keySavedNotification, setKeySavedNotification] = useState(false);
-
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
-  const inputRef = useRef<HTMLInputElement | null>(null);
-
-  // Load existing API Key & Model on mount
-  useEffect(() => {
-    const key = getStoredGrokApiKey();
-    setApiKeyInput(key || DEFAULT_GROQ_KEY);
-    setSelectedModel(getStoredGrokModel());
-  }, []);
+  const textareaRef = useRef<HTMLTextAreaElement | null>(null);
 
   // Auto-scroll to bottom of messages
   useEffect(() => {
@@ -63,17 +41,16 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
 
   // Focus input on open
   useEffect(() => {
-    if (isOpen && !showSettings) {
-      setTimeout(() => inputRef.current?.focus(), 150);
+    if (isOpen) {
+      setTimeout(() => textareaRef.current?.focus(), 150);
     }
-  }, [isOpen, showSettings]);
+  }, [isOpen]);
 
   const handleCopyMessage = async (msgId: string, text: string) => {
     try {
       if (navigator.clipboard && navigator.clipboard.writeText) {
         await navigator.clipboard.writeText(text);
       } else {
-        // Fallback for older environments
         const textArea = document.createElement("textarea");
         textArea.value = text;
         document.body.appendChild(textArea);
@@ -88,17 +65,6 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
     } catch (err) {
       console.warn("Failed to copy message:", err);
     }
-  };
-
-  const handleSaveSettings = (e: React.FormEvent) => {
-    e.preventDefault();
-    setStoredGrokApiKey(apiKeyInput.trim());
-    setStoredGrokModel(selectedModel.trim());
-    setKeySavedNotification(true);
-    setTimeout(() => {
-      setKeySavedNotification(false);
-      setShowSettings(false);
-    }, 900);
   };
 
   const handleSendMessage = async (textToSend?: string) => {
@@ -118,20 +84,24 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
     setIsLoading(true);
 
     try {
-      const responseText = await sendChatMessageToGrok(newMessages, dish);
+      const response = await sendChatMessageToBackend(newMessages, dish);
       const botMessage: ChatMessage = {
         id: `assistant-${Date.now()}`,
         role: "assistant",
-        content: responseText,
+        content: response.reply,
         timestamp: Date.now(),
+        usedWebSearch: response.usedWebSearch,
+        sources: response.sources,
+        isError: response.isError,
       };
       setMessages((prev) => [...prev, botMessage]);
     } catch {
       const errorMessage: ChatMessage = {
         id: `err-${Date.now()}`,
         role: "assistant",
-        content: "Sorry, I had trouble processing that request. Please try again or check your connection.",
+        content: "Bhojan Mitra is taking a break. Please try again in a little while.",
         timestamp: Date.now(),
+        isError: true,
       };
       setMessages((prev) => [...prev, errorMessage]);
     } finally {
@@ -139,7 +109,15 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
     }
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+  const handleRetry = () => {
+    // Find the last user message and re-send it
+    const lastUserMessage = [...messages].reverse().find((m) => m.role === "user");
+    if (lastUserMessage) {
+      handleSendMessage(lastUserMessage.content);
+    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       handleSendMessage();
@@ -150,15 +128,23 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
     setMessages([]);
   };
 
-  const promptSuggestions = [
-    { label: "📜 Historical Origin", query: `What is the historical origin and story of ${dish.name}?` },
-    { label: "🌿 Authentic Spices", query: `What authentic spices and ingredients define ${dish.name}?` },
-    { label: "🍳 Cooking Technique", query: `What traditional cooking technique is used to make ${dish.name}?` },
-    { label: "🌶️ Flavor Profile", query: `How would you describe the gastronomy and flavor profile of ${dish.name}?` },
-  ];
+  // Dynamic suggestion chips based on current dish or general food topics
+  const primaryIngredient = dish?.ingredients?.[0] || "ghee";
+  const suggestionChips = dish?.name
+    ? [
+        `What does ${primaryIngredient} mean?`,
+        "How is it made?",
+        `Spicy dishes from ${dish.state}`,
+        "How has it changed over time?",
+      ]
+    : [
+        "What is panch phoron?",
+        "History of Dum cooking",
+        "Famous street food of Mumbai",
+        "Popular breakfast dishes in South India",
+      ];
 
   const mascotSrc = isLight ? "/images/chef-bot-light.png" : "/images/chef-bot-dark.png";
-  const isGroqKey = apiKeyInput.startsWith("gsk_");
 
   return (
     <>
@@ -180,7 +166,7 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
           </button>
         )}
 
-        {/* Circular Mascot Button */}
+        {/* Circular Mascot Launcher */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Close chatbot" : "Open culinary chatbot"}
@@ -203,12 +189,12 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
         </button>
       </div>
 
-      {/* ─── STANDING RECTANGLE CHAT WINDOW ─── */}
+      {/* ─── STANDING CHAT WINDOW ─── */}
       {isOpen && (
         <div
           role="dialog"
           aria-label="Culinary AI Assistant"
-          className={`fixed bottom-24 right-6 z-50 w-[360px] sm:w-[410px] h-[550px] max-h-[82vh] rounded-3xl shadow-2xl border flex flex-col overflow-hidden backdrop-blur-xl transition-all duration-300 animate-in fade-in slide-in-from-bottom-5 ${
+          className={`fixed bottom-24 right-4 sm:right-6 z-50 w-[calc(100vw-2rem)] max-w-[360px] sm:max-w-[420px] h-[560px] max-h-[82vh] rounded-3xl shadow-2xl border flex flex-col overflow-hidden backdrop-blur-xl transition-all duration-300 animate-in fade-in slide-in-from-bottom-5 ${
             isLight
               ? "bg-[#FCFAF7]/95 border-amber-900/15 text-slate-800 shadow-amber-950/20"
               : "bg-slate-900/95 border-amber-500/30 text-slate-100 shadow-black/70"
@@ -217,59 +203,34 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
           {/* Header */}
           <div
             className={`p-3.5 px-4 border-b flex items-center justify-between transition-colors ${
-              isLight
-                ? "bg-amber-500/10 border-amber-900/10"
-                : "bg-slate-800/80 border-slate-750"
+              isLight ? "bg-amber-500/10 border-amber-900/10" : "bg-slate-800/80 border-slate-750"
             }`}
           >
             <div className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-full border-2 border-amber-500/60 overflow-hidden shadow-sm flex-shrink-0 bg-amber-500/20">
-                <img
-                  src={mascotSrc}
-                  alt="Chef Bot"
-                  className="w-full h-full object-cover"
-                />
+              <div className="w-10 h-10 rounded-full border-2 border-amber-500/60 overflow-hidden shadow-xs flex-shrink-0 bg-amber-500/20">
+                <img src={mascotSrc} alt="Bhojan Mitra" className="w-full h-full object-cover" />
               </div>
               <div className="leading-tight">
-                <div className="flex items-center gap-1.5">
-                  <h3 className="font-extrabold text-sm tracking-tight text-amber-600 dark:text-amber-400">
-                    Bhojan Mitra
-                  </h3>
-                  <span className="text-[9px] font-black uppercase tracking-wider px-1.5 py-0.2 rounded-md bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/30">
-                    {isGroqKey ? "Groq Cloud" : "Grok AI"}
-                  </span>
-                </div>
+                <h3 className="font-extrabold text-sm tracking-tight text-amber-800 dark:text-amber-400">
+                  Bhojan Mitra
+                </h3>
                 <p
-                  className={`text-[11px] truncate max-w-[190px] ${
+                  className={`text-[11px] truncate max-w-[210px] ${
                     isLight ? "text-slate-500" : "text-slate-400"
                   }`}
-                  title={`Context: ${dish.name} (${dish.state})`}
+                  title={dish?.name ? `Viewing: ${dish.name}` : "Ask about any dish, ingredient or food word"}
                 >
-                  Focus: {dish.name}
+                  {dish?.name ? `Viewing: ${dish.name}` : "Ask about any dish, ingredient or food word"}
                 </p>
               </div>
             </div>
 
-            {/* Header Actions */}
+            {/* Header Actions (Reset & Close only) */}
             <div className="flex items-center gap-1">
-              <button
-                onClick={() => setShowSettings(!showSettings)}
-                title="API Configuration"
-                className={`p-1.5 rounded-lg transition-colors cursor-pointer ${
-                  showSettings
-                    ? "bg-amber-500 text-white"
-                    : isLight
-                    ? "text-slate-500 hover:bg-amber-100 hover:text-slate-800"
-                    : "text-slate-400 hover:bg-slate-800 hover:text-white"
-                }`}
-              >
-                <Settings className="w-4 h-4" />
-              </button>
-
               {messages.length > 0 && (
                 <button
                   onClick={clearChat}
-                  title="Clear Chat History"
+                  title="New chat"
                   className={`p-1.5 rounded-lg transition-colors cursor-pointer ${
                     isLight
                       ? "text-slate-500 hover:bg-amber-100 hover:text-slate-800"
@@ -294,90 +255,12 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
             </div>
           </div>
 
-          {/* Settings Drawer / View */}
-          {showSettings && (
-            <div
-              className={`p-4 border-b text-xs flex-shrink-0 animate-in fade-in slide-in-from-top-2 ${
-                isLight
-                  ? "bg-amber-50/90 border-amber-200 text-slate-800"
-                  : "bg-slate-850/95 border-slate-700 text-slate-200"
-              }`}
-            >
-              <div className="flex items-center justify-between mb-2">
-                <span className="font-bold flex items-center gap-1.5 text-amber-600 dark:text-amber-400">
-                  <Key className="w-3.5 h-3.5" /> Groq / Grok API Setup
-                </span>
-                <a
-                  href="https://console.groq.com/keys"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[10px] text-amber-500 hover:underline flex items-center gap-0.5 font-medium"
-                >
-                  Groq Console <ExternalLink className="w-2.5 h-2.5" />
-                </a>
-              </div>
-
-              <form onSubmit={handleSaveSettings} className="space-y-2.5">
-                <div>
-                  <label className="block text-[10px] uppercase tracking-wider font-semibold opacity-70 mb-1">
-                    API Key (Groq `gsk_...` or xAI `xai-...`)
-                  </label>
-                  <input
-                    type="password"
-                    placeholder="gsk_... or xai-..."
-                    value={apiKeyInput}
-                    onChange={(e) => setApiKeyInput(e.target.value)}
-                    className={`w-full text-xs px-2.5 py-1.5 rounded-lg border focus:outline-hidden font-mono ${
-                      isLight
-                        ? "bg-white border-amber-300 text-slate-900 focus:border-amber-500"
-                        : "bg-slate-900 border-slate-700 text-slate-100 focus:border-amber-400"
-                    }`}
-                  />
-                </div>
-
-                <div className="flex gap-2 items-center">
-                  <div className="flex-1">
-                    <label className="block text-[10px] uppercase tracking-wider font-semibold opacity-70 mb-1">
-                      Model
-                    </label>
-                    <select
-                      value={selectedModel}
-                      onChange={(e) => setSelectedModel(e.target.value)}
-                      className={`w-full text-xs px-2 py-1.5 rounded-lg border focus:outline-hidden ${
-                        isLight
-                          ? "bg-white border-amber-300 text-slate-800"
-                          : "bg-slate-900 border-slate-700 text-slate-200"
-                      }`}
-                    >
-                      <option value="openai/gpt-oss-120b">openai/gpt-oss-120b (Groq Fast & Smart)</option>
-                      <option value="openai/gpt-oss-20b">openai/gpt-oss-20b (Groq Ultra-Fast)</option>
-                      <option value="qwen/qwen3.8-27b">qwen/qwen3.8-27b (Groq Multilingual)</option>
-                      <option value="grok-beta">grok-beta (xAI Grok)</option>
-                      <option value="grok-2-latest">grok-2-latest (xAI Grok 2)</option>
-                    </select>
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="self-end px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-orange-600 text-white font-bold text-xs shadow-xs hover:from-amber-600 hover:to-orange-700 transition cursor-pointer flex items-center gap-1"
-                  >
-                    {keySavedNotification ? <Check className="w-3.5 h-3.5" /> : "Save"}
-                  </button>
-                </div>
-              </form>
-
-              <p className="text-[10px] opacity-65 mt-2 leading-tight">
-                *Key is saved locally in your browser storage. Groq `gsk_...` keys connect instantly to high-speed Llama & OSS models.*
-              </p>
-            </div>
-          )}
-
           {/* Messages Container */}
-          <div className="flex-1 p-4 overflow-y-auto space-y-3.5 text-xs select-text">
+          <div className="flex-1 p-3.5 overflow-y-auto space-y-3.5 text-xs select-text">
             {messages.length === 0 ? (
-              /* Welcome Screen with "Ask me anything!" */
+              /* Welcome Screen */
               <div className="h-full flex flex-col justify-center items-center text-center px-2 py-4">
-                <div className="w-16 h-16 rounded-full border-2 border-amber-500/50 p-1 mb-3 bg-amber-500/10 shadow-md">
+                <div className="w-14 h-14 rounded-full border-2 border-amber-500/50 p-1 mb-2.5 bg-amber-500/10 shadow-xs">
                   <img
                     src={mascotSrc}
                     alt="Bhojan Mitra"
@@ -385,48 +268,41 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
                   />
                 </div>
 
-                <h4 className="font-extrabold text-base mb-1 text-slate-900 dark:text-white flex items-center gap-1.5">
-                  <Sparkles className="w-4 h-4 text-amber-500" />
-                  Ask me anything!
-                </h4>
-
                 <p
-                  className={`text-xs mb-4 leading-relaxed max-w-[280px] ${
-                    isLight ? "text-slate-600" : "text-slate-300"
+                  className={`text-[13.5px] font-medium mb-4 max-w-[290px] leading-relaxed ${
+                    isLight ? "text-slate-700" : "text-slate-200"
                   }`}
                 >
-                  I'm your AI culinary companion. Ask me anything about{" "}
-                  <strong className="text-amber-600 dark:text-amber-400">
-                    {dish.name}
-                  </strong>
-                  , spices, ingredients, ancient recipes, or gastronomy!
+                  Namaste! I'm Bhojan Mitra, your guide to Indian food history, recipes, and spices.
                 </p>
 
-                {/* Prompt Suggestions */}
-                <div className="w-full space-y-1.5 text-left">
+                {/* 4 Tappable Suggestion Chips */}
+                <div className="w-full space-y-2 text-left">
                   <p
                     className={`text-[10px] uppercase font-bold tracking-wider px-1 ${
                       isLight ? "text-slate-400" : "text-slate-500"
                     }`}
                   >
-                    Quick prompts to start:
+                    Try asking:
                   </p>
-                  {promptSuggestions.map((item, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => handleSendMessage(item.query)}
-                      className={`w-full text-left p-2 px-3 rounded-xl border text-[11px] font-medium transition cursor-pointer flex items-center justify-between group ${
-                        isLight
-                          ? "bg-white hover:bg-amber-100/60 border-amber-900/10 text-slate-700 hover:border-amber-300"
-                          : "bg-slate-800/70 hover:bg-slate-750 border-slate-700/80 text-slate-200 hover:border-amber-500/40"
-                      }`}
-                    >
-                      <span>{item.label}</span>
-                      <span className="text-amber-500 opacity-0 group-hover:opacity-100 transition-opacity">
-                        →
-                      </span>
-                    </button>
-                  ))}
+                  <div className="grid grid-cols-1 gap-1.5">
+                    {suggestionChips.map((prompt, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => handleSendMessage(prompt)}
+                        className={`w-full text-left p-2.5 px-3 rounded-xl border text-[12px] font-medium transition cursor-pointer flex items-center justify-between group shadow-xs ${
+                          isLight
+                            ? "bg-white hover:bg-amber-50 border-amber-900/10 text-slate-800 hover:border-amber-300"
+                            : "bg-slate-800/80 hover:bg-slate-750 border-slate-700 text-slate-100 hover:border-amber-500/40"
+                        }`}
+                      >
+                        <span className="truncate pr-2">{prompt}</span>
+                        <span className="text-amber-500 opacity-60 group-hover:opacity-100 transition-opacity shrink-0">
+                          →
+                        </span>
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
             ) : (
@@ -439,80 +315,112 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
                   }`}
                 >
                   {msg.role === "assistant" && (
-                    <div className="w-6 h-6 rounded-full overflow-hidden flex-shrink-0 mt-1 border border-amber-500/50">
-                      <img
-                        src={mascotSrc}
-                        alt="Bot"
-                        className="w-full h-full object-cover"
-                      />
+                    <div className="w-6 h-6 rounded-full overflow-hidden flex-shrink-0 mt-1 border border-amber-500/40">
+                      <img src={mascotSrc} alt="Bot" className="w-full h-full object-cover" />
                     </div>
                   )}
 
-                  <div className="relative max-w-[88%] group">
+                  <div className="relative max-w-[85%] group">
                     <div
-                      className={`p-3 rounded-2xl leading-relaxed whitespace-pre-wrap break-words select-text ${
+                      className={`p-3 sm:p-3.5 rounded-2xl leading-[1.55] select-text break-words shadow-xs ${
                         msg.role === "user"
-                          ? "bg-gradient-to-br from-amber-500 to-orange-600 text-white rounded-tr-xs shadow-md font-medium"
+                          ? "bg-gradient-to-br from-amber-500 to-orange-600 text-white rounded-tr-xs font-medium text-[13.5px]"
                           : isLight
-                          ? "bg-white border border-amber-900/10 text-slate-800 rounded-tl-xs shadow-xs italic"
-                          : "bg-slate-800 border border-slate-700 text-slate-100 rounded-tl-xs shadow-xs italic"
+                          ? "bg-white border border-amber-900/10 text-slate-800 rounded-tl-xs"
+                          : "bg-slate-800/90 border border-slate-700 text-slate-100 rounded-tl-xs"
                       }`}
                     >
                       {msg.role === "assistant" ? (
-                        <FormattedAiMessage content={msg.content} isLight={isLight} />
+                        <>
+                          {/* "Checked the web" Badge */}
+                          {msg.usedWebSearch && (
+                            <div className="mb-2 inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md text-[10.5px] font-semibold bg-amber-500/15 text-amber-800 dark:text-amber-300 border border-amber-500/25">
+                              <Globe className="w-3 h-3 text-amber-500" />
+                              <span>Checked the web</span>
+                            </div>
+                          )}
+
+                          <FormattedAiMessage content={msg.content} isLight={isLight} />
+
+                          {/* Sources Chips */}
+                          {msg.sources && msg.sources.length > 0 && (
+                            <div className="mt-2.5 pt-2 border-t border-amber-900/10 dark:border-slate-700 flex flex-wrap gap-1.5 items-center">
+                              <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500">
+                                Sources:
+                              </span>
+                              {msg.sources.map((s, sIdx) => (
+                                <a
+                                  key={sIdx}
+                                  href={s.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10.5px] bg-amber-100/70 dark:bg-slate-700 text-amber-900 dark:text-amber-200 hover:underline transition-colors"
+                                >
+                                  <span>{s.title}</span>
+                                  <ExternalLink className="w-2.5 h-2.5 opacity-60" />
+                                </a>
+                              ))}
+                            </div>
+                          )}
+
+                          {/* Retry button on error */}
+                          {msg.isError && (
+                            <button
+                              onClick={handleRetry}
+                              className="mt-2.5 inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-amber-500 text-white hover:bg-amber-600 transition-colors shadow-xs cursor-pointer"
+                            >
+                              <RefreshCw className="w-3 h-3" />
+                              <span>Retry</span>
+                            </button>
+                          )}
+                        </>
                       ) : (
                         msg.content
                       )}
                     </div>
 
-                    {/* Quick Copy Button on each message */}
-                    <button
-                      onClick={() => handleCopyMessage(msg.id, msg.content)}
-                      title="Copy message to clipboard"
-                      className={`absolute top-1.5 right-1.5 p-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 cursor-pointer shadow-xs ${
-                        msg.role === "user"
-                          ? "bg-black/25 hover:bg-black/40 text-white"
-                          : isLight
-                          ? "bg-amber-100/90 hover:bg-amber-200 text-amber-900 border border-amber-300"
-                          : "bg-slate-700/90 hover:bg-slate-650 text-amber-200 border border-slate-600"
-                      }`}
-                    >
-                      {copiedMessageId === msg.id ? (
-                        <div className="flex items-center gap-1 text-[9px] px-0.5 font-bold">
-                          <CheckCheck className="w-3 h-3 text-emerald-400" />
-                          <span>Copied</span>
-                        </div>
-                      ) : (
-                        <Copy className="w-3 h-3" />
-                      )}
-                    </button>
+                    {/* Quick Copy Button on Assistant Message */}
+                    {msg.role === "assistant" && !msg.isError && (
+                      <button
+                        onClick={() => handleCopyMessage(msg.id, msg.content)}
+                        title="Copy answer"
+                        className={`absolute top-2 right-2 p-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-150 cursor-pointer shadow-xs ${
+                          isLight
+                            ? "bg-amber-100/90 hover:bg-amber-200 text-amber-900 border border-amber-300"
+                            : "bg-slate-700/90 hover:bg-slate-650 text-amber-200 border border-slate-600"
+                        }`}
+                      >
+                        {copiedMessageId === msg.id ? (
+                          <div className="flex items-center gap-1 text-[9px] px-0.5 font-bold">
+                            <CheckCheck className="w-3 h-3 text-emerald-500" />
+                            <span>Copied</span>
+                          </div>
+                        ) : (
+                          <Copy className="w-3 h-3" />
+                        )}
+                      </button>
+                    )}
                   </div>
                 </div>
               ))
             )}
 
-            {/* Loading Indicator */}
+            {/* Typing Indicator while waiting */}
             {isLoading && (
               <div className="flex gap-2 justify-start items-center">
-                <div className="w-6 h-6 rounded-full overflow-hidden flex-shrink-0 border border-amber-500/50">
-                  <img
-                    src={mascotSrc}
-                    alt="Bot"
-                    className="w-full h-full object-cover animate-pulse"
-                  />
+                <div className="w-6 h-6 rounded-full overflow-hidden flex-shrink-0 border border-amber-500/40">
+                  <img src={mascotSrc} alt="Bot" className="w-full h-full object-cover" />
                 </div>
                 <div
-                  className={`p-3 py-2.5 rounded-2xl rounded-tl-xs flex items-center gap-1.5 ${
+                  className={`p-3 py-2.5 rounded-2xl rounded-tl-xs flex items-center gap-1.5 shadow-xs ${
                     isLight
-                      ? "bg-white border border-amber-900/10 text-slate-500 shadow-xs"
-                      : "bg-slate-800 border border-slate-700 text-slate-400 shadow-xs"
+                      ? "bg-white border border-amber-900/10 text-slate-500"
+                      : "bg-slate-800 border border-slate-700 text-slate-400"
                   }`}
                 >
-                  <ChefHat className="w-3.5 h-3.5 text-amber-500 animate-bounce" />
-                  <span className="text-[11px] font-medium">Bhojan Mitra is thinking...</span>
-                  <div className="flex gap-1 ml-1">
-                    <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-ping" />
-                  </div>
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-bounce" style={{ animationDelay: "0ms" }} />
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-bounce" style={{ animationDelay: "150ms" }} />
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-bounce" style={{ animationDelay: "300ms" }} />
                 </div>
               </div>
             )}
@@ -523,25 +431,24 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
           {/* Input Area */}
           <div
             className={`p-3 px-3.5 border-t ${
-              isLight
-                ? "bg-white/80 border-amber-900/10"
-                : "bg-slate-900/80 border-slate-750"
+              isLight ? "bg-white/90 border-amber-900/10" : "bg-slate-900/90 border-slate-750"
             }`}
           >
             <div className="relative flex items-center">
-              <input
-                ref={inputRef}
-                type="text"
+              <textarea
+                ref={textareaRef}
+                rows={1}
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Ask me anything about food..."
+                placeholder="Ask about a dish, ingredient or cooking method..."
                 disabled={isLoading}
-                className={`w-full pl-3.5 pr-10 py-2.5 rounded-xl border text-xs focus:outline-hidden transition-all select-text ${
+                className={`w-full pl-3.5 pr-10 py-2.5 rounded-xl border text-[13px] resize-none focus:outline-hidden transition-all select-text leading-tight ${
                   isLight
                     ? "bg-amber-50/50 border-amber-300/80 text-slate-900 placeholder:text-slate-400 focus:border-amber-500 focus:bg-white"
                     : "bg-slate-800/80 border-slate-750 text-slate-100 placeholder:text-slate-500 focus:border-amber-400 focus:bg-slate-800"
                 }`}
+                style={{ maxHeight: "90px" }}
               />
 
               <button
@@ -558,13 +465,9 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
               </button>
             </div>
 
-            <div className="mt-1.5 flex items-center justify-between px-1 text-[9px] opacity-60">
-              <span className="flex items-center gap-1">
-                <Bot className="w-2.5 h-2.5 text-amber-500" />
-                {isGroqKey ? "Groq Cloud Llama / OSS" : "xAI Grok"}
-              </span>
-              <span>Only answers food & gastronomy</span>
-            </div>
+            <p className="mt-1.5 text-center text-[10.5px] opacity-60">
+              Food, ingredients and cooking only.
+            </p>
           </div>
         </div>
       )}
