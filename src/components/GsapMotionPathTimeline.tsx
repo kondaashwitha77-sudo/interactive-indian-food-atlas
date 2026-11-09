@@ -128,6 +128,7 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
             dishId === "puttu" ||
             dishId === "siddu" ||
             dishId === "lakshadweep-kilanji" ||
+            dishId === "lakshadweep-tuna-curry" ||
             dishId === "chettinad-chicken" ||
             dishId === "idli-sambar" ||
             dishId === "filter-coffee" ||
@@ -173,6 +174,10 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
         if (index === 0) resolvedImage = "/images/dishes/kilanji-1.jpg";
         else if (index === 1) resolvedImage = "/images/dishes/kilanji-2.jpg";
         else if (index === 2) resolvedImage = "/images/dishes/kilanji-3.jpg";
+      } else if (dishId === "lakshadweep-tuna-curry") {
+        if (index === 0) resolvedImage = "/images/dishes/lakshadweep-tuna-curry-1.jpg";
+        else if (index === 1) resolvedImage = "/images/dishes/lakshadweep-tuna-curry-2.jpg";
+        else if (index === 2) resolvedImage = "/images/dishes/lakshadweep-tuna-curry-3.jpg";
       }
 
       const next = entries[index + 1];
@@ -290,6 +295,12 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
         } else if (index === 1) {
           nextUrl = "/images/dishes/kilanji-3.jpg";
         }
+      } else if (dishId === "lakshadweep-tuna-curry") {
+        if (index === 0) {
+          nextUrl = "/images/dishes/lakshadweep-tuna-curry-2.jpg";
+        } else if (index === 1) {
+          nextUrl = "/images/dishes/lakshadweep-tuna-curry-3.jpg";
+        }
       } else if (dishId === "filter-coffee") {
         nextUrl = "/images/dishes/filter-coffee-circle.jpg";
       } else if (dishId === "idli-sambar") {
@@ -325,6 +336,8 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                                 ? "Evolution of Food — from rustic shepherd hearth buns to diverse modern sweet and savory festival preparations."
                                 : dishId === "lakshadweep-kilanji" && index === 1
                                   ? "Evolution of Food — from traditional island hearth griddles to contemporary presentation with sweet coconut milk and ripe bananas."
+                                  : dishId === "lakshadweep-tuna-curry" && index === 1
+                                    ? "Evolution of Food — from oceanic campfire fish stews to rich, fragrant coconut curry simmered with whole spices and fresh herbs."
                                 : dishId === "thukpa" && index === 1
                                   ? "Evolution of Food — from rustic hearth wood pots to modern domestic stainless steel stockpots."
                                   : dishId === "bamboo-shoot-pork" && index === 1
@@ -375,6 +388,8 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
         secondaryImageAlt:
           dishId === "lakshadweep-kilanji"
             ? (index === 0 ? "Kilanji served with sweet coconut milk and banana" : "Plated Kilanji crepe presentation")
+            : dishId === "lakshadweep-tuna-curry"
+            ? (index === 0 ? "Lakshadweep Tuna Curry in earthen pot with steamed rice" : "Plated seared tuna steaks in rich coastal gravy")
             : dishId === "siddu"
             ? (index === 0 ? "Steamer pot for authentic Kullvi Siddu" : "Steamed sliced Siddu served with chutneys")
             : dishId === "puttu"
@@ -395,6 +410,8 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
         floatingOrbImage:
           dishId === "lakshadweep-kilanji"
             ? (index === 0 ? "/images/dishes/kilanji-3.jpg" : index === 1 ? "/images/dishes/kilanji-1.jpg" : "/images/dishes/kilanji-2.jpg")
+            : dishId === "lakshadweep-tuna-curry"
+            ? (index === 0 ? "/images/dishes/lakshadweep-tuna-curry-3.jpg" : index === 1 ? "/images/dishes/lakshadweep-tuna-curry-1.jpg" : "/images/dishes/lakshadweep-tuna-curry-2.jpg")
             : dishId === "puttu"
             ? "/images/dishes/puttu-circle-2.jpg"
             : dishId === "fish-molee"
@@ -405,6 +422,8 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
         floatingOrbAlt:
           dishId === "lakshadweep-kilanji"
             ? (index === 0 ? "Plated Kilanji crepes" : index === 1 ? "Delicate folded Kilanji" : "Kilanji with coconut banana accompaniment")
+            : dishId === "lakshadweep-tuna-curry"
+            ? (index === 0 ? "Plated seared tuna steaks" : index === 1 ? "Fresh tuna chunks in spiced coconut gravy" : "Traditional earthen pot of tuna curry with rice")
             : dishId === "puttu"
             ? "Steaming puttu rolls on a plate"
             : dishId === "fish-molee"

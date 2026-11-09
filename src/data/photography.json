@@ -179,10 +179,78 @@
       }
     },
     "lakshadweep-tuna-curry": {
-      "origin": null,
-      "ingredients": null,
-      "method": null,
-      "plated": null
+      "origin": {
+        "photo": {
+          "src": "/images/dishes/lakshadweep-tuna-curry-1.jpg",
+          "subject": "context",
+          "title": "Origin of Lakshadweep Tuna Curry",
+          "creator": "Lakshadweep Culinary Archive",
+          "licence": "Community Archive",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://foodex-gastro.vercel.app/#/dish/lakshadweep-tuna-curry",
+          "alt": "Fresh oceanic tuna chunks simmered in spiced coconut gravy",
+          "caption": "Lakshadweep Tuna Curry — Origin & History: Island fishermen traditions simmering fresh Arabian Sea skipjack tuna with coconut.",
+          "fallback": null,
+          "width": 846,
+          "height": 632,
+          "local": "/images/dishes/lakshadweep-tuna-curry-1.jpg"
+        },
+        "caption": "Lakshadweep Tuna Curry — Origin & History: Island fishermen traditions simmering fresh Arabian Sea skipjack tuna with coconut.",
+        "label": "Origin & History"
+      },
+      "ingredients": {
+        "photo": {
+          "src": "/images/dishes/lakshadweep-tuna-curry-2.jpg",
+          "subject": "ingredients",
+          "title": "Traditional earthen pot of Lakshadweep Tuna Curry with steamed rice",
+          "creator": "Lakshadweep Culinary Archive",
+          "licence": "Community Archive",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://foodex-gastro.vercel.app/#/dish/lakshadweep-tuna-curry",
+          "alt": "Rich coconut-based tuna curry in an earthen pot served with white rice and curry leaves",
+          "caption": "Lakshadweep Tuna Curry — Evolution of Food: Coastal coconut braise enriched with red chillies, coriander and fragrant curry leaves.",
+          "fallback": null,
+          "width": 1018,
+          "height": 586,
+          "local": "/images/dishes/lakshadweep-tuna-curry-2.jpg"
+        },
+        "caption": "Lakshadweep Tuna Curry — Evolution of Food: Coastal coconut braise enriched with red chillies, coriander and fragrant curry leaves.",
+        "label": "Evolution of Food"
+      },
+      "method": {
+        "photo": {
+          "src": "/images/dishes/lakshadweep-tuna-curry-3.jpg",
+          "subject": "dish",
+          "title": "Plated Lakshadweep Tuna Curry steaks",
+          "creator": "Lakshadweep Culinary Archive",
+          "licence": "Community Archive",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "sourceUrl": "https://foodex-gastro.vercel.app/#/dish/lakshadweep-tuna-curry",
+          "alt": "Seared tuna steaks in rich coastal gravy garnished with fresh curry leaves and green chilli",
+          "caption": "Lakshadweep Tuna Curry — Recipe & Plating: Thick tuna steaks simmered tender in roasted coconut masala gravy.",
+          "fallback": null,
+          "width": 1018,
+          "height": 472,
+          "local": "/images/dishes/lakshadweep-tuna-curry-3.jpg"
+        },
+        "caption": "Lakshadweep Tuna Curry — Recipe & Plating: Thick tuna steaks simmered tender in roasted coconut masala gravy.",
+        "label": "Recipe & Making"
+      },
+      "plated": {
+        "src": "/images/dishes/lakshadweep-tuna-curry-3.jpg",
+        "subject": "dish",
+        "title": "Lakshadweep Tuna Curry",
+        "creator": "Lakshadweep Culinary Archive",
+        "licence": "Community Archive",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://foodex-gastro.vercel.app/#/dish/lakshadweep-tuna-curry",
+        "alt": "Lakshadweep Tuna Curry",
+        "caption": "Lakshadweep Tuna Curry, Lakshadweep.",
+        "fallback": "/images/dishes/lakshadweep-tuna-curry-3.jpg",
+        "width": 1018,
+        "height": 472,
+        "local": "/images/dishes/lakshadweep-tuna-curry-3.jpg"
+      }
     },
     "pesarattu": {
       "origin": {
