@@ -29,6 +29,7 @@ import { Skiper6Summarizer, GenerationSummaryMember } from "./ui/skiper6";
 import { useTheme } from "../context/ThemeContext";
 import { CinematicParallaxJourney, CinematicStage, CinematicOutro } from "./CinematicParallaxJourney";
 import { ImageUploadSearchModal } from "./ImageUploadSearchModal";
+import { getDishYoutubeRecipe } from "../data/dishYoutubeRecipes";
 import {
   getInfographicForStage,
   getAllUploadedImages,
@@ -126,7 +127,32 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
             dishId === "fish-molee" ||
             dishId === "puttu" ||
             dishId === "siddu" ||
-            dishId === "lakshadweep-kilanji"
+            dishId === "lakshadweep-kilanji" ||
+            dishId === "chettinad-chicken" ||
+            dishId === "idli-sambar" ||
+            dishId === "filter-coffee" ||
+            dishId === "thukpa" ||
+            dishId === "bamboo-shoot-pork" ||
+            dishId === "apong" ||
+            dishId === "pondicherry-fish-curry" ||
+            dishId === "koli-kari" ||
+            dishId === "litti-chokha" ||
+            dishId === "thekua" ||
+            dishId === "silao-khaja" ||
+            dishId === "banarasi-malaiyo" ||
+            dishId === "kafuli" ||
+            dishId === "bal-mithai" ||
+            dishId === "singori" ||
+            dishId === "shorshe-ilish" ||
+            dishId === "mishti-doi" ||
+            dishId === "rosogolla" ||
+            dishId === "delhi-nihari" ||
+            dishId === "delhi-chaat" ||
+            dishId === "jadoh" ||
+            dishId === "dohneiiong" ||
+            dishId === "pumaloi"
+
+            
             ? "Evolution of Food"
             : "Evolution of food",
         photo: photography?.ingredients,
@@ -264,6 +290,12 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
         } else if (index === 1) {
           nextUrl = "/images/dishes/kilanji-3.jpg";
         }
+      } else if (dishId === "filter-coffee") {
+        nextUrl = "/images/dishes/filter-coffee-circle.jpg";
+      } else if (dishId === "idli-sambar") {
+        nextUrl = "/images/dishes/idli-sambar-circle.jpg";
+      } else if (dishId === "chettinad-chicken") {
+        nextUrl = "/images/dishes/chettinad-chicken-circle.jpg";
       }
 
       const caption =
@@ -293,7 +325,47 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                                 ? "Evolution of Food — from rustic shepherd hearth buns to diverse modern sweet and savory festival preparations."
                                 : dishId === "lakshadweep-kilanji" && index === 1
                                   ? "Evolution of Food — from traditional island hearth griddles to contemporary presentation with sweet coconut milk and ripe bananas."
-                                  : entry.photo?.caption || (stateMainImg ? `${dish.state} — Regional heritage & culinary traditions` : undefined);
+                                : dishId === "thukpa" && index === 1
+                                  ? "Evolution of Food — from rustic hearth wood pots to modern domestic stainless steel stockpots."
+                                  : dishId === "bamboo-shoot-pork" && index === 1
+                                    ? "Evolution of Food — from green bamboo hollow roasting over wood embers to modern kadhais and pressure cookers."
+                                    : dishId === "apong" && index === 1
+                                      ? "Evolution of Food — from smoked bamboo tubes and terracotta pots to modern glass carboys and stainless steel fermentation vessels."
+                                      : dishId === "pondicherry-fish-curry" && index === 1
+                                        ? "Evolution of Food — from coastal manpanai clay pots over coconut-husk embers to modern stainless steel pans and gas cooktops."
+                                        : dishId === "thekua" && index === 1
+                                            ? "Evolution of Food — from rustic earthen chulha fires and wooden moulds to modern domestic gas stoves and air fryers."
+                                            : dishId === "silao-khaja" && index === 1
+                                            ? "Evolution of Food — from coal bhattis and wayside pilgrimage stalls to modern temperature-controlled fryers and GI-certified retail packaging."
+                                                : dishId === "banarasi-malaiyo" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "kafuli" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "bal-mithai" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "singori" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "shorshe-ilish" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "mishti-doi" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "rosogolla" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "delhi-nihari" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "delhi-chaat" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "jadoh" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "dohneiiong" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                                : dishId === "pumaloi" && index === 1
+                                                ? "Evolution of Food: Then vs Now"
+                                            : dishId === "litti-chokha" && index === 1
+                                            ? "Evolution of Food — from rustic cow-dung ember pits to modern domestic ovens and gas tandoors."
+                                            : dishId === "koli-kari" && index === 1
+                                          ? "Evolution of Food — from French heavy-bottomed brass stew pots on charcoal hearths to modern non-stick pans and domestic gas stoves."
+                                          : entry.photo?.caption || (stateMainImg ? `${dish.state} — Regional heritage & culinary traditions` : undefined);
 
       return {
         id: `${dishId}-stage-${entry.key}`,
@@ -306,12 +378,18 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
             : dishId === "siddu"
             ? (index === 0 ? "Steamer pot for authentic Kullvi Siddu" : "Steamed sliced Siddu served with chutneys")
             : dishId === "puttu"
-            ? "Puttu with egg roast and pappadam on a banana leaf"
-            : dishId === "fish-molee"
-              ? "Fish molee in a stone bowl with coconut gravy"
-              : dishId === "appam-stew"
-                ? "Appam with a bowl of coconut stew and a curry leaf"
-                : undefined,
+              ? "Puttu with egg roast and pappadam on a banana leaf"
+              : dishId === "fish-molee"
+                ? "Fish molee in a stone bowl with coconut gravy"
+                : dishId === "appam-stew"
+                  ? "Appam with a bowl of coconut stew and a curry leaf"
+                  : dishId === "filter-coffee"
+                    ? "South Indian filter coffee in a steel tumbler and dabara"
+                    : dishId === "idli-sambar"
+                      ? "Idli served in sambar"
+                      : dishId === "chettinad-chicken"
+                        ? "Chettinad chicken curry"
+                        : undefined,
         secondaryImagePosition:
           dishId === "appam-stew" ? "center 38%" : undefined,
         floatingOrbImage:
@@ -474,8 +552,8 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
       <div className="max-w-4xl mx-auto text-center mb-16 space-y-4">
         <div className="flex items-center justify-center gap-2">
           <span className={`text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full border ${isLight
-              ? "bg-amber-100 text-amber-900 border-amber-300 shadow-sm"
-              : "bg-amber-500/10 text-amber-300 border-amber-500/30"
+            ? "bg-amber-100 text-amber-900 border-amber-300 shadow-sm"
+            : "bg-amber-500/10 text-amber-300 border-amber-500/30"
             }`}>
             Chronological Epochs & Verified Recipe Infographics
           </span>
@@ -494,8 +572,8 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
             type="button"
             onClick={() => openImageUploadSearch(1, "")}
             className={`inline-flex items-center gap-2 px-4 py-2 rounded-2xl text-xs font-bold border shadow-lg transition-all duration-300 hover:scale-105 ${isLight
-                ? "bg-white hover:bg-amber-100/80 text-amber-950 border-amber-300/80 shadow-amber-950/5"
-                : "bg-slate-900/90 hover:bg-slate-800 text-amber-300 border-amber-500/40 shadow-black/50"
+              ? "bg-white hover:bg-amber-100/80 text-amber-950 border-amber-300/80 shadow-amber-950/5"
+              : "bg-slate-900/90 hover:bg-slate-800 text-amber-300 border-amber-500/40 shadow-black/50"
               }`}
           >
             <Sparkles className="w-4 h-4 text-amber-500 animate-pulse" />
@@ -614,8 +692,8 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                   waypointRefs.current[idx] = el;
                 }}
                 className={`relative transition-all duration-500 rounded-3xl ${isStageActiveSpeech
-                    ? "ring-2 ring-amber-500/80 p-2 sm:p-3 bg-amber-500/5 shadow-2xl shadow-amber-500/10"
-                    : ""
+                  ? "ring-2 ring-amber-500/80 p-2 sm:p-3 bg-amber-500/5 shadow-2xl shadow-amber-500/10"
+                  : ""
                   }`}
               >
                 <div
@@ -629,15 +707,15 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                   >
                     <div
                       className={`relative rounded-3xl overflow-hidden border shadow-2xl transition-all duration-300 ${isLight
-                          ? "border-amber-900/15 bg-white shadow-amber-950/10"
-                          : "border-amber-500/40 bg-slate-950 shadow-black/80"
+                        ? "border-amber-900/15 bg-white shadow-amber-950/10"
+                        : "border-amber-500/40 bg-slate-950 shadow-black/80"
                         }`}
                     >
                       {/* Top Control Bar: Static Level Photo Label & Fullscreen Action */}
                       <div
                         className={`p-2.5 sm:p-3 border-b flex items-center justify-between gap-2 text-xs ${isLight
-                            ? "bg-amber-50/80 border-amber-900/10 text-slate-800"
-                            : "bg-slate-900/80 border-slate-800 text-slate-200"
+                          ? "bg-amber-50/80 border-amber-900/10 text-slate-800"
+                          : "bg-slate-900/80 border-slate-800 text-slate-200"
                           }`}
                       >
                         {/* Static Badge: Level Photo */}
@@ -659,8 +737,8 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                             setLightboxZoom(1);
                           }}
                           className={`p-1.5 rounded-lg border transition-colors ${isLight
-                              ? "bg-white hover:bg-slate-100 text-slate-700 border-slate-300"
-                              : "bg-slate-800 hover:bg-slate-700 text-slate-300 border-slate-700"
+                            ? "bg-white hover:bg-slate-100 text-slate-700 border-slate-300"
+                            : "bg-slate-800 hover:bg-slate-700 text-slate-300 border-slate-700"
                             }`}
                           title="Fullscreen High-Res Zoom"
                           aria-label="Open image lightbox"
@@ -720,8 +798,8 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                       {/* Bottom Caption / Upload Section Quick Link */}
                       <div
                         className={`p-3 border-t flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-[11px] ${isLight
-                            ? "bg-amber-50/50 border-amber-900/10 text-slate-700"
-                            : "bg-slate-900/60 border-slate-800 text-slate-300"
+                          ? "bg-amber-50/50 border-amber-900/10 text-slate-700"
+                          : "bg-slate-900/60 border-slate-800 text-slate-300"
                           }`}
                       >
                         <div className="flex items-center gap-1.5 truncate">
@@ -748,10 +826,10 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                     <div
                       onClick={() => scrollToWaypoint(idx)}
                       className={`w-12 h-12 rounded-2xl flex items-center justify-center font-cinzel font-black text-sm cursor-pointer transition-all duration-300 shadow-xl border ${isActive
-                          ? "bg-gradient-to-br from-amber-400 to-orange-500 text-slate-950 border-white scale-110 shadow-amber-500/50"
-                          : isLight
-                            ? "bg-white text-amber-900 border-amber-900/15 hover:scale-105 shadow-md"
-                            : "bg-slate-900 text-amber-300 border-amber-700/40 hover:scale-105"
+                        ? "bg-gradient-to-br from-amber-400 to-orange-500 text-slate-950 border-white scale-110 shadow-amber-500/50"
+                        : isLight
+                          ? "bg-white text-amber-900 border-amber-900/15 hover:scale-105 shadow-md"
+                          : "bg-slate-900 text-amber-300 border-amber-700/40 hover:scale-105"
                         }`}
                     >
                       0{waypoint.generationNumber}
@@ -790,14 +868,14 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                       className={`text-sm leading-relaxed ${isLight ? "text-slate-700" : "text-slate-200"
                         }`}
                     >
-                      {waypoint.shortDescription.includes("\n") ? (
+                      {(waypoint.shortDescription || "").includes("\n") ? (
                         <div className="space-y-1.5">
-                          {waypoint.shortDescription.split("\n").map((line, lIdx) => (
+                          {(waypoint.shortDescription || "").split("\n").map((line, lIdx) => (
                             <p key={lIdx} className="leading-snug">{line}</p>
                           ))}
                         </div>
                       ) : (
-                        <p>{waypoint.shortDescription}</p>
+                        <p>{waypoint.shortDescription || ""}</p>
                       )}
                     </div>
 
@@ -805,8 +883,8 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                     {stageNum === 3 && allStageIngredients.length > 0 && (
                       <div
                         className={`p-4 rounded-2xl border shadow-xl space-y-3 ${isLight
-                            ? "bg-white/95 border-amber-900/15 text-slate-800 shadow-amber-950/5"
-                            : "bg-slate-900/90 border-amber-500/30 text-slate-100 shadow-black/40"
+                          ? "bg-white/95 border-amber-900/15 text-slate-800 shadow-amber-950/5"
+                          : "bg-slate-900/90 border-amber-500/30 text-slate-100 shadow-black/40"
                           }`}
                       >
                         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b pb-2.5 border-slate-700/40">
@@ -821,8 +899,8 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                           </div>
                           <span
                             className={`text-[10px] uppercase font-bold px-2 py-0.5 rounded-full border self-start sm:self-center ${isLight
-                                ? "bg-emerald-100 text-emerald-900 border-emerald-300"
-                                : "text-emerald-400 bg-emerald-500/10 border-emerald-500/30"
+                              ? "bg-emerald-100 text-emerald-900 border-emerald-300"
+                              : "text-emerald-400 bg-emerald-500/10 border-emerald-500/30"
                               }`}
                           >
                             {allStageIngredients.length} Documented Ingredients
@@ -843,8 +921,8 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                             }
                             placeholder={`Filter ingredients in Stage 0${stageNum} (e.g. rice, ginger, spices)...`}
                             className={`w-full pl-8 pr-8 py-1.5 rounded-xl border text-xs font-medium outline-none transition-all focus:ring-1 focus:ring-amber-500 ${isLight
-                                ? "bg-amber-50/50 border-amber-900/15 text-slate-900 placeholder:text-slate-400"
-                                : "bg-slate-950/70 border-slate-800 text-white placeholder:text-slate-500"
+                              ? "bg-amber-50/50 border-amber-900/15 text-slate-900 placeholder:text-slate-400"
+                              : "bg-slate-950/70 border-slate-800 text-white placeholder:text-slate-500"
                               }`}
                           />
                           {ingredientFilters[stageNum] && (
@@ -877,10 +955,10 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                                   }));
                                 }}
                                 className={`group px-2.5 py-1 rounded-xl text-xs font-medium border flex items-center gap-1.5 transition-all duration-200 cursor-pointer ${isSelected
-                                    ? "bg-amber-500 text-slate-950 border-amber-400 shadow-md font-bold scale-105"
-                                    : isLight
-                                      ? "bg-amber-50/90 text-amber-950 border-amber-300/80 hover:bg-amber-100 hover:border-amber-400"
-                                      : "bg-slate-800/80 text-amber-100 border-slate-700 hover:bg-slate-750 hover:border-amber-500/50"
+                                  ? "bg-amber-500 text-slate-950 border-amber-400 shadow-md font-bold scale-105"
+                                  : isLight
+                                    ? "bg-amber-50/90 text-amber-950 border-amber-300/80 hover:bg-amber-100 hover:border-amber-400"
+                                    : "bg-slate-800/80 text-amber-100 border-slate-700 hover:bg-slate-750 hover:border-amber-500/50"
                                   }`}
                                 title={`Click to search upload images for ${ing}`}
                               >
@@ -900,8 +978,8 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                         {selectedIng && (
                           <div
                             className={`p-2 rounded-xl border flex items-center justify-between gap-2 text-xs animate-in fade-in duration-200 ${isLight
-                                ? "bg-amber-100/90 border-amber-300 text-amber-950"
-                                : "bg-amber-950/30 border-amber-800/40 text-amber-200"
+                              ? "bg-amber-100/90 border-amber-300 text-amber-950"
+                              : "bg-amber-950/30 border-amber-800/40 text-amber-200"
                               }`}
                           >
                             <div className="flex items-center gap-1.5 truncate">
@@ -924,103 +1002,23 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                     )}
 
                     {/* YouTube Recipe Link (below ingredients, at the end of Stage 3) */}
-                    {(dishId === "hyderabadi-biryani" ||
-                      dishId === "hyderabadi-haleem" ||
-                      dishId === "masala-dosa" ||
-                      dishId === "bisi-bele-bath" ||
-                      dishId === "indori-poha" ||
-                      dishId === "bhutte-ka-kees" ||
-                      dishId === "dal-bafla" ||
-                      dishId === "makki-di-roti-sarson-saag" ||
-                      dishId === "butter-chicken" ||
-                      dishId === "amritsari-kulcha" ||
-                      dishId === "vada-pav" ||
-                      dishId === "puran-poli" ||
-                      dishId === "dhokla" ||
-                      dishId === "undhiyu" ||
-                      dishId === "dal-baati-churma" ||
-                      dishId === "laal-maas" ||
-                      dishId === "pakhala" ||
-                      dishId === "chhena-poda" ||
-                      dishId === "dalma" ||
-                      dishId === "goan-fish-curry" ||
-                      dishId === "pork-vindaloo" ||
-                      dishId === "bebinca" ||
-                      dishId === "ghewar" ||
-                      dishId === "appam-stew" ||
-                      dishId === "fish-molee" ||
-                      dishId === "puttu" ||
-                      dishId === "siddu") &&
-                      stageNum === 3 && (
-                        <div className="pt-2 relative z-30 pointer-events-auto">
-                          <a
-                            href={
-                              dishId === "siddu"
-                                ? "https://www.youtube.com/watch?v=010fW1MqaVc"
-                                : dishId === "hyderabadi-haleem"
-                                ? "https://www.youtube.com/watch?v=dPpERMQzICs"
-                                : dishId === "masala-dosa"
-                                  ? "https://www.youtube.com/watch?v=e9XFHjdw3Cg"
-                                  : dishId === "bisi-bele-bath"
-                                    ? "https://www.youtube.com/watch?v=VEArdyBWvdw"
-                                    : dishId === "laal-maas"
-                                      ? "https://www.youtube.com/watch?v=xAhZZiZ5S50"
-                                      : dishId === "dal-baati-churma"
-                                        ? "https://www.youtube.com/watch?v=mZ4xTelTAGk"
-                                        : dishId === "ghewar"
-                                          ? "https://www.youtube.com/watch?v=Bh87si4LpLI"
-                                          : dishId === "undhiyu"
-                                            ? "https://youtu.be/76WP69qtDi8?si=pJ2OxBhrMlE4jino"
-                                            : dishId === "dhokla"
-                                              ? "https://youtu.be/w_2eb9uaXns?si=KIDHVXoEFHrjkhiR"
-                                              : dishId === "puran-poli"
-                                                ? "https://youtu.be/l7Efb-HjDPU?si=EscTTWw7kdAoJfmO"
-                                                : dishId === "vada-pav"
-                                                  ? "https://youtu.be/r4saZD0J_gU?si=5bMEbxfAfzxEhTd3"
-                                                  : dishId === "indori-poha"
-                                                    ? "https://youtu.be/XuttnylxuXY?si=ckFXqQLdjLIC2nCB"
-                                                    : dishId === "bhutte-ka-kees"
-                                                      ? "https://www.youtube.com/watch?v=ELuQxGELBgw"
-                                                      : dishId === "dal-bafla"
-                                                        ? "https://www.youtube.com/watch?v=3X0-I1GTOq0"
-                                                        : dishId === "makki-di-roti-sarson-saag"
-                                                          ? "https://youtu.be/-YpLF57Pnec?si=3h_Bvw7MUcU2QhTO"
-                                                          : dishId === "butter-chicken"
-                                                            ? "https://youtu.be/D_fYk8mBaF4?si=3DBkbxk0dzjxELBy"
-                                                            : dishId === "amritsari-kulcha"
-                                                              ? "https://www.youtube.com/watch?v=pbI8PkiSB8E"
-                                                              : dishId === "pakhala"
-                                                                ? "https://www.youtube.com/watch?v=9kjc-JMFJo8"
-                                                                : dishId === "chhena-poda"
-                                                                  ? "https://www.youtube.com/watch?v=5g8hrU7sJPg"
-                                                                  : dishId === "dalma"
-                                                                    ? "https://www.youtube.com/watch?v=DKYz5RO1gJQ"
-                                                                    : dishId === "goan-fish-curry"
-                                                                      ? "https://www.youtube.com/watch?v=6Tme3rLiFzg&t=2s"
-                                                                      : dishId === "pork-vindaloo"
-                                                                        ? "https://www.youtube.com/watch?v=VZ7grmNSN_M"
-                                                                        : dishId === "bebinca"
-                                                                          ? "https://www.youtube.com/watch?v=Rg0EAnr21X0"
-                                                                          : dishId === "appam-stew"
-                                                                            ? "https://www.youtube.com/watch?v=pDyRKvvFiYc"
-                                                                            : dishId === "fish-molee"
-                                                                              ? "https://www.youtube.com/watch?v=UzrlIEGr-lw"
-                                                                              : dishId === "puttu"
-                                                                                ? "https://www.youtube.com/watch?v=XeUA3niRw8A&t=1s"
-                                                                                : "https://www.youtube.com/watch?v=8Fw_zWPbGog"
-                            }
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={`inline-flex items-center gap-1.5 text-xs font-semibold underline underline-offset-4 decoration-dotted transition-colors ${isLight
-                                ? "text-amber-800 hover:text-amber-950 decoration-amber-800/60"
-                                : "text-amber-400 hover:text-amber-300 decoration-amber-400/60"
-                              }`}
-                          >
-                            <ExternalLink className="w-3.5 h-3.5" />
-                            <span>Watch the full recipe on YouTube</span>
-                          </a>
-                        </div>
-                      )}
+                    {stageNum === 3 && getDishYoutubeRecipe(dishId) && (
+                      <div className="pt-2 relative z-30 pointer-events-auto">
+                        <a
+                          href={getDishYoutubeRecipe(dishId)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`inline-flex items-center gap-1.5 text-xs font-semibold underline underline-offset-4 decoration-dotted transition-colors ${
+                            isLight
+                              ? "text-amber-800 hover:text-amber-950 decoration-amber-800/60"
+                              : "text-amber-400 hover:text-amber-300 decoration-amber-400/60"
+                          }`}
+                        >
+                          <ExternalLink className="w-3.5 h-3.5" />
+                          <span>Watch the full recipe on YouTube</span>
+                        </a>
+                      </div>
+                    )}
 
                     {/* Scholarly Citation Link */}
                     <div

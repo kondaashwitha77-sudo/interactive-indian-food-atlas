@@ -123,20 +123,45 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
   {
     "id": "info-3",
     "dishId": "pondicherry-fish-curry",
-    "title": "Pondicherry Creole Fish Curry",
+    "title": "Pondicherry Fish Curry — Origin (Birth of the food)",
     "subtitle": "Franco-Tamil coastal culinary heritage and slow coconut-tamarind reduction",
-    "era": "Contemporary / Present",
+    "era": "Birth of the food",
+    "image": "/images_updated/a_colorful_detailed_infographic_poster_for_pondi.png",
+    "isFullTimelinePoster": true,
+    "stageNumber": 1,
+    "ingredients": []
+  },
+  {
+    "id": "info-3-evolution",
+    "dishId": "pondicherry-fish-curry",
+    "title": "Pondicherry Fish Curry — Evolution of Food",
+    "subtitle": "Shifts in manpanai clay pots to modern pans, open embers, and artisanal Vadouvan seasoning",
+    "era": "Evolution of Food",
+    "image": "/images_updated/a_colorful_detailed_infographic_poster_for_pondi.png",
+    "isFullTimelinePoster": true,
+    "stageNumber": 2,
+    "ingredients": []
+  },
+  {
+    "id": "info-3-recipe",
+    "dishId": "pondicherry-fish-curry",
+    "title": "Pondicherry Fish Curry — Recipe",
+    "subtitle": "10 key ingredients and 8 simple steps for authentic Franco-Tamil Creole fish curry",
+    "era": "Recipe",
     "image": "/images_updated/a_colorful_detailed_infographic_poster_for_pondi.png",
     "isFullTimelinePoster": true,
     "stageNumber": 3,
     "ingredients": [
-      "Seer fish",
-      "Fresh coconut milk",
-      "Tamarind",
-      "Fenugreek",
-      "Aniseed",
-      "Vadouvan spices",
-      "Curry leaves"
+      "seer fish steaks (or kingfish)",
+      "fresh thick coconut milk",
+      "tangy tamarind extract",
+      "Franco-Tamil Vadouvan spice blend",
+      "pearl shallots (sambhar onions)",
+      "crushed garlic and ginger",
+      "fenugreek seeds and mustard seeds",
+      "fresh curry leaves and green chillies",
+      "Kashmiri chilli and turmeric powder",
+      "cold-pressed gingelly or coconut oil"
     ]
   },
   {
@@ -166,10 +191,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 3,
     "ingredients": [
-      "Hill-cow milk khoya",
-      "Cane sugar",
-      "Small sugar-coated beads (Khas-khas dana)",
-      "Pure ghee"
+      "Pure full-fat cow milk khoya (mawa)",
+      "Granulated cane sugar",
+      "Water (for syrup)",
+      "Cardamom powder",
+      "Pure desi cow ghee",
+      "Tiny white sugar-coated confectionery globules (khas-khas dana)",
+      "Light sugar syrup (chashni for glazing)",
+      "Buffalo milk mawa (occasional firming blend)",
+      "Rose water or kewra extract (subtle aroma)",
+      "Nutmeg powder (subtle warm undertone)"
     ]
   },
   {
@@ -218,13 +249,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": true,
     "stageNumber": 2,
     "ingredients": [
-      "Mutton shank & bone marrow",
-      "Wheat flour (Atta)",
-      "Ghee",
-      "Fried onions",
-      "Ginger juliennes",
-      "Potli spices",
-      "Kewra water"
+      "Mutton or beef shank cuts (bong) with bone marrow (nalli)",
+      "Pure desi ghee or mustard oil",
+      "Finely sliced onions (browned to golden crispness)",
+      "Ginger-garlic paste",
+      "Roasted whole-wheat flour or besan slurry (aalam)",
+      "Nihari potli spice blend (mace, nutmeg, star anise, pipli, cloves)",
+      "Kashmiri red chilli powder and turmeric",
+      "Coriander powder and fennel powder (saunf)",
+      "Fresh julienned ginger and chopped green chillies",
+      "Fresh coriander leaves and juicy lemon wedges"
     ]
   },
   {
@@ -275,11 +309,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": true,
     "stageNumber": 2,
     "ingredients": [
-      "Hilsa fish (Ilish)",
-      "Black and yellow mustard seeds",
-      "Cold-pressed mustard oil",
-      "Slit green chillies",
-      "Turmeric powder"
+      "Fresh Hilsa (Ilish) fish steaks",
+      "Yellow mustard seeds (shorshe)",
+      "Black mustard seeds (rai)",
+      "Pure cold-pressed mustard oil (kachi ghani shorsher tel)",
+      "Fresh green chillies (slit lengthwise)",
+      "Nigella seeds (kalo jeere)",
+      "Turmeric powder (holud)",
+      "Rock salt or sea salt",
+      "Water (to adjust gravy consistency)",
+      "Whisked curd or sour cream (optional variant in some family styles)"
     ]
   },
   {
@@ -345,11 +384,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 1,
     "ingredients": [
-      "Hilsa fish (Ilish)",
-      "Black and yellow mustard seeds",
-      "Cold-pressed mustard oil",
-      "Slit green chillies",
-      "Turmeric powder"
+      "Fresh Hilsa (Ilish) fish steaks",
+      "Yellow mustard seeds (shorshe)",
+      "Black mustard seeds (rai)",
+      "Pure cold-pressed mustard oil (kachi ghani shorsher tel)",
+      "Fresh green chillies (slit lengthwise)",
+      "Nigella seeds (kalo jeere)",
+      "Turmeric powder (holud)",
+      "Rock salt or sea salt",
+      "Water (to adjust gravy consistency)",
+      "Whisked curd or sour cream (optional variant in some family styles)"
     ]
   },
   {
@@ -362,10 +406,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Full-cream milk",
-      "Date palm jaggery (Nolen gur)",
-      "Active yoghurt culture",
-      "Terracotta earthen pot"
+      "Full-fat cow and buffalo milk",
+      "Granulated cane sugar (for caramelization)",
+      "Date palm jaggery (nolen gur - seasonal winter variant)",
+      "Active plain starter curd (tok doi / culture)",
+      "Crushed green cardamom pods",
+      "Porous unglazed terracotta earthen pots (bhar / matka)",
+      "Water (splash for melting caramel)",
+      "Full cream (malai - added for extra richness)",
+      "Bay leaf (boiled briefly during reduction in traditional homes)",
+      "Crushed pistachios or saffron strands (occasional festive garnish)"
     ]
   },
   {
@@ -378,12 +428,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": true,
     "stageNumber": 3,
     "ingredients": [
-      "Whole wheat flour",
-      "Spiced urad dal paste",
-      "Baby potatoes",
-      "Asafoetida (Hing)",
-      "Fenugreek seeds",
-      "Mustard oil"
+      "Whole wheat flour (atta) and fine semolina (sooji)",
+      "Split black gram (urad dal, soaked and coarsely ground)",
+      "Boiled unpeeled potatoes (aloo)",
+      "Pure desi ghee or mustard oil (for dough and frying)",
+      "Strong asafoetida (hing)",
+      "Fenugreek seeds (methi dana) and cumin seeds",
+      "Coarse fennel seeds (saunf) and coriander powder",
+      "Dry mango powder (amchur) and fresh ginger",
+      "Fresh green chillies and red chilli powder",
+      "Rock salt and chopped fresh coriander"
     ]
   },
   {
@@ -396,12 +450,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": true,
     "stageNumber": 3,
     "ingredients": [
-      "Mountain spinach",
-      "Fenugreek leaves",
-      "Rice flour paste",
-      "Jakhiya seeds (Wild mustard)",
-      "Mustard oil",
-      "Garlic"
+      "Fresh spinach leaves (palak)",
+      "Fresh fenugreek leaves (methi)",
+      "Mountain Cleome seeds (jakhiya)",
+      "Cold-pressed mustard oil",
+      "Rice paste or roasted rice flour (aalam)",
+      "Garlic cloves",
+      "Fresh ginger root",
+      "Green chillies",
+      "Turmeric powder and coriander powder",
+      "Asafoetida (hing) and rock salt"
     ]
   },
   {
@@ -414,11 +472,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": true,
     "stageNumber": 3,
     "ingredients": [
-      "Raw green papaya",
-      "Potli masala (160 spices)",
-      "Pure desi ghee",
-      "Rose water",
-      "Saffron"
+      "Finely minced mutton or lamb",
+      "Raw green papaya paste (natural tenderizer)",
+      "Roasted gram flour (bhuna besan)",
+      "Awadhi potli masala (cardamom, mace, nutmeg, star anise)",
+      "Pure desi cow ghee",
+      "Fried brown onion paste (birista)",
+      "Fresh ginger-garlic paste",
+      "Kewra and rose water with saffron strands",
+      "Kashmiri red chilli powder and rock salt",
+      "Live charcoal and cloves (for dhungar smoke infusion)"
     ]
   },
   {
@@ -475,12 +538,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": true,
     "stageNumber": 1,
     "ingredients": [
-      "River fish",
-      "Berma (Fermented fish paste)",
-      "Green chillies",
-      "Garlic",
-      "Wild coriander",
-      "Lemon basil"
+      "Fresh local river fish (chanda or rohu steaks)",
+      "Berma (traditional fermented dried fish paste)",
+      "Fresh green hill chillies",
+      "Fresh ginger paste",
+      "Crushed garlic cloves",
+      "Wild coriander leaves (khundrupwi)",
+      "Fresh lemon basil leaves",
+      "Tender seasonal vegetables (eggplant or bamboo shoots)",
+      "Pinch of turmeric powder",
+      "Sea salt and spring water"
     ]
   },
   {
@@ -528,13 +595,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": true,
     "stageNumber": 2,
     "ingredients": [
-      "Crisp papdi wafers",
-      "Boiled potatoes",
-      "Whisked sweetened curd",
-      "Tamarind chutney",
-      "Mint-coriander chutney",
-      "Chaat masala",
-      "Pomegranate"
+      "Crisp fried flour crackers (papdis made with maida and ajwain)",
+      "Boiled and diced potatoes (aloo)",
+      "Boiled white chickpeas or sprouted moong (kabuli chana)",
+      "Thick chilled whisked curd (dahi sweetened with sugar)",
+      "Tangy sweet tamarind-jaggery chutney (saunth with dry ginger)",
+      "Spicy fresh green mint-coriander chutney",
+      "Roasted cumin powder (bhuna jeera)",
+      "Black salt (kala namak) and red chilli powder",
+      "Crisp gram-flour sev (nylon sev)",
+      "Fresh pomegranate arils and finely chopped coriander"
     ]
   },
   {
@@ -565,10 +635,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": true,
     "stageNumber": 2,
     "ingredients": [
-      "Full-cream milk",
-      "Date palm jaggery (Nolen gur)",
-      "Active yoghurt culture",
-      "Terracotta earthen pot"
+      "Full-fat cow and buffalo milk",
+      "Granulated cane sugar (for caramelization)",
+      "Date palm jaggery (nolen gur - seasonal winter variant)",
+      "Active plain starter curd (tok doi / culture)",
+      "Crushed green cardamom pods",
+      "Porous unglazed terracotta earthen pots (bhar / matka)",
+      "Water (splash for melting caramel)",
+      "Full cream (malai - added for extra richness)",
+      "Bay leaf (boiled briefly during reduction in traditional homes)",
+      "Crushed pistachios or saffron strands (occasional festive garnish)"
     ]
   },
   {
@@ -581,11 +657,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": true,
     "stageNumber": 1,
     "ingredients": [
-      "Raw green papaya",
-      "Potli masala (160 spices)",
-      "Pure desi ghee",
-      "Rose water",
-      "Saffron"
+      "Finely minced mutton or lamb",
+      "Raw green papaya paste (natural tenderizer)",
+      "Roasted gram flour (bhuna besan)",
+      "Awadhi potli masala (cardamom, mace, nutmeg, star anise)",
+      "Pure desi cow ghee",
+      "Fried brown onion paste (birista)",
+      "Fresh ginger-garlic paste",
+      "Kewra and rose water with saffron strands",
+      "Kashmiri red chilli powder and rock salt",
+      "Live charcoal and cloves (for dhungar smoke infusion)"
     ]
   },
   {
@@ -598,12 +679,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": true,
     "stageNumber": 2,
     "ingredients": [
-      "Whole wheat flour",
-      "Spiced urad dal paste",
-      "Baby potatoes",
-      "Asafoetida (Hing)",
-      "Fenugreek seeds",
-      "Mustard oil"
+      "Whole wheat flour (atta) and fine semolina (sooji)",
+      "Split black gram (urad dal, soaked and coarsely ground)",
+      "Boiled unpeeled potatoes (aloo)",
+      "Pure desi ghee or mustard oil (for dough and frying)",
+      "Strong asafoetida (hing)",
+      "Fenugreek seeds (methi dana) and cumin seeds",
+      "Coarse fennel seeds (saunf) and coriander powder",
+      "Dry mango powder (amchur) and fresh ginger",
+      "Fresh green chillies and red chilli powder",
+      "Rock salt and chopped fresh coriander"
     ]
   },
   {
@@ -616,11 +701,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": true,
     "stageNumber": 2,
     "ingredients": [
-      "Raw green papaya",
-      "Potli masala (160 spices)",
-      "Pure desi ghee",
-      "Rose water",
-      "Saffron"
+      "Finely minced mutton or lamb",
+      "Raw green papaya paste (natural tenderizer)",
+      "Roasted gram flour (bhuna besan)",
+      "Awadhi potli masala (cardamom, mace, nutmeg, star anise)",
+      "Pure desi cow ghee",
+      "Fried brown onion paste (birista)",
+      "Fresh ginger-garlic paste",
+      "Kewra and rose water with saffron strands",
+      "Kashmiri red chilli powder and rock salt",
+      "Live charcoal and cloves (for dhungar smoke infusion)"
     ]
   },
   {
@@ -633,10 +723,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": true,
     "stageNumber": 2,
     "ingredients": [
-      "Hill-cow milk khoya",
-      "Cane sugar",
-      "Small sugar-coated beads (Khas-khas dana)",
-      "Pure ghee"
+      "Pure full-fat cow milk khoya (mawa)",
+      "Granulated cane sugar",
+      "Water (for syrup)",
+      "Cardamom powder",
+      "Pure desi cow ghee",
+      "Tiny white sugar-coated confectionery globules (khas-khas dana)",
+      "Light sugar syrup (chashni for glazing)",
+      "Buffalo milk mawa (occasional firming blend)",
+      "Rose water or kewra extract (subtle aroma)",
+      "Nutmeg powder (subtle warm undertone)"
     ]
   },
   {
@@ -732,160 +828,199 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
   {
     "id": "info-40",
     "dishId": "thukpa",
-    "title": "Thukpa — 1800s Traditional Guide",
-    "subtitle": "Documented culinary technique, ingredients and preparation method for Thukpa",
-    "era": "1800s Traditional",
+    "title": "Thukpa — Origin (Birth of the food)",
+    "subtitle": "High-altitude Tibetan noodle soup crossing Himalayan trade routes into Arunachal Pradesh",
+    "era": "Birth of the food",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.43.05 PM.jpeg",
-    "isFullTimelinePoster": false,
+    "isFullTimelinePoster": true,
     "stageNumber": 1,
+    "ingredients": []
+  },
+  {
+    "id": "info-40-evolution",
+    "dishId": "thukpa",
+    "title": "Thukpa — Evolution of Food",
+    "subtitle": "Shifts in broth simmering, clay pots to stockpots, mountain fuel, and noodles",
+    "era": "Evolution of Food",
+    "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.43.05 PM.jpeg",
+    "isFullTimelinePoster": true,
+    "stageNumber": 2,
+    "ingredients": []
+  },
+  {
+    "id": "info-40-recipe",
+    "dishId": "thukpa",
+    "title": "Thukpa — Recipe",
+    "subtitle": "10 key ingredients and 8 simple steps for authentic Himalayan Thukpa",
+    "era": "Recipe",
+    "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.43.05 PM.jpeg",
+    "isFullTimelinePoster": true,
+    "stageNumber": 3,
     "ingredients": [
-      "Handmade wheat noodles",
-      "Mountain vegetables",
-      "Yak/pork broth",
-      "Ginger",
-      "Garlic",
-      "Sichuan pepper"
+      "handmade wheat noodles",
+      "chicken or pork",
+      "fresh ginger",
+      "mountain garlic",
+      "sliced onions",
+      "shredded cabbage and carrots",
+      "rich meat or vegetable stock",
+      "Sichuan pepper (yer ma)",
+      "spring onions",
+      "mustard oil"
     ]
   },
   {
     "id": "info-41",
     "dishId": "dohneiiong",
     "title": "Dohneiion-c.1800 Recipe",
-    "subtitle": "Early Manipuri Greens Stew (Traditional Version)",
+    "subtitle": "Traditional Khasi Pork Braised with Black Sesame (Nei-iong)",
     "era": "1800s Traditional",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.44.17 PM.jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 1,
     "ingredients": [
-      "Pork",
-      "Black sesame seeds (Neiiong)",
-      "Garlic",
-      "Ginger",
-      "Mustard oil",
-      "Green chillies"
+      "Fresh pork with fat and skin intact (doh sniang)",
+      "Indigenous black sesame seeds (nei-iong)",
+      "Cold-pressed mustard oil",
+      "Finely sliced onions",
+      "Freshly pounded ginger paste",
+      "Freshly pounded garlic paste",
+      "Green chillies (slit lengthwise)",
+      "Lakadong turmeric powder",
+      "Freshly ground black pepper",
+      "Warm water (for adjusting gravy consistency)"
     ]
   },
   {
     "id": "info-42",
     "dishId": "dohneiiong",
     "title": "Dohneiiong — 1900s Early Modern Guide",
-    "subtitle": "Documented culinary technique, ingredients and preparation method for Dohneiiong",
+    "subtitle": "Traditional Khasi Pork Braised with Black Sesame (Nei-iong)",
     "era": "1900s Early Modern",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.45.14 PM.jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Pork",
-      "Black sesame seeds (Neiiong)",
-      "Garlic",
-      "Ginger",
-      "Mustard oil",
-      "Green chillies"
+      "Fresh pork with fat and skin intact (doh sniang)",
+      "Indigenous black sesame seeds (nei-iong)",
+      "Cold-pressed mustard oil",
+      "Finely sliced onions",
+      "Freshly pounded ginger paste",
+      "Freshly pounded garlic paste",
+      "Green chillies (slit lengthwise)",
+      "Lakadong turmeric powder",
+      "Freshly ground black pepper",
+      "Warm water (for adjusting gravy consistency)"
     ]
   },
   {
     "id": "info-43",
     "dishId": "dohneiiong",
     "title": "Dohneiiong — Heritage & Evolution Guide",
-    "subtitle": "Documented culinary technique, ingredients and preparation method for Dohneiiong",
+    "subtitle": "Traditional Khasi Pork Braised with Black Sesame (Nei-iong)",
     "era": "Heritage & Evolution",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.45.58 PM.jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Pork",
-      "Black sesame seeds (Neiiong)",
-      "Garlic",
-      "Ginger",
-      "Mustard oil",
-      "Green chillies"
+      "Fresh pork with fat and skin intact (doh sniang)",
+      "Indigenous black sesame seeds (nei-iong)",
+      "Cold-pressed mustard oil",
+      "Finely sliced onions",
+      "Freshly pounded ginger paste",
+      "Freshly pounded garlic paste",
+      "Green chillies (slit lengthwise)",
+      "Lakadong turmeric powder",
+      "Freshly ground black pepper",
+      "Warm water (for adjusting gravy consistency)"
     ]
   },
   {
     "id": "info-44",
     "dishId": "dohneiiong",
     "title": "Dohneiion -c.1900 Recipe",
-    "subtitle": "Manipuri Greens Stew (Early 20th Century Version)",
+    "subtitle": "Traditional Khasi Pork Braised with Black Sesame (Nei-iong)",
     "era": "1900s Early Modern",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.46.07 PM.jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Pork",
-      "Black sesame seeds (Neiiong)",
-      "Garlic",
-      "Ginger",
-      "Mustard oil",
-      "Green chillies"
+      "Fresh pork with fat and skin intact (doh sniang)",
+      "Indigenous black sesame seeds (nei-iong)",
+      "Cold-pressed mustard oil",
+      "Finely sliced onions",
+      "Freshly pounded ginger paste",
+      "Freshly pounded garlic paste",
+      "Green chillies (slit lengthwise)",
+      "Lakadong turmeric powder",
+      "Freshly ground black pepper",
+      "Warm water (for adjusting gravy consistency)"
     ]
   },
   {
     "id": "info-45",
     "dishId": "bamboo-shoot-pork",
-    "title": "Bamboo Shoot Pork — 1800s Traditional Guide",
-    "subtitle": "Traditional Naga smoked pork stew with fermented bamboo shoots and wild herbs",
-    "era": "1800s Traditional",
+    "title": "Bamboo Shoot Pork — Origin (Birth of the food)",
+    "subtitle": "Ancestral tribal hearth cookery and pit-fermented bamboo shoots (ekung) of Arunachal Pradesh",
+    "era": "Birth of the food",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.46.28 PM.jpeg",
-    "isFullTimelinePoster": false,
+    "isFullTimelinePoster": true,
     "stageNumber": 1,
-    "ingredients": [
-      "Fresh bamboo shoots",
-      "Country pork",
-      "Bird's eye chilli",
-      "Wild garlic",
-      "Ginger"
-    ]
+    "ingredients": []
   },
   {
     "id": "info-46",
     "dishId": "bamboo-shoot-pork",
-    "title": "Bamboo Shoot Pork — Heritage & Evolution Guide",
-    "subtitle": "Documented culinary technique, ingredients and preparation method for Bamboo Shoot Pork",
-    "era": "Heritage & Evolution",
+    "title": "Bamboo Shoot Pork — Evolution of Food",
+    "subtitle": "Shifts from green bamboo tubes and hearth wood fires to modern iron kadhais, gas burners, and pressure cookers",
+    "era": "Evolution of Food",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.46.59 PM.jpeg",
-    "isFullTimelinePoster": false,
+    "isFullTimelinePoster": true,
     "stageNumber": 2,
-    "ingredients": [
-      "Fresh bamboo shoots",
-      "Country pork",
-      "Bird's eye chilli",
-      "Wild garlic",
-      "Ginger"
-    ]
+    "ingredients": []
   },
   {
     "id": "info-47",
     "dishId": "bamboo-shoot-pork",
-    "title": "Bamboo Shoot Pork — Contemporary Recipe",
-    "subtitle": "Contemporary Naga pork preparation with bamboo shoots and King Chilli (Bhut Jolokia)",
-    "era": "Contemporary / Present",
+    "title": "Bamboo Shoot Pork — Recipe",
+    "subtitle": "10 key ingredients and 8 simple steps for authentic Arunachal tribal bamboo shoot pork",
+    "era": "Recipe",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.47.48 PM.jpeg",
-    "isFullTimelinePoster": false,
+    "isFullTimelinePoster": true,
     "stageNumber": 3,
     "ingredients": [
-      "Fresh bamboo shoots",
-      "Country pork",
-      "Bird's eye chilli",
-      "Wild garlic",
-      "Ginger"
+      "pork belly or country pork",
+      "fermented bamboo shoots (ekung)",
+      "fresh ginger",
+      "mountain garlic",
+      "fiery King Chilli or bird's eye chillies",
+      "wild mountain coriander",
+      "spring onions or wild greens",
+      "rock salt or indigenous tapyo salt",
+      "mustard oil",
+      "warm water"
     ]
   },
   {
     "id": "info-48",
     "dishId": "dohneiiong",
     "title": "Dohneiion - Present Recipe",
-    "subtitle": "Modern Manipuri Greens Stew (Dohneion)",
+    "subtitle": "Traditional Khasi Pork Braised with Black Sesame (Nei-iong)",
     "era": "Contemporary / Present",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.47.53 PM.jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 3,
     "ingredients": [
-      "Pork",
-      "Black sesame seeds (Neiiong)",
-      "Garlic",
-      "Ginger",
-      "Mustard oil",
-      "Green chillies"
+      "Fresh pork with fat and skin intact (doh sniang)",
+      "Indigenous black sesame seeds (nei-iong)",
+      "Cold-pressed mustard oil",
+      "Finely sliced onions",
+      "Freshly pounded ginger paste",
+      "Freshly pounded garlic paste",
+      "Green chillies (slit lengthwise)",
+      "Lakadong turmeric powder",
+      "Freshly ground black pepper",
+      "Warm water (for adjusting gravy consistency)"
     ]
   },
   {
@@ -945,39 +1080,45 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
   {
     "id": "info-52",
     "dishId": "litti-chokha",
-    "title": "Litti Chokha — 1800s Traditional Guide",
-    "subtitle": "Documented culinary technique, ingredients and preparation method for Litti Chokha",
-    "era": "1800s Traditional",
+    "title": "Litti Chokha — Origin (Birth of the food)",
+    "subtitle": "Ancient Magadha travel sustenance and pastoral cow-dung ember roasting in Bihar",
+    "era": "Birth of the food",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.50.39 PM.jpeg",
-    "isFullTimelinePoster": false,
+    "isFullTimelinePoster": true,
     "stageNumber": 1,
-    "ingredients": [
-      "Whole wheat flour",
-      "Roasted sattu",
-      "Cow ghee",
-      "Ajwain",
-      "Kalonji",
-      "Smoked brinjal",
-      "Mustard oil"
-    ]
+    "ingredients": []
   },
   {
-    "id": "info-53",
+    "id": "info-52-evolution",
     "dishId": "litti-chokha",
-    "title": "Litti Chokha — 1900s Early Modern Guide",
-    "subtitle": "Documented culinary technique, ingredients and preparation method for Litti Chokha",
-    "era": "1900s Early Modern",
+    "title": "Litti Chokha — Evolution of Food",
+    "subtitle": "Shifts from village goitha embers to domestic gas tandoors, convection ovens, and street carts",
+    "era": "Evolution of Food",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.51.17 PM.jpeg",
-    "isFullTimelinePoster": false,
+    "isFullTimelinePoster": true,
     "stageNumber": 2,
+    "ingredients": []
+  },
+  {
+    "id": "info-52-recipe",
+    "dishId": "litti-chokha",
+    "title": "Litti Chokha — Recipe",
+    "subtitle": "10 key ingredients and 8 simple steps for authentic Bihari Litti Chokha",
+    "era": "Recipe",
+    "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.50.39 PM.jpeg",
+    "isFullTimelinePoster": true,
+    "stageNumber": 3,
     "ingredients": [
-      "Whole wheat flour",
-      "Roasted sattu",
-      "Cow ghee",
-      "Ajwain",
-      "Kalonji",
-      "Smoked brinjal",
-      "Mustard oil"
+      "whole wheat flour (atta)",
+      "roasted gram flour (sattu)",
+      "large purple eggplant (baingan)",
+      "ripe country tomatoes & potatoes",
+      "pure desi cow ghee",
+      "pungent cold-pressed mustard oil",
+      "ajwain (carom) & kalonji (nigella seeds)",
+      "fresh garlic, ginger & green chillies",
+      "stuffed red chilli pickle masala",
+      "fresh coriander leaves & black rock salt"
     ]
   },
   {
@@ -990,11 +1131,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 1,
     "ingredients": [
-      "Wild mustard greens",
-      "Fermented bamboo shoots",
-      "Pork skin / Smoked meat",
-      "Alkaline cooking soda",
-      "Salt"
+      "Fresh mustard greens (lai pat)",
+      "Fermented bamboo shoot (rawtuai)",
+      "Pork rind or smoked pork pieces",
+      "Local green beans or eggplant",
+      "Natural alkaline extract (chingal) or cooking soda",
+      "Fresh ginger root",
+      "Fresh green hill chillies",
+      "Local aromatic herbs",
+      "Sea salt",
+      "Filtered spring water"
     ]
   },
   {
@@ -1007,11 +1153,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Wild mustard greens",
-      "Fermented bamboo shoots",
-      "Pork skin / Smoked meat",
-      "Alkaline cooking soda",
-      "Salt"
+      "Fresh mustard greens (lai pat)",
+      "Fermented bamboo shoot (rawtuai)",
+      "Pork rind or smoked pork pieces",
+      "Local green beans or eggplant",
+      "Natural alkaline extract (chingal) or cooking soda",
+      "Fresh ginger root",
+      "Fresh green hill chillies",
+      "Local aromatic herbs",
+      "Sea salt",
+      "Filtered spring water"
     ]
   },
   {
@@ -1024,29 +1175,60 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Wild mustard greens",
-      "Fermented bamboo shoots",
-      "Pork skin / Smoked meat",
-      "Alkaline cooking soda",
-      "Salt"
+      "Fresh mustard greens (lai pat)",
+      "Fermented bamboo shoot (rawtuai)",
+      "Pork rind or smoked pork pieces",
+      "Local green beans or eggplant",
+      "Natural alkaline extract (chingal) or cooking soda",
+      "Fresh ginger root",
+      "Fresh green hill chillies",
+      "Local aromatic herbs",
+      "Sea salt",
+      "Filtered spring water"
     ]
   },
   {
     "id": "info-57",
     "dishId": "thekua",
-    "title": "Thekua — 1800s Traditional Guide",
-    "subtitle": "Documented culinary technique, ingredients and preparation method for Thekua",
-    "era": "1800s Traditional",
+    "title": "Thekua — Origin (Birth of the food)",
+    "subtitle": "Ancient Vedic Sun-worship traditions and Chhath Puja mahaprasad in Bihar",
+    "era": "Birth of the food",
     "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.53.06 PM.jpeg",
-    "isFullTimelinePoster": false,
+    "isFullTimelinePoster": true,
     "stageNumber": 1,
+    "ingredients": []
+  },
+  {
+    "id": "info-57-evolution",
+    "dishId": "thekua",
+    "title": "Thekua — Evolution of Food",
+    "subtitle": "Shifts from earthen chulhas and wooden saancha to modern domestic stoves and air fryers",
+    "era": "Evolution of Food",
+    "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.53.06 PM.jpeg",
+    "isFullTimelinePoster": true,
+    "stageNumber": 2,
+    "ingredients": []
+  },
+  {
+    "id": "info-57-recipe",
+    "dishId": "thekua",
+    "title": "Thekua — Recipe",
+    "subtitle": "10 key ingredients and 8 simple steps for authentic Bihari festive Thekua",
+    "era": "Recipe",
+    "image": "/images_updated/WhatsApp Image 2026-11-03 at 10.53.06 PM.jpeg",
+    "isFullTimelinePoster": true,
+    "stageNumber": 3,
     "ingredients": [
-      "Whole wheat flour",
-      "Sugarcane jaggery",
-      "Ghee",
-      "Fennel seeds",
-      "Dry coconut",
-      "Cardamom"
+      "coarse whole wheat flour (atta)",
+      "sugarcane jaggery (gur)",
+      "pure desi cow ghee",
+      "dry coconut slices (sukha nariyal)",
+      "fennel seeds (saunf)",
+      "green cardamom powder",
+      "semolina (sooji)",
+      "white sesame seeds",
+      "filtered warm water",
+      "ghee or oil for deep frying"
     ]
   },
   {
@@ -1059,11 +1241,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 3,
     "ingredients": [
-      "Wild mustard greens",
-      "Fermented bamboo shoots",
-      "Pork skin / Smoked meat",
-      "Alkaline cooking soda",
-      "Salt"
+      "Fresh mustard greens (lai pat)",
+      "Fermented bamboo shoot (rawtuai)",
+      "Pork rind or smoked pork pieces",
+      "Local green beans or eggplant",
+      "Natural alkaline extract (chingal) or cooking soda",
+      "Fresh ginger root",
+      "Fresh green hill chillies",
+      "Local aromatic herbs",
+      "Sea salt",
+      "Filtered spring water"
     ]
   },
   {
@@ -1076,11 +1263,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Wild mustard greens",
-      "Fermented bamboo shoots",
-      "Pork skin / Smoked meat",
-      "Alkaline cooking soda",
-      "Salt"
+      "Fresh mustard greens (lai pat)",
+      "Fermented bamboo shoot (rawtuai)",
+      "Pork rind or smoked pork pieces",
+      "Local green beans or eggplant",
+      "Natural alkaline extract (chingal) or cooking soda",
+      "Fresh ginger root",
+      "Fresh green hill chillies",
+      "Local aromatic herbs",
+      "Sea salt",
+      "Filtered spring water"
     ]
   },
   {
@@ -1093,11 +1285,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 3,
     "ingredients": [
-      "Wild mustard greens",
-      "Fermented bamboo shoots",
-      "Pork skin / Smoked meat",
-      "Alkaline cooking soda",
-      "Salt"
+      "Fresh mustard greens (lai pat)",
+      "Fermented bamboo shoot (rawtuai)",
+      "Pork rind or smoked pork pieces",
+      "Local green beans or eggplant",
+      "Natural alkaline extract (chingal) or cooking soda",
+      "Fresh ginger root",
+      "Fresh green hill chillies",
+      "Local aromatic herbs",
+      "Sea salt",
+      "Filtered spring water"
     ]
   },
   {
@@ -1110,11 +1307,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 1,
     "ingredients": [
-      "Indigenous sticky rice",
-      "Country chicken / Pork",
-      "Crushed ginger",
+      "Indigenous short-grain hill rice",
+      "Bone-in country pork or chicken",
+      "Crushed fresh ginger root",
       "Garlic cloves",
-      "Black peppercorns"
+      "Fresh green hill chillies",
+      "Crushed wild black peppercorns",
+      "Mustard leaves (for finishing)",
+      "Filtered spring water",
+      "Pure lard or drop of mustard oil",
+      "Sea salt"
     ]
   },
   {
@@ -1127,12 +1329,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 1,
     "ingredients": [
-      "Rice batter",
-      "Urad dal",
-      "Sesame seeds",
-      "Green chillies",
-      "Coriander",
-      "Mustard oil"
+      "Rice flour (chawal ka atta)",
+      "Filtered water",
+      "Cumin seeds (jeera)",
+      "Finely chopped green chillies",
+      "Finely chopped fresh coriander",
+      "Finely chopped onions (optional)",
+      "White sesame seeds (til)",
+      "Mustard oil or ghee (for roasting)",
+      "Rock salt (sendha namak)",
+      "Roasted tomato and green garlic chutney (for serving)"
     ]
   },
   {
@@ -1145,12 +1351,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Rice batter",
-      "Urad dal",
-      "Sesame seeds",
-      "Green chillies",
-      "Coriander",
-      "Mustard oil"
+      "Rice flour (chawal ka atta)",
+      "Filtered water",
+      "Cumin seeds (jeera)",
+      "Finely chopped green chillies",
+      "Finely chopped fresh coriander",
+      "Finely chopped onions (optional)",
+      "White sesame seeds (til)",
+      "Mustard oil or ghee (for roasting)",
+      "Rock salt (sendha namak)",
+      "Roasted tomato and green garlic chutney (for serving)"
     ]
   },
   {
@@ -1163,12 +1373,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 3,
     "ingredients": [
-      "Rice batter",
-      "Urad dal",
-      "Sesame seeds",
-      "Green chillies",
-      "Coriander",
-      "Mustard oil"
+      "Rice flour (chawal ka atta)",
+      "Filtered water",
+      "Cumin seeds (jeera)",
+      "Finely chopped green chillies",
+      "Finely chopped fresh coriander",
+      "Finely chopped onions (optional)",
+      "White sesame seeds (til)",
+      "Mustard oil or ghee (for roasting)",
+      "Rock salt (sendha namak)",
+      "Roasted tomato and green garlic chutney (for serving)"
     ]
   },
   {
@@ -1181,11 +1395,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Indigenous sticky rice",
-      "Country chicken / Pork",
-      "Crushed ginger",
+      "Indigenous short-grain hill rice",
+      "Bone-in country pork or chicken",
+      "Crushed fresh ginger root",
       "Garlic cloves",
-      "Black peppercorns"
+      "Fresh green hill chillies",
+      "Crushed wild black peppercorns",
+      "Mustard leaves (for finishing)",
+      "Filtered spring water",
+      "Pure lard or drop of mustard oil",
+      "Sea salt"
     ]
   },
   {
@@ -1198,12 +1417,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 1,
     "ingredients": [
-      "Rice flour",
-      "Chana dal",
-      "Garlic",
-      "Green chillies",
-      "Mustard seeds",
-      "Curry leaves"
+      "Fresh rice flour (chawal atta)",
+      "Bengal gram lentils (chana dal)",
+      "Split black gram lentils (urad dal)",
+      "Green chillies and fresh ginger",
+      "Garlic cloves (lahsun)",
+      "Mustard seeds (sarson / rai)",
+      "Fresh curry leaves (kadi patta)",
+      "White sesame seeds (safed til)",
+      "Fresh coriander leaves",
+      "Mustard oil or ghee (for dough and tempering)"
     ]
   },
   {
@@ -1216,12 +1439,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Rice flour",
-      "Chana dal",
-      "Garlic",
-      "Green chillies",
-      "Mustard seeds",
-      "Curry leaves"
+      "Fresh rice flour (chawal atta)",
+      "Bengal gram lentils (chana dal)",
+      "Split black gram lentils (urad dal)",
+      "Green chillies and fresh ginger",
+      "Garlic cloves (lahsun)",
+      "Mustard seeds (sarson / rai)",
+      "Fresh curry leaves (kadi patta)",
+      "White sesame seeds (safed til)",
+      "Fresh coriander leaves",
+      "Mustard oil or ghee (for dough and tempering)"
     ]
   },
   {
@@ -1234,11 +1461,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 3,
     "ingredients": [
-      "Indigenous sticky rice",
-      "Country chicken / Pork",
-      "Crushed ginger",
+      "Indigenous short-grain hill rice",
+      "Bone-in country pork or chicken",
+      "Crushed fresh ginger root",
       "Garlic cloves",
-      "Black peppercorns"
+      "Fresh green hill chillies",
+      "Crushed wild black peppercorns",
+      "Mustard leaves (for finishing)",
+      "Filtered spring water",
+      "Pure lard or drop of mustard oil",
+      "Sea salt"
     ]
   },
   {
@@ -1251,11 +1483,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 3,
     "ingredients": [
-      "Indigenous sticky rice",
-      "Country chicken / Pork",
-      "Crushed ginger",
+      "Indigenous short-grain hill rice",
+      "Bone-in country pork or chicken",
+      "Crushed fresh ginger root",
       "Garlic cloves",
-      "Black peppercorns"
+      "Fresh green hill chillies",
+      "Crushed wild black peppercorns",
+      "Mustard leaves (for finishing)",
+      "Filtered spring water",
+      "Pure lard or drop of mustard oil",
+      "Sea salt"
     ]
   },
   {
@@ -1268,11 +1505,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 1,
     "ingredients": [
-      "Indigenous sticky rice",
-      "Country chicken / Pork",
-      "Crushed ginger",
+      "Indigenous short-grain hill rice",
+      "Bone-in country pork or chicken",
+      "Crushed fresh ginger root",
       "Garlic cloves",
-      "Black peppercorns"
+      "Fresh green hill chillies",
+      "Crushed wild black peppercorns",
+      "Mustard leaves (for finishing)",
+      "Filtered spring water",
+      "Pure lard or drop of mustard oil",
+      "Sea salt"
     ]
   },
   {
@@ -1285,11 +1527,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Indigenous sticky rice",
-      "Country chicken / Pork",
-      "Crushed ginger",
+      "Indigenous short-grain hill rice",
+      "Bone-in country pork or chicken",
+      "Crushed fresh ginger root",
       "Garlic cloves",
-      "Black peppercorns"
+      "Fresh green hill chillies",
+      "Crushed wild black peppercorns",
+      "Mustard leaves (for finishing)",
+      "Filtered spring water",
+      "Pure lard or drop of mustard oil",
+      "Sea salt"
     ]
   },
   {
@@ -1302,11 +1549,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Hearth-smoked pork",
-      "Fermented bamboo shoots",
-      "Bhut Jolokia (King Chilli)",
+      "Hearth-smoked pork chunks",
+      "Fermented bamboo shoots (wet bastenga or dry khorisa)",
+      "Fresh Naga King Chilli (Bhut Jolokia / Raja Mircha)",
+      "Fresh ginger root",
       "Garlic cloves",
-      "Ginger root"
+      "Sichuan pepper leaves or local wild herbs",
+      "Local sour tomato (for body)",
+      "Filtered spring water",
+      "Rock salt",
+      "Fresh coriander or local chives (for garnish)"
     ]
   },
   {
@@ -1319,11 +1571,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 3,
     "ingredients": [
-      "Hearth-smoked pork",
-      "Fermented bamboo shoots",
-      "Bhut Jolokia (King Chilli)",
+      "Hearth-smoked pork chunks",
+      "Fermented bamboo shoots (wet bastenga or dry khorisa)",
+      "Fresh Naga King Chilli (Bhut Jolokia / Raja Mircha)",
+      "Fresh ginger root",
       "Garlic cloves",
-      "Ginger root"
+      "Sichuan pepper leaves or local wild herbs",
+      "Local sour tomato (for body)",
+      "Filtered spring water",
+      "Rock salt",
+      "Fresh coriander or local chives (for garnish)"
     ]
   },
   {
@@ -1424,11 +1681,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Short hill rice",
-      "Smoked meat scraps",
-      "Axone (Fermented soybeans)",
-      "Mountain greens",
-      "Bird's eye chilli"
+      "Indigenous Naga hill rice",
+      "Hearth-smoked pork or beef cuts",
+      "Axone (fermented soybean cake)",
+      "Seasonal wild mountain greens (mustard leaves)",
+      "Fresh ginger root",
+      "Garlic cloves",
+      "Fresh Naga bird's-eye chillies",
+      "Local sour tomato or wild plum",
+      "Filtered spring water",
+      "Rock salt"
     ]
   },
   {
@@ -1441,11 +1703,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 1,
     "ingredients": [
-      "Short hill rice",
-      "Smoked meat scraps",
-      "Axone (Fermented soybeans)",
-      "Mountain greens",
-      "Bird's eye chilli"
+      "Indigenous Naga hill rice",
+      "Hearth-smoked pork or beef cuts",
+      "Axone (fermented soybean cake)",
+      "Seasonal wild mountain greens (mustard leaves)",
+      "Fresh ginger root",
+      "Garlic cloves",
+      "Fresh Naga bird's-eye chillies",
+      "Local sour tomato or wild plum",
+      "Filtered spring water",
+      "Rock salt"
     ]
   },
   {
@@ -1458,11 +1725,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 3,
     "ingredients": [
-      "Short hill rice",
-      "Smoked meat scraps",
-      "Axone (Fermented soybeans)",
-      "Mountain greens",
-      "Bird's eye chilli"
+      "Indigenous Naga hill rice",
+      "Hearth-smoked pork or beef cuts",
+      "Axone (fermented soybean cake)",
+      "Seasonal wild mountain greens (mustard leaves)",
+      "Fresh ginger root",
+      "Garlic cloves",
+      "Fresh Naga bird's-eye chillies",
+      "Local sour tomato or wild plum",
+      "Filtered spring water",
+      "Rock salt"
     ]
   },
   {
@@ -2180,12 +2452,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 1,
     "ingredients": [
-      "Chamba Rajma",
-      "Thick curd",
-      "Ghee",
-      "Dried raisins",
-      "Cloves",
-      "Cardamom"
+      "Basmati rice",
+      "Kabuli chickpeas (chana) / Rajma",
+      "Split black gram (maah ki dal)",
+      "Thick whole-milk curd (dahi)",
+      "Pure desi cow ghee",
+      "Dried tamarind pulp or amchur (for khatta)",
+      "Sugarcane jaggery or sugar (for mitha bhaat)",
+      "Whole spices (cloves, cardamom, cinnamon)",
+      "Dry ginger powder (saunth) and fennel seeds",
+      "Mustard oil and rock salt"
     ]
   },
   {
@@ -2198,12 +2474,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 3,
     "ingredients": [
-      "Chamba Rajma",
-      "Thick curd",
-      "Ghee",
-      "Dried raisins",
-      "Cloves",
-      "Cardamom"
+      "Basmati rice",
+      "Kabuli chickpeas (chana) / Rajma",
+      "Split black gram (maah ki dal)",
+      "Thick whole-milk curd (dahi)",
+      "Pure desi cow ghee",
+      "Dried tamarind pulp or amchur (for khatta)",
+      "Sugarcane jaggery or sugar (for mitha bhaat)",
+      "Whole spices (cloves, cardamom, cinnamon)",
+      "Dry ginger powder (saunth) and fennel seeds",
+      "Mustard oil and rock salt"
     ]
   },
   {
@@ -2216,12 +2496,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Chamba Rajma",
-      "Thick curd",
-      "Ghee",
-      "Dried raisins",
-      "Cloves",
-      "Cardamom"
+      "Basmati rice",
+      "Kabuli chickpeas (chana) / Rajma",
+      "Split black gram (maah ki dal)",
+      "Thick whole-milk curd (dahi)",
+      "Pure desi cow ghee",
+      "Dried tamarind pulp or amchur (for khatta)",
+      "Sugarcane jaggery or sugar (for mitha bhaat)",
+      "Whole spices (cloves, cardamom, cinnamon)",
+      "Dry ginger powder (saunth) and fennel seeds",
+      "Mustard oil and rock salt"
     ]
   },
   {
@@ -2234,12 +2518,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 1,
     "ingredients": [
-      "Chamba Rajma",
-      "Thick curd",
-      "Ghee",
-      "Dried raisins",
-      "Cloves",
-      "Cardamom"
+      "Basmati rice",
+      "Kabuli chickpeas (chana) / Rajma",
+      "Split black gram (maah ki dal)",
+      "Thick whole-milk curd (dahi)",
+      "Pure desi cow ghee",
+      "Dried tamarind pulp or amchur (for khatta)",
+      "Sugarcane jaggery or sugar (for mitha bhaat)",
+      "Whole spices (cloves, cardamom, cinnamon)",
+      "Dry ginger powder (saunth) and fennel seeds",
+      "Mustard oil and rock salt"
     ]
   },
   {
@@ -2252,12 +2540,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Chamba Rajma",
-      "Thick curd",
-      "Ghee",
-      "Dried raisins",
-      "Cloves",
-      "Cardamom"
+      "Basmati rice",
+      "Kabuli chickpeas (chana) / Rajma",
+      "Split black gram (maah ki dal)",
+      "Thick whole-milk curd (dahi)",
+      "Pure desi cow ghee",
+      "Dried tamarind pulp or amchur (for khatta)",
+      "Sugarcane jaggery or sugar (for mitha bhaat)",
+      "Whole spices (cloves, cardamom, cinnamon)",
+      "Dry ginger powder (saunth) and fennel seeds",
+      "Mustard oil and rock salt"
     ]
   },
   {
@@ -2270,12 +2562,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 3,
     "ingredients": [
-      "Chamba Rajma",
-      "Thick curd",
-      "Ghee",
-      "Dried raisins",
-      "Cloves",
-      "Cardamom"
+      "Basmati rice",
+      "Kabuli chickpeas (chana) / Rajma",
+      "Split black gram (maah ki dal)",
+      "Thick whole-milk curd (dahi)",
+      "Pure desi cow ghee",
+      "Dried tamarind pulp or amchur (for khatta)",
+      "Sugarcane jaggery or sugar (for mitha bhaat)",
+      "Whole spices (cloves, cardamom, cinnamon)",
+      "Dry ginger powder (saunth) and fennel seeds",
+      "Mustard oil and rock salt"
     ]
   },
   {
@@ -2288,12 +2584,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 1,
     "ingredients": [
-      "Sour buttermilk",
-      "Gram flour",
-      "Fenugreek seeds",
-      "Dried red chillies",
-      "Ghee",
-      "Onion pakoras"
+      "Sour whole-milk curd (dahi / chaas)",
+      "Bengal gram flour (besan)",
+      "Pure desi cow ghee",
+      "Fenugreek seeds (methi dana)",
+      "Cumin and mustard seeds",
+      "Asafoetida (hing)",
+      "Finely sliced onions and spinach (for pakoras)",
+      "Dried whole red chillies",
+      "Turmeric and red chilli powder",
+      "Rock salt (sendha namak) and fresh coriander"
     ]
   },
   {
@@ -2306,12 +2606,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Sour buttermilk",
-      "Gram flour",
-      "Fenugreek seeds",
-      "Dried red chillies",
-      "Ghee",
-      "Onion pakoras"
+      "Sour whole-milk curd (dahi / chaas)",
+      "Bengal gram flour (besan)",
+      "Pure desi cow ghee",
+      "Fenugreek seeds (methi dana)",
+      "Cumin and mustard seeds",
+      "Asafoetida (hing)",
+      "Finely sliced onions and spinach (for pakoras)",
+      "Dried whole red chillies",
+      "Turmeric and red chilli powder",
+      "Rock salt (sendha namak) and fresh coriander"
     ]
   },
   {
@@ -2324,12 +2628,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Sour buttermilk",
-      "Gram flour",
-      "Fenugreek seeds",
-      "Dried red chillies",
-      "Ghee",
-      "Onion pakoras"
+      "Sour whole-milk curd (dahi / chaas)",
+      "Bengal gram flour (besan)",
+      "Pure desi cow ghee",
+      "Fenugreek seeds (methi dana)",
+      "Cumin and mustard seeds",
+      "Asafoetida (hing)",
+      "Finely sliced onions and spinach (for pakoras)",
+      "Dried whole red chillies",
+      "Turmeric and red chilli powder",
+      "Rock salt (sendha namak) and fresh coriander"
     ]
   },
   {
@@ -2342,12 +2650,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 2,
     "ingredients": [
-      "Sour buttermilk",
-      "Gram flour",
-      "Fenugreek seeds",
-      "Dried red chillies",
-      "Ghee",
-      "Onion pakoras"
+      "Sour whole-milk curd (dahi / chaas)",
+      "Bengal gram flour (besan)",
+      "Pure desi cow ghee",
+      "Fenugreek seeds (methi dana)",
+      "Cumin and mustard seeds",
+      "Asafoetida (hing)",
+      "Finely sliced onions and spinach (for pakoras)",
+      "Dried whole red chillies",
+      "Turmeric and red chilli powder",
+      "Rock salt (sendha namak) and fresh coriander"
     ]
   },
   {
@@ -2360,12 +2672,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 1,
     "ingredients": [
-      "Bajra (Pearl millet)",
-      "Moong dal",
-      "Desi butter / Ghee",
-      "Cumin",
-      "Garlic",
-      "Rock salt"
+      "Whole pearl millet (bajra)",
+      "Yellow split moong dal (dhuli moong)",
+      "Pure desi cow ghee",
+      "Cumin seeds (jeera)",
+      "Asafoetida (hing)",
+      "Turmeric powder (haldi)",
+      "Finely chopped green chillies and ginger",
+      "Rock salt (sendha namak)",
+      "Filtered water",
+      "Freshly churned white butter (desi makkhan) / Jaggery (gur) (for serving)"
     ]
   },
   {
@@ -2378,12 +2694,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 3,
     "ingredients": [
-      "Bajra (Pearl millet)",
-      "Moong dal",
-      "Desi butter / Ghee",
-      "Cumin",
-      "Garlic",
-      "Rock salt"
+      "Whole pearl millet (bajra)",
+      "Yellow split moong dal (dhuli moong)",
+      "Pure desi cow ghee",
+      "Cumin seeds (jeera)",
+      "Asafoetida (hing)",
+      "Turmeric powder (haldi)",
+      "Finely chopped green chillies and ginger",
+      "Rock salt (sendha namak)",
+      "Filtered water",
+      "Freshly churned white butter (desi makkhan) / Jaggery (gur) (for serving)"
     ]
   },
   {
@@ -2396,12 +2716,16 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
     "isFullTimelinePoster": false,
     "stageNumber": 1,
     "ingredients": [
-      "Bajra (Pearl millet)",
-      "Moong dal",
-      "Desi butter / Ghee",
-      "Cumin",
-      "Garlic",
-      "Rock salt"
+      "Whole pearl millet (bajra)",
+      "Yellow split moong dal (dhuli moong)",
+      "Pure desi cow ghee",
+      "Cumin seeds (jeera)",
+      "Asafoetida (hing)",
+      "Turmeric powder (haldi)",
+      "Finely chopped green chillies and ginger",
+      "Rock salt (sendha namak)",
+      "Filtered water",
+      "Freshly churned white butter (desi makkhan) / Jaggery (gur) (for serving)"
     ]
   },
   {
@@ -3013,74 +3337,128 @@ export const DISH_INFOGRAPHICS: DishInfographic[] = [
   {
     "id": "info-151",
     "dishId": "chettinad-chicken",
-    "title": "Chettinad Chicken Curry — c. 1800 Recipe",
-    "subtitle": "Traditional seafaring Chettiar spice formulation with stone-ground kalpasi and country chicken",
-    "era": "1800s Traditional",
+    "title": "Chettinad Chicken Curry - Origin (Birth of the food)",
+    "subtitle": "Chettinad chicken (Chettinad kozhi) is a spicy chicken curry from the Chettinad region of Tamil Nadu.",
+    "era": "Birth of the food",
     "image": "/images_updated/WhatsApp Image 2026-11-04 at 2.50.19 AM.jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 1,
-    "ingredients": [
-      "Country chicken (naatu kozhi)",
-      "Kalpasi (black stone flower)",
-      "Star anise & marathi moggu",
-      "Shallots (small onions)",
-      "Gingelly (sesame) oil",
-      "Curry leaves"
-    ]
+    "ingredients": []
   },
   {
     "id": "info-152",
     "dishId": "chettinad-chicken",
-    "title": "Chettinad Chicken Curry — c. 1900 Recipe",
-    "subtitle": "Refined mercantile feast recipe with roasted coriander, black pepper, and coconut paste",
-    "era": "1900s Early Modern",
+    "title": "Chettinad Chicken Curry - Evolution of Food",
+    "subtitle": "Then vs Now: Grinding, marinade, thickener, vessel, tomato, oil, meat, and eaten with.",
+    "era": "Evolution of Food",
     "image": "/images_updated/WhatsApp Image 2026-11-04 at 2.51.48 AM.jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 2,
-    "ingredients": [
-      "Country chicken",
-      "Roasted coriander seeds",
-      "Black peppercorns",
-      "Fresh grated coconut",
-      "Dry red chillies",
-      "Curry leaves"
-    ]
+    "ingredients": []
   },
   {
     "id": "info-153",
     "dishId": "chettinad-chicken",
-    "title": "Chettinad Chicken Curry — Present Recipe",
-    "subtitle": "Contemporary vibrant Chettinad pepper chicken curry with rich roasted masala and coconut",
-    "era": "Contemporary / Present",
+    "title": "Chettinad Chicken Curry - Recipe",
+    "subtitle": "Key ingredients and 8-step preparation for traditional Chettinad Chicken Curry.",
+    "era": "Recipe",
     "image": "/images_updated/WhatsApp Image 2026-11-04 at 2.54.27 AM.jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 3,
     "ingredients": [
       "Chicken",
-      "Chettinad roasted masala powder",
-      "Fresh coconut paste",
-      "Shallots & ginger-garlic",
-      "Black pepper & fennel",
-      "Curry leaves"
+      "Onion",
+      "Tomato",
+      "Ginger-garlic paste",
+      "Dried red chillies, coriander, fennel and cumin seeds",
+      "Black pepper, cardamom, cloves, cinnamon and star anise",
+      "Kalpasi (stone flower)",
+      "Grated coconut",
+      "Curry leaves with oil (gingelly if you like)",
+      "Turmeric, salt and lemon juice"
     ]
   },
   {
     "id": "info-154",
     "dishId": "idli-sambar",
-    "title": "Idli Sambar — c. 1800 Recipe",
-    "subtitle": "Historic Thanjavur Maratha court sambar with freshly ground spices, lentils, and steamed idlis",
-    "era": "1800s Traditional",
+    "title": "Idli Sambar - Origin (Birth of the food)",
+    "subtitle": "Idli sambar is a South Indian meal of steamed idlis served with sambar, a lentil and tamarind vegetable stew.",
+    "era": "Birth of the food",
     "image": "/images_updated/WhatsApp Image 2026-11-04 at 2.57.05 AM.jpeg",
     "isFullTimelinePoster": false,
     "stageNumber": 1,
+    "ingredients": []
+  },
+  {
+    "id": "info-idli-sambar-2",
+    "dishId": "idli-sambar",
+    "title": "Idli Sambar - Evolution of Food",
+    "subtitle": "Then vs Now: Batter, grinding, moulds, cooking method, size, convenience, sambar, and eaten with.",
+    "era": "Evolution of Food",
+    "image": "/images/dishes/idli-sambar-stage-2.webp",
+    "isFullTimelinePoster": false,
+    "stageNumber": 2,
+    "ingredients": []
+  },
+  {
+    "id": "info-idli-sambar-3",
+    "dishId": "idli-sambar",
+    "title": "Idli Sambar - Recipe",
+    "subtitle": "Key ingredients and 8-step preparation for authentic South Indian Idli Sambar.",
+    "era": "Recipe",
+    "image": "/images/dishes/idli-sambar-stage-3.webp",
+    "isFullTimelinePoster": false,
+    "stageNumber": 3,
     "ingredients": [
-      "Parboiled idli rice",
-      "Urad dal",
+      "Idli rice (parboiled rice)",
+      "Whole black gram (urad dal)",
+      "Fenugreek seeds",
+      "Salt",
       "Toor dal",
-      "Shallots (Madras onions)",
-      "Drumsticks",
       "Tamarind",
-      "Curry leaves"
+      "Mixed vegetables (drumstick, carrot, brinjal, potato)",
+      "Shallots or onion and tomato",
+      "Sambar powder with turmeric",
+      "Mustard seeds, curry leaves and asafoetida (hing)"
+    ]
+  },
+  {
+    "id": "info-filter-coffee-1",
+    "dishId": "filter-coffee",
+    "title": "Filter Coffee - Origin (Birth of the food)",
+    "subtitle": "Filter coffee (filter kaapi) is a South Indian drink of strong coffee decoction mixed with hot milk and sugar.",
+    "era": "Birth of the food",
+    "image": "/images/dishes/filter-coffee-stage-1.webp",
+    "isFullTimelinePoster": false,
+    "stageNumber": 1,
+    "ingredients": []
+  },
+  {
+    "id": "info-filter-coffee-2",
+    "dishId": "filter-coffee",
+    "title": "Filter Coffee - Evolution of Food",
+    "subtitle": "Then vs Now: Price and access, blend, sweetener, brewing, decoction strength, serving, milk, and where it is drunk.",
+    "era": "Evolution of Food",
+    "image": "/images/dishes/filter-coffee-stage-2.webp",
+    "isFullTimelinePoster": false,
+    "stageNumber": 2,
+    "ingredients": []
+  },
+  {
+    "id": "info-filter-coffee-3",
+    "dishId": "filter-coffee",
+    "title": "Filter Coffee - Recipe",
+    "subtitle": "Key ingredients and 8-step preparation for traditional South Indian Filter Coffee.",
+    "era": "Recipe",
+    "image": "/images/dishes/filter-coffee-stage-3.webp",
+    "isFullTimelinePoster": false,
+    "stageNumber": 3,
+    "ingredients": [
+      "Filter coffee powder (medium to dark roast)",
+      "Chicory (blended into the powder)",
+      "Freshly boiled water",
+      "Full-cream milk",
+      "Sugar (or jaggery)"
     ]
   },
   {

@@ -46,7 +46,13 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
       category: "beverage",
       description:
         "A two-tier steel filter drips a dark coffee-chicory decoction overnight; it is cut with boiling milk and pulled between a dabarah and tumbler until a crown of froth forms.",
-      ingredients: ["Coffee powder with chicory", "Boiling water", "Full-cream milk", "Sugar"],
+      ingredients: [
+        "Filter coffee powder (medium to dark roast)",
+        "Chicory (blended into the powder)",
+        "Freshly boiled water",
+        "Full-cream milk",
+        "Sugar (or jaggery)",
+      ],
       tasteProfile: "Bittersweet, Milky-Heavy & Deeply Roasted",
       era: "Madras coffee-house culture, documented from the early 20th century",
       keyTechnique: "Two-Tier Drip Filter & Dabarah Frothing",
@@ -169,21 +175,7 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
 
   "Himachal Pradesh": [],
 
-  Jharkhand: [
-    {
-      id: "pittha",
-      name: "Pittha",
-      alternateName: "Jharkhandi Rice Dumplings",
-      state: "Jharkhand",
-      category: "fermented-steamed",
-      description:
-        "Rice-flour dough shaped by hand into crescents or cups, sometimes filled with jaggery and sesame, steamed over a cloth-lined pot and eaten at harvest festivals across Jharkhand's tribal communities.",
-      ingredients: ["Rice flour", "Jaggery", "Sesame seeds", "Water", "Salt"],
-      tasteProfile: "Soft, Mildly Sweet & Rice-Forward",
-      era: "Tribal harvest-festival tradition; documented in ethnographic and regional accounts",
-      keyTechnique: "Hand-Shaped Rice Dough & Cloth Steaming",
-    },
-  ],
+  Jharkhand: [],
 
   Karnataka: [],
 
@@ -216,35 +208,20 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
     },
   ],
 
-  Manipur: [
-    {
-      id: "chak-hao-kheer",
-      name: "Chak-Hao Kheer",
-      alternateName: "Manipuri Black Rice Pudding",
-      state: "Manipur",
-      category: "sweet-dessert",
-      description:
-        "A slow-cooked pudding of aromatic Manipuri black rice (Chak-Hao), milk and jaggery or sugar, served at feasts and now protected by the Chak-Hao geographical indication.",
-      ingredients: ["Chak-Hao black rice", "Milk", "Jaggery or sugar", "Cardamom", "Cashew nuts"],
-      tasteProfile: "Nutty, Fragrant & Deeply Violet",
-      era: "Manipuri rice-cultivation tradition; Chak-Hao registered as a GI in 2020",
-      keyTechnique: "Long Soak & Low-Heat Black-Rice Reduction",
-    },
-  ],
+  Manipur: [],
 
   Meghalaya: [
     {
       id: "pumaloi",
       name: "Pumaloi",
-      alternateName: "Khasi Steamed Rice Cake",
+      alternateName: "Khasi Steamed Powdered Rice / Khaw Pumaloi",
       state: "Meghalaya",
       category: "fermented-steamed",
-      description:
-        "Coarsely ground rice moistened and steamed in a special earthen or metal steamer (siew) until it rises into a light crumb; a Khasi ceremonial food served with meat or tea.",
-      ingredients: ["Rice", "Water", "Salt"],
-      tasteProfile: "Clean, Soft & Rice-Sweet",
-      era: "Khasi ceremonial food tradition; documented in ethnographic accounts",
-      keyTechnique: "Coarse Rice Meal Steaming in a Siew",
+      description: "Meghalaya's cherished Khasi steamed staple: coarse indigenous hill rice flour lightly sprinkled with salted water into a moist, crumbly texture, gently steamed in an artisanal two-tier earthen pot until fluffy and aromatic.",
+      ingredients: ["Indigenous Khasi hill rice (khaw pumaloi / unpolished red or white rice)","Cold water (for sprinkling and moistening the flour)","Fine sea salt or rock salt (subtle pinch for dough balance)","Boiling water (for generating steam in the lower vessel)","Freshly grated coconut (traditional sweet festive variation)","Finely grated jaggery (optional layered filling in sweet versions)","Bamboo mesh or perforated clay disc (siew ranei / internal steam plate)","Banana leaves (optional liner for the steamer pot)","Fresh whole milk (accompanying tea or drizzle in morning meals)","Tungrymbai or spicy pork curry (traditional savory meal accompaniments)"],
+      tasteProfile: "Delicate, Earthy & Mildly Sweet-Nutty",
+      era: "Ancient Khasi Steaming Tradition (East & West Khasi Hills)",
+      keyTechnique: "Cold Water Crumb Moistening & Two-Tier Earthen Steaming (Khiew Ranei)",
     },
   ],
 
@@ -252,15 +229,26 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
     {
       id: "vawksa-rep",
       name: "Vawksa Rep",
-      alternateName: "Mizo Smoked Pork",
+      alternateName: "Traditional Mizo Smoked Pork with Bamboo Shoot",
       state: "Mizoram",
       category: "meat",
       description:
-        "Pork smoked over the kitchen hearth, then simmered with bamboo shoot, local herbs and chilli; a Mizo staple that turns preservation into a distinct flavour.",
-      ingredients: ["Pork", "Bamboo shoot", "Ginger", "Garlic", "Green chilli", "Local herbs", "Salt"],
-      tasteProfile: "Smoky, Hot & Deeply Savoury",
-      era: "Mizo hearth-preservation tradition; documented in regional food writing",
-      keyTechnique: "Hearth Smoking & Slow Bamboo-Shoot Braise",
+        "Traditional Mizo smoked pork cured over home kitchen hearths (rap), braised tender in water with fermented bamboo shoots, fresh mountain ginger, garlic, and fiery green chillies without oil.",
+      ingredients: [
+        "Hearth-smoked country pork (vawksa rep)",
+        "Fermented bamboo shoots (rawtuai)",
+        "Fresh ginger root",
+        "Garlic cloves",
+        "Fresh green hill chillies",
+        "Local wild mustard greens",
+        "Filtered spring water",
+        "Local aromatic mountain herbs",
+        "Sea salt",
+        "Fresh coriander or local chives (for garnish)"
+      ],
+      tasteProfile: "Smoky, Fiery, Tangy & Deeply Savoury",
+      era: "Mizo Hearth-Preservation & Village Kitchen Heritage",
+      keyTechnique: "Hearth Smoke-Curing & Zero-Oil Bamboo Shoot Braising",
     },
   ],
 
@@ -268,15 +256,26 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
     {
       id: "zutho",
       name: "Zutho",
-      alternateName: "Angami Rice Beer",
+      alternateName: "Traditional Angami Fermented Rice Beverage",
       state: "Nagaland",
       category: "beverage",
       description:
-        "A milky, mildly sour fermented rice drink of the Angami Nagas, prepared from sprouted rice and a local starter, diluted and served in bamboo tumblers at communal work and festivals.",
-      ingredients: ["Rice", "Sprouted rice starter", "Water"],
-      tasteProfile: "Tangy, Mildly Sweet & Lightly Fermented",
-      era: "Angami fermentation tradition; documented in ethnographic accounts",
-      keyTechnique: "Sprouted-Rice Starter Fermentation & Dilution",
+        "Traditional frothy, milky-white fermented rice beverage of the Angami Nagas, crafted from local sticky rice and an indigenous sprouted-grain starter culture (piazu), offering a mildly sweet, sour, and refreshing natural effervescence.",
+      ingredients: [
+        "Indigenous glutinous sticky rice",
+        "Sprouted unpolished paddy starter (piazu)",
+        "Clean filtered spring water",
+        "Milled sprouted rice malt",
+        "Natural wild fermentation yeast enzymes",
+        "Wild herbal starter plant leaves",
+        "Fermented rice mash liquor",
+        "Natural grain brewing sugars",
+        "Dilution pure spring water",
+        "Bamboo tumblers (for serving)"
+      ],
+      tasteProfile: "Fruity, Tangy, Mildly Sweet & Effervescent",
+      era: "Ancestral Angami Naga Fermentation & Harvest Rites",
+      keyTechnique: "Piazu Sprouted Starter Fermentation & Terracotta Brewing",
     },
   ],
 
@@ -336,36 +335,33 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
     },
   ],
 
-  Sikkim: [
-    {
-      id: "sel-roti",
-      name: "Sel Roti",
-      alternateName: "Nepali-Sikkimese Ring Bread",
-      state: "Sikkim",
-      category: "grain-bread",
-      description:
-        "A ring-shaped, slightly sweet bread from a poured rice-flour and banana batter, deep-fried in a wide karahi and made for Tihar, Dashain and Sikkimese Nepali weddings.",
-      ingredients: ["Rice flour", "Wheat flour", "Banana", "Sugar", "Milk", "Ghee", "Cardamom"],
-      tasteProfile: "Crisp-Edged, Mildly Sweet & Fragrant",
-      era: "Nepali–Sikkimese festival tradition; documented in regional food writing",
-      keyTechnique: "Poured-Ring Batter Frying",
-    },
-  ],
+  Sikkim: [],
 
 
   Tripura: [
     {
       id: "awan-bangwi",
       name: "Awan Bangwi",
-      alternateName: "Tripuri Steamed Rice Cake",
+      alternateName: "Traditional Tripuri Leaf-Wrapped Steamed Rice Cake",
       state: "Tripura",
       category: "fermented-steamed",
       description:
-        "Glutinous rice, jaggery and sometimes grated coconut wrapped in banana or turmeric leaf and steam-baked into a fragrant cake; prepared for Tripuri household celebrations and offerings.",
-      ingredients: ["Glutinous rice", "Jaggery", "Grated coconut", "Banana leaf", "Sesame"],
-      tasteProfile: "Chewy, Leaf-Perfumed & Gently Sweet",
-      era: "Tripuri festival-food tradition; documented in ethnographic accounts",
-      keyTechnique: "Leaf-Wrapped Rice Steaming",
+        "A celebrated festive delicacy of the indigenous Tripuri (Borok) people: fragrant indigenous sticky rice mixed with cashews, raisins, ginger, and pork or coconut, shaped into cones within fresh Lairu (banana/turmeric) leaves, and boiled to fragrant, chewy perfection.",
+      ingredients: [
+        "Indigenous sticky rice (guria chawal)",
+        "Pork chunks or fresh grated coconut",
+        "Crushed fresh ginger root",
+        "Chopped cashews and golden raisins",
+        "Finely sliced shallots",
+        "Pinch of green cardamom powder",
+        "Lairu leaves (banana or wild turmeric leaves for wrapping)",
+        "Fine bamboo or cotton twine (for binding)",
+        "Pinch of sea salt",
+        "Filtered spring water (for immersion boiling)"
+      ],
+      tasteProfile: "Fragrant, Chewy, Leaf-Perfumed & Subtle Savoury-Sweet",
+      era: "Ancient Tripuri Royal & Agrarian Harvest Festivities",
+      keyTechnique: "Lairu Leaf Cone Wrapping, Tight Binding & Immersion Boiling",
     },
   ],
 
@@ -373,15 +369,14 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
     {
       id: "banarasi-malaiyo",
       name: "Banarasi Malaiyo",
-      alternateName: "Malaiyo / Nimish",
+      alternateName: "Kesar Malaiyo / Makhan Malai",
       state: "Uttar Pradesh",
       category: "sweet-dessert",
-      description:
-        "A winter-only Varanasi delicacy: full-fat milk boiled with saffron and sugar, chilled overnight under the dew, then whisked with hand-churned cream into an airy foam dusted with pistachio.",
-      ingredients: ["Full-fat milk", "Fresh cream (malai)", "Sugar", "Saffron", "Pistachio", "Cardamom"],
-      tasteProfile: "Airy, Milky & Saffron-Scented",
-      era: "Varanasi winter sweet, documented in 20th-century city food writing",
-      keyTechnique: "Dew-Chilled Milk & Hand-Whisked Cream Foam",
+      description: "Varanasi's ethereal winter froth: raw milk infused with saffron and sugar, chilled overnight under open morning dew, churned into cloud-light foam and crowned with pistachios and almonds in earthen kulhads.",
+      ingredients: ["Full-fat cow and buffalo milk","Kashmiri saffron strands","Green cardamom powder","Powdered sugar (boora)","Fresh milk cream (malai)","Finely slivered pistachios","Finely slivered almonds","Kewra or rose water","Overnight winter morning dew (ambient cool aeration)","Yellow food essence or turmeric hue (optional traditional tint)"],
+      tasteProfile: "Delicate, Creamy & Saffron-Infused",
+      era: "Winter Tradition of Varanasi (Awadh & Purvanchal Confectionery)",
+      keyTechnique: "Dew-Cooled Aeration & Wooden Bilona Frothing",
     },
   ],
 
@@ -389,15 +384,14 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
     {
       id: "singori",
       name: "Singori",
-      alternateName: "Singodi / Malu-Leaf Sweet",
+      alternateName: "Singauri / Malu-Leaf Cone Sweet",
       state: "Uttarakhand",
       category: "sweet-dessert",
-      description:
-        "A cone of sweetened, reduced milk solids (khoya) and coconut, wrapped in a folded malu leaf whose aroma perfumes the sweet; a Garhwali–Kumaoni market delicacy.",
-      ingredients: ["Khoya (reduced milk)", "Sugar", "Grated coconut", "Cardamom", "Malu leaf wrapper"],
-      tasteProfile: "Milky, Coconut-Sweet & Leaf-Aromatic",
-      era: "Garhwali–Kumaoni sweet-making tradition; documented in regional food writing",
-      keyTechnique: "Khoya Reduction & Malu-Leaf Wrapping",
+      description: "Uttarakhand's delicate conical sweet: slow-cooked khoya enriched with grated coconut and green cardamom, folded gently into a fragrant wild Malu leaf cone that infuses the fudge with a subtle herbal mountain perfume.",
+      ingredients: ["Fresh whole-milk khoya (mawa)","Finely grated dry coconut (copra)","Granulated cane sugar","Green cardamom powder","Fresh wild Malu leaves (Bauhinia vahlii)","Whole cloves (laung for pinning the cone)","Pure desi cow ghee","Crushed pistachios or almonds (optional garnish)","Kewra or rose water (subtle floral accent)","Warm milk (for loosening fudge consistency)"],
+      tasteProfile: "Sweet, Milky & Earthy with Forest Herbal Aroma",
+      era: "Historic Kumaoni Hill Tradition (Almora & Tehri Heritage)",
+      keyTechnique: "Khoya Reduction, Coconut Folding & Malu Leaf Cone Wrapping",
     },
   ],
 
@@ -405,15 +399,14 @@ export const ADDITIONAL_DISHES: Record<string, Dish[]> = {
     {
       id: "rosogolla",
       name: "Rosogolla",
-      alternateName: "Banglar Rasogolla / Bengali Rossogolla",
+      alternateName: "Banglar Rosogolla / Rasgulla",
       state: "West Bengal",
       category: "sweet-dessert",
-      description:
-        "Spongy balls of fresh chhena kneaded until smooth, poached in light sugar syrup until they swell and cool into a syrup-held sphere; 'Banglar Rasogolla' received a GI tag in 2017.",
-      ingredients: ["Fresh chhena (curdled milk solids)", "Sugar", "Water", "Cardamom or rose water"],
-      tasteProfile: "Spongy, Syrup-Light & Delicately Milky",
-      era: "19th-century Bengali sweet-making; 'Banglar Rasogolla' GI-registered in 2017",
-      keyTechnique: "Chhena Kneading & Controlled-Syrup Poaching",
+      description: "Bengal's iconic spongy sweet: pristine cow-milk chhana kneaded with delicate fingertip mastery, shaped into smooth spherical balls, and boiled vigorously in light bubbling sugar syrup until buoyant, porous, and syrup-soaked.",
+      ingredients: ["Pure fresh cow milk","Sour whey or fresh lemon juice (for curdling chhana)","Granulated white sugar (for light syrup)","Water (for boiling syrup and steeping)","Fine semolina (suji - minuscule binding pinch)","Green cardamom pods","Rose water or kewra essence","Ice cubes or cold water (for washing chhana)","Refined wheat flour (maida - optional dusting pinch)","Thin sugar steeping syrup (patla chashni for cooling)"],
+      tasteProfile: "Spongy, Juicy & Delicately Floral-Sweet",
+      era: "19th-Century Renaissance Kolkata (Bagbazar Confectionery Heritage)",
+      keyTechnique: "Fresh Chhana Kneading & Rapid Light-Syrup Boiling",
     },
   ],
 };
