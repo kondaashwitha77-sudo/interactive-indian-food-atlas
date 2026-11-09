@@ -185,7 +185,9 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
             alt="Bhojan Mitra Chef AI Mascot"
             className="w-full h-full object-cover rounded-full transition-transform duration-300 group-hover:rotate-6"
           />
-          <span className="absolute bottom-1 right-1 w-3.5 h-3.5 bg-emerald-500 border-2 border-white dark:border-slate-900 rounded-full shadow-xs" />
+          <span className={`absolute bottom-1 right-1 w-3.5 h-3.5 bg-emerald-500 border-2 rounded-full shadow-xs ${
+            isLight ? "border-white" : "border-slate-900"
+          }`} />
         </button>
       </div>
 
@@ -211,7 +213,9 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
                 <img src={mascotSrc} alt="Bhojan Mitra" className="w-full h-full object-cover" />
               </div>
               <div className="leading-tight">
-                <h3 className="font-extrabold text-sm tracking-tight text-amber-800 dark:text-amber-400">
+                <h3 className={`font-extrabold text-sm tracking-tight ${
+                  isLight ? "text-amber-800" : "text-amber-300"
+                }`}>
                   Bhojan Mitra
                 </h3>
                 <p
@@ -334,7 +338,13 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
                         <>
                           {/* "Checked the web" Badge */}
                           {msg.usedWebSearch && (
-                            <div className="mb-2 inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md text-[10.5px] font-semibold bg-amber-500/15 text-amber-800 dark:text-amber-300 border border-amber-500/25">
+                            <div
+                              className={`mb-2 inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md text-[10.5px] font-semibold border ${
+                                isLight
+                                  ? "bg-amber-100 text-amber-900 border-amber-300"
+                                  : "bg-amber-500/20 text-amber-200 border-amber-500/30"
+                              }`}
+                            >
                               <Globe className="w-3 h-3 text-amber-500" />
                               <span>Checked the web</span>
                             </div>
@@ -344,8 +354,16 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
 
                           {/* Sources Chips */}
                           {msg.sources && msg.sources.length > 0 && (
-                            <div className="mt-2.5 pt-2 border-t border-amber-900/10 dark:border-slate-700 flex flex-wrap gap-1.5 items-center">
-                              <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500">
+                            <div
+                              className={`mt-2.5 pt-2 border-t flex flex-wrap gap-1.5 items-center ${
+                                isLight ? "border-amber-900/10" : "border-slate-700"
+                              }`}
+                            >
+                              <span
+                                className={`text-[10px] uppercase font-bold ${
+                                  isLight ? "text-slate-500" : "text-slate-400"
+                                }`}
+                              >
                                 Sources:
                               </span>
                               {msg.sources.map((s, sIdx) => (
@@ -354,7 +372,11 @@ export const CulinaryChatbot: React.FC<CulinaryChatbotProps> = ({ dish, isLight 
                                   href={s.url}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10.5px] bg-amber-100/70 dark:bg-slate-700 text-amber-900 dark:text-amber-200 hover:underline transition-colors"
+                                  className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10.5px] hover:underline transition-colors ${
+                                    isLight
+                                      ? "bg-amber-100/90 text-amber-900 border border-amber-200"
+                                      : "bg-slate-700 text-amber-200 border border-slate-600"
+                                  }`}
                                 >
                                   <span>{s.title}</span>
                                   <ExternalLink className="w-2.5 h-2.5 opacity-60" />

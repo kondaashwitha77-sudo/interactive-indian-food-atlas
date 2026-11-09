@@ -125,7 +125,8 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
             dishId === "appam-stew" ||
             dishId === "fish-molee" ||
             dishId === "puttu" ||
-            dishId === "siddu"
+            dishId === "siddu" ||
+            dishId === "lakshadweep-kilanji"
             ? "Evolution of Food"
             : "Evolution of food",
         photo: photography?.ingredients,
@@ -141,7 +142,12 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
       // Primary image source:
       // State-level cuisine poster image throughout all scroll-effect image boxes for all dishes in that state.
       // If a state poster is missing (Lakshadweep, Manipur), cleanly falls back to verified dish photography.
-      const resolvedImage = stateMainImg || verifiedUrl || stageInfographic?.image || UNRESOLVED_IMAGE;
+      let resolvedImage = stateMainImg || verifiedUrl || stageInfographic?.image || UNRESOLVED_IMAGE;
+      if (dishId === "lakshadweep-kilanji") {
+        if (index === 0) resolvedImage = "/images/dishes/kilanji-1.jpg";
+        else if (index === 1) resolvedImage = "/images/dishes/kilanji-2.jpg";
+        else if (index === 2) resolvedImage = "/images/dishes/kilanji-3.jpg";
+      }
 
       const next = entries[index + 1];
       let nextUrl = next ? (stageImageUrl(next.photo) || getInfographicForStage(dishId, next.stageNum)?.image) : undefined;
@@ -252,6 +258,12 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
         } else if (index === 1) {
           nextUrl = "/images/dishes/siddu-circle-2.jpg";
         }
+      } else if (dishId === "lakshadweep-kilanji") {
+        if (index === 0) {
+          nextUrl = "/images/dishes/kilanji-2.jpg";
+        } else if (index === 1) {
+          nextUrl = "/images/dishes/kilanji-3.jpg";
+        }
       }
 
       const caption =
@@ -279,7 +291,9 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                               ? "Evolution of Food — from monsoon-festival sweet shops to modern artisanal rabri varieties."
                               : dishId === "siddu" && index === 1
                                 ? "Evolution of Food — from rustic shepherd hearth buns to diverse modern sweet and savory festival preparations."
-                                : entry.photo?.caption || (stateMainImg ? `${dish.state} — Regional heritage & culinary traditions` : undefined);
+                                : dishId === "lakshadweep-kilanji" && index === 1
+                                  ? "Evolution of Food — from traditional island hearth griddles to contemporary presentation with sweet coconut milk and ripe bananas."
+                                  : entry.photo?.caption || (stateMainImg ? `${dish.state} — Regional heritage & culinary traditions` : undefined);
 
       return {
         id: `${dishId}-stage-${entry.key}`,
@@ -287,7 +301,9 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
         imageAlt: stateMainImg ? `${dish.state} Regional Cuisine — ${entry.title}` : (entry.photo ? `${dishName} — ${entry.title}` : `${dish.state} — ${entry.title}`),
         secondaryImage: nextUrl || undefined,
         secondaryImageAlt:
-          dishId === "siddu"
+          dishId === "lakshadweep-kilanji"
+            ? (index === 0 ? "Kilanji served with sweet coconut milk and banana" : "Plated Kilanji crepe presentation")
+            : dishId === "siddu"
             ? (index === 0 ? "Steamer pot for authentic Kullvi Siddu" : "Steamed sliced Siddu served with chutneys")
             : dishId === "puttu"
             ? "Puttu with egg roast and pappadam on a banana leaf"
@@ -299,7 +315,9 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
         secondaryImagePosition:
           dishId === "appam-stew" ? "center 38%" : undefined,
         floatingOrbImage:
-          dishId === "puttu"
+          dishId === "lakshadweep-kilanji"
+            ? (index === 0 ? "/images/dishes/kilanji-3.jpg" : index === 1 ? "/images/dishes/kilanji-1.jpg" : "/images/dishes/kilanji-2.jpg")
+            : dishId === "puttu"
             ? "/images/dishes/puttu-circle-2.jpg"
             : dishId === "fish-molee"
               ? "/images/dishes/fish-molee-circle-2.jpg"
@@ -307,7 +325,9 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
                 ? "/images/dishes/appam-circle-1.jpg"
                 : undefined,
         floatingOrbAlt:
-          dishId === "puttu"
+          dishId === "lakshadweep-kilanji"
+            ? (index === 0 ? "Plated Kilanji crepes" : index === 1 ? "Delicate folded Kilanji" : "Kilanji with coconut banana accompaniment")
+            : dishId === "puttu"
             ? "Steaming puttu rolls on a plate"
             : dishId === "fish-molee"
               ? "Fish molee in a pan with tomato slices and curry leaves"

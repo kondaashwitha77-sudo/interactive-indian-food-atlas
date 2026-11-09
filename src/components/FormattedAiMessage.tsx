@@ -8,7 +8,7 @@ interface FormattedAiMessageProps {
 /**
  * Parses inline formatting: **bold**, *italic*, `code`, and [links](url).
  */
-function renderInlineText(text: string): React.ReactNode[] {
+function renderInlineText(text: string, isLight: boolean): React.ReactNode[] {
   // Regex matches markdown links [text](url), **bold**, *italic*, and `code`
   const regex = /(\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
   const parts = text.split(regex);
@@ -25,7 +25,11 @@ function renderInlineText(text: string): React.ReactNode[] {
           href={safeUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-amber-600 dark:text-amber-400 font-medium underline underline-offset-2 hover:text-amber-700 dark:hover:text-amber-300 transition-colors"
+          className={`not-italic font-medium underline underline-offset-2 transition-colors ${
+            isLight
+              ? "text-amber-700 hover:text-amber-900"
+              : "text-amber-300 hover:text-amber-200"
+          }`}
         >
           {label}
         </a>
@@ -37,17 +41,24 @@ function renderInlineText(text: string): React.ReactNode[] {
       return (
         <strong
           key={i}
-          className="font-bold not-italic text-amber-900 dark:text-amber-200"
+          className={`font-bold not-italic ${
+            isLight ? "text-amber-950" : "text-amber-300"
+          }`}
         >
           {part.slice(2, -2)}
         </strong>
       );
     }
 
-    // Italic terms (only when explicitly marked with *term*)
+    // Explicit italic markup
     if (part.startsWith("*") && part.endsWith("*")) {
       return (
-        <em key={i} className="italic text-amber-800/90 dark:text-amber-300/90">
+        <em
+          key={i}
+          className={`italic font-medium ${
+            isLight ? "text-amber-900" : "text-amber-200"
+          }`}
+        >
           {part.slice(1, -1)}
         </em>
       );
@@ -58,7 +69,11 @@ function renderInlineText(text: string): React.ReactNode[] {
       return (
         <code
           key={i}
-          className="not-italic px-1.5 py-0.5 rounded font-mono text-[11px] bg-amber-500/15 text-amber-900 dark:text-amber-200"
+          className={`not-italic px-1.5 py-0.5 rounded font-mono text-[11px] ${
+            isLight
+              ? "bg-amber-500/15 text-amber-950"
+              : "bg-slate-700/80 text-amber-200"
+          }`}
         >
           {part.slice(1, -1)}
         </code>
@@ -125,25 +140,33 @@ export const FormattedAiMessage: React.FC<FormattedAiMessageProps> = ({ content,
         blocks.push(
           <div
             key={`table-${i}`}
-            className="my-2.5 overflow-x-auto rounded-xl border border-amber-900/15 dark:border-slate-700 bg-amber-50/50 dark:bg-slate-900/60 shadow-xs"
+            className={`my-2.5 overflow-x-auto rounded-xl border shadow-xs ${
+              isLight
+                ? "border-amber-900/15 bg-amber-50/50"
+                : "border-slate-700 bg-slate-900/80"
+            }`}
           >
             <table className="w-full border-collapse text-left text-[12px]">
               <thead>
                 <tr
                   className={
                     isLight
-                      ? "bg-amber-100/80 text-amber-950 border-b border-amber-200"
+                      ? "bg-amber-100/90 text-amber-950 border-b border-amber-200"
                       : "bg-slate-800 text-amber-300 border-b border-slate-700"
                   }
                 >
                   {tableData.headers.map((h, hIdx) => (
-                    <th key={hIdx} className="px-3 py-1.5 font-bold tracking-wide">
-                      {renderInlineText(h)}
+                    <th key={hIdx} className="px-3 py-1.5 font-bold tracking-wide not-italic">
+                      {renderInlineText(h, isLight)}
                     </th>
                   ))}
                 </tr>
               </thead>
-              <tbody className="divide-y divide-amber-900/10 dark:divide-slate-800/80">
+              <tbody
+                className={`divide-y ${
+                  isLight ? "divide-amber-900/10" : "divide-slate-800/80"
+                }`}
+              >
                 {tableData.rows.map((row, rIdx) => (
                   <tr
                     key={rIdx}
@@ -154,9 +177,11 @@ export const FormattedAiMessage: React.FC<FormattedAiMessageProps> = ({ content,
                     {row.map((cell, cIdx) => (
                       <td
                         key={cIdx}
-                        className="px-3 py-1.5 align-top leading-relaxed text-slate-800 dark:text-slate-200"
+                        className={`px-3 py-1.5 align-top leading-relaxed italic ${
+                          isLight ? "text-slate-800" : "text-slate-100"
+                        }`}
                       >
-                        {renderInlineText(cell)}
+                        {renderInlineText(cell, isLight)}
                       </td>
                     ))}
                   </tr>
@@ -169,14 +194,16 @@ export const FormattedAiMessage: React.FC<FormattedAiMessageProps> = ({ content,
       }
     }
 
-    // 3. Headings (if generated)
+    // 3. Headings
     if (trimmed.startsWith("### ")) {
       blocks.push(
         <h4
           key={`h3-${i}`}
-          className="font-bold text-xs uppercase tracking-wide text-amber-700 dark:text-amber-400 mt-2 mb-1"
+          className={`font-bold text-xs uppercase tracking-wide not-italic mt-2 mb-1 ${
+            isLight ? "text-amber-800" : "text-amber-300"
+          }`}
         >
-          {renderInlineText(trimmed.replace(/^###\s+/, ""))}
+          {renderInlineText(trimmed.replace(/^###\s+/, ""), isLight)}
         </h4>
       );
       i++;
@@ -187,9 +214,11 @@ export const FormattedAiMessage: React.FC<FormattedAiMessageProps> = ({ content,
       blocks.push(
         <h3
           key={`h2-${i}`}
-          className="font-extrabold text-sm text-amber-800 dark:text-amber-300 mt-2.5 mb-1 flex items-center gap-1.5"
+          className={`font-extrabold text-sm not-italic mt-2.5 mb-1 flex items-center gap-1.5 ${
+            isLight ? "text-amber-900" : "text-amber-200"
+          }`}
         >
-          {renderInlineText(trimmed.replace(/^##\s+/, ""))}
+          {renderInlineText(trimmed.replace(/^##\s+/, ""), isLight)}
         </h3>
       );
       i++;
@@ -200,9 +229,11 @@ export const FormattedAiMessage: React.FC<FormattedAiMessageProps> = ({ content,
       blocks.push(
         <h2
           key={`h1-${i}`}
-          className="font-black text-sm text-amber-900 dark:text-amber-200 mt-2.5 mb-1"
+          className={`font-black text-sm not-italic mt-2.5 mb-1 ${
+            isLight ? "text-amber-950" : "text-amber-100"
+          }`}
         >
-          {renderInlineText(trimmed.replace(/^#\s+/, ""))}
+          {renderInlineText(trimmed.replace(/^#\s+/, ""), isLight)}
         </h2>
       );
       i++;
@@ -214,9 +245,13 @@ export const FormattedAiMessage: React.FC<FormattedAiMessageProps> = ({ content,
       blocks.push(
         <blockquote
           key={`quote-${i}`}
-          className="my-1.5 border-l-2 border-amber-500 pl-2.5 text-[12px] opacity-85"
+          className={`my-1.5 border-l-2 pl-2.5 text-[12px] italic ${
+            isLight
+              ? "border-amber-600 text-slate-700"
+              : "border-amber-400 text-slate-300"
+          }`}
         >
-          {renderInlineText(trimmed.replace(/^>\s*/, ""))}
+          {renderInlineText(trimmed.replace(/^>\s*/, ""), isLight)}
         </blockquote>
       );
       i++;
@@ -237,9 +272,14 @@ export const FormattedAiMessage: React.FC<FormattedAiMessageProps> = ({ content,
       blocks.push(
         <ul key={`ul-${i}`} className="my-1.5 space-y-1 pl-0.5">
           {listItems.map((item, idx) => (
-            <li key={idx} className="flex items-start gap-2 leading-relaxed text-[13.5px]">
-              <span className="select-none text-amber-500 font-bold text-xs mt-0.5">•</span>
-              <span className="flex-1">{renderInlineText(item)}</span>
+            <li
+              key={idx}
+              className={`flex items-start gap-2 leading-relaxed text-[13.5px] italic ${
+                isLight ? "text-slate-800" : "text-slate-100"
+              }`}
+            >
+              <span className="select-none not-italic text-amber-500 font-bold text-xs mt-0.5">•</span>
+              <span className="flex-1">{renderInlineText(item, isLight)}</span>
             </li>
           ))}
         </ul>
@@ -261,11 +301,20 @@ export const FormattedAiMessage: React.FC<FormattedAiMessageProps> = ({ content,
       blocks.push(
         <ol key={`ol-${i}`} className="my-1.5 space-y-1 pl-0.5">
           {listItems.map((item, idx) => (
-            <li key={idx} className="flex items-start gap-2 leading-relaxed text-[13.5px]">
-              <span className="select-none text-amber-600 dark:text-amber-400 font-bold text-[11.5px] mt-0.5">
+            <li
+              key={idx}
+              className={`flex items-start gap-2 leading-relaxed text-[13.5px] italic ${
+                isLight ? "text-slate-800" : "text-slate-100"
+              }`}
+            >
+              <span
+                className={`select-none not-italic font-bold text-[11.5px] mt-0.5 ${
+                  isLight ? "text-amber-700" : "text-amber-400"
+                }`}
+              >
                 {item.num}.
               </span>
-              <span className="flex-1">{renderInlineText(item.text)}</span>
+              <span className="flex-1">{renderInlineText(item.text, isLight)}</span>
             </li>
           ))}
         </ol>
@@ -273,17 +322,26 @@ export const FormattedAiMessage: React.FC<FormattedAiMessageProps> = ({ content,
       continue;
     }
 
-    // 7. Standard Paragraph (13.5px / 14px comfortable reading, non-italic)
+    // 7. Standard Paragraph (in italic with guaranteed theme contrast)
     blocks.push(
-      <p key={`p-${i}`} className="leading-relaxed text-[13.5px]">
-        {renderInlineText(trimmed)}
+      <p
+        key={`p-${i}`}
+        className={`leading-relaxed text-[13.5px] italic ${
+          isLight ? "text-slate-800" : "text-slate-100"
+        }`}
+      >
+        {renderInlineText(trimmed, isLight)}
       </p>
     );
     i++;
   }
 
   return (
-    <div className="space-y-1.5 font-sans not-italic text-slate-800 dark:text-slate-100">
+    <div
+      className={`space-y-1.5 font-sans italic ${
+        isLight ? "text-slate-800" : "text-slate-100"
+      }`}
+    >
       {blocks}
     </div>
   );
