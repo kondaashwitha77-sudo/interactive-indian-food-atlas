@@ -221,9 +221,9 @@ export const GsapMotionPathTimeline: React.FC<GsapMotionPathTimelineProps> = ({
         }
       } else if (dishId === "dal-baati-churma") {
         if (index === 0) {
-          nextUrl = "/images_updated/WhatsApp Image 2026-11-08 at 02.46.45.jpeg";
+          nextUrl = "/images/dishes/dal-baati-churma.jpg";
         } else if (index === 1) {
-          nextUrl = "/images_updated/WhatsApp Image 2026-11-08 at 02.46.45.jpeg";
+          nextUrl = "/images/dishes/dal-baati-churma.jpg";
         }
       } else if (dishId === "laal-maas") {
         if (index === 0) {

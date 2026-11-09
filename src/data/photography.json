@@ -2040,18 +2040,19 @@
         "label": "Dal Baati Churma, Recipe"
       },
       "plated": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/Rajasthani_dal-bati-churma_thali_01.jpg",
+        "src": "/images/dishes/dal-baati-churma.jpg",
         "subject": "dish",
         "title": "Dal Baati Churma",
-        "creator": "",
-        "licence": "CC BY-SA 4.0",
+        "creator": "Rajasthan Culinary Heritage",
+        "licence": "Community Archive",
         "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rajasthani_dal-bati-churma_thali_01.jpg",
-        "alt": "Dal Baati Churma — Rajasthan",
+        "sourceUrl": "https://foodex-gastro.vercel.app/#/dish/dal-baati-churma",
+        "alt": "Authentic Rajasthani Dal Baati Churma platter with baatis, panchmel dal, almond-garnished churma, and pure ghee",
         "caption": "Dal Baati Churma, Rajasthan.",
         "fallback": "/images/dishes/dal-baati-churma-stage-4.webp",
-        "width": null,
-        "height": null
+        "local": "/images/dishes/dal-baati-churma-stage-4.webp",
+        "width": 1024,
+        "height": 703
       }
     },
     "laal-maas": {
